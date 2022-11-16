@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leader Impact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="search-bar">
+                <div class="cmp-search-lister__search-box">
+                    <input class="cmp-search-lister__search-box-text" data-cmp-hook-formssearch="input" type="text" placeholder="Search resources...">
+                </div>
+                <span class="close-search">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="1" width="21.861" height="2" transform="rotate(45 2 1)" fill="#000000"/>
+                        <rect x="1" y="16" width="21.861" height="2" transform="rotate(-45 1 16)" fill="#000000"/>
+                    </svg>
+                </span>
+            </div>
+            <div class="container">
+                <div class="site-logo">
+                    <div data-asset-id="" id="" data-cmp-data-layer="" class="logo-wrap" itemscope="" itemtype="">
+                        <a class="logo-link" data-cmp-clickable="" href="">
+                            <img srcset="./assets/logo.svg" src="./assets/logo.svg" loading="lazy" class="logo-img" itemprop="contentUrl"  alt="logo" title="logo">
+                        </a>
+                        <meta itemprop="caption" content="Component">
+                    </div>
+                </div>
+                <div class="navigation">
+                    <nav id="" class="nav-wrap" itemscope="" itemtype="" data-cmp-data-layer="">
+                        <ul class="nav-link-wrap">
+                            <li class="navigation-item" data-cmp-data-layer="">
+                                <a data-cmp-clickable="" class="nav-link-item" href="">Join a Group</a>
+                            </li>
+                            <li class="navigation-item" data-cmp-data-layer="">
+                                <a data-cmp-clickable="" class="nav-link-item" href="">Start a Group</a>
+                            </li>
+                            <li class="navigation-item" data-cmp-data-layer="">
+                                <a data-cmp-clickable="" class="nav-link-item" href="">Resources</a>
+                            </li>
+                            <li class="navigation-item" data-cmp-data-layer="">
+                                <a data-cmp-clickable="" class="nav-link-item" href="">About</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sub-nav">
+                    <span class="sub-nav-item">
+                        <a data-cmp-clickable="" class="nav-link-item" href="">Give</a>
+                    </span>
+                    <div class="nav-button">
+                        <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                            <span class="btn-text">Leaderhub</span>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <img src="./assets/search.svg" alt="">
+                    </div>
+                    <div class="hamburger">
+                        <img class="open" src="./assets/hamburger.svg" alt="">
+                        <img class="close" src="./assets/clsoe.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-nav-wrap">
+                <nav id="" class="nav-wrap" itemscope="" itemtype="" data-cmp-data-layer="">
+                    <ul class="nav-link-wrap">
+                        <li class="navigation-item" data-cmp-data-layer="">
+                            <a data-cmp-clickable="" class="nav-link-item" href="">Join a Group</a>
+                        </li>
+                        <li class="navigation-item" data-cmp-data-layer="">
+                            <a data-cmp-clickable="" class="nav-link-item" href="">Start a Group</a>
+                        </li>
+                        <li class="navigation-item" data-cmp-data-layer="">
+                            <a data-cmp-clickable="" class="nav-link-item" href="">Resources</a>
+                        </li>
+                        <li class="navigation-item" data-cmp-data-layer="">
+                            <a data-cmp-clickable="" class="nav-link-item" href="">About</a>
+                        </li>
+                    </ul>
+                    <span class="sub-link">
+                        <a data-cmp-clickable="" class="sub-link-item" href="">Leaderhub</a>
+                        <a data-cmp-clickable="" class="sub-link-item" href="">Give</a>
+                        <a data-cmp-clickable="" class="sub-link-item" href="">Contact</a>
+                    </span>
+                </nav>
+                <div class="mobile-nav-footer">
+                    <div class="term-policy-wrap">
+                        <span class="term-policy-item" data-cmp-data-layer="">
+                            <a data-cmp-clickable="" class="nav-link-item" href="">Privacy</a>
+                        </span> 
+                        <span class="term-policy-item" data-cmp-data-layer="">
+                            <a data-cmp-clickable="" class="nav-link-item" href="">Term of Use</a>
+                        </span> 
+                    </div>
+                    <div class="social-wrap">
+                        <a href="" data-cmp-clickable="" class="social-link-item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 0.416748C5.84086 0.416748 0.416656 5.84095 0.416656 12.5001C0.416656 19.1592 5.84086 24.5834 12.5 24.5834C19.1591 24.5834 24.5833 19.1592 24.5833 12.5001C24.5833 5.84095 19.1591 0.416748 12.5 0.416748ZM12.5 2.83341C17.8531 2.83341 22.1667 7.14702 22.1667 12.5001C22.1667 17.3509 18.6206 21.3366 13.9726 22.044V15.3817H16.7858L17.2271 12.5237H13.9726V10.9613C13.9726 9.77355 14.3596 8.71932 15.4713 8.71932H17.2554V6.22477C16.9413 6.18248 16.2783 6.09025 15.0252 6.09025C12.408 6.09025 10.8739 7.47258 10.8739 10.6215V12.5237H8.1835V15.3817H10.8739V22.0204C6.30159 21.2494 2.83332 17.2974 2.83332 12.5001C2.83332 7.14702 7.14692 2.83341 12.5 2.83341Z" fill="#9C9FA1"/>
+                            </svg>       
+                        </a>
+                        <a href="" data-cmp-clickable="" class="social-link-item">
+                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.33333 0.625C3.11683 0.625 0.5 3.33529 0.5 6.66667V16.3333C0.5 19.6647 3.11683 22.375 6.33333 22.375H15.6667C18.8832 22.375 21.5 19.6647 21.5 16.3333V6.66667C21.5 3.33529 18.8832 0.625 15.6667 0.625H6.33333ZM6.33333 3.04167H15.6667C17.5963 3.04167 19.1667 4.66808 19.1667 6.66667V16.3333C19.1667 18.3319 17.5963 19.9583 15.6667 19.9583H6.33333C4.40367 19.9583 2.83333 18.3319 2.83333 16.3333V6.66667C2.83333 4.66808 4.40367 3.04167 6.33333 3.04167ZM16.8333 4.25C16.5239 4.25 16.2272 4.37731 16.0084 4.60391C15.7896 4.83052 15.6667 5.13786 15.6667 5.45833C15.6667 5.7788 15.7896 6.08615 16.0084 6.31275C16.2272 6.53936 16.5239 6.66667 16.8333 6.66667C17.1428 6.66667 17.4395 6.53936 17.6583 6.31275C17.8771 6.08615 18 5.7788 18 5.45833C18 5.13786 17.8771 4.83052 17.6583 4.60391C17.4395 4.37731 17.1428 4.25 16.8333 4.25ZM11 5.45833C7.7835 5.45833 5.16667 8.16863 5.16667 11.5C5.16667 14.8314 7.7835 17.5417 11 17.5417C14.2165 17.5417 16.8333 14.8314 16.8333 11.5C16.8333 8.16863 14.2165 5.45833 11 5.45833ZM11 7.875C12.9297 7.875 14.5 9.50142 14.5 11.5C14.5 13.4986 12.9297 15.125 11 15.125C9.07033 15.125 7.5 13.4986 7.5 11.5C7.5 9.50142 9.07033 7.875 11 7.875Z" fill="#9C9FA1"/>
+                            </svg>
+                        </a>
+                        <a href="" data-cmp-clickable="" class="social-link-item">
+                            <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0.833252C12 0.833252 4.70312 0.833214 2.88312 1.3383C1.87862 1.61621 1.08928 2.43495 0.820943 3.47412C0.333276 5.35912 0.333313 10.4999 0.333313 10.4999C0.333313 10.4999 0.333276 15.6407 0.820943 17.5257C1.08928 18.5661 1.87978 19.3836 2.88312 19.6615C4.70312 20.1666 12 20.1666 12 20.1666C12 20.1666 19.2968 20.1666 21.1168 19.6615C22.1202 19.3836 22.9107 18.5649 23.179 17.5257C23.6667 15.6407 23.6666 10.4999 23.6666 10.4999C23.6666 10.4999 23.6667 5.35912 23.179 3.47412C22.9107 2.43495 22.1202 1.61621 21.1168 1.3383C19.2968 0.833214 12 0.833252 12 0.833252ZM12 3.24992C15.3623 3.24992 19.5727 3.41136 20.513 3.67236C20.7102 3.72674 20.8718 3.89411 20.9254 4.09953C21.2066 5.18461 21.3333 8.4965 21.3333 10.4999C21.3333 12.5033 21.2066 15.814 20.9254 16.9003C20.8729 17.1045 20.7113 17.2719 20.513 17.3275C19.5738 17.5885 15.3623 17.7499 12 17.7499C8.63881 17.7499 4.42846 17.5885 3.48696 17.3275C3.28979 17.2731 3.12819 17.1057 3.07452 16.9003C2.79336 15.8152 2.66665 12.5033 2.66665 10.4999C2.66665 8.4965 2.79336 5.18467 3.07452 4.09717C3.12702 3.89417 3.28863 3.72674 3.48696 3.67236C4.42613 3.41136 8.63765 3.24992 12 3.24992ZM9.66665 6.31323V14.6866L16.6666 10.4999L9.66665 6.31323Z" fill="#9C9FA1"/>
+                            </svg>
+                        </a>
+                        <a href="" data-cmp-clickable="" class="social-link-item">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.04167 0.625C1.70646 0.625 0.625 1.70646 0.625 3.04167V19.9583C0.625 21.2935 1.70646 22.375 3.04167 22.375H19.9583C21.2935 22.375 22.375 21.2935 22.375 19.9583V3.04167C22.375 1.70646 21.2935 0.625 19.9583 0.625H3.04167ZM3.04167 3.04167H19.9583V19.9583H3.04167V3.04167ZM6.39998 4.63232C5.36444 4.63232 4.74325 5.25482 4.74325 6.08374C4.74325 6.91266 5.36452 7.5328 6.29614 7.5328C7.33168 7.5328 7.95288 6.91266 7.95288 6.08374C7.95288 5.25482 7.33161 4.63232 6.39998 4.63232ZM4.82585 9.08333V17.5417H7.875V9.08333H4.82585ZM10.3908 9.08333V17.5417H13.4399V12.9184C13.4399 11.5421 14.4219 11.3442 14.7167 11.3442C15.0115 11.3442 15.8 11.64 15.8 12.9184V17.5417H18.75V12.9184C18.75 10.2637 17.5703 9.08333 16.095 9.08333C14.6196 9.08333 13.8327 9.5746 13.4399 10.2633V9.08333H10.3908Z" fill="#9C9FA1"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="banner" style="background-image: url('./assets/Banner.png')">
+            <div class="container">
+                <div class="title">
+                    <div data-cmp-data-layer="" id="" class="title-wrap">
+                        <h1>POSITIVE IMPACT STARTS HERE</h1>
+                    </div>
+                </div>
+                <div class="content-wrap">
+                    <div class="text">
+                        <div data-cmp-data-layer="" id="" class="text-wrap">
+                            <p>Join the global communiy of leaders dedicated to making a lasting impact.</p>
+                        </div>
+                    </div>
+                    <div class="button-wrap">
+                        <div class="button">
+                            <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                <span class="btn-text">Join a Group</span>
+                            </a>
+                        </div>
+                        <div class="button">
+                            <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                <span class="btn-text">Start a Group</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="alert-bar">
+            <div class="container">
+                <div class="alert-logo-wrap">
+                    <div data-asset-id="" id="" data-cmp-data-layer="" class="cmp-image" itemscope="" itemtype="">
+                        <img srcset="./assets/alert-logo.svg" src="./assets/alert-logo.svg" loading="lazy" class="logo-img" itemprop="contentUrl"  alt="logo" title="logo">
+                        <span class="alert-text" itemprop="">Have an impact as a young professional.</span>
+                    </div>
+                </div>
+                <div class="alert-btn-wrap">
+                    <div data-asset-id="" id="" data-cmp-data-layer="" class="cmp-image" itemscope="" itemtype="">
+                        <img srcset="./assets/alert-img.png" src="./assets/alert-img.png" loading="lazy" class="logo-img" itemprop="contentUrl"  alt="logo" title="logo">
+                    </div>
+                    <div class="button">
+                        <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                            <span class="btn-text">Learn More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="welcome" style="background-image: url('./assets/Welcome-bg.png')">
+            <div class="container">
+                <div class="content-wrap">
+                    <div class="sub-title">
+                        <div data-cmp-data-layer="" id="" class="cmp-title">
+                            <h6>Welcome</h6>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <div data-cmp-data-layer="" id="" class="title-wrap">
+                            <h3>Changing the World Takes Leaders Like You</h3>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div data-cmp-data-layer="" id="" class="text-wrap">
+                            <p>When leaders are transformed, we affect change through the channels and connections they have – family, friends, co-workers and colleagues. Deep, positive, long-lasting change that can help make our world better.</p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                            <span class="btn-text">More About Us</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="icon-box-wrap">
+                    <div class="icon-box-item">
+                        <div data-asset-id="" id="" data-cmp-data-layer="" class="cmp-image" itemscope="" itemtype="">
+                            <img srcset="./assets/article-item.svg" src="./assets/article-item.svg" loading="lazy" class="logo-img" itemprop="contentUrl"  alt="logo" title="logo">
+                        </div>
+                        <div class="box-title-wrap" data-cmp-data-layer="" id="">
+                            <h4>Articles</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadip.</p>
+                        </div>
+                    </div>
+                    <div class="icon-box-item">
+                        <div data-asset-id="" id="" data-cmp-data-layer="" class="cmp-image" itemscope="" itemtype="">
+                            <img srcset="./assets/video.svg" src="./assets/video.svg" loading="lazy" class="logo-img" itemprop="contentUrl"  alt="logo" title="logo">
+                        </div>
+                        <div class="box-title-wrap" data-cmp-data-layer="" id="">
+                            <h4>Video Series</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadip.</p>
+                        </div>
+                    </div>
+                    <div class="icon-box-item">
+                        <div data-asset-id="" id="" data-cmp-data-layer="" class="cmp-image" itemscope="" itemtype="">
+                            <img srcset="./assets/book.svg" src="./assets/book.svg" loading="lazy" class="logo-img" itemprop="contentUrl"  alt="logo" title="logo">
+                        </div>
+                        <div class="box-title-wrap" data-cmp-data-layer="" id="">
+                            <h4>Books</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadip.</p>
+                        </div>
+                    </div>
+                    <div class="icon-box-item">
+                        <div data-asset-id="" id="" data-cmp-data-layer="" class="cmp-image" itemscope="" itemtype="">
+                            <img srcset="./assets/bulb.svg" src="./assets/bulb.svg" loading="lazy" class="logo-img" itemprop="contentUrl"  alt="logo" title="logo">
+                        </div>
+                        <div class="box-title-wrap" data-cmp-data-layer="" id="">
+                            <h4>All Resources</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadip.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter-bar">
+            <div class="container">
+                <div class="title">
+                    <div data-cmp-data-layer="" id="" class="title-wrap">
+                        <h3>Join Thousands of Leaders Leaving a Lasting Impact</h3>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <div class="button">
+                        <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                            <span class="btn-text">Subscribe to Our Newsletter</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                            <span class="btn-text">Join a Group</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                            <span class="btn-text">Start a Group</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="latest-post">
+            <div class="container">
+                <div class="sub-title">
+                    <div data-cmp-data-layer="" id="" class="cmp-title">
+                        <h6>Resources</h6>
+                    </div>
+                </div>
+                <div class="title">
+                    <div data-cmp-data-layer="" id="" class="title-wrap">
+                        <h2>The Latest</h2>
+                    </div>
+                </div>
+                <div class="post-wrap">
+                    <a href="" class="post-item">
+                        <div class="img-wrap">
+                            <img srcset="./assets/post-article.svg" src="./assets/post-article.svg" loading="lazy" class="post-icon" itemprop="contentUrl"  alt="" title="">
+                            <img srcset="./assets/latest-post1.png" src="./assets/latest-post1.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                        </div>
+                        <div class="content-wrap">
+                            <span class="post-icon">
+                                <img srcset="./assets/post-article.svg" src="./assets/post-article.svg" loading="lazy" class="post-icon" itemprop="contentUrl"  alt="" title="">
+                            </span>
+                            <h3 class="post-title">Living the Fullfilled Life of a Leader</h3>
+                            <p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                        </div>
+                    </a>
+                    <a href="" class="post-item">
+                        <div class="img-wrap">
+                            <img srcset="./assets/post-article.svg" src="./assets/post-article.svg" loading="lazy" class="post-icon" itemprop="contentUrl"  alt="" title="">
+                            <img srcset="./assets/latest-post2.png" src="./assets/latest-post2.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                        </div>
+                        <div class="content-wrap">
+                            <span class="post-icon">
+                                <img srcset="./assets/post-article.svg" src="./assets/post-article.svg" loading="lazy" class="post-icon" itemprop="contentUrl"  alt="" title="">
+                            </span>
+                            <h3 class="post-title">Who’s Following in your Wake?</h3>
+                            <p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                        </div>
+                    </a>
+                    <a href="" class="post-item">
+                        <div class="img-wrap">
+                            <img srcset="./assets/post-book.svg" src="./assets/post-book.svg" loading="lazy" class="post-icon" itemprop="contentUrl"  alt="" title="">
+                            <img srcset="./assets/latest-post3.png" src="./assets/latest-post3.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                        </div>
+                        <div class="content-wrap">
+                            <span class="post-icon">
+                                <img srcset="./assets/post-book.svg" src="./assets/post-book.svg" loading="lazy" class="post-icon" itemprop="contentUrl"  alt="" title="">
+                            </span>
+                            <h3 class="post-title">Becoming a Leader of Impact Book</h3>
+                            <p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                        </div>
+                    </a>
+                    <a href="" class="post-item">
+                        <div class="img-wrap">
+                            <img srcset="./assets/video.svg" src="./assets/video.svg" loading="lazy" class="post-icon" itemprop="contentUrl"  alt="" title="">
+                            <img srcset="./assets/latest-post4.png" src="./assets/latest-post4.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                        </div>
+                        <div class="content-wrap">
+                            <span class="post-icon">
+                                <img srcset="./assets/video.svg" src="./assets/video.svg" loading="lazy" class="post-icon" itemprop="contentUrl"  alt="" title="">
+                            </span>
+                            <h3 class="post-title">Leading in Times of Crisis Video Series</h3>
+                            <p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="button resource-btn">
+                    <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                        <span class="btn-text">All Resources</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="impact-story">
+            <div class="container">
+                <div class="stories-wrap">
+                    <div class="title">
+                        <div data-cmp-data-layer="" id="" class="title-wrap">
+                            <h2>Impact Stories</h2>
+                        </div>
+                    </div>
+                    <div class="stories-item-wrap">
+                        <a href="#story1" class="story-item">
+                            <div class="img">
+                                <img srcset="./assets/story1.png" src="./assets/story1.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                            </div>
+                            <p class="content">Sed Diam Nonumy Eirmod Tempor</p>
+                        </a>
+                        <a href="#story2" class="story-item">
+                            <div class="img">
+                                <img srcset="./assets/story2.png" src="./assets/story2.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                            </div>
+                            <p class="content">Sed Diam Nonumy Eirmod Tempor</p>
+                        </a>
+                        <a href="#story3" class="story-item">
+                            <div class="img">
+                                <img srcset="./assets/story3.png" src="./assets/story3.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                            </div>
+                            <p class="content">Sed Diam Nonumy Eirmod Tempor</p>
+                        </a>
+                    </div>
+                    <div class="button story-btn">
+                        <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                            <span class="btn-text">All Stories</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <div class="story-tab" id="story1">
+                        <div class="story-blurb">
+                            <span class="quote">“</span>
+                            <p class="quote-content">Joining a LeaderImpact group was the smartest decision I made for my business as well as for my personal development. I have built lasting friendships and mentors.</p>
+                            <div class="button full-story-btn">
+                                <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                    <span class="btn-text">Read Full Story</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="story-img">
+                            <img srcset="./assets/quote-img.png" src="./assets/quote-img.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                        </div>
+                    </div>
+                    <div class="story-tab" id="story2">
+                        <div class="story-blurb">
+                            <span class="quote">“</span>
+                            <p class="quote-content">Joining a LeaderImpact group was the smartest decision I made for my business as well as for my personal development. I have built lasting friendships and mentors...</p>
+                            <div class="button full-story-btn">
+                                <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                    <span class="btn-text">Read Full Story</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="story-img">
+                            <img srcset="./assets/quote-img.png" src="./assets/quote-img.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                        </div>
+                    </div>
+                    <div class="story-tab" id="story3">
+                        <div class="story-blurb">
+                            <span class="quote">“</span>
+                            <p class="quote-content">Joining a LeaderImpact group was the smartest decision I made for my business as well as for my personal development. I have built lasting friendships and mentors......</p>
+                            <div class="button full-story-btn">
+                                <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                    <span class="btn-text">Read Full Story</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="story-img">
+                            <img srcset="./assets/quote-img.png" src="./assets/quote-img.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter-bar">
+            <div class="container">
+                <div class="title">
+                    <div data-cmp-data-layer="" id="" class="title-wrap">
+                        <h3>Join Thousands of Leaders Leaving a Lasting Impact</h3>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <div class="button">
+                        <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                            <span class="btn-text">Subscribe to Our Newsletter</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                            <span class="btn-text">Join a Group</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                            <span class="btn-text">Start a Group</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="container">
+                <div class="title-btn-wrap">
+                    <div class="title">
+                        <div data-cmp-data-layer="" id="" class="title-wrap">
+                            <h5>Featured Products</h5>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                            <span class="btn-text">Shop All</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-slider">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <img srcset="./assets/product1.png" src="./assets/product1.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title-wrap">
+                                <h5 class="title">BECOMING A LEADER OF IMPACT</h5>
+                                <p class="content">by Braden Douglas</p>
+                            </div>
+                            <div class="button">
+                                <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                    <span class="btn-text">Buy Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <img srcset="./assets/product2.png" src="./assets/product2.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title-wrap">
+                                <h5 class="title">Devenir un leader d'impact (French Edition)</h5>
+                                <p class="content">by Braden Douglas</p>
+                            </div>
+                            <div class="button">
+                                <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                    <span class="btn-text">Buy Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <img srcset="./assets/product1.png" src="./assets/product1.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title-wrap">
+                                <h5 class="title">Convertirse en un Líder de Impacto (Spanish Edition)</h5>
+                                <p class="content">by Braden Douglas</p>
+                            </div>
+                            <div class="button">
+                                <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                    <span class="btn-text">Buy Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <img srcset="./assets/product2.png" src="./assets/product2.png" loading="lazy" class="post-img" itemprop="contentUrl"  alt="" title="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title-wrap">
+                                <h5 class="title">Convertirse en un Líder de Impacto (Spanish Edition)</h5>
+                                <p class="content">by Braden Douglas</p>
+                            </div>
+                            <div class="button">
+                                <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                    <span class="btn-text">Buy Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button bottom-btn" style="display: none;">
+                    <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                        <span class="btn-text">Shop All</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="blurb" style="background-image: url('./assets/blurb-bg.png')">
+            <div class="container">
+                <div class="content-wrap">
+                    <img srcset="./assets/blurb-logo.svg" src="./assets/blurb-logo.svg" loading="lazy" class="logo-img" itemprop="contentUrl"  alt="logo" title="logo">
+                    <span class="blurb-text" itemprop="">Leaders of impact don't wait until they're older or deeper in their career to make a difference - they start today!</span>
+                    <div class="button-wrap">
+                        <div class="button">
+                            <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                <span class="btn-text">Learn More</span>
+                            </a>
+                        </div>
+                        <div class="video-btn">
+                            <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                <img srcset="./assets/video.svg" src="./assets/video.svg" loading="lazy" class="post-icon" itemprop="contentUrl"  alt="" title="">
+                                <span class="btn-text">Watch Video</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrap">
+                    <img srcset="./assets/blurb-img.png" src="./assets/blurb-img.png" loading="lazy" class="blurb-img" itemprop="contentUrl"  alt="" title="">
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="site-logo">
+                    <div data-asset-id="" id="" data-cmp-data-layer="" class="logo-wrap" itemscope="" itemtype="">
+                        <a class="logo-link" data-cmp-clickable="" href="">
+                            <img srcset="./assets/footer-logo.svg" src="./assets/footer-logo.svg" loading="lazy" class="logo-img" itemprop="contentUrl"  alt="logo" title="logo">
+                        </a>
+                        <meta itemprop="caption" content="Component">
+                    </div>
+                </div>
+                <div class="content-wrap">
+                    <div class="title">
+                        <div data-cmp-data-layer="" id="" class="title-wrap">
+                            <h3>Join Thousands of Leaders Leaving a Lasting Impact</h3>
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <div class="button">
+                            <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                <span class="btn-text">Subscribe to Our Newsletter</span>
+                            </a>
+                        </div>
+                        <div class="button">
+                            <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                <span class="btn-text">Join a Group</span>
+                            </a>
+                        </div>
+                        <div class="button">
+                            <a href="" id="" class="btn-link" data-cmp-clickable="" data-cmp-data-layer="">
+                                <span class="btn-text">Start a Group</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-content-wrap">
+                    <nav id="" class="nav-wrap" itemscope="" itemtype="" data-cmp-data-layer="">
+                        <ul class="nav-link-wrap">
+                            <li class="navigation-item" data-cmp-data-layer="">
+                                <a data-cmp-clickable="" class="nav-link-item" href="">Resources</a>
+                            </li>
+                            <li class="navigation-item" data-cmp-data-layer="">
+                                <a data-cmp-clickable="" class="nav-link-item" href="">About</a>
+                            </li>
+                            <li class="navigation-item" data-cmp-data-layer="">
+                                <a data-cmp-clickable="" class="nav-link-item" href="">Contact</a>
+                            </li>
+                            <li class="navigation-item" data-cmp-data-layer="">
+                                <a data-cmp-clickable="" class="nav-link-item" href="">Leaderhub</a>
+                            </li>
+                            <li class="navigation-item" data-cmp-data-layer="">
+                                <a data-cmp-clickable="" class="nav-link-item" href="">Give</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="social-wrap">
+                        <a href="" data-cmp-clickable="" class="social-link-item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 0.416748C5.84086 0.416748 0.416656 5.84095 0.416656 12.5001C0.416656 19.1592 5.84086 24.5834 12.5 24.5834C19.1591 24.5834 24.5833 19.1592 24.5833 12.5001C24.5833 5.84095 19.1591 0.416748 12.5 0.416748ZM12.5 2.83341C17.8531 2.83341 22.1667 7.14702 22.1667 12.5001C22.1667 17.3509 18.6206 21.3366 13.9726 22.044V15.3817H16.7858L17.2271 12.5237H13.9726V10.9613C13.9726 9.77355 14.3596 8.71932 15.4713 8.71932H17.2554V6.22477C16.9413 6.18248 16.2783 6.09025 15.0252 6.09025C12.408 6.09025 10.8739 7.47258 10.8739 10.6215V12.5237H8.1835V15.3817H10.8739V22.0204C6.30159 21.2494 2.83332 17.2974 2.83332 12.5001C2.83332 7.14702 7.14692 2.83341 12.5 2.83341Z" fill="#9C9FA1"/>
+                            </svg>       
+                        </a>
+                        <a href="" data-cmp-clickable="" class="social-link-item">
+                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.33333 0.625C3.11683 0.625 0.5 3.33529 0.5 6.66667V16.3333C0.5 19.6647 3.11683 22.375 6.33333 22.375H15.6667C18.8832 22.375 21.5 19.6647 21.5 16.3333V6.66667C21.5 3.33529 18.8832 0.625 15.6667 0.625H6.33333ZM6.33333 3.04167H15.6667C17.5963 3.04167 19.1667 4.66808 19.1667 6.66667V16.3333C19.1667 18.3319 17.5963 19.9583 15.6667 19.9583H6.33333C4.40367 19.9583 2.83333 18.3319 2.83333 16.3333V6.66667C2.83333 4.66808 4.40367 3.04167 6.33333 3.04167ZM16.8333 4.25C16.5239 4.25 16.2272 4.37731 16.0084 4.60391C15.7896 4.83052 15.6667 5.13786 15.6667 5.45833C15.6667 5.7788 15.7896 6.08615 16.0084 6.31275C16.2272 6.53936 16.5239 6.66667 16.8333 6.66667C17.1428 6.66667 17.4395 6.53936 17.6583 6.31275C17.8771 6.08615 18 5.7788 18 5.45833C18 5.13786 17.8771 4.83052 17.6583 4.60391C17.4395 4.37731 17.1428 4.25 16.8333 4.25ZM11 5.45833C7.7835 5.45833 5.16667 8.16863 5.16667 11.5C5.16667 14.8314 7.7835 17.5417 11 17.5417C14.2165 17.5417 16.8333 14.8314 16.8333 11.5C16.8333 8.16863 14.2165 5.45833 11 5.45833ZM11 7.875C12.9297 7.875 14.5 9.50142 14.5 11.5C14.5 13.4986 12.9297 15.125 11 15.125C9.07033 15.125 7.5 13.4986 7.5 11.5C7.5 9.50142 9.07033 7.875 11 7.875Z" fill="#9C9FA1"/>
+                            </svg>
+                        </a>
+                        <a href="" data-cmp-clickable="" class="social-link-item">
+                            <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0.833252C12 0.833252 4.70312 0.833214 2.88312 1.3383C1.87862 1.61621 1.08928 2.43495 0.820943 3.47412C0.333276 5.35912 0.333313 10.4999 0.333313 10.4999C0.333313 10.4999 0.333276 15.6407 0.820943 17.5257C1.08928 18.5661 1.87978 19.3836 2.88312 19.6615C4.70312 20.1666 12 20.1666 12 20.1666C12 20.1666 19.2968 20.1666 21.1168 19.6615C22.1202 19.3836 22.9107 18.5649 23.179 17.5257C23.6667 15.6407 23.6666 10.4999 23.6666 10.4999C23.6666 10.4999 23.6667 5.35912 23.179 3.47412C22.9107 2.43495 22.1202 1.61621 21.1168 1.3383C19.2968 0.833214 12 0.833252 12 0.833252ZM12 3.24992C15.3623 3.24992 19.5727 3.41136 20.513 3.67236C20.7102 3.72674 20.8718 3.89411 20.9254 4.09953C21.2066 5.18461 21.3333 8.4965 21.3333 10.4999C21.3333 12.5033 21.2066 15.814 20.9254 16.9003C20.8729 17.1045 20.7113 17.2719 20.513 17.3275C19.5738 17.5885 15.3623 17.7499 12 17.7499C8.63881 17.7499 4.42846 17.5885 3.48696 17.3275C3.28979 17.2731 3.12819 17.1057 3.07452 16.9003C2.79336 15.8152 2.66665 12.5033 2.66665 10.4999C2.66665 8.4965 2.79336 5.18467 3.07452 4.09717C3.12702 3.89417 3.28863 3.72674 3.48696 3.67236C4.42613 3.41136 8.63765 3.24992 12 3.24992ZM9.66665 6.31323V14.6866L16.6666 10.4999L9.66665 6.31323Z" fill="#9C9FA1"/>
+                            </svg>
+                        </a>
+                        <a href="" data-cmp-clickable="" class="social-link-item">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.04167 0.625C1.70646 0.625 0.625 1.70646 0.625 3.04167V19.9583C0.625 21.2935 1.70646 22.375 3.04167 22.375H19.9583C21.2935 22.375 22.375 21.2935 22.375 19.9583V3.04167C22.375 1.70646 21.2935 0.625 19.9583 0.625H3.04167ZM3.04167 3.04167H19.9583V19.9583H3.04167V3.04167ZM6.39998 4.63232C5.36444 4.63232 4.74325 5.25482 4.74325 6.08374C4.74325 6.91266 5.36452 7.5328 6.29614 7.5328C7.33168 7.5328 7.95288 6.91266 7.95288 6.08374C7.95288 5.25482 7.33161 4.63232 6.39998 4.63232ZM4.82585 9.08333V17.5417H7.875V9.08333H4.82585ZM10.3908 9.08333V17.5417H13.4399V12.9184C13.4399 11.5421 14.4219 11.3442 14.7167 11.3442C15.0115 11.3442 15.8 11.64 15.8 12.9184V17.5417H18.75V12.9184C18.75 10.2637 17.5703 9.08333 16.095 9.08333C14.6196 9.08333 13.8327 9.5746 13.4399 10.2633V9.08333H10.3908Z" fill="#9C9FA1"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-container">
+                <div class="inner-wrap">
+                    <div class="copy-right">
+                        <p class="content">©1994-2022. LeaderImpact™ All Rights Reserved.</p>
+                        <img srcset="./assets/copyright-ecfa.svg" src="./assets/copyright-ecfa.svg" loading="lazy" class="logo-img" itemprop="contentUrl"  alt="logo" title="logo">
+                    </div>
+                    <div class="term-policy-wrap">
+                        <span class="term-policy-item" data-cmp-data-layer="">
+                            <a data-cmp-clickable="" class="nav-link-item" href="">Privacy</a>
+                        </span> 
+                        <span class="term-policy-item" data-cmp-data-layer="">
+                            <a data-cmp-clickable="" class="nav-link-item" href="">Term of Use</a>
+                        </span> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script/custom.js"></script>
+</html>

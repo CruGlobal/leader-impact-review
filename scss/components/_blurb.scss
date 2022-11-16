@@ -1,0 +1,105 @@
+.blurb{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 30px;
+    position: relative;
+    @media (max-width: 768px){
+        background: linear-gradient(-90deg, #FFCF07 -97.69%, rgba(255, 207, 7, 0) 44.01%) !important;
+        background-image: none;
+    }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 220px 0;
+        display: flex;
+        flex-wrap: wrap;
+        @media (max-width: 991px){
+            padding: 150px 0;
+        }
+        @media (max-width: 768px){
+            padding: 100px 0 0;
+        }
+        .content-wrap{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            @media (max-width: 991px){
+                width: 60%;
+            }
+            @media (max-width: 768px){
+                width: 100%;
+                margin-bottom: 80px;
+            }
+            img{
+                width: fit-content;
+                margin-bottom: 30px;
+                @media (max-width: 575px) {
+                    width: 80%;
+                }
+            }
+            .blurb-text{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                color: $gray;
+                padding-right: 100px;
+                @media (max-width: 575px) {
+                    padding: 0px;
+                }
+            }
+            .button-wrap{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                grid-gap: 30px;
+                @include bgbutton;
+                .button{
+                    .btn-text{
+                        @media (max-width: 575px) {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                @media (max-width: 575px) {
+                    justify-content: space-between;
+                }
+                .video-btn{
+                    a{
+                        display: flex;
+                        align-items: center;
+                        grid-gap: 15px;
+                        img{
+                            width: 40px;
+                            margin: 0px;
+                        }
+                        .btn-text{
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 18px;
+                            text-align: center;
+                            letter-spacing: -0.005em;
+                            color: $gray;
+                            @media (max-width: 575px) {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }             
+            }
+        }
+        .img-wrap{
+            width: 50%;
+            @media (max-width: 575px) {
+                width: 100%;
+            }
+            @media (min-width: 768px) {
+                display: none;
+            }
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
