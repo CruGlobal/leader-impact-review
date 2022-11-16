@@ -1,3 +1,4 @@
 {
-    "task.allowAutomaticTasks": true
+    "task.allowAutomaticTasks": true,
+    "prettier.tabWidth": 4
 }
