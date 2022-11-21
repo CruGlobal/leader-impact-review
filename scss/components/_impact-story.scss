@@ -9,11 +9,11 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            @media (max-width: 991px){
+            @include md-screen{
                 width: 50%;
                 padding: 60px 30px;
             }
-            @media (max-width: 768px){
+            @include sm-screen{
                 width: 100%;
                 padding: 50px 30px;
             }
@@ -21,10 +21,10 @@
                 color: $gray;
                 margin-bottom: 50px;
                 h2{
-                    @media (max-width: 1250px){
+                    @include lg-screen{
                         font-size: 35px;
                     }
-                    @media (max-width: 768px){
+                    @include sm-screen{
                         font-size: 40px;
                     }
                 }
@@ -62,7 +62,7 @@
                             transform: rotate(45deg);
                             right: -60px;
                             position: absolute;
-                            @media (max-width: 991px){
+                            @include md-screen{
                                 right: -40px;
                             }
                         }
@@ -70,7 +70,7 @@
                     .content{
                         transition: all 0.4s ease;
                         margin: 0px;
-                        @media (max-width: 1250px){
+                        @include lg-screen{
                             font-size: 16px;
                         }
                     }
@@ -87,15 +87,16 @@
         .story-content{
             width: 66.7%;
             background-color: $gray;
-            @media (max-width: 991px){
+            @include md-screen{
                 width: 50%;
             }
-            @media (max-width: 768px){
+            @include sm-screen{
                 display: none;
             }
             .story-tab{
                 display: flex;
                 flex-wrap: wrap;
+                height: 100%;
                 .story-blurb{
                     width: 50%;
                     background-color: $gray;
@@ -103,10 +104,10 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    @media (max-width: 1250px){
+                    @include lg-screen{
                         padding: 60px 30px
                     }
-                    @media (max-width: 991px){
+                    @include md-screen{
                         width: 100%;
                     }
                     .quote{
@@ -122,11 +123,11 @@
                         line-height: 40px;
                         color: #FFFFFF;
                         margin: 90px 0 45px;
-                        @media (max-width: 1250px){
+                        @include lg-screen{
                             font-size: 26px;
                             line-height: 32px;
                         }
-                        @media (max-width: 991px){
+                        @include md-screen{
                             margin: 70px 0 35px;
                         }
                     }
@@ -135,7 +136,8 @@
                 .story-img{
                     width: 50%;
                     position: relative;
-                    @media (max-width: 991px){
+                    height: 100%;
+                    @include md-screen{
                         display: none;
                     }
                     &::before{

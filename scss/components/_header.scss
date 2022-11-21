@@ -15,6 +15,9 @@
             background: #383F43;
             opacity: 0.5;
             z-index: 99;
+            @include sm-screen{
+                height: 90vh;
+            }
         }
     }
     .search-bar{
@@ -72,17 +75,17 @@
         flex-wrap: wrap;
         padding: 20px 0;
         align-items: center;
-        @media (max-width: 768px){
+        @include sm-screen{
             justify-content: space-between;
         }
         .site-logo{
             flex: 0 0 15%;
             display: flex;
             align-items: center;
-            @media (max-width: 768px){
+            @include sm-screen{
                 flex: 0 0 35%;
             }
-            @media (max-width: 575px){
+            @include xs-screen{
                 flex: 0 0 50%;
             }
             .logo-wrap{
@@ -90,7 +93,7 @@
                     img{
                         width: 100%;
                         display: block;
-                        @media (max-width: 575px){
+                        @include xs-screen{
                             width: 180px;
                         }
                     }
@@ -100,10 +103,10 @@
         .navigation{
             flex: 0 0 60%;
             padding-left: 15px;
-            @media (max-width: 991px){
+            @include md-screen{
                 flex: 0 0 55%;
             }
-            @media (max-width: 768px){
+            @include sm-screen{
                 display: none;
             }
             .nav-wrap{
@@ -122,7 +125,7 @@
                             line-height: 18px;
                             transition: all 0.3s ease;
                             letter-spacing: -0.005em;
-                            @media (max-width: 991px){
+                            @include md-screen{
                                 font-size: 12px;
                             }
                             &:hover{
@@ -139,7 +142,7 @@
             justify-content: end;
             grid-column-gap: 25px;
             align-items: center;
-            @media (max-width: 991px){
+            @include md-screen{
                 flex: 0 0 30%;
             }
             .sub-nav-item{
@@ -150,25 +153,25 @@
                     line-height: 18px;
                     letter-spacing: -0.005em;
                     transition: all 0.3s ease;
-                    @media (max-width: 991px){
+                    @include md-screen{
                         font-size: 12px;
                     }
                     &:hover{
                         color: $yellow;
                     }
                 }
-                @media (max-width: 768px){
+                @include sm-screen{
                     display: none;
                 }
             }
             @include borderbutton;
             .nav-button{
                 .btn-text{
-                    @media (max-width: 991px){
+                    @include md-screen{
                         font-size: 12px;
                     }
                 }
-                @media (max-width: 768px){
+                @include sm-screen{
                     display: none;
                 }
             }
@@ -176,7 +179,7 @@
                 display: contents;
                 cursor: pointer;
                 img{
-                    @media (max-width: 768px){
+                    @include sm-screen{
                         width: 20px;
                     }
                 }
