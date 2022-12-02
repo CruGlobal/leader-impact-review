@@ -2,15 +2,15 @@
     background: $gray;
     border-left: 10px solid white;
     padding-left: 50px;
-    @media (max-width: 991px){ 
+    @include md-screen{
         padding-left: 30px;
     }
-    @media (max-width: 768px){
+    @include sm-screen{
         border-left: 0px;
     }
     .container{
         padding: 150px 0;
-        @media (max-width: 991px){ 
+        @include md-screen{
             padding: 80px 0;
         }
         .title-btn-wrap{
@@ -20,24 +20,24 @@
             padding-right: 250px;
             padding-left: 50px;
             margin-bottom: 30px;
-            @media (max-width: 1200px){ 
+            @include lg-screen{
                 padding-right: 180px;
             }
-            @media (max-width: 991px){ 
+            @include md-screen{
                 padding-left: 0px;
-                padding-right: 0px;
+                padding-right: 130px;
             }
             .title{
                 color: #FFFFFF;
                 h5{
-                    @media (max-width: 575px){
+                    @include xs-screen{
                         font-size: 18px;
                     }
                 }
             }
             @include bgbutton;
             .button{
-                @media (max-width: 768px){
+                @include sm-screen{
                     display: none;
                 }
             }
@@ -60,10 +60,10 @@
                     right: 200px;
                     top: -55px;
                     left: unset;
-                    @media (max-width: 1200px){ 
+                    @include lg-screen{
                         right: 130px;
                     }
-                    @media (max-width: 768px){ 
+                    @include md-screen{
                         right: 80px;
                     }
                 }
@@ -72,10 +72,10 @@
                     right: 150px;
                     top: -55px;
                     left: unset;
-                    @media (max-width: 1200px){ 
+                    @include lg-screen{
                         right: 80px;
                     }
-                    @media (max-width: 768px){ 
+                    @include md-screen{
                         right: 30px;
                     }
                 }
@@ -84,7 +84,7 @@
                 @media (min-width: 991px){ 
                     padding: 25px 50px !important;
                 }
-                @media (max-width: 990px){ 
+                @include md-screen{ 
                     padding: 25px 0px !important;
                 }
             }
@@ -102,20 +102,20 @@
                     @include bgbutton;
                     .product-title-wrap{
                         h5{
-                            @media (max-width: 1400px){ 
+                            @include xl-screen{
                                 font-size: 18px;
                                 line-height: 23px;
                             }
-                            @media (max-width: 768px){
+                            @include sm-screen{
                                 font-size: 23px;
                             }
-                            @media (max-width: 575px){
+                            @include xs-screen{
                                 font-size: 18px;
                                 line-height: 23px;
                             }
                         }
                         .content{
-                            @media (max-width: 575px){
+                            @include xs-screen{
                                 font-size: 14px;
                             }
                         }
@@ -123,7 +123,7 @@
                 }
                 .product-img{
                     width: 30%;
-                    @media (max-width: 1400px){ 
+                    @include xl-screen{
                         width: 32%;
                     }
                     img{
@@ -135,11 +135,11 @@
             }
         }
         .bottom-btn{
-            @media (max-width: 768px){
+            @include sm-screen{
                 display: block !important;
                 margin-top: 30px !important;
             }
-            @media (max-width: 575px){
+            @include xs-screen{
                 display: block !important;
                 margin-top: 15px !important;
             }

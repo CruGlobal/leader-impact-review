@@ -63,7 +63,7 @@ $('.product-slider').slick({
     nextArrow:"<button type='button' class='slick-next pull-right'><img src='./assets/right-arrow.svg' alt='Next'></button>",
     responsive: [
         {
-            breakpoint: 1200,
+            breakpoint: 1250,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
@@ -79,9 +79,9 @@ $('.product-slider').slick({
     ]
 });
 
-
-
-$('.latest-post .post-wrap').slick({
+$window = $(window);
+$slick_slider = $('.latest-post .post-wrap');
+settings = {
     dots: false,
     slidesToShow: 2,
     adaptiveHeight: false,
@@ -89,12 +89,12 @@ $('.latest-post .post-wrap').slick({
     variableWidth: false,
     speed: 500,
     arrows: false,
-    responsive: [
-        {
-        breakpoint: 9999,
-            settings: "unslick"
+  responsive: [
+    {
+        breakpoint: 99999,
+            settings: 'unslick'
         },
-        {
+    {
         breakpoint: 768,
             settings: {
                 slidesToShow: 2,
@@ -119,5 +119,17 @@ $('.latest-post .post-wrap').slick({
                 variableWidth: false
             }
         }
-    ]
+    ],
+};
+$slick_slider.slick(settings);
+
+$window.on('resize', function() {
+  if ($window.width() > 768) {
+    if ($slick_slider.hasClass('slick-initialized'))
+      $slick_slider.slick('unslick');
+    return
+  }
+  if ( ! $slick_slider.hasClass('slick-initialized'))
+    return $slick_slider.slick(settings);
 });
+

@@ -1,13 +1,13 @@
 .newsletter-bar{
     padding: 0 30px;
     background: linear-gradient(120deg, $yellow 47%, rgba(255, 207, 7, 0) 47%);
-    @media (max-width: 1250px){ 
+    @include lg-screen{
         background: linear-gradient(120deg, $yellow 43%, rgba(255, 207, 7, 0) 43%);
     }
-    @media (max-width: 991px){ 
+    @include md-screen{
         background: linear-gradient(180deg, $yellow 53%, rgba(255, 207, 7, 0) 50%);
     }
-    @media (max-width: 768px){ 
+    @include sm-screen{
         background: linear-gradient(180deg, $yellow 45%, rgba(255, 207, 7, 0) 45%);
     }
     @media (max-width: 475px){ 
@@ -20,27 +20,27 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 45px 0;
-        @media (max-width: 991px){ 
+        @include md-screen{
             justify-content: center;
             padding: 45px 0 70px;
         }
         .title{
             width: 40%;
             color: #383F43;
-            @media (max-width: 991px){ 
+            @include md-screen{
                 width: 100%;
                 padding-bottom: 60px;
             }
             h3{
-                @media (max-width: 1250px){ 
+                @include lg-screen{
                     font-size: 32px;
                     line-height: 40px;
                 }
-                @media (max-width: 991px){ 
+                @include md-screen{
                     font-size: 40px;
                     line-height: 47px;
                 }
-                @media (max-width: 768px){ 
+                @include sm-screen{
                     font-size: 32px;
                     line-height: 40px;
                 }
@@ -52,31 +52,31 @@
             justify-content: end;
             grid-column-gap: 35px;
             align-items: center;
-            @media (max-width: 991px){ 
+            @include md-screen{
                 justify-content: start;
                 width: 100%;
             }
-            @media (max-width: 768px){ 
+            @include xs-screen{
                 flex-wrap: wrap;
             }
             @include bgbutton;
             .button{
                 display: block;
-                @media (max-width: 991px){ 
+                @include md-screen{
                     margin-top: 50px;
                 }
-                @media (max-width: 768px){ 
+                @include sm-screen{
                     margin-top: 25px;
                 }
                 &:first-child{
-                    @media (max-width: 768px){ 
+                    @include xs-screen{
                         width: 100%;
                     }
                 }
                 .btn-link{
                     padding: 8px 20px 10px 10px;
                     span{
-                        @media (max-width: 1250px){ 
+                        @include lg-screen{
                             font-size: 12px;
                         }
                     }
