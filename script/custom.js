@@ -8,9 +8,10 @@ $('.story-item').mouseenter(function(){
   $('.story-item').removeClass('active');
   $(this).addClass('active');
 
+ // $(this).addClass('active');
   $('.story-tab').hide();
   
-  const activeTab = $(this).first('a').attr('href');
+  var activeTab = $(this).first('a').attr('href');
   $(activeTab).css('display', 'flex');
   return false;
 });
@@ -20,7 +21,7 @@ $('.hamburger').click(function(){
     toggleMobileMenu();
 });
 
-let mobile_menu_open = false;
+var mobile_menu_open = false;
 function toggleMobileMenu() {
 if (mobile_menu_open) {
     $('.close').css('display', 'none');
@@ -52,15 +53,15 @@ $('.close-search').click(function(){
 
 $('.product-slider').slick({
     dots: false,
-    slidesToShow: 3,
-    adaptiveHeight: false,
-    infinite: true,
+	slidesToShow: 3,
+	adaptiveHeight: false,
+	infinite: true,
     centerMode: true,
     variableWidth: false,
-    speed: 500,
+	speed: 500,
     arrows: true,
-    prevArrow:"<button type='button' class='slick-prev pull-left'><img src='./assets/left-arrow.svg' alt='Previous'></button>",
-    nextArrow:"<button type='button' class='slick-next pull-right'><img src='./assets/right-arrow.svg' alt='Next'></button>",
+    prevArrow:"<button type='button' class='slick-prev pull-left'><img src='./assets/left-arrow.svg'></button>",
+    nextArrow:"<button type='button' class='slick-next pull-right'><img src='./assets/right-arrow.svg'></button>",
     responsive: [
         {
             breakpoint: 1250,
@@ -83,11 +84,11 @@ $window = $(window);
 $slick_slider = $('.latest-post .post-wrap');
 settings = {
     dots: false,
-    slidesToShow: 2,
-    adaptiveHeight: false,
-    infinite: true,
+	slidesToShow: 2,
+	adaptiveHeight: false,
+	infinite: true,
     variableWidth: false,
-    speed: 500,
+	speed: 500,
     arrows: false,
   responsive: [
     {
@@ -95,7 +96,7 @@ settings = {
             settings: 'unslick'
         },
     {
-        breakpoint: 768,
+        breakpoint: 769,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
@@ -124,7 +125,7 @@ settings = {
 $slick_slider.slick(settings);
 
 $window.on('resize', function() {
-  if ($window.width() > 768) {
+  if ($window.width() > 769) {
     if ($slick_slider.hasClass('slick-initialized'))
       $slick_slider.slick('unslick');
     return

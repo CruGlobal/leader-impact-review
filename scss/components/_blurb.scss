@@ -61,6 +61,18 @@
                             font-size: 12px;
                         }
                     }
+                    &:hover{
+                        a{
+                            &::before{
+                                background: transparent;
+                                border-color: $yellow;
+                            }
+                            &::after{
+                                background: transparent;
+                                border-color: $yellow;
+                            }
+                        }
+                    }
                 }
                 @include xs-screen{
                     justify-content: space-between;
@@ -91,11 +103,12 @@
         }
         .img-wrap{
             width: 50%;
+            display: none;
             @include xs-screen{
                 width: 100%;
             }
-            @media (min-width: 768px) {
-                display: none;
+            @include sm-screen{
+                display: block;
             }
             img{
                 width: 100%;

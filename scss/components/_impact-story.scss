@@ -137,6 +137,9 @@
                     width: 50%;
                     position: relative;
                     height: 100%;
+                    @include sm-screen{
+                        height: 605px;
+                    }
                     @include md-screen{
                         display: none;
                     }
