@@ -8,25 +8,13 @@
     <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
       <div class="container responsivegrid header aem-GridColumn aem-GridColumn--default--12">
         <div id="container-3bd95d56fa" class="cmp-container">
-          <div class="search">
-            <section id="search-7313442c6f" class="cmp-search" role="search" data-cmp-min-length="3" data-cmp-results-size="10">
-              <form class="cmp-search__form" data-cmp-hook-search="form" method="get" action="/content/leaderimpact/lang/en2.searchresults.json/_jcr_content/content-parsys/container/search" autocomplete="off">
-                <div class="cmp-search__field">
-                  <i class="cmp-search__icon" data-cmp-hook-search="icon"></i>
-                  <span class="cmp-search__loading-indicator" data-cmp-hook-search="loadingIndicator"></span>
-                  <input class="cmp-search__input" data-cmp-hook-search="input" type="text" name="fulltext" placeholder="Search" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-invalid="false" aria-expanded="false" aria-owns="cmp-search-results-0">
-                  <button class="cmp-search__clear" data-cmp-hook-search="clear" aria-label="Clear">
-                    <i class="cmp-search__clear-icon"></i>
-                  </button>
-                </div>
+          <div class="home-search-overlay aem-GridColumn aem-GridColumn--default--12">
+            <div id="search-overlay">
+              <a href="#" class="close"><img src="/images/icons/search_close.png"></a>
+              <form action="/search">
+                <input type="text" placeholder="SEARCH" name="q">
               </form>
-              <div class="cmp-search__results" aria-label="Search results" data-cmp-hook-search="results" role="listbox" aria-multiselectable="false" id="cmp-search-results-0"></div>
-              <script data-cmp-hook-search="itemTemplate" type="x-template">
-                <a class="cmp-search__item" data-cmp-hook-search="item" role="option" aria-selected="false">
-                  <span class="cmp-search__item-title" data-cmp-hook-search="itemTitle"></span>
-                </a>
-              </script>
-            </section>
+            </div>
           </div>
 
           <div class="container responsivegrid">
@@ -75,10 +63,10 @@
                     </a>
                   </div>
 
-                  <div class="image search">
-                    <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container/container_2037006891/container/image.coreimg{.width}.svg/1669058888816/search.svg" data-asset="/content/dam/LeaderImpact/site-assets/search.svg" data-title="search" id="image-fd5f155c3f" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                      <img src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container/container_2037006891/container/image.coreimg.svg/1669058888816/search.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="search">
-                    </div>
+                  <div class="button icon icon-search search search-toggle">
+                    <a id="button-c77d9dfcbd" class="cmp-button" href="#">
+                      <span class="cmp-button__icon cmp-button__icon--icon-search" aria-hidden="true"></span>
+                    </a>
                   </div>
 
                   <div class="container responsivegrid hamburger">
