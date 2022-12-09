@@ -95,7 +95,7 @@ settings = {
             settings: 'unslick'
         },
     {
-        breakpoint: 768,
+        breakpoint: 769,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
@@ -124,7 +124,7 @@ settings = {
 $slick_slider.slick(settings);
 
 $window.on('resize', function() {
-  if ($window.width() > 768) {
+  if ($window.width() > 769) {
     if ($slick_slider.hasClass('slick-initialized'))
       $slick_slider.slick('unslick');
     return
@@ -132,4 +132,3 @@ $window.on('resize', function() {
   if ( ! $slick_slider.hasClass('slick-initialized'))
     return $slick_slider.slick(settings);
 });
-

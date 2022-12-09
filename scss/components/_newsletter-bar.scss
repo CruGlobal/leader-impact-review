@@ -81,6 +81,18 @@
                         }
                     }
                 }
+                &:hover{
+                    a{
+                        &::before{
+                            background: transparent;
+                            border-color: $yellow;
+                        }
+                        &::after{
+                            background: transparent;
+                            border-color: $yellow;
+                        }
+                    }
+                }
             }
         }
     }
