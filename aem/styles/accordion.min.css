@@ -1,0 +1,10 @@
+.cmp-accordion__header{margin:0}
+.cmp-accordion__button{display:block;width:100%;text-align:left}
+.cmp-accordion__panel--hidden{display:none}
+.cmp-accordion__panel--expanded{display:block}
+
+.accordion.title-sans-serif .cmp-accordion__header .cmp-accordion__title{font-family:"Source Sans Pro",-apple-system,BlinkMacSystemFont,"avenir next",avenir,"helvetica neue",helvetica,ubuntu,roboto,noto,"segoe ui",arial,sans-serif}
+.accordion.title-uppercase .cmp-accordion__header .cmp-accordion__title{text-transform:uppercase}
+.accordion.title-light-blue .cmp-accordion__header .cmp-accordion__title{color:#2dafc3}
+.accordion.button-transparent .cmp-accordion__header .cmp-accordion__button{border-color:transparent;outline:0;background:0}
+.accordion.button-cursor-pointer .cmp-accordion__header .cmp-accordion__button{cursor:pointer}
