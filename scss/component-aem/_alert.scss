@@ -1,6 +1,6 @@
 .alert-bar{
     padding: 0 30px;
-    .container{
+    #container_alert{
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
@@ -48,7 +48,7 @@
                         width: 180px;
                     }
                 }
-                .alert-text{
+                .cmp-image__title{
                     font-weight: 600;
                     font-size: 18px;
                     line-height: 28px;
@@ -61,10 +61,12 @@
             }
         }
         .alert-btn-wrap{
+            .cmp-container{
             display: flex;
             align-items: center;
             grid-column-gap: 30px;
             z-index: 20;
+            position: relative;
             @include lg-screen{
                 flex-wrap: wrap;
                 grid-column-gap: 10px;
@@ -118,6 +120,7 @@
                         }
                     }
                 }
+            }
             }
         }
     }

@@ -2,14 +2,27 @@
 @import "./general";
 @import "./mixins";
 
+// components
+// @import "./components/header";
+// @import "./components/footer";
+// @import "./components/banner";
+// @import "./components/alert";
+// @import "./components/welcome";
+// @import "./components/newsletter-bar";
+// @import "./components/latest-post";
+// @import "./components/impact-story";
+// @import "./components/slider";
+// @import "./components/blurb";
+
+
 //components
-@import "./components/header";
-@import "./components/footer";
-@import "./components/banner";
-@import "./components/alert";
-@import "./components/welcome";
-@import "./components/newsletter-bar";
-@import "./components/latest-post";
-@import "./components/impact-story";
-@import "./components/slider";
-@import "./components/blurb";
+@import "./component-aem/header";
+@import "./component-aem/footer";
+@import "./component-aem/banner";
+@import "./component-aem/alert";
+@import "./component-aem/welcome";
+@import "./component-aem/newsletter-bar";
+@import "./component-aem/latest-post";
+@import "./component-aem/impact-story";
+@import "./component-aem/slider";
+@import "./component-aem/blurb";

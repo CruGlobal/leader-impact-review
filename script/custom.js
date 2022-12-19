@@ -1,16 +1,17 @@
 // Show the first tab and hide the rest
 $('.story-item:first-child').addClass('active');
-$('.story-tab').hide();
-$('.story-tab:first-child').show();
+$('.story-tab .cmp-tabs__tabpanel').hide();
+$('.story-tab .cmp-tabs__tabpanel:nth-child(2)').show();
 
 // Click function
 $('.story-item').mouseenter(function(){
   $('.story-item').removeClass('active');
   $(this).addClass('active');
 
-  $('.story-tab').hide();
-  
-  const activeTab = $(this).first('a').attr('href');
+ // $(this).addClass('active');
+  $('.story-tab .cmp-tabs__tabpanel').hide();
+
+  var activeTab = $(this).first('div').attr('data-val');
   $(activeTab).css('display', 'flex');
   return false;
 });
@@ -20,7 +21,7 @@ $('.hamburger').click(function(){
     toggleMobileMenu();
 });
 
-let mobile_menu_open = false;
+var mobile_menu_open = false;
 function toggleMobileMenu() {
 if (mobile_menu_open) {
     $('.close').css('display', 'none');
@@ -82,7 +83,7 @@ $('.product-slider').slick({
 });
 
 $window = $(window);
-$slick_slider = $('.latest-post .post-wrap');
+$slick_slider = $('#post-wrap');
 settings = {
     dots: false,
     slidesToShow: 2,
