@@ -11,7 +11,7 @@ $('.story-item').mouseenter(function(){
  // $(this).addClass('active');
   $('.story-tab .cmp-tabs__tabpanel').hide();
 
-  var activeTab = $(this).first('div').attr('data-val');
+  const activeTab = $(this).first('div').attr('data-val');
   $(activeTab).css('display', 'flex');
   return false;
 });
@@ -21,7 +21,7 @@ $('.hamburger').click(function(){
     toggleMobileMenu();
 });
 
-var mobile_menu_open = false;
+let mobile_menu_open = false;
 function toggleMobileMenu() {
 if (mobile_menu_open) {
     $('.close').css('display', 'none');
