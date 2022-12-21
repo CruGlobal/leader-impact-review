@@ -8,7 +8,7 @@
     @include sm-screen{
         border-left: 0px;
     }
-    .container{
+    #slider-container{
         padding: 150px 0;
         @include md-screen{
             padding: 80px 0;
@@ -81,15 +81,15 @@
                 }
             }
             .slick-list{
-                @media (min-width: 991px){ 
+                @media (min-width: 991px){
                     padding: 25px 50px !important;
                 }
-                @include md-screen{ 
+                @include md-screen{
                     padding: 25px 0px !important;
                 }
             }
             .product-item{
-                width: 33.3%;
+                // width: 33.3%;
                 display: flex;
                 color: white;
                 grid-gap: 35px;
@@ -98,7 +98,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    width: 50%;
+                    // width: 50%;
                     @include bgbutton;
                     .product-title-wrap{
                         h5{
@@ -130,6 +130,24 @@
                         width: 100%;
                         display: block;
                         box-shadow: 10px 8px 10px black;
+                    }
+                }
+                .content-text{
+                    width: 50%;
+                    .cmp-container{
+                        height: 100%;
+                        .aem-Grid{
+                            height: 100%;
+                            .container{
+                                height: 100%;
+                                .cmp-container{
+                                    height: 100%;
+                                    .product-content{
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

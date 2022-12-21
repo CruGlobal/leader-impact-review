@@ -8,7 +8,7 @@
         background: linear-gradient(-90deg, $yellow -97.69%, rgba(255, 207, 7, 0) 44.01%) !important;
         background-image: none;
     }
-    .container{
+    #blurb-container{
         max-width: 1200px;
         margin: 0 auto;
         padding: 220px 0;
@@ -32,6 +32,19 @@
                 width: 100%;
                 margin-bottom: 80px;
             }
+            #content{
+                .blurb-text p{
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $gray;
+                    margin: 0;
+                    padding-right: 100px;
+                    @include xs-screen{
+                        padding: 0px;
+                    }
+                }
+            }
             img{
                 width: fit-content;
                 margin-bottom: 30px;
@@ -39,17 +52,8 @@
                     width: 80%;
                 }
             }
-            .blurb-text{
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 28px;
-                color: $gray;
-                padding-right: 100px;
-                @include xs-screen{
-                    padding: 0px;
-                }
-            }
-            .button-wrap{
+
+            #button-wrap{
                 margin-top: 20px;
                 display: flex;
                 align-items: center;
@@ -86,7 +90,7 @@
                             width: 40px;
                             margin: 0px;
                         }
-                        .btn-text{
+                        .cmp-button__text{
                             font-weight: 600;
                             font-size: 14px;
                             line-height: 18px;
@@ -98,10 +102,11 @@
                             }
                         }
                     }
-                }             
+                }
             }
         }
-        .img-wrap{
+
+        .image-wrap{
             width: 50%;
             display: none;
             @include xs-screen{

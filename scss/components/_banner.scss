@@ -18,13 +18,13 @@
         background: linear-gradient(180deg, $yellow -20%, rgba(217, 217, 217, 0) 51.04%);
         transform: rotate(-180deg);
     }
-    .container{
+    .cmp-container{
         max-width: 1200px;
         margin: 0 auto;
         height: 80vh;
         display: flex;
         align-items: center;
-        justify-content: space-between;        
+        justify-content: space-between;
         flex-wrap: wrap;
         @include md-screen{
             flex-direction: column;
@@ -85,6 +85,7 @@
                 }
             }
             .button-wrap{
+                .cmp-containers{
                 display: flex;
                 margin-top: 30px;
                 grid-column-gap: 40px;
@@ -96,10 +97,11 @@
                         @include sm-screen{
                             padding: 8px 20px 10px 10px;
                         }
-                        
+
                     }
                 }
                 @include bgbutton;
+                }
             }
         }
     }

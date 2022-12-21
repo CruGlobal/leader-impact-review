@@ -1,5 +1,5 @@
 .impact-story{
-    .container{
+    #impact-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -29,55 +29,79 @@
                     }
                 }
             }
-            .stories-item-wrap{
+            #stories-item-wrap{
                 display: flex;
                 flex-direction: column;
                 grid-gap: 25px;
                 margin-bottom: 40px;
                 .story-item{
-                    font-weight: 600;
-                    font-size: 18px;
-                    line-height: 24px;
-                    color: #9C9FA1;
-                    display: flex;
-                    align-items: center;
-                    grid-gap: 30px;
-                    position: relative;
-                    transition: all 0.4s ease;
-                    &:hover{
-                        color: $yellow;
-                        .content{
-                            transform: translateX(20px);
+                    .cmp-teaser{
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #9C9FA1;
+                        display: flex;
+                        align-items: center;
+                        grid-gap: 30px;
+                        position: relative;
+                        transition: all 0.4s ease;
+                        &:hover{
+
+                            .cmp-teaser__content{
+                                transform: translateX(20px);
+                                .cmp-teaser__title{
+                                    .cmp-teaser__title-link{
+                                        color: $yellow;
+                                    }
+                                }
+                            }
+                            img{
+                                transform: translateX(20px);
+                            }
                         }
+
+                        .cmp-teaser__content{
+                            transition: all 0.4s ease;
+                            margin: 0px;
+                            .cmp-teaser__title{
+                                font-size: initial;
+                                line-height: normal;
+                                .cmp-teaser__title-link{
+                                    transition: all 0.4s ease;
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: #9C9FA1;
+                                    @include lg-screen{
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+
                         img{
-                            transform: translateX(20px);
+                            width: 100%;
+                            display: block;
+                            transition: all 0.4s ease;
+
                         }
                     }
                     &.active{
-                        &:after{
-                            content: "";
-                            height: 25px;
-                            width: 25px;
-                            background-color: #ffffff;
-                            transform: rotate(45deg);
-                            right: -60px;
-                            position: absolute;
-                            @include md-screen{
-                                right: -40px;
+                        display: block;
+                        .cmp-teaser{
+                            &:after{
+                                content: "";
+                                height: 25px;
+                                width: 25px;
+                                background-color: #ffffff;
+                                transform: rotate(45deg);
+                                right: -60px;
+                                position: absolute;
+                                @include md-screen{
+                                    right: -40px;
+                                }
                             }
                         }
-                    }
-                    .content{
-                        transition: all 0.4s ease;
-                        margin: 0px;
-                        @include lg-screen{
-                            font-size: 16px;
-                        }
-                    }
-                    img{
-                        width: 100%;
-                        display: block;
-                        transition: all 0.4s ease;
 
                     }
                 }
@@ -94,9 +118,26 @@
                 display: none;
             }
             .story-tab{
-                display: flex;
-                flex-wrap: wrap;
-                height: 100%;
+                .cmp-tabs{
+                    .cmp-tabs__tablist{
+                        display: none;
+                    }
+                    .cmp-tabs__tabpanel{
+                        display: flex;
+                        flex-wrap: wrap;
+                        height: 100%;
+                        .container{
+                            .story-tablist{
+                                .aem-Grid{
+                                display: flex;
+                                flex-wrap: wrap;
+                                height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .story-blurb{
                     width: 50%;
                     background-color: $gray;
@@ -110,14 +151,15 @@
                     @include md-screen{
                         width: 100%;
                     }
-                    .quote{
+                    .quote p{
                         font-weight: 700;
                         font-size: 80px;
                         line-height: 49px;
                         color: $yellow;
                         font-family: $source;
+                        margin: 0;
                     }
-                    .quote-content{
+                    .quote-content p{
                         font-weight: 600;
                         font-size: 32px;
                         line-height: 40px;
@@ -133,7 +175,8 @@
                     }
                     @include bgbutton;
                 }
-                .story-img{
+
+                .post-img{
                     width: 50%;
                     position: relative;
                     height: 100%;

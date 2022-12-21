@@ -4,6 +4,7 @@
     transition: all 0.3s ease;
     &.active{
         background-color: $yellow;
+
         &::before{
             content: "";
             width: 100%;
@@ -19,8 +20,11 @@
                 height: 90vh;
             }
         }
+        .search{
+            // display: flex;
+        }
     }
-    .search-bar{
+    .search{
         max-width: 1440px;
         margin: 0 auto;
         display: flex;
@@ -69,6 +73,7 @@
         }
     }
     .container{
+    .cmp-container{
         max-width: 1440px;
         margin: 0 auto;
         display: flex;
@@ -88,8 +93,8 @@
             @include xs-screen{
                 flex: 0 0 50%;
             }
-            .logo-wrap{
-                .logo-link{
+            .cmp-image{
+                .cmp-image__link{
                     img{
                         width: 100%;
                         display: block;
@@ -109,7 +114,7 @@
             @include sm-screen{
                 display: none;
             }
-            .nav-wrap{
+            .cmp-navigation{
                 ul{
                     padding: 0px;
                     display: flex;
@@ -138,6 +143,8 @@
         }
         .sub-nav{
             flex: 0 0 25%;
+            .cmp-container{
+                padding: 0;
             display: flex;
             justify-content: end;
             grid-column-gap: 25px;
@@ -145,7 +152,9 @@
             @include md-screen{
                 flex: 0 0 30%;
             }
-            .sub-nav-item{
+            .text{
+                p{
+                    margin: 0;
                 a{
                     color: white;
                     font-weight: 600;
@@ -160,6 +169,7 @@
                         color: $yellow;
                     }
                 }
+            }
                 @include sm-screen{
                     display: none;
                 }
@@ -178,7 +188,9 @@
             .search{
                 display: contents;
                 cursor: pointer;
+
                 img{
+                    display: block;
                     @include sm-screen{
                         width: 20px;
                     }
@@ -195,6 +207,8 @@
                 }
             }
         }
+        }
+    }
     }
     .mobile-nav-wrap{
         display: none;
@@ -288,7 +302,7 @@
                         font-size: 12px;
                         line-height: 15px;
                         letter-spacing: -0.005em;
-                        text-decoration-line: underline; 
+                        text-decoration-line: underline;
                         color: #9C9FA1;
                     }
                 }

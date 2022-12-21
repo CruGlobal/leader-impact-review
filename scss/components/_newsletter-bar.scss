@@ -10,16 +10,18 @@
     @include sm-screen{
         background: linear-gradient(180deg, $yellow 45%, rgba(255, 207, 7, 0) 45%);
     }
-    @media (max-width: 475px){ 
+    @media (max-width: 475px){
         background: linear-gradient(180deg, $yellow 50%, rgba(255, 207, 7, 0) 45%);
     }
-    .container{
+    #news-container,
+    #news2-container{
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 45px 0;
+        align-items: center;
         @include md-screen{
             justify-content: center;
             padding: 45px 0 70px;
@@ -46,54 +48,60 @@
                 }
             }
         }
-        .btn-wrap{
+        #button_block{
             width: 60%;
-            display: flex;
-            justify-content: end;
-            grid-column-gap: 35px;
-            align-items: center;
             @include md-screen{
-                justify-content: start;
                 width: 100%;
             }
-            @include xs-screen{
-                flex-wrap: wrap;
-            }
-            @include bgbutton;
-            .button{
-                display: block;
+            #button-wrap{
+                // width: 60%;
+                display: flex;
+                justify-content: end;
+                grid-column-gap: 35px;
+                align-items: center;
                 @include md-screen{
-                    margin-top: 50px;
+                    justify-content: start;
                 }
-                @include sm-screen{
-                    margin-top: 25px;
+                @include xs-screen{
+                    flex-wrap: wrap;
                 }
-                &:first-child{
-                    @include xs-screen{
-                        width: 100%;
+                @include bgbutton;
+                .button{
+                    display: block;
+                    @include md-screen{
+                        margin-top: 50px;
                     }
-                }
-                .btn-link{
-                    padding: 8px 20px 10px 10px;
-                    span{
-                        @include lg-screen{
-                            font-size: 12px;
+                    @include sm-screen{
+                        margin-top: 25px;
+                    }
+                    &:first-child{
+                        @include xs-screen{
+                            width: 100%;
                         }
                     }
-                }
-                &:hover{
-                    a{
-                        &::before{
-                            background: transparent;
-                            border-color: $yellow;
+                    .cmp-button{
+                        padding: 8px 20px 10px 10px;
+                        span{
+                            @include lg-screen{
+                                font-size: 12px;
+                            }
                         }
-                        &::after{
-                            background: transparent;
-                            border-color: $yellow;
+                    }
+                    &:hover{
+                        a{
+                            &::before{
+                                background: transparent;
+                                border-color: $yellow;
+                            }
+                            &::after{
+                                background: transparent;
+                                border-color: $yellow;
+                            }
                         }
                     }
                 }
             }
         }
+
     }
 }
