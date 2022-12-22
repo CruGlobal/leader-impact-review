@@ -1,24 +1,31 @@
 .footer{
     padding: 0 30px;
     background-color: $gray;
+    .site-logo{
+
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding-top: 100px ;
+    }
     .container{
         max-width: 1200px;
         margin: 0 auto;
-        padding: 100px 0;
+        padding-bottom: 100px;
         @include md-screen{
             padding: 80px 0;
+            padding-top: 0;
         }
         @include sm-screen{
             padding: 50px 0;
+            padding-top: 0;
         }
-        .site-logo{
-            margin-bottom: 50px;
-        }
+
         .content-wrap{
             color: white;
-            margin-bottom: 70px;
+            // margin-bottom: 70px;
             @include sm-screen{
-                margin-bottom: 50px;
+                // margin-bottom: 50px;
             }
             .title{
                 width: 65%;
@@ -35,11 +42,12 @@
                     }
                 }
             }
-            .btn-wrap{
+            .button-wrap{
                 display: flex;
                 justify-content: start;
                 grid-gap: 35px;
                 align-items: center;
+                flex-wrap: wrap;
                 margin-top: 40px;
                 @include sm-screen{
                     flex-wrap: wrap;
@@ -58,57 +66,62 @@
                 }
             }
         }
-        .nav-content-wrap{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            @include sm-screen{
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            ul{
-                padding: 0px;
+        #navigation-wrap{
+            flex: 0 0 100%;
+            margin-top: 35px;
+            .nav-content-wrap{
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
-                grid-gap: 35px;
-                margin: 0px;
                 @include sm-screen{
                     flex-direction: column;
-                    margin-bottom: 35px;
                     align-items: flex-start;
-                    grid-gap: 25px;
                 }
-                li{
-                    list-style: none;
-                    a{
-                        color: white;
-                        font-weight: 600;
-                        font-size: 19px;
-                        line-height: 24px;
-                        transition: all 0.3s ease;
-                        letter-spacing: -0.005em;
-                        &:hover{
-                            color: $yellow;
+                ul{
+                    padding: 0px;
+                    display: flex;
+                    align-items: center;
+                    grid-gap: 35px;
+                    margin: 0px;
+                    @include sm-screen{
+                        flex-direction: column;
+                        margin-bottom: 35px;
+                        align-items: flex-start;
+                        grid-gap: 25px;
+                    }
+                    li{
+                        list-style: none;
+                        a{
+                            color: white;
+                            font-weight: 600;
+                            font-size: 19px;
+                            line-height: 24px;
+                            transition: all 0.3s ease;
+                            letter-spacing: -0.005em;
+                            &:hover{
+                                color: $yellow;
+                            }
                         }
                     }
                 }
-            }
-            .social-wrap{
-                display: flex;
-                grid-gap: 10px;
-                align-items: center;
-                .social-link-item{
-                    svg{
-                        transition: all 0.3 ease;
-                        &:hover{
-                            path{
-                                fill: $yellow;
+                .social-wrap{
+                    display: flex;
+                    grid-gap: 10px;
+                    align-items: center;
+                    .social-link-item{
+                        svg{
+                            transition: all 0.3 ease;
+                            &:hover{
+                                path{
+                                    fill: $yellow;
+                                }
                             }
                         }
                     }
                 }
             }
         }
+
     }
     .footer-bottom-container{
         background: #303031;
@@ -142,7 +155,7 @@
             .term-policy-wrap{
                 display: flex;
                 grid-gap: 20px;
-                span{
+                .text{
                     position: relative;
                     &:last-child{
                         &:after{
@@ -155,15 +168,19 @@
                         right: -11px;
                         color: #9C9FA1;
                         font-size: 12px;
-                        top: 4px;
+                        top: 0px;
                     }
-                    a{
+                    p{
                         font-weight: 600;
                         font-size: 12px;
                         line-height: 15px;
                         letter-spacing: -0.005em;
-                        text-decoration-line: underline; 
+                        text-decoration-line: underline;
                         color: #9C9FA1;
+                        margin: 0;
+                        a{
+                            color: #9C9FA1;
+                        }
                     }
                 }
             }
