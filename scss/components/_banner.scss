@@ -55,6 +55,7 @@
                 }
             }
         }
+
         .content-wrap{
             color: white;
             width: 35%;
@@ -67,6 +68,11 @@
             @include sm-screen{
                 width: 100%;
                 margin-top: 10px;
+            }
+            #content-container{
+                max-width: 100%;
+                height: auto;
+                display: block;
             }
             .text{
                 p{
@@ -85,10 +91,13 @@
                 }
             }
             .button-wrap{
-                .cmp-containers{
+                .cmp-container{
                 display: flex;
                 margin-top: 30px;
                 grid-column-gap: 40px;
+                max-width: 100%;
+                height: auto;
+                justify-content: flex-start;
                 @include sm-screen{
                     grid-column-gap: 25px;
                 }

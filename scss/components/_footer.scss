@@ -7,6 +7,9 @@
         margin: 0 auto;
         margin-bottom: 50px;
         padding-top: 100px ;
+        .cmp-image__image{
+            width: auto;
+        }
     }
     .container{
         max-width: 1200px;
@@ -66,7 +69,7 @@
                 }
             }
         }
-        #navigation-wrap{
+        .navigation-wrap{
             flex: 0 0 100%;
             margin-top: 35px;
             .nav-content-wrap{

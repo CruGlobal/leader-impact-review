@@ -60,7 +60,7 @@
             @include sm-screen{
                 flex: 100%;
             }
-            #icon-box-item{
+            .icon-box-item-col{
                 background-color: #626163;
                 display: flex;
                 grid-column-gap: 30px;

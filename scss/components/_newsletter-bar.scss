@@ -48,12 +48,12 @@
                 }
             }
         }
-        #button_block{
+        .button_block{
             width: 60%;
             @include md-screen{
                 width: 100%;
             }
-            #button-wrap{
+            .button_wrap{
                 // width: 60%;
                 display: flex;
                 justify-content: end;
