@@ -61,7 +61,9 @@ $('.product-slider').slick({
 	speed: 500,
     arrows: true,
     prevArrow:"<button type='button' class='slick-prev pull-left'><img src='./assets/left-arrow.svg'></button>",
+    //prevArrow:"<button type='button' class='slick-prev pull-left'><img src='/content/dam/LeaderImpact/site-assets/left-arrow.svg' alt='Previous'></button>",
     nextArrow:"<button type='button' class='slick-next pull-right'><img src='./assets/right-arrow.svg'></button>",
+    //nextArrow:"<button type='button' class='slick-next pull-right'><img src='/content/dam/LeaderImpact/site-assets/right-arrow.svg' alt='Next'></button>",
     responsive: [
         {
             breakpoint: 1250,
