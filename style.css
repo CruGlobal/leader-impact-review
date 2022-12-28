@@ -8,6 +8,9 @@ html, body {
   margin: 0;
   padding: 0;
 }
+html .resource, body .resource {
+  background-color: #414042;
+}
 
 *, :after, :before {
   box-sizing: border-box;
@@ -15,6 +18,19 @@ html, body {
 
 * {
   font-family: "Source Sans Pro";
+  clear: none !important;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--12.layout-grid {
+  float: none;
+  clear: none;
+  width: auto;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--12.layout-grid {
+  float: none;
+  clear: none;
+  width: auto;
 }
 
 h1 {
@@ -122,7 +138,6 @@ a {
   color: #AB8A08;
   border-radius: inherit;
   background-image: url("./assets/search-icon.svg");
-  /*background-image: url("/content/dam/LeaderImpact/site-assets/search-icon.svg");*/
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 0px center;
@@ -507,7 +522,7 @@ a {
   display: flex;
   margin-left: 7px;
 }
-.footer .container .blurb #blurb-container .content-wrap .button-wrap .button_wrap .button a:before, .blurb #blurb-container .footer .container .content-wrap .button-wrap .button_wrap .button a:before, .footer .container .blurb #blurb-container .content-wrap .button_wrap .button-wrap .button a:before, .blurb #blurb-container .footer .container .content-wrap .button_wrap .button-wrap .button a:before, .footer .container .blurb #blurb-container .content-wrap .button-wrap .button_wrap .button a:after, .blurb #blurb-container .footer .container .content-wrap .button-wrap .button_wrap .button a:after, .footer .container .blurb #blurb-container .content-wrap .button_wrap .button-wrap .button a:after, .blurb #blurb-container .footer .container .content-wrap .button_wrap .button-wrap .button a:after, .footer .container .blurb #blurb-container .content-wrap .button-wrap .button_wrap .button a, .blurb #blurb-container .footer .container .content-wrap .button-wrap .button_wrap .button a, .footer .container .blurb #blurb-container .content-wrap .button_wrap .button-wrap .button a, .blurb #blurb-container .footer .container .content-wrap .button_wrap .button-wrap .button a, .footer .container .content-wrap .button-wrap .slider #slider-container .button a:before, .slider #slider-container .footer .container .content-wrap .button-wrap .button a:before, .footer .container .content-wrap .button-wrap .slider #slider-container .button a:after, .slider #slider-container .footer .container .content-wrap .button-wrap .button a:after, .footer .container .content-wrap .button-wrap .slider #slider-container .button a, .slider #slider-container .footer .container .content-wrap .button-wrap .button a, .footer .container .content-wrap .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:before, .impact-story #impact-container .story-content .story-tab .story-blurb .footer .container .content-wrap .button-wrap .button a:before, .footer .container .content-wrap .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:after, .impact-story #impact-container .story-content .story-tab .story-blurb .footer .container .content-wrap .button-wrap .button a:after, .footer .container .content-wrap .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a, .impact-story #impact-container .story-content .story-tab .story-blurb .footer .container .content-wrap .button-wrap .button a, .footer .container .content-wrap .button-wrap .impact-story #impact-container .stories-wrap .button a:before, .impact-story #impact-container .stories-wrap .footer .container .content-wrap .button-wrap .button a:before, .footer .container .content-wrap .button-wrap .impact-story #impact-container .stories-wrap .button a:after, .impact-story #impact-container .stories-wrap .footer .container .content-wrap .button-wrap .button a:after, .footer .container .content-wrap .button-wrap .impact-story #impact-container .stories-wrap .button a, .impact-story #impact-container .stories-wrap .footer .container .content-wrap .button-wrap .button a, .footer .container .content-wrap .button-wrap .latest-post #latest-container .button a:before, .latest-post #latest-container .footer .container .content-wrap .button-wrap .button a:before, .footer .container .content-wrap .button-wrap .latest-post #latest-container .button a:after, .latest-post #latest-container .footer .container .content-wrap .button-wrap .button a:after, .footer .container .content-wrap .button-wrap .latest-post #latest-container .button a, .latest-post #latest-container .footer .container .content-wrap .button-wrap .button a, .footer .container .content-wrap .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a:before, .newsletter-bar #news-container .button_block .button_wrap .footer .container .content-wrap .button-wrap .button a:before,
+.footer .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .footer .container .content-wrap .button-align .button-wrap .button a:before, .footer .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .footer .container .content-wrap .button-align .button-wrap .button a:after, .footer .contact .container .content-wrap .button-align .button-wrap .button a, .contact .footer .container .content-wrap .button-align .button-wrap .button a, .footer .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:before, .step-boxes .footer .container .content-wrap .box-container .content-box .button-wrap .button a:before, .footer .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a:before, .step-boxes .footer .container .box-container .content-box .content-wrap .button-wrap .button a:before, .footer .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:after, .step-boxes .footer .container .content-wrap .box-container .content-box .button-wrap .button a:after, .footer .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a:after, .step-boxes .footer .container .box-container .content-box .content-wrap .button-wrap .button a:after, .footer .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a, .step-boxes .footer .container .content-wrap .box-container .content-box .button-wrap .button a, .footer .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a, .step-boxes .footer .container .box-container .content-box .content-wrap .button-wrap .button a, .footer .container .blurb #blurb-container .content-wrap .button-wrap .button_wrap .button a:before, .blurb #blurb-container .footer .container .content-wrap .button-wrap .button_wrap .button a:before, .footer .container .blurb #blurb-container .content-wrap .button_wrap .button-wrap .button a:before, .blurb #blurb-container .footer .container .content-wrap .button_wrap .button-wrap .button a:before, .footer .container .blurb #blurb-container .content-wrap .button-wrap .button_wrap .button a:after, .blurb #blurb-container .footer .container .content-wrap .button-wrap .button_wrap .button a:after, .footer .container .blurb #blurb-container .content-wrap .button_wrap .button-wrap .button a:after, .blurb #blurb-container .footer .container .content-wrap .button_wrap .button-wrap .button a:after, .footer .container .blurb #blurb-container .content-wrap .button-wrap .button_wrap .button a, .blurb #blurb-container .footer .container .content-wrap .button-wrap .button_wrap .button a, .footer .container .blurb #blurb-container .content-wrap .button_wrap .button-wrap .button a, .blurb #blurb-container .footer .container .content-wrap .button_wrap .button-wrap .button a, .footer .container .content-wrap .button-wrap .slider #slider-container .button a:before, .slider #slider-container .footer .container .content-wrap .button-wrap .button a:before, .footer .container .content-wrap .button-wrap .slider #slider-container .button a:after, .slider #slider-container .footer .container .content-wrap .button-wrap .button a:after, .footer .container .content-wrap .button-wrap .slider #slider-container .button a, .slider #slider-container .footer .container .content-wrap .button-wrap .button a, .footer .container .content-wrap .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:before, .impact-story #impact-container .story-content .story-tab .story-blurb .footer .container .content-wrap .button-wrap .button a:before, .footer .container .content-wrap .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:after, .impact-story #impact-container .story-content .story-tab .story-blurb .footer .container .content-wrap .button-wrap .button a:after, .footer .container .content-wrap .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a, .impact-story #impact-container .story-content .story-tab .story-blurb .footer .container .content-wrap .button-wrap .button a, .footer .container .content-wrap .button-wrap .impact-story #impact-container .stories-wrap .button a:before, .impact-story #impact-container .stories-wrap .footer .container .content-wrap .button-wrap .button a:before, .footer .container .content-wrap .button-wrap .impact-story #impact-container .stories-wrap .button a:after, .impact-story #impact-container .stories-wrap .footer .container .content-wrap .button-wrap .button a:after, .footer .container .content-wrap .button-wrap .impact-story #impact-container .stories-wrap .button a, .impact-story #impact-container .stories-wrap .footer .container .content-wrap .button-wrap .button a, .footer .container .content-wrap .button-wrap .latest-post #latest-container .button a:before, .latest-post #latest-container .footer .container .content-wrap .button-wrap .button a:before, .footer .container .content-wrap .button-wrap .latest-post #latest-container .button a:after, .latest-post #latest-container .footer .container .content-wrap .button-wrap .button a:after, .footer .container .content-wrap .button-wrap .latest-post #latest-container .button a, .latest-post #latest-container .footer .container .content-wrap .button-wrap .button a, .footer .container .content-wrap .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a:before, .newsletter-bar #news-container .button_block .button_wrap .footer .container .content-wrap .button-wrap .button a:before,
 .footer .container .content-wrap .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a:before,
 .newsletter-bar #news2-container .button_block .button_wrap .footer .container .content-wrap .button-wrap .button a:before, .footer .container .content-wrap .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a:after, .newsletter-bar #news-container .button_block .button_wrap .footer .container .content-wrap .button-wrap .button a:after,
 .footer .container .content-wrap .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a:after,
@@ -702,7 +717,6 @@ a {
 @media (max-width: 768px) {
   .banner {
     background-image: url("./assets/mobile-banner.png") !important;
-    /* background-image: url("/content/dam/LeaderImpact/site-assets/mobile-banner.png") !important; */
   }
 }
 .banner:before {
@@ -1257,26 +1271,26 @@ a {
 
 .newsletter-bar {
   padding: 0 30px;
-  background: linear-gradient(120deg, #FFCF07 47%, rgba(255, 207, 7, 0) 47%);
+  background: linear-gradient(120deg, #FFCF07 47%, rgb(255, 255, 255) 47%);
 }
 @media (max-width: 1250px) {
   .newsletter-bar {
-    background: linear-gradient(120deg, #FFCF07 43%, rgba(255, 207, 7, 0) 43%);
+    background: linear-gradient(120deg, #FFCF07 43%, rgb(255, 255, 255) 43%);
   }
 }
 @media (max-width: 991px) {
   .newsletter-bar {
-    background: linear-gradient(180deg, #FFCF07 53%, rgba(255, 207, 7, 0) 50%);
+    background: linear-gradient(180deg, #FFCF07 53%, rgb(255, 255, 255) 50%);
   }
 }
 @media (max-width: 768px) {
   .newsletter-bar {
-    background: linear-gradient(180deg, #FFCF07 45%, rgba(255, 207, 7, 0) 45%);
+    background: linear-gradient(180deg, #FFCF07 45%, rgb(255, 255, 255) 45%);
   }
 }
 @media (max-width: 475px) {
   .newsletter-bar {
-    background: linear-gradient(180deg, #FFCF07 50%, rgba(255, 207, 7, 0) 45%);
+    background: linear-gradient(180deg, #FFCF07 50%, rgb(255, 255, 255) 45%);
   }
 }
 .newsletter-bar #news-container,
@@ -1291,7 +1305,7 @@ a {
 }
 @media (max-width: 991px) {
   .newsletter-bar #news-container,
-.newsletter-bar #news2-container {
+  .newsletter-bar #news2-container {
     justify-content: center;
     padding: 45px 0 70px;
   }
@@ -1303,28 +1317,28 @@ a {
 }
 @media (max-width: 991px) {
   .newsletter-bar #news-container .title,
-.newsletter-bar #news2-container .title {
+  .newsletter-bar #news2-container .title {
     width: 100%;
     padding-bottom: 60px;
   }
 }
 @media (max-width: 1250px) {
   .newsletter-bar #news-container .title h3,
-.newsletter-bar #news2-container .title h3 {
+  .newsletter-bar #news2-container .title h3 {
     font-size: 32px;
     line-height: 40px;
   }
 }
 @media (max-width: 991px) {
   .newsletter-bar #news-container .title h3,
-.newsletter-bar #news2-container .title h3 {
+  .newsletter-bar #news2-container .title h3 {
     font-size: 40px;
     line-height: 47px;
   }
 }
 @media (max-width: 768px) {
   .newsletter-bar #news-container .title h3,
-.newsletter-bar #news2-container .title h3 {
+  .newsletter-bar #news2-container .title h3 {
     font-size: 32px;
     line-height: 40px;
   }
@@ -1335,7 +1349,7 @@ a {
 }
 @media (max-width: 991px) {
   .newsletter-bar #news-container .button_block,
-.newsletter-bar #news2-container .button_block {
+  .newsletter-bar #news2-container .button_block {
     width: 100%;
   }
 }
@@ -1348,13 +1362,13 @@ a {
 }
 @media (max-width: 991px) {
   .newsletter-bar #news-container .button_block .button_wrap,
-.newsletter-bar #news2-container .button_block .button_wrap {
+  .newsletter-bar #news2-container .button_block .button_wrap {
     justify-content: start;
   }
 }
 @media (max-width: 575px) {
   .newsletter-bar #news-container .button_block .button_wrap,
-.newsletter-bar #news2-container .button_block .button_wrap {
+  .newsletter-bar #news2-container .button_block .button_wrap {
     flex-wrap: wrap;
   }
 }
@@ -1439,19 +1453,19 @@ a {
 }
 @media (max-width: 991px) {
   .newsletter-bar #news-container .button_block .button_wrap .button,
-.newsletter-bar #news2-container .button_block .button_wrap .button {
+  .newsletter-bar #news2-container .button_block .button_wrap .button {
     margin-top: 50px;
   }
 }
 @media (max-width: 768px) {
   .newsletter-bar #news-container .button_block .button_wrap .button,
-.newsletter-bar #news2-container .button_block .button_wrap .button {
+  .newsletter-bar #news2-container .button_block .button_wrap .button {
     margin-top: 25px;
   }
 }
 @media (max-width: 575px) {
   .newsletter-bar #news-container .button_block .button_wrap .button:first-child,
-.newsletter-bar #news2-container .button_block .button_wrap .button:first-child {
+  .newsletter-bar #news2-container .button_block .button_wrap .button:first-child {
     width: 100%;
   }
 }
@@ -1461,7 +1475,7 @@ a {
 }
 @media (max-width: 1250px) {
   .newsletter-bar #news-container .button_block .button_wrap .button .cmp-button span,
-.newsletter-bar #news2-container .button_block .button_wrap .button .cmp-button span {
+  .newsletter-bar #news2-container .button_block .button_wrap .button .cmp-button span {
     font-size: 12px;
   }
 }
@@ -1476,10 +1490,23 @@ a {
   border-color: #FFCF07;
 }
 
+body.resource .latest-post {
+  padding-right: 0;
+}
+body.resource #latest-container {
+  padding-bottom: 0;
+}
+body.resource #slider-container {
+  padding: 0;
+  padding-bottom: 50px;
+}
+
 .latest-post {
   background: #414042;
-  border-left: 10px solid white;
   padding: 0 30px;
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
   .latest-post {
@@ -1750,6 +1777,9 @@ a {
   text-transform: capitalize;
   position: relative;
   z-index: 20;
+}
+.latest-post .article-slider {
+  padding-left: 70px;
 }
 
 .impact-story #impact-container {
@@ -2075,7 +2105,6 @@ a {
 
 .slider {
   background: #414042;
-  border-left: 10px solid white;
   padding-left: 50px;
 }
 @media (max-width: 991px) {
@@ -2377,7 +2406,7 @@ a {
   display: flex;
   margin-left: 7px;
 }
-.slider #slider-container .blurb #blurb-container .content-wrap .button_wrap .button a:before, .blurb #blurb-container .content-wrap .button_wrap .slider #slider-container .button a:before, .slider #slider-container .blurb #blurb-container .content-wrap .button_wrap .button a:after, .blurb #blurb-container .content-wrap .button_wrap .slider #slider-container .button a:after, .slider #slider-container .blurb #blurb-container .content-wrap .button_wrap .button a, .blurb #blurb-container .content-wrap .button_wrap .slider #slider-container .button a, .slider #slider-container .button a:before, .slider #slider-container .button a:after, .slider #slider-container .button a, .slider #slider-container .button .header .container .cmp-container .sub-nav .cmp-container .nav-button a, .header .container .cmp-container .sub-nav .cmp-container .nav-button .slider #slider-container .button a, .slider #slider-container .button .header .container .cmp-container .sub-nav .cmp-container .nav-button a:after, .header .container .cmp-container .sub-nav .cmp-container .nav-button .slider #slider-container .button a:after, .slider #slider-container .button .header .container .cmp-container .sub-nav .cmp-container .nav-button a:before, .header .container .cmp-container .sub-nav .cmp-container .nav-button .slider #slider-container .button a:before, .slider #slider-container .footer .container .content-wrap .button-wrap .button a, .footer .container .content-wrap .button-wrap .slider #slider-container .button a, .slider #slider-container .footer .container .content-wrap .button-wrap .button a:after, .footer .container .content-wrap .button-wrap .slider #slider-container .button a:after, .slider #slider-container .footer .container .content-wrap .button-wrap .button a:before, .footer .container .content-wrap .button-wrap .slider #slider-container .button a:before, .slider #slider-container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a, .banner .cmp-container .content-wrap .button-wrap .cmp-container .slider #slider-container .button a, .slider #slider-container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:after, .banner .cmp-container .content-wrap .button-wrap .cmp-container .slider #slider-container .button a:after, .slider #slider-container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:before, .banner .cmp-container .content-wrap .button-wrap .cmp-container .slider #slider-container .button a:before, .slider #slider-container .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .slider #slider-container .button a, .slider #slider-container .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:after, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .slider #slider-container .button a:after, .slider #slider-container .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:before, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .slider #slider-container .button a:before, .slider #slider-container .welcome #welcome-container .content-wrap .button a, .welcome #welcome-container .content-wrap .slider #slider-container .button a, .slider #slider-container .welcome #welcome-container .content-wrap .button a:after, .welcome #welcome-container .content-wrap .slider #slider-container .button a:after, .slider #slider-container .welcome #welcome-container .content-wrap .button a:before, .welcome #welcome-container .content-wrap .slider #slider-container .button a:before, .slider #slider-container .newsletter-bar #news-container .button_block .button_wrap .button a, .newsletter-bar #news-container .button_block .button_wrap .slider #slider-container .button a,
+.slider #slider-container .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .content-wrap .button-align .button-wrap .slider #slider-container .button a:before, .slider #slider-container .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .container .content-wrap .button-align .button-wrap .slider #slider-container .button a:after, .slider #slider-container .contact .container .content-wrap .button-align .button-wrap .button a, .contact .container .content-wrap .button-align .button-wrap .slider #slider-container .button a, .slider #slider-container .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .button-wrap .slider #slider-container .button a:before, .slider #slider-container .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .slider #slider-container .button a:after, .slider #slider-container .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .slider #slider-container .button a, .slider #slider-container .video .container .content-wrap .button-wrap .button a:before, .video .container .content-wrap .button-wrap .slider #slider-container .button a:before, .slider #slider-container .video .container .content-wrap .button-wrap .button a:after, .video .container .content-wrap .button-wrap .slider #slider-container .button a:after, .slider #slider-container .video .container .content-wrap .button-wrap .button a, .video .container .content-wrap .button-wrap .slider #slider-container .button a, .slider #slider-container .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .content-wrap .button-wrap .slider #slider-container .button a:before, .slider #slider-container .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .container .content-wrap .button-wrap .slider #slider-container .button a:after, .slider #slider-container .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .container .content-wrap .button-wrap .slider #slider-container .button a, .slider #slider-container .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .slider #slider-container .button a:before, .slider #slider-container .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .slider #slider-container .button a:after, .slider #slider-container .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .slider #slider-container .button a, .slider #slider-container .about-banner .container .content-wrap .button a:before, .about-banner .container .content-wrap .slider #slider-container .button a:before, .slider #slider-container .about-banner .container .content-wrap .button a:after, .about-banner .container .content-wrap .slider #slider-container .button a:after, .slider #slider-container .about-banner .container .content-wrap .button a, .about-banner .container .content-wrap .slider #slider-container .button a, .slider #slider-container .blurb #blurb-container .content-wrap .button_wrap .button a:before, .blurb #blurb-container .content-wrap .button_wrap .slider #slider-container .button a:before, .slider #slider-container .blurb #blurb-container .content-wrap .button_wrap .button a:after, .blurb #blurb-container .content-wrap .button_wrap .slider #slider-container .button a:after, .slider #slider-container .blurb #blurb-container .content-wrap .button_wrap .button a, .blurb #blurb-container .content-wrap .button_wrap .slider #slider-container .button a, .slider #slider-container .button a:before, .slider #slider-container .button a:after, .slider #slider-container .button a, .slider #slider-container .button .header .container .cmp-container .sub-nav .cmp-container .nav-button a, .header .container .cmp-container .sub-nav .cmp-container .nav-button .slider #slider-container .button a, .slider #slider-container .button .header .container .cmp-container .sub-nav .cmp-container .nav-button a:after, .header .container .cmp-container .sub-nav .cmp-container .nav-button .slider #slider-container .button a:after, .slider #slider-container .button .header .container .cmp-container .sub-nav .cmp-container .nav-button a:before, .header .container .cmp-container .sub-nav .cmp-container .nav-button .slider #slider-container .button a:before, .slider #slider-container .footer .container .content-wrap .button-wrap .button a, .footer .container .content-wrap .button-wrap .slider #slider-container .button a, .slider #slider-container .footer .container .content-wrap .button-wrap .button a:after, .footer .container .content-wrap .button-wrap .slider #slider-container .button a:after, .slider #slider-container .footer .container .content-wrap .button-wrap .button a:before, .footer .container .content-wrap .button-wrap .slider #slider-container .button a:before, .slider #slider-container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a, .banner .cmp-container .content-wrap .button-wrap .cmp-container .slider #slider-container .button a, .slider #slider-container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:after, .banner .cmp-container .content-wrap .button-wrap .cmp-container .slider #slider-container .button a:after, .slider #slider-container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:before, .banner .cmp-container .content-wrap .button-wrap .cmp-container .slider #slider-container .button a:before, .slider #slider-container .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .slider #slider-container .button a, .slider #slider-container .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:after, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .slider #slider-container .button a:after, .slider #slider-container .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:before, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .slider #slider-container .button a:before, .slider #slider-container .welcome #welcome-container .content-wrap .button a, .welcome #welcome-container .content-wrap .slider #slider-container .button a, .slider #slider-container .welcome #welcome-container .content-wrap .button a:after, .welcome #welcome-container .content-wrap .slider #slider-container .button a:after, .slider #slider-container .welcome #welcome-container .content-wrap .button a:before, .welcome #welcome-container .content-wrap .slider #slider-container .button a:before, .slider #slider-container .newsletter-bar #news-container .button_block .button_wrap .button a, .newsletter-bar #news-container .button_block .button_wrap .slider #slider-container .button a,
 .slider #slider-container .newsletter-bar #news2-container .button_block .button_wrap .button a,
 .newsletter-bar #news2-container .button_block .button_wrap .slider #slider-container .button a, .slider #slider-container .newsletter-bar #news-container .button_block .button_wrap .button a:after, .newsletter-bar #news-container .button_block .button_wrap .slider #slider-container .button a:after,
 .slider #slider-container .newsletter-bar #news2-container .button_block .button_wrap .button a:after,
@@ -2618,6 +2647,1900 @@ a {
 .blurb #blurb-container .image-wrap img {
   width: 100%;
   display: block;
+}
+
+.resource-post {
+  background-image: url("./assets/resource-banner.png");
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.resource-post .container {
+  padding: 100px 0;
+}
+.resource-post .container .title {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+.resource-post .container .post-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 30px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.resource-post .container .post-wrap .featured-item {
+  flex-direction: row-reverse;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s ease;
+}
+@media (max-width: 991px) {
+  .resource-post .container .post-wrap .featured-item {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  .resource-post .container .post-wrap .featured-item {
+    flex-direction: column;
+  }
+}
+.resource-post .container .post-wrap .featured-item:hover .content-wrap {
+  transition: all 0.3s ease;
+}
+.resource-post .container .post-wrap .featured-item:hover .content-wrap .post-title {
+  color: #FFCF07;
+}
+.resource-post .container .post-wrap .featured-item .img-wrap {
+  width: 68%;
+  display: flex;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .resource-post .container .post-wrap .featured-item .img-wrap {
+    width: 65%;
+  }
+}
+@media (max-width: 768px) {
+  .resource-post .container .post-wrap .featured-item .img-wrap {
+    width: 100%;
+  }
+}
+.resource-post .container .post-wrap .featured-item .img-wrap::before {
+  content: "";
+  background: linear-gradient(180deg, #FFCF07 0%, rgba(217, 217, 217, 0) 51.04%);
+  transform: rotate(-180deg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+}
+.resource-post .container .post-wrap .featured-item .img-wrap .post-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .resource-post .container .post-wrap .featured-item .img-wrap .post-img {
+    object-fit: cover;
+  }
+}
+.resource-post .container .post-wrap .featured-item .content-wrap {
+  width: 32%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  border-radius: 0px;
+  padding: 30px 80px 30px 35px;
+}
+@media (max-width: 991px) {
+  .resource-post .container .post-wrap .featured-item .content-wrap {
+    width: 35%;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 1250px) {
+  .resource-post .container .post-wrap .featured-item .content-wrap {
+    padding-right: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .resource-post .container .post-wrap .featured-item .content-wrap {
+    width: 100%;
+    height: 250px;
+    justify-content: start;
+    padding: 30px 20px;
+  }
+}
+.resource-post .container .post-wrap .featured-item .content-wrap .post-icon {
+  display: block;
+  position: absolute;
+  top: 20px;
+}
+@media (max-width: 768px) {
+  .resource-post .container .post-wrap .featured-item .content-wrap .post-icon {
+    display: none;
+  }
+}
+.resource-post .container .post-wrap .featured-item .content-wrap .post-title {
+  font-size: 40px;
+  line-height: 43px;
+  color: #414042;
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+@media (max-width: 991px) {
+  .resource-post .container .post-wrap .featured-item .content-wrap .post-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .resource-post .container .post-wrap .featured-item .content-wrap .post-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.resource-post .container .post-wrap .featured-item .content-wrap p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #9C9FA1;
+  font-weight: 600;
+}
+.resource-post .container .resource-slider-container {
+  margin-top: 50px;
+  padding-left: 100px;
+}
+@media (max-width: 1250px) {
+  .resource-post .container .resource-slider-container {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .resource-post .container .resource-slider-container {
+    padding-right: 30px;
+  }
+}
+.resource-post .container .resource-slider-container .slick-arrow {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.resource-post .container .resource-slider-container .slick-arrow:hover {
+  opacity: 1;
+}
+.resource-post .container .resource-slider-container .slick-arrow::before {
+  display: none;
+}
+.resource-post .container .resource-slider-container .slick-arrow.slick-prev {
+  position: absolute;
+  right: 200px;
+  top: -55px;
+  left: unset;
+}
+@media (max-width: 1250px) {
+  .resource-post .container .resource-slider-container .slick-arrow.slick-prev {
+    right: 130px;
+  }
+}
+@media (max-width: 991px) {
+  .resource-post .container .resource-slider-container .slick-arrow.slick-prev {
+    right: 80px;
+  }
+}
+.resource-post .container .resource-slider-container .slick-arrow.slick-next {
+  position: absolute;
+  right: 150px;
+  top: -55px;
+  left: unset;
+}
+@media (max-width: 1250px) {
+  .resource-post .container .resource-slider-container .slick-arrow.slick-next {
+    right: 80px;
+  }
+}
+@media (max-width: 991px) {
+  .resource-post .container .resource-slider-container .slick-arrow.slick-next {
+    right: 30px;
+  }
+}
+.resource-post .container .resource-slider-container .slick-list {
+  padding: 0 100px !important;
+}
+@media (max-width: 575px) {
+  .resource-post .container .resource-slider-container .slick-list {
+    padding: 0px !important;
+  }
+}
+.resource-post .container .resource-slider-container .slick-list .slick-track {
+  display: flex;
+  grid-gap: 30px;
+  margin-left: -130px;
+}
+@media (max-width: 768px) {
+  .resource-post .container .resource-slider-container .slick-list .slick-track {
+    grid-gap: 0px;
+    margin-left: -110px;
+  }
+}
+@media (max-width: 575px) {
+  .resource-post .container .resource-slider-container .slick-list .slick-track {
+    margin: 0px;
+  }
+}
+.resource-post .container .resource-slider-container .title-btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 250px;
+  padding-left: 0px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1250px) {
+  .resource-post .container .resource-slider-container .title-btn-wrap {
+    padding-right: 180px;
+  }
+}
+@media (max-width: 991px) {
+  .resource-post .container .resource-slider-container .title-btn-wrap {
+    padding-right: 130px;
+  }
+}
+.resource-post .container .resource-slider-container .title-btn-wrap .title {
+  margin: 0px;
+}
+.resource-post .container .resource-slider-container .title-btn-wrap .title h5 {
+  font-size: 30px;
+}
+@media (max-width: 991px) {
+  .resource-post .container .resource-slider-container .title-btn-wrap .title h5 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 575px) {
+  .resource-post .container .resource-slider-container .title-btn-wrap .title h5 {
+    font-size: 18px;
+  }
+}
+.resource-post .container .resource-slider-container .resource-slider {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 30px;
+  position: relative;
+}
+.resource-post .container .resource-slider-container .resource-slider .post-item {
+  width: calc(25% - 40px);
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s ease;
+}
+@media (max-width: 991px) {
+  .resource-post .container .resource-slider-container .resource-slider .post-item {
+    width: calc(35% - 30px);
+  }
+}
+@media (max-width: 768px) {
+  .resource-post .container .resource-slider-container .resource-slider .post-item {
+    margin: 20px 10px;
+  }
+}
+@media (max-width: 575px) {
+  .resource-post .container .resource-slider-container .resource-slider .post-item {
+    margin: 20px 0;
+  }
+}
+.resource-post .container .resource-slider-container .resource-slider .post-item:hover .content-wrap {
+  transition: all 0.3s ease;
+}
+.resource-post .container .resource-slider-container .resource-slider .post-item:hover .content-wrap .post-title {
+  color: #FFCF07;
+}
+.resource-post .container .resource-slider-container .resource-slider .post-item .img-wrap {
+  position: relative;
+}
+.resource-post .container .resource-slider-container .resource-slider .post-item .img-wrap .post-icon {
+  position: absolute;
+  width: 45px;
+  top: 25px;
+  left: 35px;
+}
+@media (max-width: 991px) {
+  .resource-post .container .resource-slider-container .resource-slider .post-item .img-wrap .post-icon {
+    left: 20px;
+    top: 15px;
+  }
+}
+.resource-post .container .resource-slider-container .resource-slider .post-item .img-wrap .post-img {
+  width: 100%;
+  display: block;
+}
+.resource-post .container .resource-slider-container .resource-slider .post-item .content-wrap {
+  padding: 30px 35px;
+  border-radius: 0px;
+  height: 230px;
+}
+@media (max-width: 991px) {
+  .resource-post .container .resource-slider-container .resource-slider .post-item .content-wrap {
+    height: 280px;
+    padding: 30px 20px;
+  }
+}
+.resource-post .container .resource-slider-container .resource-slider .post-item .content-wrap .post-icon {
+  display: none;
+}
+.resource-post .container .resource-slider-container .resource-slider .post-item .content-wrap .post-title {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+  color: #414042;
+  transition: all 0.3s ease;
+}
+@media (max-width: 991px) {
+  .resource-post .container .resource-slider-container .resource-slider .post-item .content-wrap .post-title {
+    font-size: 20px;
+  }
+}
+.resource-post .container .resource-slider-container .resource-slider .post-item .content-wrap .content {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #9C9FA1;
+}
+
+.post-slider .container {
+  padding: 0px 0 100px;
+}
+.post-slider .container .resource-slider-container {
+  padding-left: 100px;
+}
+@media (max-width: 1250px) {
+  .post-slider .container .resource-slider-container {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .post-slider .container .resource-slider-container {
+    padding-right: 30px;
+  }
+}
+.post-slider .container .resource-slider-container .slick-arrow {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.post-slider .container .resource-slider-container .slick-arrow:hover {
+  opacity: 1;
+}
+.post-slider .container .resource-slider-container .slick-arrow::before {
+  display: none;
+}
+.post-slider .container .resource-slider-container .slick-arrow.slick-prev {
+  position: absolute;
+  right: 200px;
+  top: -55px;
+  left: unset;
+}
+@media (max-width: 1250px) {
+  .post-slider .container .resource-slider-container .slick-arrow.slick-prev {
+    right: 130px;
+  }
+}
+@media (max-width: 991px) {
+  .post-slider .container .resource-slider-container .slick-arrow.slick-prev {
+    right: 80px;
+  }
+}
+.post-slider .container .resource-slider-container .slick-arrow.slick-next {
+  position: absolute;
+  right: 150px;
+  top: -55px;
+  left: unset;
+}
+@media (max-width: 1250px) {
+  .post-slider .container .resource-slider-container .slick-arrow.slick-next {
+    right: 80px;
+  }
+}
+@media (max-width: 991px) {
+  .post-slider .container .resource-slider-container .slick-arrow.slick-next {
+    right: 30px;
+  }
+}
+.post-slider .container .resource-slider-container .slick-list {
+  padding: 0 100px !important;
+}
+@media (max-width: 575px) {
+  .post-slider .container .resource-slider-container .slick-list {
+    padding: 0px !important;
+  }
+}
+.post-slider .container .resource-slider-container .slick-list .slick-track {
+  display: flex;
+  grid-gap: 30px;
+  margin-left: -130px;
+}
+@media (max-width: 768px) {
+  .post-slider .container .resource-slider-container .slick-list .slick-track {
+    grid-gap: 0px;
+    margin-left: -110px;
+  }
+}
+@media (max-width: 575px) {
+  .post-slider .container .resource-slider-container .slick-list .slick-track {
+    margin: 0px;
+  }
+}
+.post-slider .container .resource-slider-container .title-btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 250px;
+  padding-left: 0px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1250px) {
+  .post-slider .container .resource-slider-container .title-btn-wrap {
+    padding-right: 180px;
+  }
+}
+@media (max-width: 991px) {
+  .post-slider .container .resource-slider-container .title-btn-wrap {
+    padding-right: 130px;
+  }
+}
+.post-slider .container .resource-slider-container .title-btn-wrap .title {
+  margin: 0px;
+}
+.post-slider .container .resource-slider-container .title-btn-wrap .title h5 {
+  font-size: 30px;
+  color: white;
+}
+@media (max-width: 991px) {
+  .post-slider .container .resource-slider-container .title-btn-wrap .title h5 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 575px) {
+  .post-slider .container .resource-slider-container .title-btn-wrap .title h5 {
+    font-size: 18px;
+  }
+}
+.post-slider .container .resource-slider-container .resource-slider {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 30px;
+  position: relative;
+}
+.post-slider .container .resource-slider-container .resource-slider .post-item {
+  width: calc(25% - 40px);
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s ease;
+}
+@media (max-width: 991px) {
+  .post-slider .container .resource-slider-container .resource-slider .post-item {
+    width: calc(35% - 30px);
+  }
+}
+@media (max-width: 768px) {
+  .post-slider .container .resource-slider-container .resource-slider .post-item {
+    margin: 20px 10px;
+  }
+}
+@media (max-width: 575px) {
+  .post-slider .container .resource-slider-container .resource-slider .post-item {
+    margin: 20px 0;
+  }
+}
+.post-slider .container .resource-slider-container .resource-slider .post-item:hover .content-wrap {
+  transition: all 0.3s ease;
+}
+.post-slider .container .resource-slider-container .resource-slider .post-item:hover .content-wrap .post-title {
+  color: #FFCF07;
+}
+.post-slider .container .resource-slider-container .resource-slider .post-item .img-wrap {
+  position: relative;
+}
+.post-slider .container .resource-slider-container .resource-slider .post-item .img-wrap .post-icon {
+  position: absolute;
+  width: 45px;
+  top: 25px;
+  left: 35px;
+}
+@media (max-width: 991px) {
+  .post-slider .container .resource-slider-container .resource-slider .post-item .img-wrap .post-icon {
+    left: 20px;
+    top: 15px;
+  }
+}
+.post-slider .container .resource-slider-container .resource-slider .post-item .img-wrap .post-img {
+  width: 100%;
+  display: block;
+}
+.post-slider .container .resource-slider-container .resource-slider .post-item .content-wrap {
+  padding: 30px 35px;
+  border-radius: 0px;
+  height: 230px;
+}
+@media (max-width: 991px) {
+  .post-slider .container .resource-slider-container .resource-slider .post-item .content-wrap {
+    height: 280px;
+    padding: 30px 20px;
+  }
+}
+.post-slider .container .resource-slider-container .resource-slider .post-item .content-wrap .post-icon {
+  display: none;
+}
+.post-slider .container .resource-slider-container .resource-slider .post-item .content-wrap .post-title {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+  color: #414042;
+  transition: all 0.3s ease;
+}
+@media (max-width: 991px) {
+  .post-slider .container .resource-slider-container .resource-slider .post-item .content-wrap .post-title {
+    font-size: 20px;
+  }
+}
+.post-slider .container .resource-slider-container .resource-slider .post-item .content-wrap .content {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #9C9FA1;
+}
+
+.about-banner {
+  background-color: #414042;
+}
+@media (max-width: 1400px) {
+  .about-banner {
+    background-size: contain !important;
+  }
+}
+@media (max-width: 991px) {
+  .about-banner {
+    background-size: 150% !important;
+    background-position: top left !important;
+  }
+}
+@media (max-width: 575px) {
+  .about-banner {
+    background-size: 200% !important;
+    background-position: 15% 0% !important;
+  }
+}
+.about-banner .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 200px 30px 300px;
+}
+@media (max-width: 1250px) {
+  .about-banner .container {
+    padding: 100px 30px 200px;
+  }
+}
+@media (max-width: 991px) {
+  .about-banner .container {
+    padding: 50px 30px 250px;
+  }
+}
+.about-banner .container .content-wrap {
+  color: white;
+  width: 50%;
+}
+@media (max-width: 1250px) {
+  .about-banner .container .content-wrap {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .about-banner .container .content-wrap {
+    width: 100%;
+  }
+}
+.about-banner .container .content-wrap h1 {
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .about-banner .container .content-wrap h1 {
+    font-size: 40px;
+    line-height: 49px;
+  }
+}
+@media (max-width: 575px) {
+  .about-banner .container .content-wrap h1 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+.about-banner .container .content-wrap .button {
+  display: flex;
+  margin-left: 7px;
+}
+.about-banner .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .about-banner .container .content-wrap .button-align .button-wrap .button a:before, .about-banner .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .about-banner .container .content-wrap .button-align .button-wrap .button a:after, .about-banner .contact .container .content-wrap .button-align .button-wrap .button a, .contact .about-banner .container .content-wrap .button-align .button-wrap .button a, .about-banner .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:before, .step-boxes .about-banner .container .content-wrap .box-container .content-box .button-wrap .button a:before, .about-banner .step-boxes .container .box-container .content-box .button-wrap .content-wrap .button a:before, .step-boxes .about-banner .container .box-container .content-box .button-wrap .content-wrap .button a:before, .about-banner .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:after, .step-boxes .about-banner .container .content-wrap .box-container .content-box .button-wrap .button a:after, .about-banner .step-boxes .container .box-container .content-box .button-wrap .content-wrap .button a:after, .step-boxes .about-banner .container .box-container .content-box .button-wrap .content-wrap .button a:after, .about-banner .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a, .step-boxes .about-banner .container .content-wrap .box-container .content-box .button-wrap .button a, .about-banner .step-boxes .container .box-container .content-box .button-wrap .content-wrap .button a, .step-boxes .about-banner .container .box-container .content-box .button-wrap .content-wrap .button a, .about-banner .video .container .content-wrap .button-wrap .button a:before, .video .about-banner .container .content-wrap .button-wrap .button a:before, .about-banner .video .container .content-wrap .button-wrap .button a:after, .video .about-banner .container .content-wrap .button-wrap .button a:after, .about-banner .video .container .content-wrap .button-wrap .button a, .video .about-banner .container .content-wrap .button-wrap .button a, .about-banner .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .about-banner .container .content-wrap .button-wrap .button a:before, .about-banner .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .about-banner .container .content-wrap .button-wrap .button a:after, .about-banner .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .about-banner .container .content-wrap .button-wrap .button a, .about-banner .container .content-wrap .button a:before, .about-banner .container .content-wrap .button a:after, .about-banner .container .content-wrap .button a, .about-banner .header .container .content-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a, .header .about-banner .container .content-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a, .about-banner .header .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button a, .header .about-banner .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button a, .about-banner .header .container .content-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:after, .header .about-banner .container .content-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:after, .about-banner .header .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button a:after, .header .about-banner .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button a:after, .about-banner .header .container .content-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:before, .header .about-banner .container .content-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:before, .about-banner .header .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button a:before, .header .about-banner .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button a:before, .about-banner .footer .container .content-wrap .button-wrap .button a, .footer .about-banner .container .content-wrap .button-wrap .button a, .about-banner .footer .container .content-wrap .button-wrap .button a:after, .footer .about-banner .container .content-wrap .button-wrap .button a:after, .about-banner .footer .container .content-wrap .button-wrap .button a:before, .footer .about-banner .container .content-wrap .button-wrap .button a:before, .about-banner .container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a, .banner .cmp-container .about-banner .container .content-wrap .button-wrap .cmp-container .button a, .about-banner .container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:after, .banner .cmp-container .about-banner .container .content-wrap .button-wrap .cmp-container .button a:after, .about-banner .container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:before, .banner .cmp-container .about-banner .container .content-wrap .button-wrap .cmp-container .button a:before, .about-banner .container .content-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .about-banner .container .content-wrap .button a, .about-banner .container .content-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:after, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .about-banner .container .content-wrap .button a:after, .about-banner .container .content-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:before, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .about-banner .container .content-wrap .button a:before, .about-banner .container .welcome #welcome-container .content-wrap .button a, .welcome #welcome-container .about-banner .container .content-wrap .button a, .about-banner .container .welcome #welcome-container .content-wrap .button a:after, .welcome #welcome-container .about-banner .container .content-wrap .button a:after, .about-banner .container .welcome #welcome-container .content-wrap .button a:before, .welcome #welcome-container .about-banner .container .content-wrap .button a:before, .about-banner .container .content-wrap .newsletter-bar #news-container .button_block .button_wrap .button a, .newsletter-bar #news-container .button_block .button_wrap .about-banner .container .content-wrap .button a,
+.about-banner .container .content-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a,
+.newsletter-bar #news2-container .button_block .button_wrap .about-banner .container .content-wrap .button a, .about-banner .container .content-wrap .newsletter-bar #news-container .button_block .button_wrap .button a:after, .newsletter-bar #news-container .button_block .button_wrap .about-banner .container .content-wrap .button a:after,
+.about-banner .container .content-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a:after,
+.newsletter-bar #news2-container .button_block .button_wrap .about-banner .container .content-wrap .button a:after, .about-banner .container .content-wrap .newsletter-bar #news-container .button_block .button_wrap .button a:before, .newsletter-bar #news-container .button_block .button_wrap .about-banner .container .content-wrap .button a:before,
+.about-banner .container .content-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a:before,
+.newsletter-bar #news2-container .button_block .button_wrap .about-banner .container .content-wrap .button a:before, .about-banner .container .content-wrap .latest-post #latest-container .button a, .latest-post #latest-container .about-banner .container .content-wrap .button a, .about-banner .container .content-wrap .latest-post #latest-container .button a:after, .latest-post #latest-container .about-banner .container .content-wrap .button a:after, .about-banner .container .content-wrap .latest-post #latest-container .button a:before, .latest-post #latest-container .about-banner .container .content-wrap .button a:before, .about-banner .container .content-wrap .impact-story #impact-container .stories-wrap .button a, .impact-story #impact-container .stories-wrap .about-banner .container .content-wrap .button a, .about-banner .container .content-wrap .impact-story #impact-container .stories-wrap .button a:after, .impact-story #impact-container .stories-wrap .about-banner .container .content-wrap .button a:after, .about-banner .container .content-wrap .impact-story #impact-container .stories-wrap .button a:before, .impact-story #impact-container .stories-wrap .about-banner .container .content-wrap .button a:before, .about-banner .container .content-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a, .impact-story #impact-container .story-content .story-tab .story-blurb .about-banner .container .content-wrap .button a, .about-banner .container .content-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:after, .impact-story #impact-container .story-content .story-tab .story-blurb .about-banner .container .content-wrap .button a:after, .about-banner .container .content-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:before, .impact-story #impact-container .story-content .story-tab .story-blurb .about-banner .container .content-wrap .button a:before, .about-banner .container .content-wrap .slider #slider-container .button a, .slider #slider-container .about-banner .container .content-wrap .button a, .about-banner .container .content-wrap .slider #slider-container .button a:after, .slider #slider-container .about-banner .container .content-wrap .button a:after, .about-banner .container .content-wrap .slider #slider-container .button a:before, .slider #slider-container .about-banner .container .content-wrap .button a:before, .about-banner .container .blurb #blurb-container .content-wrap .button_wrap .button a, .blurb #blurb-container .about-banner .container .content-wrap .button_wrap .button a, .about-banner .container .blurb #blurb-container .content-wrap .button_wrap .button a:after, .blurb #blurb-container .about-banner .container .content-wrap .button_wrap .button a:after, .about-banner .container .blurb #blurb-container .content-wrap .button_wrap .button a:before, .blurb #blurb-container .about-banner .container .content-wrap .button_wrap .button a:before {
+  transition: 0.12s;
+}
+.about-banner .container .content-wrap .button a {
+  padding: 8px 25px 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  color: #FFCF07;
+  position: relative;
+  cursor: pointer;
+}
+.about-banner .container .content-wrap .button a:hover::after {
+  border-color: white;
+}
+.about-banner .container .content-wrap .button a:hover::before {
+  border-color: white;
+}
+.about-banner .container .content-wrap .button a:after {
+  content: "";
+  background: #FFCF07;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #FFCF07;
+  border-width: 1px 1px 1px 0;
+  transform: skewX(-20deg);
+}
+.about-banner .container .content-wrap .button a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -7px;
+  bottom: 0;
+  width: 17px;
+  border: 1px solid #FFCF07;
+  border-width: 1px 0 1px 1px;
+  background: #FFCF07;
+  z-index: 8;
+}
+.about-banner .container .content-wrap .button a span {
+  color: #414042;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 20;
+}
+.about-banner .bottom-container {
+  display: flex;
+  align-items: center;
+  grid-gap: 100px;
+  flex-wrap: wrap;
+}
+@media (max-width: 1250px) {
+  .about-banner .bottom-container {
+    grid-gap: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .about-banner .bottom-container {
+    grid-gap: 50px;
+    flex-direction: column-reverse;
+  }
+}
+.about-banner .bottom-container .image-wrap {
+  display: flex;
+  grid-gap: 30px;
+  width: 55%;
+}
+@media (max-width: 991px) {
+  .about-banner .bottom-container .image-wrap {
+    width: 100%;
+  }
+}
+.about-banner .bottom-container .image-wrap .image {
+  display: flex;
+  width: 100%;
+}
+.about-banner .bottom-container .image-wrap .image img {
+  width: 100%;
+  height: fit-content;
+}
+.about-banner .bottom-container .image-wrap .image:nth-child(2) {
+  margin-top: 50px;
+}
+.about-banner .bottom-container .bottom-content {
+  color: white;
+  width: 30%;
+}
+@media (max-width: 1400px) {
+  .about-banner .bottom-container .bottom-content {
+    width: 35%;
+  }
+}
+@media (max-width: 1250px) {
+  .about-banner .bottom-container .bottom-content {
+    width: 40%;
+  }
+}
+@media (max-width: 991px) {
+  .about-banner .bottom-container .bottom-content {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+.about-banner .bottom-container .bottom-content .sub-title {
+  margin-bottom: 20px;
+}
+.about-banner .bottom-container .bottom-content .sub-title h6 {
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFCF07;
+}
+.about-banner .bottom-container .bottom-content .title {
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .about-banner .bottom-container .bottom-content .title h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.about-banner .bottom-container .bottom-content .text {
+  padding-right: 80px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1250px) {
+  .about-banner .bottom-container .bottom-content .text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1250px) {
+  .about-banner .bottom-container .bottom-content .text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 991px) {
+  .about-banner .bottom-container .bottom-content .text {
+    padding-right: 0px;
+  }
+}
+.about-banner .bottom-container .bottom-content .button {
+  display: flex;
+  margin-left: 7px;
+}
+.about-banner .bottom-container .bottom-content .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .content-wrap .button-align .button-wrap .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .container .content-wrap .button-align .button-wrap .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .contact .container .content-wrap .button-align .button-wrap .button a, .contact .container .content-wrap .button-align .button-wrap .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .button-wrap .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .video .container .content-wrap .button-wrap .button a:before, .video .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .video .container .content-wrap .button-wrap .button a:after, .video .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .video .container .content-wrap .button-wrap .button a, .video .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .button .header .container .cmp-container .sub-nav .cmp-container .nav-button a, .header .container .cmp-container .sub-nav .cmp-container .nav-button .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .button .header .container .cmp-container .sub-nav .cmp-container .nav-button a:after, .header .container .cmp-container .sub-nav .cmp-container .nav-button .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .button .header .container .cmp-container .sub-nav .cmp-container .nav-button a:before, .header .container .cmp-container .sub-nav .cmp-container .nav-button .about-banner .bottom-container .bottom-content .button a:before, .footer .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a, .footer .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a:after, .footer .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a, .banner .cmp-container .content-wrap .button-wrap .cmp-container .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:after, .banner .cmp-container .content-wrap .button-wrap .cmp-container .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:before, .banner .cmp-container .content-wrap .button-wrap .cmp-container .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:after, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:before, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .welcome #welcome-container .content-wrap .button a, .welcome #welcome-container .content-wrap .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .welcome #welcome-container .content-wrap .button a:after, .welcome #welcome-container .content-wrap .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .welcome #welcome-container .content-wrap .button a:before, .welcome #welcome-container .content-wrap .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .newsletter-bar #news-container .button_block .button_wrap .button a, .newsletter-bar #news-container .button_block .button_wrap .about-banner .bottom-container .bottom-content .button a,
+.about-banner .bottom-container .bottom-content .newsletter-bar #news2-container .button_block .button_wrap .button a,
+.newsletter-bar #news2-container .button_block .button_wrap .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .newsletter-bar #news-container .button_block .button_wrap .button a:after, .newsletter-bar #news-container .button_block .button_wrap .about-banner .bottom-container .bottom-content .button a:after,
+.about-banner .bottom-container .bottom-content .newsletter-bar #news2-container .button_block .button_wrap .button a:after,
+.newsletter-bar #news2-container .button_block .button_wrap .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .newsletter-bar #news-container .button_block .button_wrap .button a:before, .newsletter-bar #news-container .button_block .button_wrap .about-banner .bottom-container .bottom-content .button a:before,
+.about-banner .bottom-container .bottom-content .newsletter-bar #news2-container .button_block .button_wrap .button a:before,
+.newsletter-bar #news2-container .button_block .button_wrap .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .latest-post #latest-container .button a, .latest-post #latest-container .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .latest-post #latest-container .button a:after, .latest-post #latest-container .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .latest-post #latest-container .button a:before, .latest-post #latest-container .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .impact-story #impact-container .stories-wrap .button a, .impact-story #impact-container .stories-wrap .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .impact-story #impact-container .stories-wrap .button a:after, .impact-story #impact-container .stories-wrap .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .impact-story #impact-container .stories-wrap .button a:before, .impact-story #impact-container .stories-wrap .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .impact-story #impact-container .story-content .story-tab .story-blurb .button a, .impact-story #impact-container .story-content .story-tab .story-blurb .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .impact-story #impact-container .story-content .story-tab .story-blurb .button a:after, .impact-story #impact-container .story-content .story-tab .story-blurb .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .impact-story #impact-container .story-content .story-tab .story-blurb .button a:before, .impact-story #impact-container .story-content .story-tab .story-blurb .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .slider #slider-container .button a, .slider #slider-container .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .slider #slider-container .button a:after, .slider #slider-container .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .slider #slider-container .button a:before, .slider #slider-container .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .blurb #blurb-container .content-wrap .button_wrap .button a, .blurb #blurb-container .content-wrap .button_wrap .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .blurb #blurb-container .content-wrap .button_wrap .button a:after, .blurb #blurb-container .content-wrap .button_wrap .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .blurb #blurb-container .content-wrap .button_wrap .button a:before, .blurb #blurb-container .content-wrap .button_wrap .about-banner .bottom-container .bottom-content .button a:before {
+  transition: 0.12s;
+}
+.about-banner .bottom-container .bottom-content .button a {
+  padding: 8px 25px 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  color: #FFCF07;
+  position: relative;
+  cursor: pointer;
+}
+.about-banner .bottom-container .bottom-content .button a:hover::after {
+  border-color: white;
+}
+.about-banner .bottom-container .bottom-content .button a:hover::before {
+  border-color: white;
+}
+.about-banner .bottom-container .bottom-content .button a:after {
+  content: "";
+  background: #FFCF07;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #FFCF07;
+  border-width: 1px 1px 1px 0;
+  transform: skewX(-20deg);
+}
+.about-banner .bottom-container .bottom-content .button a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -7px;
+  bottom: 0;
+  width: 17px;
+  border: 1px solid #FFCF07;
+  border-width: 1px 0 1px 1px;
+  background: #FFCF07;
+  z-index: 8;
+}
+.about-banner .bottom-container .bottom-content .button a span {
+  color: #414042;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 20;
+}
+@media (max-width: 991px) {
+  .about-banner .bottom-container .bottom-content .button a span {
+    font-size: 12px;
+  }
+}
+
+.about-blurb {
+  background-color: #414042;
+  padding: 0 30px;
+}
+.about-blurb .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 991px) {
+  .about-blurb .container {
+    grid-gap: 50px;
+  }
+}
+.about-blurb .container .content-wrap {
+  width: 45%;
+  color: white;
+}
+@media (max-width: 991px) {
+  .about-blurb .container .content-wrap {
+    width: 100%;
+  }
+}
+.about-blurb .container .content-wrap .sub-title {
+  margin-bottom: 20px;
+}
+.about-blurb .container .content-wrap .sub-title h6 {
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFCF07;
+}
+.about-blurb .container .content-wrap .title {
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .about-blurb .container .content-wrap .title h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.about-blurb .container .content-wrap .text {
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .about-blurb .container .content-wrap .text {
+    padding-right: 0px;
+  }
+}
+.about-blurb .container .content-wrap .button-wrap {
+  display: flex;
+  margin-top: 30px;
+  grid-column-gap: 40px;
+}
+@media (max-width: 768px) {
+  .about-blurb .container .content-wrap .button-wrap {
+    grid-column-gap: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .about-blurb .container .content-wrap .button-wrap .button .btn-link {
+    padding: 8px 20px 10px 10px;
+  }
+}
+.about-blurb .container .content-wrap .button-wrap .button {
+  display: flex;
+  margin-left: 7px;
+}
+.about-blurb .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .about-blurb .container .content-wrap .button-align .button-wrap .button a:before, .about-blurb .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .about-blurb .container .content-wrap .button-align .button-wrap .button a:after, .about-blurb .contact .container .content-wrap .button-align .button-wrap .button a, .contact .about-blurb .container .content-wrap .button-align .button-wrap .button a, .about-blurb .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:before, .step-boxes .about-blurb .container .content-wrap .box-container .content-box .button-wrap .button a:before, .about-blurb .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a:before, .step-boxes .about-blurb .container .box-container .content-box .content-wrap .button-wrap .button a:before, .about-blurb .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:after, .step-boxes .about-blurb .container .content-wrap .box-container .content-box .button-wrap .button a:after, .about-blurb .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a:after, .step-boxes .about-blurb .container .box-container .content-box .content-wrap .button-wrap .button a:after, .about-blurb .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a, .step-boxes .about-blurb .container .content-wrap .box-container .content-box .button-wrap .button a, .about-blurb .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a, .step-boxes .about-blurb .container .box-container .content-box .content-wrap .button-wrap .button a, .about-blurb .video .container .content-wrap .button-wrap .button a:before, .video .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .video .container .content-wrap .button-wrap .button a:after, .video .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .video .container .content-wrap .button-wrap .button a, .video .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .header .container .content-wrap .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a, .header .about-blurb .container .content-wrap .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a, .about-blurb .header .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-wrap .button a, .header .about-blurb .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-wrap .button a, .about-blurb .header .container .content-wrap .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:after, .header .about-blurb .container .content-wrap .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:after, .about-blurb .header .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-wrap .button a:after, .header .about-blurb .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-wrap .button a:after, .about-blurb .header .container .content-wrap .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:before, .header .about-blurb .container .content-wrap .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:before, .about-blurb .header .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-wrap .button a:before, .header .about-blurb .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-wrap .button a:before, .about-blurb .footer .container .content-wrap .button-wrap .button a, .footer .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .footer .container .content-wrap .button-wrap .button a:after, .footer .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .footer .container .content-wrap .button-wrap .button a:before, .footer .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a, .banner .cmp-container .about-blurb .container .content-wrap .button-wrap .cmp-container .button a, .about-blurb .container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:after, .banner .cmp-container .about-blurb .container .content-wrap .button-wrap .cmp-container .button a:after, .about-blurb .container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:before, .banner .cmp-container .about-blurb .container .content-wrap .button-wrap .cmp-container .button a:before, .about-blurb .container .content-wrap .button-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .container .content-wrap .button-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:after, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .container .content-wrap .button-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:before, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .welcome #welcome-container .content-wrap .button-wrap .button a, .welcome #welcome-container .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .container .welcome #welcome-container .content-wrap .button-wrap .button a:after, .welcome #welcome-container .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .container .welcome #welcome-container .content-wrap .button-wrap .button a:before, .welcome #welcome-container .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .content-wrap .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a, .newsletter-bar #news-container .button_block .button_wrap .about-blurb .container .content-wrap .button-wrap .button a,
+.about-blurb .container .content-wrap .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a,
+.newsletter-bar #news2-container .button_block .button_wrap .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .container .content-wrap .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a:after, .newsletter-bar #news-container .button_block .button_wrap .about-blurb .container .content-wrap .button-wrap .button a:after,
+.about-blurb .container .content-wrap .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a:after,
+.newsletter-bar #news2-container .button_block .button_wrap .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .container .content-wrap .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a:before, .newsletter-bar #news-container .button_block .button_wrap .about-blurb .container .content-wrap .button-wrap .button a:before,
+.about-blurb .container .content-wrap .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a:before,
+.newsletter-bar #news2-container .button_block .button_wrap .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .content-wrap .button-wrap .latest-post #latest-container .button a, .latest-post #latest-container .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .container .content-wrap .button-wrap .latest-post #latest-container .button a:after, .latest-post #latest-container .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .container .content-wrap .button-wrap .latest-post #latest-container .button a:before, .latest-post #latest-container .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .content-wrap .button-wrap .impact-story #impact-container .stories-wrap .button a, .impact-story #impact-container .stories-wrap .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .container .content-wrap .button-wrap .impact-story #impact-container .stories-wrap .button a:after, .impact-story #impact-container .stories-wrap .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .container .content-wrap .button-wrap .impact-story #impact-container .stories-wrap .button a:before, .impact-story #impact-container .stories-wrap .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .content-wrap .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a, .impact-story #impact-container .story-content .story-tab .story-blurb .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .container .content-wrap .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:after, .impact-story #impact-container .story-content .story-tab .story-blurb .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .container .content-wrap .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:before, .impact-story #impact-container .story-content .story-tab .story-blurb .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .content-wrap .button-wrap .slider #slider-container .title-btn-wrap .button a, .slider #slider-container .title-btn-wrap .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .container .content-wrap .button-wrap .slider #slider-container .title-btn-wrap .button a:after, .slider #slider-container .title-btn-wrap .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .container .content-wrap .button-wrap .slider #slider-container .title-btn-wrap .button a:before, .slider #slider-container .title-btn-wrap .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .content-wrap .button-wrap .slider #slider-container .product-slider .product-item .product-content .button a, .slider #slider-container .product-slider .product-item .product-content .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .container .content-wrap .button-wrap .slider #slider-container .product-slider .product-item .product-content .button a:after, .slider #slider-container .product-slider .product-item .product-content .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .container .content-wrap .button-wrap .slider #slider-container .product-slider .product-item .product-content .button a:before, .slider #slider-container .product-slider .product-item .product-content .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .content-wrap .button-wrap .slider #slider-container .button a, .slider #slider-container .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .container .content-wrap .button-wrap .slider #slider-container .button a:after, .slider #slider-container .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .container .content-wrap .button-wrap .slider #slider-container .button a:before, .slider #slider-container .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .blurb #blurb-container .content-wrap .button-wrap .button_wrap .button a, .blurb #blurb-container .about-blurb .container .content-wrap .button-wrap .button_wrap .button a, .about-blurb .container .blurb #blurb-container .content-wrap .button_wrap .button-wrap .button a, .blurb #blurb-container .about-blurb .container .content-wrap .button_wrap .button-wrap .button a, .about-blurb .container .blurb #blurb-container .content-wrap .button-wrap .button_wrap .button a:after, .blurb #blurb-container .about-blurb .container .content-wrap .button-wrap .button_wrap .button a:after, .about-blurb .container .blurb #blurb-container .content-wrap .button_wrap .button-wrap .button a:after, .blurb #blurb-container .about-blurb .container .content-wrap .button_wrap .button-wrap .button a:after, .about-blurb .container .blurb #blurb-container .content-wrap .button-wrap .button_wrap .button a:before, .blurb #blurb-container .about-blurb .container .content-wrap .button-wrap .button_wrap .button a:before, .about-blurb .container .blurb #blurb-container .content-wrap .button_wrap .button-wrap .button a:before, .blurb #blurb-container .about-blurb .container .content-wrap .button_wrap .button-wrap .button a:before, .about-blurb .about-banner .container .content-wrap .button-wrap .button a, .about-banner .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .about-banner .container .content-wrap .button-wrap .button a:after, .about-banner .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .about-banner .container .content-wrap .button-wrap .button a:before, .about-banner .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .about-blurb .container .content-wrap .button-wrap .button a:before {
+  transition: 0.12s;
+}
+.about-blurb .container .content-wrap .button-wrap .button a {
+  padding: 8px 25px 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  color: #FFCF07;
+  position: relative;
+  cursor: pointer;
+}
+.about-blurb .container .content-wrap .button-wrap .button a:hover::after {
+  border-color: white;
+}
+.about-blurb .container .content-wrap .button-wrap .button a:hover::before {
+  border-color: white;
+}
+.about-blurb .container .content-wrap .button-wrap .button a:after {
+  content: "";
+  background: #FFCF07;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #FFCF07;
+  border-width: 1px 1px 1px 0;
+  transform: skewX(-20deg);
+}
+.about-blurb .container .content-wrap .button-wrap .button a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -7px;
+  bottom: 0;
+  width: 17px;
+  border: 1px solid #FFCF07;
+  border-width: 1px 0 1px 1px;
+  background: #FFCF07;
+  z-index: 8;
+}
+.about-blurb .container .content-wrap .button-wrap .button a span {
+  color: #414042;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 20;
+}
+.about-blurb .container .image-wrap {
+  width: 50%;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .about-blurb .container .image-wrap {
+    width: 100%;
+  }
+}
+.about-blurb .container .image-wrap img {
+  width: 100%;
+}
+
+.impact {
+  padding: 0 30px;
+  border-top: 1px solid #ededed;
+}
+.impact .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.impact .container .content-wrap {
+  text-align: center;
+  color: #414042;
+  padding: 0 100px;
+}
+@media (max-width: 991px) {
+  .impact .container .content-wrap {
+    padding: 0px;
+  }
+}
+.impact .container .content-wrap .sub-title {
+  margin-bottom: 20px;
+}
+.impact .container .content-wrap .sub-title h6 {
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFCF07;
+}
+.impact .container .content-wrap .title {
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .impact .container .content-wrap .title h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.impact .container .impact-img {
+  text-align: center;
+  width: fit-content;
+  margin: 50px auto 0;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .impact .container .impact-img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .impact .container .impact-img img {
+    width: 100%;
+  }
+}
+.impact .container .impact-img .tooltip-wrap {
+  cursor: pointer;
+  position: absolute;
+}
+.impact .container .impact-img .tooltip-wrap#tip1:hover .tooltip {
+  transform: translateX(0%) rotate(45deg) !important;
+}
+.impact .container .impact-img .tooltip-wrap:hover .tooltip {
+  transform: rotate(45deg);
+}
+.impact .container .impact-img .tooltip-wrap#tip1 {
+  top: 90px;
+  right: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+  width: fit-content;
+}
+@media (max-width: 768px) {
+  .impact .container .impact-img .tooltip-wrap#tip1 {
+    top: 12%;
+  }
+}
+.impact .container .impact-img .tooltip-wrap#tip2 {
+  bottom: 20%;
+  left: 110px;
+}
+@media (max-width: 768px) {
+  .impact .container .impact-img .tooltip-wrap#tip2 {
+    bottom: 18%;
+    left: 20%;
+  }
+}
+.impact .container .impact-img .tooltip-wrap#tip3 {
+  bottom: 20%;
+  right: 110px;
+}
+@media (max-width: 768px) {
+  .impact .container .impact-img .tooltip-wrap#tip3 {
+    bottom: 18%;
+    right: 20%;
+  }
+}
+.impact .container .impact-img .tooltip-wrap .tooltip {
+  background-color: #FFCF07;
+  color: white;
+  font-family: "Source Sans Pro";
+  border-radius: 50%;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 100%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .impact .container .impact-img .tooltip-wrap .tooltip {
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+  }
+}
+.impact .container .impact-img .tooltip-wrap .tip {
+  display: none;
+}
+
+.video {
+  background-color: #414042;
+  padding: 0 30px;
+}
+.video .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .video .container {
+    grid-gap: 50px;
+  }
+}
+.video .container .video-wrap {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  .video .container .video-wrap {
+    width: 100%;
+  }
+}
+.video .container .video-wrap iframe {
+  width: 100%;
+  height: 350px;
+}
+@media (max-width: 991px) {
+  .video .container .video-wrap iframe {
+    height: 500px;
+  }
+}
+@media (max-width: 575px) {
+  .video .container .video-wrap iframe {
+    height: 300px;
+  }
+}
+.video .container .content-wrap {
+  width: 45%;
+  color: white;
+}
+@media (max-width: 991px) {
+  .video .container .content-wrap {
+    width: 100%;
+  }
+}
+.video .container .content-wrap .sub-title {
+  margin-bottom: 20px;
+}
+.video .container .content-wrap .sub-title h6 {
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFCF07;
+}
+.video .container .content-wrap .title {
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .video .container .content-wrap .title h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.video .container .content-wrap .text {
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .video .container .content-wrap .text {
+    padding-right: 0px;
+  }
+}
+.video .container .content-wrap .button-wrap {
+  display: flex;
+  margin-top: 30px;
+  grid-column-gap: 40px;
+}
+@media (max-width: 768px) {
+  .video .container .content-wrap .button-wrap {
+    grid-column-gap: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .video .container .content-wrap .button-wrap .button .btn-link {
+    padding: 8px 20px 10px 10px;
+  }
+}
+.video .container .content-wrap .button-wrap .button {
+  display: flex;
+  margin-left: 7px;
+}
+.video .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .video .container .content-wrap .button-align .button-wrap .button a:before, .video .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .video .container .content-wrap .button-align .button-wrap .button a:after, .video .contact .container .content-wrap .button-align .button-wrap .button a, .contact .video .container .content-wrap .button-align .button-wrap .button a, .video .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:before, .step-boxes .video .container .content-wrap .box-container .content-box .button-wrap .button a:before, .video .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a:before, .step-boxes .video .container .box-container .content-box .content-wrap .button-wrap .button a:before, .video .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:after, .step-boxes .video .container .content-wrap .box-container .content-box .button-wrap .button a:after, .video .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a:after, .step-boxes .video .container .box-container .content-box .content-wrap .button-wrap .button a:after, .video .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a, .step-boxes .video .container .content-wrap .box-container .content-box .button-wrap .button a, .video .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a, .step-boxes .video .container .box-container .content-box .content-wrap .button-wrap .button a, .video .container .content-wrap .button-wrap .button a:before, .video .container .content-wrap .button-wrap .button a:after, .video .container .content-wrap .button-wrap .button a, .video .header .container .content-wrap .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a, .header .video .container .content-wrap .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a, .video .header .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-wrap .button a, .header .video .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-wrap .button a, .video .header .container .content-wrap .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:after, .header .video .container .content-wrap .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:after, .video .header .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-wrap .button a:after, .header .video .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-wrap .button a:after, .video .header .container .content-wrap .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:before, .header .video .container .content-wrap .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:before, .video .header .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-wrap .button a:before, .header .video .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-wrap .button a:before, .video .footer .container .content-wrap .button-wrap .button a, .footer .video .container .content-wrap .button-wrap .button a, .video .footer .container .content-wrap .button-wrap .button a:after, .footer .video .container .content-wrap .button-wrap .button a:after, .video .footer .container .content-wrap .button-wrap .button a:before, .footer .video .container .content-wrap .button-wrap .button a:before, .video .container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a, .banner .cmp-container .video .container .content-wrap .button-wrap .cmp-container .button a, .video .container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:after, .banner .cmp-container .video .container .content-wrap .button-wrap .cmp-container .button a:after, .video .container .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:before, .banner .cmp-container .video .container .content-wrap .button-wrap .cmp-container .button a:before, .video .container .content-wrap .button-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .video .container .content-wrap .button-wrap .button a, .video .container .content-wrap .button-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:after, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .video .container .content-wrap .button-wrap .button a:after, .video .container .content-wrap .button-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:before, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .video .container .content-wrap .button-wrap .button a:before, .video .container .welcome #welcome-container .content-wrap .button-wrap .button a, .welcome #welcome-container .video .container .content-wrap .button-wrap .button a, .video .container .welcome #welcome-container .content-wrap .button-wrap .button a:after, .welcome #welcome-container .video .container .content-wrap .button-wrap .button a:after, .video .container .welcome #welcome-container .content-wrap .button-wrap .button a:before, .welcome #welcome-container .video .container .content-wrap .button-wrap .button a:before, .video .container .content-wrap .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a, .newsletter-bar #news-container .button_block .button_wrap .video .container .content-wrap .button-wrap .button a,
+.video .container .content-wrap .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a,
+.newsletter-bar #news2-container .button_block .button_wrap .video .container .content-wrap .button-wrap .button a, .video .container .content-wrap .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a:after, .newsletter-bar #news-container .button_block .button_wrap .video .container .content-wrap .button-wrap .button a:after,
+.video .container .content-wrap .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a:after,
+.newsletter-bar #news2-container .button_block .button_wrap .video .container .content-wrap .button-wrap .button a:after, .video .container .content-wrap .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a:before, .newsletter-bar #news-container .button_block .button_wrap .video .container .content-wrap .button-wrap .button a:before,
+.video .container .content-wrap .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a:before,
+.newsletter-bar #news2-container .button_block .button_wrap .video .container .content-wrap .button-wrap .button a:before, .video .container .content-wrap .button-wrap .latest-post #latest-container .button a, .latest-post #latest-container .video .container .content-wrap .button-wrap .button a, .video .container .content-wrap .button-wrap .latest-post #latest-container .button a:after, .latest-post #latest-container .video .container .content-wrap .button-wrap .button a:after, .video .container .content-wrap .button-wrap .latest-post #latest-container .button a:before, .latest-post #latest-container .video .container .content-wrap .button-wrap .button a:before, .video .container .content-wrap .button-wrap .impact-story #impact-container .stories-wrap .button a, .impact-story #impact-container .stories-wrap .video .container .content-wrap .button-wrap .button a, .video .container .content-wrap .button-wrap .impact-story #impact-container .stories-wrap .button a:after, .impact-story #impact-container .stories-wrap .video .container .content-wrap .button-wrap .button a:after, .video .container .content-wrap .button-wrap .impact-story #impact-container .stories-wrap .button a:before, .impact-story #impact-container .stories-wrap .video .container .content-wrap .button-wrap .button a:before, .video .container .content-wrap .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a, .impact-story #impact-container .story-content .story-tab .story-blurb .video .container .content-wrap .button-wrap .button a, .video .container .content-wrap .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:after, .impact-story #impact-container .story-content .story-tab .story-blurb .video .container .content-wrap .button-wrap .button a:after, .video .container .content-wrap .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:before, .impact-story #impact-container .story-content .story-tab .story-blurb .video .container .content-wrap .button-wrap .button a:before, .video .container .content-wrap .button-wrap .slider #slider-container .title-btn-wrap .button a, .slider #slider-container .title-btn-wrap .video .container .content-wrap .button-wrap .button a, .video .container .content-wrap .button-wrap .slider #slider-container .title-btn-wrap .button a:after, .slider #slider-container .title-btn-wrap .video .container .content-wrap .button-wrap .button a:after, .video .container .content-wrap .button-wrap .slider #slider-container .title-btn-wrap .button a:before, .slider #slider-container .title-btn-wrap .video .container .content-wrap .button-wrap .button a:before, .video .container .content-wrap .button-wrap .slider #slider-container .product-slider .product-item .product-content .button a, .slider #slider-container .product-slider .product-item .product-content .video .container .content-wrap .button-wrap .button a, .video .container .content-wrap .button-wrap .slider #slider-container .product-slider .product-item .product-content .button a:after, .slider #slider-container .product-slider .product-item .product-content .video .container .content-wrap .button-wrap .button a:after, .video .container .content-wrap .button-wrap .slider #slider-container .product-slider .product-item .product-content .button a:before, .slider #slider-container .product-slider .product-item .product-content .video .container .content-wrap .button-wrap .button a:before, .video .container .content-wrap .button-wrap .slider #slider-container .button a, .slider #slider-container .video .container .content-wrap .button-wrap .button a, .video .container .content-wrap .button-wrap .slider #slider-container .button a:after, .slider #slider-container .video .container .content-wrap .button-wrap .button a:after, .video .container .content-wrap .button-wrap .slider #slider-container .button a:before, .slider #slider-container .video .container .content-wrap .button-wrap .button a:before, .video .container .blurb #blurb-container .content-wrap .button-wrap .button_wrap .button a, .blurb #blurb-container .video .container .content-wrap .button-wrap .button_wrap .button a, .video .container .blurb #blurb-container .content-wrap .button_wrap .button-wrap .button a, .blurb #blurb-container .video .container .content-wrap .button_wrap .button-wrap .button a, .video .container .blurb #blurb-container .content-wrap .button-wrap .button_wrap .button a:after, .blurb #blurb-container .video .container .content-wrap .button-wrap .button_wrap .button a:after, .video .container .blurb #blurb-container .content-wrap .button_wrap .button-wrap .button a:after, .blurb #blurb-container .video .container .content-wrap .button_wrap .button-wrap .button a:after, .video .container .blurb #blurb-container .content-wrap .button-wrap .button_wrap .button a:before, .blurb #blurb-container .video .container .content-wrap .button-wrap .button_wrap .button a:before, .video .container .blurb #blurb-container .content-wrap .button_wrap .button-wrap .button a:before, .blurb #blurb-container .video .container .content-wrap .button_wrap .button-wrap .button a:before, .video .about-banner .container .content-wrap .button-wrap .button a, .about-banner .video .container .content-wrap .button-wrap .button a, .video .about-banner .container .content-wrap .button-wrap .button a:after, .about-banner .video .container .content-wrap .button-wrap .button a:after, .video .about-banner .container .content-wrap .button-wrap .button a:before, .about-banner .video .container .content-wrap .button-wrap .button a:before, .video .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .video .container .content-wrap .button-wrap .button a, .video .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .video .container .content-wrap .button-wrap .button a:after, .video .container .content-wrap .button-wrap .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .video .container .content-wrap .button-wrap .button a:before, .video .about-blurb .container .content-wrap .button-wrap .button a, .about-blurb .video .container .content-wrap .button-wrap .button a, .video .about-blurb .container .content-wrap .button-wrap .button a:after, .about-blurb .video .container .content-wrap .button-wrap .button a:after, .video .about-blurb .container .content-wrap .button-wrap .button a:before, .about-blurb .video .container .content-wrap .button-wrap .button a:before {
+  transition: 0.12s;
+}
+.video .container .content-wrap .button-wrap .button a {
+  padding: 8px 25px 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  color: #FFCF07;
+  position: relative;
+  cursor: pointer;
+}
+.video .container .content-wrap .button-wrap .button a:hover::after {
+  border-color: white;
+}
+.video .container .content-wrap .button-wrap .button a:hover::before {
+  border-color: white;
+}
+.video .container .content-wrap .button-wrap .button a:after {
+  content: "";
+  background: #FFCF07;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #FFCF07;
+  border-width: 1px 1px 1px 0;
+  transform: skewX(-20deg);
+}
+.video .container .content-wrap .button-wrap .button a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -7px;
+  bottom: 0;
+  width: 17px;
+  border: 1px solid #FFCF07;
+  border-width: 1px 0 1px 1px;
+  background: #FFCF07;
+  z-index: 8;
+}
+.video .container .content-wrap .button-wrap .button a span {
+  color: #414042;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 20;
+}
+
+.step-boxes {
+  background-color: #414042;
+  padding: 0 30px;
+}
+.step-boxes .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 0 100px;
+}
+.step-boxes .container .title {
+  margin-bottom: 20px;
+}
+.step-boxes .container .title h2 {
+  color: white;
+  font-size: 40px;
+}
+.step-boxes .container .box-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 991px) {
+  .step-boxes .container .box-container {
+    grid-gap: 15px;
+  }
+}
+.step-boxes .container .box-container .content-box {
+  width: calc(33% - 10px);
+  padding: 0px;
+  color: white;
+  border-radius: 10px;
+  padding: 30px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1250px) {
+  .step-boxes .container .box-container .content-box {
+    padding: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .step-boxes .container .box-container .content-box {
+    padding: 30px;
+    width: 100%;
+  }
+}
+.step-boxes .container .box-container .content-box:hover::before {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+.step-boxes .container .box-container .content-box::before {
+  content: "";
+  background: linear-gradient(74.29deg, rgba(255, 207, 7, 0.75) -25.37%, rgba(56, 63, 67, 0) 88.35%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.step-boxes .container .box-container .content-box .content {
+  position: relative;
+  z-index: 20;
+}
+.step-boxes .container .box-container .content-box .content .sub-title {
+  margin-bottom: 20px;
+}
+.step-boxes .container .box-container .content-box .content .sub-title h6 {
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFCF07;
+}
+@media (max-width: 1250px) {
+  .step-boxes .container .box-container .content-box .content .sub-title h6 {
+    font-size: 16px;
+  }
+}
+.step-boxes .container .box-container .content-box .content .title {
+  margin-bottom: 20px;
+}
+.step-boxes .container .box-container .content-box .content .title h3 {
+  font-size: 35px;
+  line-height: 40px;
+}
+@media (max-width: 1250px) {
+  .step-boxes .container .box-container .content-box .content .title h3 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+.step-boxes .container .box-container .content-box .content .text {
+  padding-right: 20px;
+  margin-bottom: 0px;
+}
+.step-boxes .container .box-container .content-box .content .text p {
+  margin: 0px;
+}
+@media (max-width: 991px) {
+  .step-boxes .container .box-container .content-box .content .text {
+    padding-right: 0px;
+  }
+}
+.step-boxes .container .box-container .content-box .button-wrap {
+  display: flex;
+  margin-top: 20px;
+  grid-column-gap: 40px;
+}
+@media (max-width: 768px) {
+  .step-boxes .container .box-container .content-box .button-wrap {
+    grid-column-gap: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .step-boxes .container .box-container .content-box .button-wrap .button .btn-link {
+    padding: 8px 20px 10px 10px;
+  }
+}
+.step-boxes .container .box-container .content-box .button-wrap .button {
+  display: flex;
+  margin-left: 7px;
+}
+.step-boxes .contact .container .box-container .content-box .content-wrap .button-align .button-wrap .button a:before, .contact .step-boxes .container .box-container .content-box .content-wrap .button-align .button-wrap .button a:before, .step-boxes .contact .container .content-wrap .button-align .box-container .content-box .button-wrap .button a:before, .contact .step-boxes .container .content-wrap .button-align .box-container .content-box .button-wrap .button a:before, .step-boxes .contact .container .box-container .content-box .content-wrap .button-align .button-wrap .button a:after, .contact .step-boxes .container .box-container .content-box .content-wrap .button-align .button-wrap .button a:after, .step-boxes .contact .container .content-wrap .button-align .box-container .content-box .button-wrap .button a:after, .contact .step-boxes .container .content-wrap .button-align .box-container .content-box .button-wrap .button a:after, .step-boxes .contact .container .box-container .content-box .content-wrap .button-align .button-wrap .button a, .contact .step-boxes .container .box-container .content-box .content-wrap .button-align .button-wrap .button a, .step-boxes .contact .container .content-wrap .button-align .box-container .content-box .button-wrap .button a, .contact .step-boxes .container .content-wrap .button-align .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .header .container .box-container .content-box .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a, .header .step-boxes .container .box-container .content-box .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a, .step-boxes .header .container .cmp-container .sub-nav .cmp-container .nav-button .box-container .content-box .button-wrap .button a, .header .step-boxes .container .cmp-container .sub-nav .cmp-container .nav-button .box-container .content-box .button-wrap .button a, .step-boxes .header .container .box-container .content-box .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:after, .header .step-boxes .container .box-container .content-box .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:after, .step-boxes .header .container .cmp-container .sub-nav .cmp-container .nav-button .box-container .content-box .button-wrap .button a:after, .header .step-boxes .container .cmp-container .sub-nav .cmp-container .nav-button .box-container .content-box .button-wrap .button a:after, .step-boxes .header .container .box-container .content-box .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:before, .header .step-boxes .container .box-container .content-box .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:before, .step-boxes .header .container .cmp-container .sub-nav .cmp-container .nav-button .box-container .content-box .button-wrap .button a:before, .header .step-boxes .container .cmp-container .sub-nav .cmp-container .nav-button .box-container .content-box .button-wrap .button a:before, .step-boxes .footer .container .box-container .content-box .content-wrap .button-wrap .button a, .footer .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a, .step-boxes .footer .container .content-wrap .box-container .content-box .button-wrap .button a, .footer .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a, .step-boxes .footer .container .box-container .content-box .content-wrap .button-wrap .button a:after, .footer .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a:after, .step-boxes .footer .container .content-wrap .box-container .content-box .button-wrap .button a:after, .footer .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:after, .step-boxes .footer .container .box-container .content-box .content-wrap .button-wrap .button a:before, .footer .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a:before, .step-boxes .footer .container .content-wrap .box-container .content-box .button-wrap .button a:before, .footer .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a, .banner .cmp-container .content-wrap .step-boxes .container .box-container .content-box .button-wrap .cmp-container .button a, .step-boxes .container .box-container .content-box .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:after, .banner .cmp-container .content-wrap .step-boxes .container .box-container .content-box .button-wrap .cmp-container .button a:after, .step-boxes .container .box-container .content-box .banner .cmp-container .content-wrap .button-wrap .cmp-container .button a:before, .banner .cmp-container .content-wrap .step-boxes .container .box-container .content-box .button-wrap .cmp-container .button a:before, .step-boxes .container .box-container .content-box .button-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:after, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:before, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .button-wrap .welcome #welcome-container .content-wrap .button a, .welcome #welcome-container .content-wrap .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .welcome #welcome-container .content-wrap .button a:after, .welcome #welcome-container .content-wrap .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .welcome #welcome-container .content-wrap .button a:before, .welcome #welcome-container .content-wrap .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a, .newsletter-bar #news-container .button_block .button_wrap .step-boxes .container .box-container .content-box .button-wrap .button a,
+.step-boxes .container .box-container .content-box .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a,
+.newsletter-bar #news2-container .button_block .button_wrap .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a:after, .newsletter-bar #news-container .button_block .button_wrap .step-boxes .container .box-container .content-box .button-wrap .button a:after,
+.step-boxes .container .box-container .content-box .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a:after,
+.newsletter-bar #news2-container .button_block .button_wrap .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a:before, .newsletter-bar #news-container .button_block .button_wrap .step-boxes .container .box-container .content-box .button-wrap .button a:before,
+.step-boxes .container .box-container .content-box .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a:before,
+.newsletter-bar #news2-container .button_block .button_wrap .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .button-wrap .latest-post #latest-container .button a, .latest-post #latest-container .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .latest-post #latest-container .button a:after, .latest-post #latest-container .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .latest-post #latest-container .button a:before, .latest-post #latest-container .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .button-wrap .impact-story #impact-container .stories-wrap .button a, .impact-story #impact-container .stories-wrap .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .impact-story #impact-container .stories-wrap .button a:after, .impact-story #impact-container .stories-wrap .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .impact-story #impact-container .stories-wrap .button a:before, .impact-story #impact-container .stories-wrap .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a, .impact-story #impact-container .story-content .story-tab .story-blurb .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:after, .impact-story #impact-container .story-content .story-tab .story-blurb .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:before, .impact-story #impact-container .story-content .story-tab .story-blurb .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .button-wrap .slider #slider-container .title-btn-wrap .button a, .slider #slider-container .title-btn-wrap .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .slider #slider-container .title-btn-wrap .button a:after, .slider #slider-container .title-btn-wrap .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .slider #slider-container .title-btn-wrap .button a:before, .slider #slider-container .title-btn-wrap .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .button-wrap .slider #slider-container .product-slider .product-item .product-content .button a, .slider #slider-container .product-slider .product-item .product-content .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .slider #slider-container .product-slider .product-item .product-content .button a:after, .slider #slider-container .product-slider .product-item .product-content .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .slider #slider-container .product-slider .product-item .product-content .button a:before, .slider #slider-container .product-slider .product-item .product-content .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .button-wrap .slider #slider-container .button a, .slider #slider-container .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .slider #slider-container .button a:after, .slider #slider-container .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .slider #slider-container .button a:before, .slider #slider-container .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .button-wrap .blurb #blurb-container .content-wrap .button_wrap .button a, .blurb #blurb-container .content-wrap .button_wrap .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .blurb #blurb-container .content-wrap .button_wrap .button a:after, .blurb #blurb-container .content-wrap .button_wrap .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .blurb #blurb-container .content-wrap .button_wrap .button a:before, .blurb #blurb-container .content-wrap .button_wrap .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .about-banner .container .box-container .content-box .button-wrap .content-wrap .button a, .about-banner .step-boxes .container .box-container .content-box .button-wrap .content-wrap .button a, .step-boxes .about-banner .container .content-wrap .box-container .content-box .button-wrap .button a, .about-banner .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a, .step-boxes .about-banner .container .box-container .content-box .button-wrap .content-wrap .button a:after, .about-banner .step-boxes .container .box-container .content-box .button-wrap .content-wrap .button a:after, .step-boxes .about-banner .container .content-wrap .box-container .content-box .button-wrap .button a:after, .about-banner .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:after, .step-boxes .about-banner .container .box-container .content-box .button-wrap .content-wrap .button a:before, .about-banner .step-boxes .container .box-container .content-box .button-wrap .content-wrap .button a:before, .step-boxes .about-banner .container .content-wrap .box-container .content-box .button-wrap .button a:before, .about-banner .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:before, .step-boxes .container .box-container .content-box .button-wrap .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .step-boxes .container .box-container .content-box .button-wrap .button a, .step-boxes .container .box-container .content-box .button-wrap .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .step-boxes .container .box-container .content-box .button-wrap .button a:after, .step-boxes .container .box-container .content-box .button-wrap .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .step-boxes .container .box-container .content-box .button-wrap .button a:before, .step-boxes .about-blurb .container .box-container .content-box .content-wrap .button-wrap .button a, .about-blurb .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a, .step-boxes .about-blurb .container .content-wrap .box-container .content-box .button-wrap .button a, .about-blurb .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a, .step-boxes .about-blurb .container .box-container .content-box .content-wrap .button-wrap .button a:after, .about-blurb .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a:after, .step-boxes .about-blurb .container .content-wrap .box-container .content-box .button-wrap .button a:after, .about-blurb .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:after, .step-boxes .about-blurb .container .box-container .content-box .content-wrap .button-wrap .button a:before, .about-blurb .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a:before, .step-boxes .about-blurb .container .content-wrap .box-container .content-box .button-wrap .button a:before, .about-blurb .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:before, .step-boxes .video .container .box-container .content-box .content-wrap .button-wrap .button a, .video .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a, .step-boxes .video .container .content-wrap .box-container .content-box .button-wrap .button a, .video .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a, .step-boxes .video .container .box-container .content-box .content-wrap .button-wrap .button a:after, .video .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a:after, .step-boxes .video .container .content-wrap .box-container .content-box .button-wrap .button a:after, .video .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:after, .step-boxes .video .container .box-container .content-box .content-wrap .button-wrap .button a:before, .video .step-boxes .container .box-container .content-box .content-wrap .button-wrap .button a:before, .step-boxes .video .container .content-wrap .box-container .content-box .button-wrap .button a:before, .video .step-boxes .container .content-wrap .box-container .content-box .button-wrap .button a:before {
+  transition: 0.12s;
+}
+.step-boxes .container .box-container .content-box .button-wrap .button a {
+  padding: 8px 25px 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  color: #FFCF07;
+  position: relative;
+  cursor: pointer;
+}
+.step-boxes .container .box-container .content-box .button-wrap .button a:hover::after {
+  border-color: white;
+}
+.step-boxes .container .box-container .content-box .button-wrap .button a:hover::before {
+  border-color: white;
+}
+.step-boxes .container .box-container .content-box .button-wrap .button a:after {
+  content: "";
+  background: #FFCF07;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #FFCF07;
+  border-width: 1px 1px 1px 0;
+  transform: skewX(-20deg);
+}
+.step-boxes .container .box-container .content-box .button-wrap .button a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -7px;
+  bottom: 0;
+  width: 17px;
+  border: 1px solid #FFCF07;
+  border-width: 1px 0 1px 1px;
+  background: #FFCF07;
+  z-index: 8;
+}
+.step-boxes .container .box-container .content-box .button-wrap .button a span {
+  color: #414042;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 20;
+}
+
+.contact {
+  background: linear-gradient(to left, #303031 50%, #ffffff 50%);
+  padding: 0 30px;
+}
+.contact .container {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.contact .container .content-wrap {
+  flex: 0 0 50%;
+  align-items: center;
+  padding: 70px 50px 70px 0px;
+}
+.contact .container .content-wrap .top-content {
+  display: flex;
+}
+.contact .container .content-wrap .top-content .text-wrap {
+  width: 50%;
+}
+.contact .container .content-wrap .top-content .text-wrap .heading-wrap .title {
+  font-size: 50px;
+  line-height: 66px;
+  color: #414042;
+}
+.contact .container .content-wrap .top-content .text-wrap .heading-wrap .paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 360px;
+  margin-top: 10px;
+}
+.contact .container .content-wrap .top-content .text-wrap .address-wrap {
+  color: #414042;
+}
+.contact .container .content-wrap .top-content .text-wrap .address-wrap .sub-title {
+  font-size: 25px;
+  line-height: 24px;
+  padding: 30px 0 20px;
+}
+.contact .container .content-wrap .top-content .text-wrap .address-wrap p {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: fit-content;
+}
+.contact .container .content-wrap .top-content .text-wrap .address-wrap p.number {
+  padding-top: 20px;
+  padding-right: 10px;
+  border-bottom: 1px solid #FFCF07;
+}
+.contact .container .content-wrap .top-content .text-wrap .address-wrap p.email-text {
+  padding-top: 20px;
+  padding-right: 10px;
+  border-bottom: 1px solid #FFCF07;
+}
+.contact .container .content-wrap .button-align {
+  display: flex;
+  align-items: flex-end;
+}
+.contact .container .content-wrap .button-align .button-wrap {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  grid-gap: 30px;
+}
+.contact .container .content-wrap .button-align .button-wrap .button {
+  display: flex;
+  margin-left: 7px;
+}
+.contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .container .content-wrap .button-align .button-wrap .button a, .contact .header .container .content-wrap .button-align .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a, .header .contact .container .content-wrap .button-align .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a, .contact .header .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-align .button-wrap .button a, .header .contact .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-align .button-wrap .button a, .contact .header .container .content-wrap .button-align .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:after, .header .contact .container .content-wrap .button-align .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:after, .contact .header .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-align .button-wrap .button a:after, .header .contact .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-align .button-wrap .button a:after, .contact .header .container .content-wrap .button-align .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:before, .header .contact .container .content-wrap .button-align .button-wrap .button .cmp-container .sub-nav .cmp-container .nav-button a:before, .contact .header .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-align .button-wrap .button a:before, .header .contact .container .cmp-container .sub-nav .cmp-container .nav-button .content-wrap .button-align .button-wrap .button a:before, .contact .footer .container .content-wrap .button-align .button-wrap .button a, .footer .contact .container .content-wrap .button-align .button-wrap .button a, .contact .footer .container .content-wrap .button-align .button-wrap .button a:after, .footer .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .footer .container .content-wrap .button-align .button-wrap .button a:before, .footer .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .banner .cmp-container .content-wrap .button-align .button-wrap .cmp-container .button a, .banner .cmp-container .contact .container .content-wrap .button-align .button-wrap .cmp-container .button a, .contact .container .banner .cmp-container .content-wrap .button-align .button-wrap .cmp-container .button a:after, .banner .cmp-container .contact .container .content-wrap .button-align .button-wrap .cmp-container .button a:after, .contact .container .banner .cmp-container .content-wrap .button-align .button-wrap .cmp-container .button a:before, .banner .cmp-container .contact .container .content-wrap .button-align .button-wrap .cmp-container .button a:before, .contact .container .content-wrap .button-align .button-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .contact .container .content-wrap .button-align .button-wrap .button a, .contact .container .content-wrap .button-align .button-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:after, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .container .content-wrap .button-align .button-wrap .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .button a:before, .alert-bar #container_alert .alert .alert-btn-wrap .cmp-container .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .welcome #welcome-container .content-wrap .button-align .button-wrap .button a, .welcome #welcome-container .contact .container .content-wrap .button-align .button-wrap .button a, .contact .container .welcome #welcome-container .content-wrap .button-align .button-wrap .button a:after, .welcome #welcome-container .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .container .welcome #welcome-container .content-wrap .button-align .button-wrap .button a:before, .welcome #welcome-container .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .content-wrap .button-align .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a, .newsletter-bar #news-container .button_block .button_wrap .contact .container .content-wrap .button-align .button-wrap .button a,
+.contact .container .content-wrap .button-align .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a,
+.newsletter-bar #news2-container .button_block .button_wrap .contact .container .content-wrap .button-align .button-wrap .button a, .contact .container .content-wrap .button-align .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a:after, .newsletter-bar #news-container .button_block .button_wrap .contact .container .content-wrap .button-align .button-wrap .button a:after,
+.contact .container .content-wrap .button-align .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a:after,
+.newsletter-bar #news2-container .button_block .button_wrap .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .container .content-wrap .button-align .button-wrap .newsletter-bar #news-container .button_block .button_wrap .button a:before, .newsletter-bar #news-container .button_block .button_wrap .contact .container .content-wrap .button-align .button-wrap .button a:before,
+.contact .container .content-wrap .button-align .button-wrap .newsletter-bar #news2-container .button_block .button_wrap .button a:before,
+.newsletter-bar #news2-container .button_block .button_wrap .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .content-wrap .button-align .button-wrap .latest-post #latest-container .button a, .latest-post #latest-container .contact .container .content-wrap .button-align .button-wrap .button a, .contact .container .content-wrap .button-align .button-wrap .latest-post #latest-container .button a:after, .latest-post #latest-container .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .container .content-wrap .button-align .button-wrap .latest-post #latest-container .button a:before, .latest-post #latest-container .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .content-wrap .button-align .button-wrap .impact-story #impact-container .stories-wrap .button a, .impact-story #impact-container .stories-wrap .contact .container .content-wrap .button-align .button-wrap .button a, .contact .container .content-wrap .button-align .button-wrap .impact-story #impact-container .stories-wrap .button a:after, .impact-story #impact-container .stories-wrap .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .container .content-wrap .button-align .button-wrap .impact-story #impact-container .stories-wrap .button a:before, .impact-story #impact-container .stories-wrap .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .content-wrap .button-align .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a, .impact-story #impact-container .story-content .story-tab .story-blurb .contact .container .content-wrap .button-align .button-wrap .button a, .contact .container .content-wrap .button-align .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:after, .impact-story #impact-container .story-content .story-tab .story-blurb .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .container .content-wrap .button-align .button-wrap .impact-story #impact-container .story-content .story-tab .story-blurb .button a:before, .impact-story #impact-container .story-content .story-tab .story-blurb .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .content-wrap .button-align .button-wrap .slider #slider-container .title-btn-wrap .button a, .slider #slider-container .title-btn-wrap .contact .container .content-wrap .button-align .button-wrap .button a, .contact .container .content-wrap .button-align .button-wrap .slider #slider-container .title-btn-wrap .button a:after, .slider #slider-container .title-btn-wrap .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .container .content-wrap .button-align .button-wrap .slider #slider-container .title-btn-wrap .button a:before, .slider #slider-container .title-btn-wrap .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .content-wrap .button-align .button-wrap .slider #slider-container .product-slider .product-item .product-content .button a, .slider #slider-container .product-slider .product-item .product-content .contact .container .content-wrap .button-align .button-wrap .button a, .contact .container .content-wrap .button-align .button-wrap .slider #slider-container .product-slider .product-item .product-content .button a:after, .slider #slider-container .product-slider .product-item .product-content .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .container .content-wrap .button-align .button-wrap .slider #slider-container .product-slider .product-item .product-content .button a:before, .slider #slider-container .product-slider .product-item .product-content .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .content-wrap .button-align .button-wrap .slider #slider-container .button a, .slider #slider-container .contact .container .content-wrap .button-align .button-wrap .button a, .contact .container .content-wrap .button-align .button-wrap .slider #slider-container .button a:after, .slider #slider-container .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .container .content-wrap .button-align .button-wrap .slider #slider-container .button a:before, .slider #slider-container .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .blurb #blurb-container .content-wrap .button-align .button-wrap .button_wrap .button a, .blurb #blurb-container .contact .container .content-wrap .button-align .button-wrap .button_wrap .button a, .contact .container .blurb #blurb-container .content-wrap .button_wrap .button-align .button-wrap .button a, .blurb #blurb-container .contact .container .content-wrap .button_wrap .button-align .button-wrap .button a, .contact .container .blurb #blurb-container .content-wrap .button-align .button-wrap .button_wrap .button a:after, .blurb #blurb-container .contact .container .content-wrap .button-align .button-wrap .button_wrap .button a:after, .contact .container .blurb #blurb-container .content-wrap .button_wrap .button-align .button-wrap .button a:after, .blurb #blurb-container .contact .container .content-wrap .button_wrap .button-align .button-wrap .button a:after, .contact .container .blurb #blurb-container .content-wrap .button-align .button-wrap .button_wrap .button a:before, .blurb #blurb-container .contact .container .content-wrap .button-align .button-wrap .button_wrap .button a:before, .contact .container .blurb #blurb-container .content-wrap .button_wrap .button-align .button-wrap .button a:before, .blurb #blurb-container .contact .container .content-wrap .button_wrap .button-align .button-wrap .button a:before, .contact .about-banner .container .content-wrap .button-align .button-wrap .button a, .about-banner .contact .container .content-wrap .button-align .button-wrap .button a, .contact .about-banner .container .content-wrap .button-align .button-wrap .button a:after, .about-banner .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .about-banner .container .content-wrap .button-align .button-wrap .button a:before, .about-banner .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .container .content-wrap .button-align .button-wrap .about-banner .bottom-container .bottom-content .button a, .about-banner .bottom-container .bottom-content .contact .container .content-wrap .button-align .button-wrap .button a, .contact .container .content-wrap .button-align .button-wrap .about-banner .bottom-container .bottom-content .button a:after, .about-banner .bottom-container .bottom-content .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .container .content-wrap .button-align .button-wrap .about-banner .bottom-container .bottom-content .button a:before, .about-banner .bottom-container .bottom-content .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .about-blurb .container .content-wrap .button-align .button-wrap .button a, .about-blurb .contact .container .content-wrap .button-align .button-wrap .button a, .contact .about-blurb .container .content-wrap .button-align .button-wrap .button a:after, .about-blurb .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .about-blurb .container .content-wrap .button-align .button-wrap .button a:before, .about-blurb .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .video .container .content-wrap .button-align .button-wrap .button a, .video .contact .container .content-wrap .button-align .button-wrap .button a, .contact .video .container .content-wrap .button-align .button-wrap .button a:after, .video .contact .container .content-wrap .button-align .button-wrap .button a:after, .contact .video .container .content-wrap .button-align .button-wrap .button a:before, .video .contact .container .content-wrap .button-align .button-wrap .button a:before, .contact .step-boxes .container .content-wrap .button-align .box-container .content-box .button-wrap .button a, .step-boxes .contact .container .content-wrap .button-align .box-container .content-box .button-wrap .button a, .contact .step-boxes .container .box-container .content-box .content-wrap .button-align .button-wrap .button a, .step-boxes .contact .container .box-container .content-box .content-wrap .button-align .button-wrap .button a, .contact .step-boxes .container .content-wrap .button-align .box-container .content-box .button-wrap .button a:after, .step-boxes .contact .container .content-wrap .button-align .box-container .content-box .button-wrap .button a:after, .contact .step-boxes .container .box-container .content-box .content-wrap .button-align .button-wrap .button a:after, .step-boxes .contact .container .box-container .content-box .content-wrap .button-align .button-wrap .button a:after, .contact .step-boxes .container .content-wrap .button-align .box-container .content-box .button-wrap .button a:before, .step-boxes .contact .container .content-wrap .button-align .box-container .content-box .button-wrap .button a:before, .contact .step-boxes .container .box-container .content-box .content-wrap .button-align .button-wrap .button a:before, .step-boxes .contact .container .box-container .content-box .content-wrap .button-align .button-wrap .button a:before {
+  transition: 0.12s;
+}
+.contact .container .content-wrap .button-align .button-wrap .button a {
+  padding: 8px 25px 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  color: #FFCF07;
+  position: relative;
+  cursor: pointer;
+}
+.contact .container .content-wrap .button-align .button-wrap .button a:hover::after {
+  border-color: white;
+}
+.contact .container .content-wrap .button-align .button-wrap .button a:hover::before {
+  border-color: white;
+}
+.contact .container .content-wrap .button-align .button-wrap .button a:after {
+  content: "";
+  background: #FFCF07;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #FFCF07;
+  border-width: 1px 1px 1px 0;
+  transform: skewX(-20deg);
+}
+.contact .container .content-wrap .button-align .button-wrap .button a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -7px;
+  bottom: 0;
+  width: 17px;
+  border: 1px solid #FFCF07;
+  border-width: 1px 0 1px 1px;
+  background: #FFCF07;
+  z-index: 8;
+}
+.contact .container .content-wrap .button-align .button-wrap .button a span {
+  color: #414042;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 20;
+}
+@media (max-width: 575px) {
+  .contact .container .content-wrap .button-align .button-wrap .button .btn-text {
+    font-size: 12px;
+  }
+}
+.contact .container .content-wrap .button-align .button-wrap .button:hover a::before {
+  background: transparent;
+  border-color: #FFCF07;
+}
+.contact .container .content-wrap .button-align .button-wrap .button:hover a::after {
+  background: transparent;
+  border-color: #FFCF07;
+}
+.contact .container .content-wrap .socials {
+  border-top: 1px solid #EBECEC;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+.contact .container .content-wrap .socials .title-socials {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.contact .container .content-wrap .socials .icons {
+  padding-top: 30px;
+}
+.contact .container .content-wrap .socials .icons a {
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+.contact .container .content-wrap .socials .icons a svg {
+  transform: scale(1.3);
+}
+.contact .container .content-wrap .socials .icons a svg:hover {
+  fill: #FFCF07;
+}
+.contact .container .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 50px;
+  padding-right: 20px;
+}
+.contact .container .form .formtext {
+  font-size: 16px;
+  line-height: 24px;
+  color: #9C9FA1;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: left;
+}
+.contact .container .form .form-container .container {
+  display: flex;
+}
+.contact .container .form .form-container .container form {
+  display: flex;
+  grid-gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .contact .container .form .form-container .container form {
+    padding: 20px;
+  }
+}
+.contact .container .form .form-container .container form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #9C9FA1;
+  background: transparent;
+  padding: 10px 10px 10px 0px;
+  font-family: "Source Sans Pro";
+  color: white;
+}
+.contact .container .form .form-container .container form input.mail {
+  flex: 0 0 46%;
+}
+.contact .container .form .form-container .container form input.phone {
+  flex: 0 0 46%;
+}
+.contact .container .form .form-container .container form input::placeholder {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 16;
+  color: white;
+}
+.contact .container .form .form-container .container form textarea {
+  width: 100%;
+  background: transparent;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #9C9FA1;
+  border-radius: 5px;
+  resize: none;
+  height: 150px !important;
+}
+.contact .container .form .form-container .container form textarea::placeholder {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 16;
+  color: white;
+}
+.contact .container .form .form-container .container form select {
+  width: 100%;
+  border-bottom: 1px solid #9C9FA1;
+  background: transparent;
+  padding: 10px 10px 10px 0px;
+  border: none;
+  border-bottom: 1px solid #9C9FA1;
+  color: white;
+}
+.contact .container .form .form-container .container form select option {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 16;
+  color: white;
+  background-color: #414042;
+}
+.contact .container .form .form-container .container form select .white {
+  color: white;
+}
+.contact .container .form .form-container .container form span {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+.contact .container .form .form-container .container form span .submit {
+  border: 1px solid #FFCF07;
+  border-radius: 35px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px 30px;
+  background-color: transparent;
+  color: white;
+}
+
+.article-slider {
+  background-color: transparent;
+  padding-left: 100px;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+.article-slider #slider-container {
+  padding: 0;
+}
+.article-slider #slider-container .title-btn-wrap {
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+.article-slider #slider-container .title-btn-wrap h5 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.article-slider #slider-container .resource-slider {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 30px;
+  position: relative;
+}
+.article-slider #slider-container .resource-slider .slick-arrow {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.article-slider #slider-container .resource-slider .slick-arrow:hover {
+  opacity: 1;
+}
+.article-slider #slider-container .resource-slider .slick-arrow::before {
+  display: none;
+}
+.article-slider #slider-container .resource-slider .slick-arrow.slick-prev {
+  position: absolute;
+  right: 200px;
+  top: -55px;
+  left: unset;
+}
+@media (max-width: 1250px) {
+  .article-slider #slider-container .resource-slider .slick-arrow.slick-prev {
+    right: 130px;
+  }
+}
+@media (max-width: 991px) {
+  .article-slider #slider-container .resource-slider .slick-arrow.slick-prev {
+    right: 80px;
+  }
+}
+.article-slider #slider-container .resource-slider .slick-arrow.slick-next {
+  position: absolute;
+  right: 150px;
+  top: -55px;
+  left: unset;
+}
+@media (max-width: 1250px) {
+  .article-slider #slider-container .resource-slider .slick-arrow.slick-next {
+    right: 80px;
+  }
+}
+@media (max-width: 991px) {
+  .article-slider #slider-container .resource-slider .slick-arrow.slick-next {
+    right: 30px;
+  }
+}
+.article-slider #slider-container .resource-slider .slick-list {
+  padding: 0 100px !important;
+}
+@media (max-width: 575px) {
+  .article-slider #slider-container .resource-slider .slick-list {
+    padding: 0px !important;
+  }
+}
+.article-slider #slider-container .resource-slider .slick-list .slick-track {
+  display: flex;
+  grid-gap: 30px;
+  margin-left: -130px;
+}
+@media (max-width: 768px) {
+  .article-slider #slider-container .resource-slider .slick-list .slick-track {
+    grid-gap: 0px;
+    margin-left: -110px;
+  }
+}
+@media (max-width: 575px) {
+  .article-slider #slider-container .resource-slider .slick-list .slick-track {
+    margin: 0px;
+  }
+}
+.article-slider #slider-container .resource-slider .post-item {
+  width: calc(25% - 40px);
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s ease;
+}
+@media (max-width: 991px) {
+  .article-slider #slider-container .resource-slider .post-item {
+    width: calc(35% - 30px);
+  }
+}
+@media (max-width: 768px) {
+  .article-slider #slider-container .resource-slider .post-item {
+    margin: 20px 10px;
+  }
+}
+@media (max-width: 575px) {
+  .article-slider #slider-container .resource-slider .post-item {
+    margin: 20px 0;
+  }
+}
+.article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid {
+  position: relative;
+}
+.article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .image .cmp-image .cmp-image__image {
+  position: absolute;
+  width: 45px;
+  top: 25px;
+  left: 35px;
+  z-index: 1;
+}
+.article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s ease;
+}
+.article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__image {
+  width: 100%;
+}
+.article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__image .cmp-image img {
+  width: 100%;
+  display: block;
+}
+.article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__image {
+  position: relative;
+}
+.article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__image .post-icon {
+  position: absolute;
+  width: 45px;
+  top: 25px;
+  left: 35px;
+}
+@media (max-width: 991px) {
+  .article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__image .post-icon {
+    left: 20px;
+    top: 15px;
+  }
+}
+.article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__image .post-img {
+  width: 100%;
+  display: block;
+}
+.article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__content {
+  padding: 30px 35px;
+  border-radius: 0px;
+  height: 230px;
+}
+@media (max-width: 991px) {
+  .article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__content {
+    height: 280px;
+    padding: 30px 20px;
+  }
+}
+.article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__content .post-icon {
+  display: none;
+}
+.article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__content .cmp-teaser__title, .article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__content a {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+  color: #414042;
+  transition: all 0.3s ease;
+}
+@media (max-width: 991px) {
+  .article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__content .cmp-teaser__title, .article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__content a {
+    font-size: 20px;
+  }
+}
+.article-slider #slider-container .resource-slider .post-item .cmp-container .aem-Grid .teaser .cmp-teaser .cmp-teaser__content .cmp-teaser__description p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #9C9FA1;
+}
+.article-slider #slider-container .resource-slider .post-item:hover .content-wrap {
+  transition: all 0.3s ease;
+}
+.article-slider #slider-container .resource-slider .post-item:hover .content-wrap .post-title {
+  color: #FFCF07;
 }
 
 /*# sourceMappingURL=style.css.map */

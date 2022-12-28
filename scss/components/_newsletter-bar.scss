@@ -1,17 +1,17 @@
 .newsletter-bar{
     padding: 0 30px;
-    background: linear-gradient(120deg, $yellow 47%, rgba(255, 207, 7, 0) 47%);
+    background: linear-gradient(120deg, $yellow 47%, rgb(255 255 255) 47%);
     @include lg-screen{
-        background: linear-gradient(120deg, $yellow 43%, rgba(255, 207, 7, 0) 43%);
+        background: linear-gradient(120deg, $yellow 43%, rgb(255 255 255) 43%);
     }
     @include md-screen{
-        background: linear-gradient(180deg, $yellow 53%, rgba(255, 207, 7, 0) 50%);
+        background: linear-gradient(180deg, $yellow 53%, rgb(255 255 255) 50%);
     }
     @include sm-screen{
-        background: linear-gradient(180deg, $yellow 45%, rgba(255, 207, 7, 0) 45%);
+        background: linear-gradient(180deg, $yellow 45%, rgb(255 255 255) 45%);
     }
     @media (max-width: 475px){
-        background: linear-gradient(180deg, $yellow 50%, rgba(255, 207, 7, 0) 45%);
+        background: linear-gradient(180deg, $yellow 50%, rgb(255 255 255) 45%);
     }
     #news-container,
     #news2-container{

@@ -50,6 +50,33 @@ $('#search-overlay .close').click(function(){
 });
 
 
+$('.resource-slider').slick({
+    dots: false,
+	slidesToShow: 3,
+	adaptiveHeight: false,
+	infinite: true,
+    centerMode: true,
+    variableWidth: false,
+	speed: 500,
+    arrows: true,
+    prevArrow:"<button type='button' class='slick-prev pull-left'><img src='./assets/left-arrow.svg'></button>",
+    nextArrow:"<button type='button' class='slick-next pull-right'><img src='./assets/right-arrow.svg'></button>",
+    responsive: [
+        {
+            breakpoint: 1250,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        },
+    ]
+});
 
 $('.product-slider').slick({
     dots: false,
