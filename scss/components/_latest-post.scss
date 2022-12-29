@@ -23,6 +23,7 @@ body{
         border-left: 0px;
     }
     #latest-container{
+
         max-width: 1200px;
         margin: 0 auto;
         padding: 100px 0;
@@ -45,6 +46,7 @@ body{
             }
         }
         #post-wrap{
+            .post-grid-layout{
             display: flex;
             flex-wrap: wrap;
             grid-gap: 30px;
@@ -215,7 +217,7 @@ body{
                     }
                 }
             }
-           
+        }
         }
         .resource-btn{
             justify-content: center;

@@ -26,11 +26,11 @@ function toggleMobileMenu() {
 if (mobile_menu_open) {
     $('.close').css('display', 'none');
     $('.open').css('display', 'flex');
-    $('.mobile-nav-wrap').slideUp('slow');
+    $('.mobile-navigation').slideUp('slow');
 } else {
     $('.open').css('display', 'none');
     $('.close').css('display', 'flex');
-    $('.mobile-nav-wrap').slideDown(500, function(){
+    $('.mobile-navigation').slideDown(500, function(){
         $(this).css('display', 'flex');
     });
 }

@@ -14,7 +14,9 @@
         background: linear-gradient(180deg, $yellow 50%, rgb(255 255 255) 45%);
     }
     #news-container,
-    #news2-container{
+    #news2-container
+    {
+        .news-grid{
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
@@ -53,7 +55,7 @@
             @include md-screen{
                 width: 100%;
             }
-            .button_wrap{
+            .button-wrap{
                 // width: 60%;
                 display: flex;
                 justify-content: end;
@@ -102,6 +104,6 @@
                 }
             }
         }
-
+    }
     }
 }

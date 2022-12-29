@@ -1,3 +1,13 @@
+.resource{
+    .slider{
+        #slider-container{
+            .slider-grid{
+                padding: 0;
+            }
+        }
+    }
+
+}
 .slider{
     background: $gray;
     padding-left: 50px;
@@ -8,6 +18,7 @@
         border-left: 0px;
     }
     #slider-container{
+        .slider-grid{
         padding: 150px 0;
         @include md-screen{
             padding: 80px 0;
@@ -162,5 +173,6 @@
             }
         }
         @include bgbutton;
+    }
     }
 }

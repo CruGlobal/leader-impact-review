@@ -2,7 +2,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 0 30px;
+    // padding: 0 30px;
     position: relative;
     @include sm-screen{
         background-image: url('./assets/mobile-banner.png') !important;
@@ -18,7 +18,7 @@
         background: linear-gradient(180deg, $yellow -20%, rgba(217, 217, 217, 0) 51.04%);
         transform: rotate(-180deg);
     }
-    .cmp-container{
+    .banner-wrap{
         max-width: 1200px;
         margin: 0 auto;
         height: 80vh;

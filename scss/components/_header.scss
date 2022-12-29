@@ -208,7 +208,7 @@
         }
     }
     }
-    .mobile-nav-wrap{
+    .mobile-navigation{
         display: none;
         position: absolute;
         width: 100%;
@@ -221,7 +221,14 @@
         z-index: 99;
         flex-direction: column;
         justify-content: space-between;
-        .nav-wrap{
+        .cmp-container{
+            display: block;
+            padding: 0;
+            margin: 0;
+        }
+    .mobile-nav-wrap{
+
+        .cmp-navigation{
             ul{
                 padding: 0px;
                 display: flex;
@@ -242,44 +249,50 @@
                     }
                 }
             }
-            .sub-link{
-                margin-top: 25px;
-                display: flex;
-                flex-direction: column;
-                grid-gap: 25px;
-                a{
-                    font-weight: 400;
-                    font-size: 25px;
-                    line-height: 31px;
-                    letter-spacing: -0.005em;
-                    color: white;
-                }
-            }
+
         }
-        .mobile-nav-footer{
+
+    }
+
+    .sub-link{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 25px;
+        a{
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 31px;
+            letter-spacing: -0.005em;
+            color: white;
+        }
+    }
+
+    .mobile-nav-footer #nav-bottom-footer{
+        display: flex;
+        justify-content: space-between;
+        background: #303031;
+        margin: 200px -35px 0;
+        padding: 15px 30px;
+        .social-wrap{
             display: flex;
-            justify-content: space-between;
-            background: #303031;
-            margin: 200px -35px 0;
-            padding: 15px 30px;
-            .social-wrap{
-                display: flex;
-                grid-gap: 10px;
-                align-items: center;
-                .social-link-item{
-                    svg{
-                        transition: all 0.3 ease;
-                        &:hover{
-                            path{
-                                fill: $yellow;
-                            }
+            grid-gap: 10px;
+            align-items: center;
+            .social-link-item{
+                svg{
+                    transition: all 0.3 ease;
+                    &:hover{
+                        path{
+                            fill: $yellow;
                         }
                     }
                 }
             }
-            .term-policy-wrap{
-                display: flex;
-                grid-gap: 20px;
+        }
+        .term-policy-wrap .terms-grid{
+            display: flex;
+            grid-gap: 20px;
+
                 span{
                     position: relative;
                     &:last-child{
@@ -304,7 +317,10 @@
                         color: #9C9FA1;
                     }
                 }
-            }
+
+
         }
     }
+
+}
 }
