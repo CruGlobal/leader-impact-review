@@ -47,10 +47,12 @@ body{
         }
         #post-wrap{
             .post-grid-layout{
-            display: flex;
-            flex-wrap: wrap;
-            grid-gap: 30px;
-            justify-content: space-between;
+                .cmp-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    grid-gap: 30px;
+                    justify-content: space-between;
+                }
             @include md-screen{
                 grid-gap: 20px;
             }
