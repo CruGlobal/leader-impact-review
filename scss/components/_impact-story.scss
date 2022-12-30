@@ -1,6 +1,6 @@
 .impact-story{
     #impact-container{
-        .wrap-impact-story{
+        &:first-child{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
