@@ -80,6 +80,7 @@
             .cmp-image{
                 @include lg-screen{
                     width: 65%;
+                    margin: 0 auto;
                 }
                 @include sm-screen{
                     width: 100%;

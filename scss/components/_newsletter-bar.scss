@@ -16,7 +16,7 @@
     #news-container,
     #news2-container
     {
-        .news-grid{
+        & > div:first-child{
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
@@ -55,7 +55,7 @@
             @include md-screen{
                 width: 100%;
             }
-            .button-wrap{
+            #button-wrap{
                 // width: 60%;
                 display: flex;
                 justify-content: end;

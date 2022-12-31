@@ -80,7 +80,7 @@ $('.resource-slider').slick({
     ]
 });
 
-$('.product-slider').slick({
+$('#product-slider').slick({
     dots: false,
 	slidesToShow: 3,
 	adaptiveHeight: false,

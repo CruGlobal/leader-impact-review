@@ -226,45 +226,51 @@
             padding: 0;
             margin: 0;
         }
-    .mobile-nav-wrap{
+        .mobile-nav-wrap{
 
-        .cmp-navigation{
-            ul{
-                padding: 0px;
-                display: flex;
-                flex-direction: column;
-                grid-gap: 25px;
-                margin: 0px;
-                li{
-                    list-style: none;
-                    a{
-                        color: white;
-                        font-weight: 600;
-                        font-size: 35px;
-                        line-height: 44px;
-                        letter-spacing: -0.005em;
-                        &:hover{
-                            color: $yellow;
+            .cmp-navigation{
+                ul{
+                    padding: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    grid-gap: 25px;
+                    margin: 0px;
+                    li{
+                        list-style: none;
+                        a{
+                            color: white;
+                            font-weight: 600;
+                            font-size: 35px;
+                            line-height: 44px;
+                            letter-spacing: -0.005em;
+                            &:hover{
+                                color: $yellow;
+                            }
                         }
                     }
                 }
+
             }
 
         }
 
-    }
-
     .sub-link{
-        margin-top: 25px;
-        display: flex;
-        flex-direction: column;
-        grid-gap: 25px;
-        a{
-            font-weight: 400;
-            font-size: 25px;
-            line-height: 31px;
-            letter-spacing: -0.005em;
-            color: white;
+        ul{
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            grid-gap: 25px;
+            padding-left: 0px;
+            li{
+                list-style: none;
+                a{
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 31px;
+                    letter-spacing: -0.005em;
+                    color: white;
+                }
+            }
         }
     }
 
@@ -289,38 +295,41 @@
                 }
             }
         }
-        .term-policy-wrap .terms-grid{
-            display: flex;
-            grid-gap: 20px;
-
-                span{
-                    position: relative;
-                    &:last-child{
-                        &:after{
-                            display: none;
+        .term-policy-wrap{
+            .container{
+                .cmp-container{
+                    display: flex;
+                    grid-gap: 20px;
+                    .cmp-text{
+                        position: relative;
+                        &:last-child{
+                            &:after{
+                                display: none;
+                            }
+                        }
+                        &:after {
+                            content: "|";
+                            position: absolute;
+                            right: -11px;
+                            color: #9C9FA1;
+                            font-size: 12px;
+                            top: 4px;
+                        }
+                        p{
+                            margin: 0px;
+                            a{
+                                font-weight: 600;
+                                font-size: 12px;
+                                line-height: 15px;
+                                letter-spacing: -0.005em;
+                                text-decoration-line: underline;
+                                color: #9C9FA1;
+                            }
                         }
                     }
-                    &:after {
-                        content: "|";
-                        position: absolute;
-                        right: -11px;
-                        color: #9C9FA1;
-                        font-size: 12px;
-                        top: 4px;
-                    }
-                    a{
-                        font-weight: 600;
-                        font-size: 12px;
-                        line-height: 15px;
-                        letter-spacing: -0.005em;
-                        text-decoration-line: underline;
-                        color: #9C9FA1;
-                    }
                 }
-
-
+            }
         }
     }
-
 }
 }

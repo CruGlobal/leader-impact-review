@@ -1,124 +1,126 @@
 .blurb{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0 30px;
-    position: relative;
-    @include sm-screen{
-        background: linear-gradient(-90deg, $yellow -97.69%, rgba(255, 207, 7, 0) 44.01%) !important;
-        background-image: none;
-    }
-    #blurb-container{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 220px 0;
-        display: flex;
-        flex-wrap: wrap;
-        @include md-screen{
-            padding: 150px 0;
-        }
+    & > div:first-child{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0 30px;
+        position: relative;
         @include sm-screen{
-            padding: 100px 0 0;
-            justify-content: center;
+            background: linear-gradient(-90deg, $yellow -97.69%, rgba(255, 207, 7, 0) 44.01%) !important;
+            background-image: none;
         }
-        .content-wrap{
-            width: 40%;
+        #blurb-container{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 220px 0;
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             @include md-screen{
-                width: 60%;
+                padding: 150px 0;
             }
             @include sm-screen{
-                width: 100%;
-                margin-bottom: 80px;
+                padding: 100px 0 0;
+                justify-content: center;
             }
-            #content{
-                .blurb-text p{
-                    font-weight: 600;
-                    font-size: 18px;
-                    line-height: 28px;
-                    color: $gray;
-                    margin: 0;
-                    padding-right: 100px;
-                    @include xs-screen{
-                        padding: 0px;
-                    }
-                }
-            }
-            img{
-                width: fit-content;
-                margin-bottom: 30px;
-                @include xs-screen{
-                    width: 80%;
-                }
-            }
-
-        
-            .button-wrap{
-                margin-top: 20px;
+            .content-wrap{
+                width: 40%;
                 display: flex;
-                align-items: center;
-                grid-gap: 30px;
-                @include bgbutton;
-                .button{
-                    .btn-text{
+                flex-direction: column;
+                @include md-screen{
+                    width: 60%;
+                }
+                @include sm-screen{
+                    width: 100%;
+                    margin-bottom: 80px;
+                }
+                #content{
+                    .blurb-text p{
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 28px;
+                        color: $gray;
+                        margin: 0;
+                        padding-right: 100px;
                         @include xs-screen{
-                            font-size: 12px;
-                        }
-                    }
-                    &:hover{
-                        a{
-                            &::before{
-                                background: transparent;
-                                border-color: $yellow;
-                            }
-                            &::after{
-                                background: transparent;
-                                border-color: $yellow;
-                            }
+                            padding: 0px;
                         }
                     }
                 }
-                @include xs-screen{
-                    justify-content: space-between;
+                img{
+                    width: fit-content;
+                    margin-bottom: 30px;
+                    @include xs-screen{
+                        width: 80%;
+                    }
                 }
-                .video-btn{
-                    a{
-                        display: flex;
-                        align-items: center;
-                        grid-gap: 15px;
-                        img{
-                            width: 40px;
-                            margin: 0px;
-                        }
-                        .cmp-button__text{
-                            font-weight: 600;
-                            font-size: 14px;
-                            line-height: 18px;
-                            text-align: center;
-                            letter-spacing: -0.005em;
-                            color: $gray;
+    
+            
+                #button-wrap{
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    grid-gap: 30px;
+                    @include bgbutton;
+                    .button{
+                        .btn-text{
                             @include xs-screen{
                                 font-size: 12px;
                             }
                         }
+                        &:hover{
+                            a{
+                                &::before{
+                                    background: transparent;
+                                    border-color: $yellow;
+                                }
+                                &::after{
+                                    background: transparent;
+                                    border-color: $yellow;
+                                }
+                            }
+                        }
+                    }
+                    @include xs-screen{
+                        justify-content: space-between;
+                    }
+                    .video-btn{
+                        a{
+                            display: flex;
+                            align-items: center;
+                            grid-gap: 15px;
+                            img{
+                                width: 40px;
+                                margin: 0px;
+                            }
+                            .cmp-button__text{
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 18px;
+                                text-align: center;
+                                letter-spacing: -0.005em;
+                                color: $gray;
+                                @include xs-screen{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
                     }
                 }
             }
-        }
-
-        .image-wrap{
-            width: 50%;
-            display: none;
-            @include xs-screen{
-                width: 100%;
-            }
-            @include sm-screen{
-                display: block;
-            }
-            img{
-                width: 100%;
-                display: block;
+    
+            .image-wrap{
+                width: 50%;
+                display: none;
+                @include xs-screen{
+                    width: 100%;
+                }
+                @include sm-screen{
+                    display: block;
+                }
+                img{
+                    width: 100%;
+                    display: block;
+                }
             }
         }
     }
