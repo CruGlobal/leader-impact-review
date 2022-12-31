@@ -2,7 +2,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 0 30px;
+    // padding: 0 30px;
     position: relative;
     @include sm-screen{
         background-image: url('./assets/mobile-banner.png') !important;
@@ -18,14 +18,17 @@
         background: linear-gradient(180deg, $yellow -20%, rgba(217, 217, 217, 0) 51.04%);
         transform: rotate(-180deg);
     }
-    .container{
+    .banner-wrap{
         max-width: 1200px;
         margin: 0 auto;
         height: 80vh;
         display: flex;
         align-items: center;
-        justify-content: space-between;        
+        justify-content: space-between;
         flex-wrap: wrap;
+        @include lg-screen{
+            padding: 0 30px;
+        }
         @include md-screen{
             flex-direction: column;
             justify-content: center;
@@ -55,6 +58,7 @@
                 }
             }
         }
+
         .content-wrap{
             color: white;
             width: 35%;
@@ -67,6 +71,11 @@
             @include sm-screen{
                 width: 100%;
                 margin-top: 10px;
+            }
+            #content-container{
+                max-width: 100%;
+                height: auto;
+                display: block;
             }
             .text{
                 p{
@@ -85,9 +94,13 @@
                 }
             }
             .button-wrap{
+                .cmp-container{
                 display: flex;
                 margin-top: 30px;
                 grid-column-gap: 40px;
+                max-width: 100%;
+                height: auto;
+                justify-content: flex-start;
                 @include sm-screen{
                     grid-column-gap: 25px;
                 }
@@ -96,10 +109,11 @@
                         @include sm-screen{
                             padding: 8px 20px 10px 10px;
                         }
-                        
+
                     }
                 }
                 @include bgbutton;
+                }
             }
         }
     }
