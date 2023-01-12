@@ -1,137 +1,148 @@
 .about-banner{
-    background-color: $gray;
-    @include xl-screen{
-        background-size: contain !important;
-    }
-    @include md-screen{
-        background-size: 150% !important;
-        background-position: top left !important;
-    }
-    @include xs-screen{
-        background-size: 200% !important;
-        background-position: 15%  0% !important
-    }
-    .container{
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 200px 30px 300px;
-        @include lg-screen{
-            padding: 100px 30px 200px;
+    #abt-banner-container{
+        background-color: $gray;
+        @include xl-screen{
+            background-size: contain !important;
         }
         @include md-screen{
-            padding: 50px 30px 250px;
+            background-size: 150% !important;
+            background-position: top left !important;
         }
-        .content-wrap{
-            color: white;
-            width: 50%;
-            @include lg-screen{
-                width: 60%;
-            }
-            @include sm-screen{
-                width: 100%;
-            }
-            h1{
-                font-size: 50px;
-                line-height: 59px;
-                margin-bottom: 20px;
-                @include sm-screen{
-                    font-size: 40px;
-                    line-height: 49px;
-                }
-                @include xs-screen{
-                    font-size: 30px;
-                    line-height: 39px;
-                }
-            }
-            @include bgbutton;
+        @include xs-screen{
+            background-size: 200% !important;
+            background-position: 15%  0% !important
         }
-    }
-    .bottom-container{
-        display: flex;
-        align-items: center;
-        grid-gap: 100px;
-        flex-wrap: wrap;
-        @include lg-screen{
-            grid-gap: 40px;
-        }
-        @include md-screen{
-            grid-gap: 50px;
-            flex-direction: column-reverse;
-        }
-        .image-wrap{
+        .banner-wrap{
+            max-width: 1200px;
+            margin: 0 auto;
             display: flex;
-            grid-gap: 30px;
-            width: 55%;
-            @include md-screen{
-                width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 200px 30px 300px;
+            @include lg-screen{
+                padding: 100px 30px 200px;
             }
-            .image{
-                display: flex;
-                width: 100%;
-                img{
+            @include md-screen{
+                padding: 50px 30px 250px;
+            }
+            .content-wrap{
+                color: white;
+                width: 60%;
+                @include sm-screen{
                     width: 100%;
-                    height: fit-content;
                 }
-                &:nth-child(2){
-                    margin-top: 50px;
+                h1{
+                    font-size: 50px;
+                    line-height: 59px;
+                    margin-bottom: 20px;
+                    @include sm-screen{
+                        font-size: 40px;
+                        line-height: 49px;
+                    }
+                    @include xs-screen{
+                        font-size: 30px;
+                        line-height: 39px;
+                    }
                 }
+                @include bgbutton;
             }
         }
-        .bottom-content{
-            color: white;
-            width: 30%;
-            @include xl-screen{
-                width: 35%;
-            }
-            @include lg-screen{
-                width: 40%;
-            }
-            @include md-screen{
-                width: 100%;
-                padding: 0 30px;
-            }
-            .sub-title{
-                margin-bottom: 20px;
-                h6{
-                    letter-spacing: 0.07em;
-                    text-transform: uppercase;
-                    color: $yellow;
-                }
-            }
-            .title{
-                margin-bottom: 30px;
-                h3{
-                    @include md-screen{
-                        font-size: 32px;
-                        line-height: 40px;
-                    }
-                }
-            }
-            .text{
-                padding-right: 80px;
-                margin-bottom: 20px;
-                p{
+        .bottom-container{
+            #bottom-wrap{
+                & > div:first-child{
+                    display: flex;
+                    align-items: center;
+                    grid-gap: 100px;
+                    flex-wrap: wrap;
                     @include lg-screen{
-                        font-size: 16px;                   
+                        grid-gap: 40px;
                     }
-                }
-                @include lg-screen{
-                    font-size: 16px;                   
-                }
-                @include md-screen{
-                    padding-right: 0px;                   
-                }
-            }
-            @include bgbutton;
-            .button{
-                a{
-                    span{
-                        @include md-screen{ 
-                            font-size: 12px;
+                    @include md-screen{
+                        grid-gap: 50px;
+                        flex-direction: column-reverse;
+                    }
+                    .image-wrap{
+                        width: 55%;
+                        @include md-screen{
+                            width: 100%;
+                        }
+                        .cmp-container{
+                            & > div:first-child{
+                                display: flex;
+                                grid-gap: 30px;
+                                width: 100%;
+                                .image{
+                                    display: flex;
+                                    width: 100%;
+                                    div{
+                                        width: 100%;
+                                        img{
+                                            width: 100%;
+                                            height: fit-content;
+                                        }
+                                    }
+                                    &:nth-child(2){
+                                        margin-top: 50px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .bottom-content{
+                        color: white;
+                        width: 30%;
+                        @include xl-screen{
+                            width: 35%;
+                        }
+                        @include lg-screen{
+                            width: 40%;
+                        }
+                        @include md-screen{
+                            width: 100%;
+                            padding: 0 30px;
+                        }
+                        .sub-title{
+                            margin-bottom: 20px;
+                            h6{
+                                letter-spacing: 0.07em;
+                                text-transform: uppercase;
+                                color: $yellow;
+                            }
+                        }
+                        .title{
+                            margin-bottom: 30px;
+                            h3{
+                                @include md-screen{
+                                    font-size: 32px;
+                                    line-height: 40px;
+                                }
+                            }
+                        }
+                        .text{
+                            padding-right: 80px;
+                            margin-bottom: 20px;
+                            p{
+                                @include lg-screen{
+                                    font-size: 16px;                   
+                                }
+                            }
+                            @include lg-screen{
+                                font-size: 16px;                   
+                            }
+                            @include md-screen{
+                                padding-right: 0px;                   
+                            }
+                        }
+                        @include bgbutton;
+                        .button{
+                            a{
+                                span{
+                                    @include md-screen{ 
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

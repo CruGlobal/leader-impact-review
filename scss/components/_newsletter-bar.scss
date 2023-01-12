@@ -55,7 +55,8 @@
             @include md-screen{
                 width: 100%;
             }
-            #button-wrap{
+            #button-wrap,
+            #button-wrap2{
                 // width: 60%;
                 display: flex;
                 justify-content: end;

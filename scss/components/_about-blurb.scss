@@ -1,73 +1,77 @@
 .about-blurb{
     background-color: $gray;
     padding: 0 30px;
-    .container{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 100px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        @include md-screen{
-            grid-gap: 50px;
-        }
-        .content-wrap{
-            width: 45%;
-            color: white;
-            @include md-screen{
-                width: 100%;
-            }
-            .sub-title{
-                margin-bottom: 20px;
-                h6{
-                    letter-spacing: 0.07em;
-                    text-transform: uppercase;
-                    color: $yellow;
-                }
-            }
-            .title{
-                margin-bottom: 30px;
-                h3{
-                    @include md-screen{
-                        font-size: 32px;
-                        line-height: 40px;
-                    }
-                }
-            }
-            .text{
-                padding-right: 50px;
-                margin-bottom: 20px;
-                @include md-screen{ 
-                    padding-right: 0px;                   
-                }
-            }
-            .button-wrap{
-                display: flex;
-                margin-top: 30px;
-                grid-column-gap: 40px;
-                @include sm-screen{
-                    grid-column-gap: 25px;
-                }
-                .button{
-                    .btn-link{
-                        @include sm-screen{
-                            padding: 8px 20px 10px 10px;
-                        }
-                        
-                    }
-                }
-                @include bgbutton;
-            }
-        }
-        .image-wrap{
-            width: 50%;
+    #abt-blurb-wrap{
+        & > div:first-child{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 0;
             display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
             @include md-screen{
-                width: 100%;
+                grid-gap: 50px;
             }
-            img{
-                width: 100%;
+            .content-wrap{
+                width: 45%;
+                color: white;
+                @include md-screen{
+                    width: 100%;
+                }
+                .sub-title{
+                    margin-bottom: 20px;
+                    h6{
+                        letter-spacing: 0.07em;
+                        text-transform: uppercase;
+                        color: $yellow;
+                    }
+                }
+                .title{
+                    margin-bottom: 30px;
+                    h3{
+                        @include md-screen{
+                            font-size: 32px;
+                            line-height: 40px;
+                        }
+                    }
+                }
+                .text{
+                    padding-right: 50px;
+                    margin-bottom: 20px;
+                    @include md-screen{ 
+                        padding-right: 0px;                   
+                    }
+                }
+                #button-wrap{
+                    margin-top: 30px;
+                    & > div:first-child{
+                        display: flex;
+                        grid-column-gap: 40px;
+                        @include sm-screen{
+                            grid-column-gap: 25px;
+                        }    
+                        .button{
+                            .btn-link{
+                                @include sm-screen{
+                                    padding: 8px 20px 10px 10px;
+                                }
+                                
+                            }
+                        }
+                        @include bgbutton;
+                    }
+                }
+            }
+            .image-wrap{
+                width: 50%;
+                display: flex;
+                @include md-screen{
+                    width: 100%;
+                }
+                img{
+                    width: 100%;
+                }
             }
         }
     }
