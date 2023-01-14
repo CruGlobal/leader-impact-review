@@ -12,12 +12,12 @@
             right: 0;
             left: 0;
             position: absolute;
-            height: 80vh;
+            height: 50em;
             background: #383F43;
             opacity: 0.5;
             z-index: 99;
             @include sm-screen{
-                height: 90vh;
+                height: 60em;
             }
         }
         .home-search-overlay{

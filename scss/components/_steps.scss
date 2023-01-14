@@ -1,114 +1,127 @@
 .step-boxes{
     background-color: $gray;
     padding: 0 30px;
-    .container{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0px 0 100px; 
-        .title{
-            margin-bottom: 20px;
-            h2{
-                color: white;
-                font-size: 40px;
+    #stepbox-container{
+        & > div:first-child{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0px 0 100px; 
+            .title{
+                margin-bottom: 20px;
+                h2{
+                    color: white;
+                    font-size: 40px;
+                }
             }
-        }
-        .box-container{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            @include md-screen{
-                grid-gap: 15px;
-            }
-            .content-box{
-                width: calc(33% - 10px);
-                padding: 0px;
-                color: white;
-                border-radius: 10px;
-                padding: 30px 40px;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                @include lg-screen{
-                    padding: 20px;
-                }
-                @include md-screen{
-                    padding: 30px;
-                    width: 100%;
-                }
-                &:hover{
-                    &::before{
-                        visibility: hidden;
-                        opacity: 0;
-                        transition: visibility 0.3s linear,opacity 0.3s linear;
-                    }
-                }
-                &::before{
-                    content: "";
-                    background: linear-gradient(74.29deg, rgba(255, 207, 7, 0.75) -25.37%, rgba(56, 63, 67, 0) 88.35%);
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 10px;
-                    top: 0;
-                    bottom: 0;
-                    right: 0;
-                    left: 0;
-                    visibility: visible;
-                    opacity: 1;
-                }
-                .content{
-                    position: relative;
-                    z-index: 20;
-                    .sub-title{
-                        margin-bottom: 20px;
-                        h6{
-                            letter-spacing: 0.07em;
-                            text-transform: uppercase;
-                            color: $yellow;
-                            @include lg-screen{
-                                font-size: 16px;
+            .box-container{
+                #box-container-wrap{
+                    & > div:first-child{
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        @include md-screen{
+                            grid-gap: 15px;
+                        }
+                        .content-box{
+                            width: calc(33% - 10px);
+                            @include md-screen{
+                                width: 100%;
+                            }
+                            & > div:first-child{
+                                padding: 0px;
+                                color: white;
+                                border-radius: 10px;
+                                padding: 30px 40px;
+                                position: relative;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                @include lg-screen{
+                                    padding: 20px;
+                                }
+                                @include md-screen{
+                                    padding: 30px;
+                                    width: 100%;
+                                }
+                                &:hover{
+                                    &::before{
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        transition: visibility 0.3s linear,opacity 0.3s linear;
+                                    }
+                                }
+                                &::before{
+                                    content: "";
+                                    background: linear-gradient(74.29deg, rgba(255, 207, 7, 0.75) -25.37%, rgba(56, 63, 67, 0) 88.35%);
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 10px;
+                                    top: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    left: 0;
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                                .content{
+                                    position: relative;
+                                    z-index: 20;
+                                    .sub-title{
+                                        margin-bottom: 20px;
+                                        h6{
+                                            letter-spacing: 0.07em;
+                                            text-transform: uppercase;
+                                            color: $yellow;
+                                            @include lg-screen{
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+                                    .title{
+                                        margin-bottom: 20px;
+                                        h3{
+                                            font-size: 35px;
+                                            line-height: 40px;
+                                            @include lg-screen{
+                                                font-size: 28px;
+                                                line-height: 30px;
+                                            }
+                                        }
+                                    }
+                                    .text{
+                                        padding-right: 20px;
+                                        margin-bottom: 0px;
+                                        p{
+                                            margin: 0px;
+                                        }
+                                        @include md-screen{ 
+                                            padding-right: 0px;                   
+                                        }
+                                    }
+                                }
+                                .button-wrap{
+                                    margin-top: 20px;
+                                    .cmp-container{
+                                        display: flex;
+                                        grid-column-gap: 40px;
+                                        @include sm-screen{
+                                            grid-column-gap: 25px;
+                                        }
+                                        .button{
+                                            .btn-link{
+                                                @include sm-screen{
+                                                    padding: 8px 20px 10px 10px;
+                                                }
+                                                
+                                            }
+                                        }
+                                        @include bgbutton;
+                                    }
+                                }
                             }
                         }
                     }
-                    .title{
-                        margin-bottom: 20px;
-                        h3{
-                            font-size: 35px;
-                            line-height: 40px;
-                            @include lg-screen{
-                                font-size: 28px;
-                                line-height: 30px;
-                            }
-                        }
-                    }
-                    .text{
-                        padding-right: 20px;
-                        margin-bottom: 0px;
-                        p{
-                            margin: 0px;
-                        }
-                        @include md-screen{ 
-                            padding-right: 0px;                   
-                        }
-                    }
-                }
-                .button-wrap{
-                    display: flex;
-                    margin-top: 20px;
-                    grid-column-gap: 40px;
-                    @include sm-screen{
-                        grid-column-gap: 25px;
-                    }
-                    .button{
-                        .btn-link{
-                            @include sm-screen{
-                                padding: 8px 20px 10px 10px;
-                            }
-                            
-                        }
-                    }
-                    @include bgbutton;
                 }
             }
         }

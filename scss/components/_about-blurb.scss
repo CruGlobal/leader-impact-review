@@ -43,23 +43,25 @@
                         padding-right: 0px;                   
                     }
                 }
-                #button-wrap{
+                .button-wrap{
                     margin-top: 30px;
-                    & > div:first-child{
-                        display: flex;
-                        grid-column-gap: 40px;
-                        @include sm-screen{
-                            grid-column-gap: 25px;
-                        }    
-                        .button{
-                            .btn-link{
-                                @include sm-screen{
-                                    padding: 8px 20px 10px 10px;
+                    .cmp-container{
+                        & > div:first-child{
+                            display: flex;
+                            grid-column-gap: 40px;
+                            @include sm-screen{
+                                grid-column-gap: 25px;
+                            }    
+                            .button{
+                                .btn-link{
+                                    @include sm-screen{
+                                        padding: 8px 20px 10px 10px;
+                                    }
+                                    
                                 }
-                                
                             }
+                            @include bgbutton;
                         }
-                        @include bgbutton;
                     }
                 }
             }

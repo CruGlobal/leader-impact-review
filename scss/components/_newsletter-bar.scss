@@ -55,50 +55,51 @@
             @include md-screen{
                 width: 100%;
             }
-            #button-wrap,
-            #button-wrap2{
-                // width: 60%;
-                display: flex;
-                justify-content: end;
-                grid-column-gap: 35px;
-                align-items: center;
-                @include md-screen{
-                    justify-content: start;
-                }
-                @include xs-screen{
-                    flex-wrap: wrap;
-                }
-                @include bgbutton;
-                .button{
-                    display: block;
+            .button-wrap{
+                .cmp-container{
+                    // width: 60%;
+                    display: flex;
+                    justify-content: end;
+                    grid-column-gap: 35px;
+                    align-items: center;
                     @include md-screen{
-                        margin-top: 50px;
+                        justify-content: start;
                     }
-                    @include sm-screen{
-                        margin-top: 25px;
+                    @include xs-screen{
+                        flex-wrap: wrap;
                     }
-                    &:first-child{
-                        @include xs-screen{
-                            width: 100%;
+                    @include bgbutton;
+                    .button{
+                        display: block;
+                        @include md-screen{
+                            margin-top: 50px;
                         }
-                    }
-                    .cmp-button{
-                        padding: 8px 20px 10px 10px;
-                        span{
-                            @include lg-screen{
-                                font-size: 12px;
+                        @include sm-screen{
+                            margin-top: 25px;
+                        }
+                        &:first-child{
+                            @include xs-screen{
+                                width: 100%;
                             }
                         }
-                    }
-                    &:hover{
-                        a{
-                            &::before{
-                                background: transparent;
-                                border-color: $yellow;
+                        .cmp-button{
+                            padding: 8px 20px 10px 10px;
+                            span{
+                                @include lg-screen{
+                                    font-size: 12px;
+                                }
                             }
-                            &::after{
-                                background: transparent;
-                                border-color: $yellow;
+                        }
+                        &:hover{
+                            a{
+                                &::before{
+                                    background: transparent;
+                                    border-color: $yellow;
+                                }
+                                &::after{
+                                    background: transparent;
+                                    border-color: $yellow;
+                                }
                             }
                         }
                     }

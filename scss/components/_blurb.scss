@@ -33,6 +33,15 @@
                     width: 100%;
                     margin-bottom: 80px;
                 }
+                .title{
+                    margin-bottom: 20px;
+                    h1{
+                        font-weight: 700;
+                        font-size: 50px;
+                        line-height: 59px;
+                        color: #414042;
+                    }
+                }
                 #content{
                     .blurb-text p{
                         font-weight: 600;
@@ -53,35 +62,35 @@
                         width: 80%;
                     }
                 }
-    
-            
-                #button-wrap{
+                .button-wrap{
                     margin-top: 20px;
-                    display: flex;
-                    align-items: center;
-                    grid-gap: 30px;
-                    @include bgbutton;
-                    .button{
-                        .btn-text{
-                            @include xs-screen{
-                                font-size: 12px;
-                            }
-                        }
-                        &:hover{
-                            a{
-                                &::before{
-                                    background: transparent;
-                                    border-color: $yellow;
-                                }
-                                &::after{
-                                    background: transparent;
-                                    border-color: $yellow;
+                    .cmp-container{
+                        display: flex;
+                        align-items: center;
+                        grid-gap: 30px;
+                        @include bgbutton;
+                        .button{
+                            .btn-text{
+                                @include xs-screen{
+                                    font-size: 12px;
                                 }
                             }
+                            &:hover{
+                                a{
+                                    &::before{
+                                        background: transparent;
+                                        border-color: $yellow;
+                                    }
+                                    &::after{
+                                        background: transparent;
+                                        border-color: $yellow;
+                                    }
+                                }
+                            }
                         }
-                    }
-                    @include xs-screen{
-                        justify-content: space-between;
+                        @include xs-screen{
+                            justify-content: space-between;
+                        }
                     }
                     .video-btn{
                         a{

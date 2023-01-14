@@ -21,7 +21,7 @@
     .banner-wrap{
         max-width: 1200px;
         margin: 0 auto;
-        height: 80vh;
+        height: 50em;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -35,7 +35,7 @@
             align-items: flex-start;
         }
         @include sm-screen{
-            height: 90vh;
+            height: 60em;
             padding-bottom: 30px;
         }
         .title{
