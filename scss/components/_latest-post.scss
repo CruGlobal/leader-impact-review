@@ -45,7 +45,7 @@ body{
             }
         }
         #post-wrap{
-            .post-grid-layout{
+            & > div:first-child{
                 display: flex;
                 flex-wrap: wrap;
                 grid-gap: 30px;

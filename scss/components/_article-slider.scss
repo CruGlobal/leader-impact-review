@@ -3,14 +3,18 @@
     padding-left: 100px;
     margin-top: 50px;
     padding-bottom: 100px;
-    #slider-container{
+    & > div:first-child{
         padding: 0;
         .title-btn-wrap{
-            padding-left: 0;
-            margin-bottom: 30px;
-            h5{
-                font-size: 30px;
-                color: #FFFFFF;
+            .cmp-container{
+                & > div:first-child{
+                    padding-left: 0;
+                    margin-bottom: 50px;
+                    h5{
+                        font-size: 30px;
+                        color: #FFFFFF;
+                    }
+                }
             }
         }
         .resource-slider{
