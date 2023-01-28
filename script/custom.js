@@ -166,6 +166,47 @@ $window.on('resize', function() {
 });
 
 
+$slick_sliders = $('#expect-slider > div:first-child');
+settings = {
+    dots: false,
+	slidesToShow: 1,
+	adaptiveHeight: false,
+	infinite: true,
+    variableWidth: false,
+	speed: 500,
+    arrows: false,
+  responsive: [
+    {
+        breakpoint: 99999,
+            settings: 'unslick'
+        },
+    {
+        breakpoint: 769,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+                centerMode: true,
+                centerPadding: '20px',
+                autoWidth: true,
+                variableWidth: false
+            }
+        }
+    ],
+};
+$slick_sliders.slick(settings);
+
+$window.on('resize', function() {
+  if ($window.width() > 769) {
+    if ($slick_sliders.hasClass('slick-initialized'))
+      $slick_sliders.slick('unslick');
+    return
+  }
+  if ( ! $slick_sliders.hasClass('slick-initialized'))
+    return $slick_sliders.slick(settings);
+});
+
 $(".tooltip-wrap ").hover(function(){
     if ($(window).width() > 991) {
         if($(this).hasClass("active")){
@@ -194,3 +235,4 @@ $(".tooltip-wrap").click(function(){
         }
     }
 })
+

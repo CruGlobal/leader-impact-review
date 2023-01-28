@@ -42,6 +42,9 @@
                     @include md-screen{ 
                         padding-right: 0px;                   
                     }
+                    a{
+                        color: $yellow;
+                    }
                 }
                 .button-wrap{
                     margin-top: 30px;

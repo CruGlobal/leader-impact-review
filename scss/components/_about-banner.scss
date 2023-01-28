@@ -1,3 +1,68 @@
+.start-group{
+    .about-banner{
+        #abt-banner-container{ 
+            background-position: bottom !important;
+        @include xl-screen{
+            background-size: 120% !important;
+        }    
+         @include md-screen{
+            background-size: 160% !important;
+
+         }
+         @include xs-screen{
+            background-size: 280% !important;
+
+         }
+            .banner-wrap{
+                padding: 100px 30px 200px !important;
+                @include xl-screen{
+                    padding: 50px 30px 100px !important;
+                }
+                .content-wrap{
+                    width: 40% !important;
+                    @include xl-screen{
+                        width: 55% !important;
+                    }
+                    @include md-screen{
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.join-a-group{
+    .about-banner{
+        #abt-banner-container{ 
+        @include xl-screen{
+            background-size: 120% !important;
+        }    
+         @include md-screen{
+            background-size: 160% !important;
+
+         }
+         @include xs-screen{
+            background-size: 280% !important;
+
+         }
+            .banner-wrap{
+                padding: 100px 30px 200px !important;
+                @include xl-screen{
+                    padding: 50px 30px 100px !important;
+                }
+                .content-wrap{
+                    width: 40% !important;
+                    @include xl-screen{
+                        width: 55% !important;
+                    }
+                    @include md-screen{
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
 .about-banner{
     #abt-banner-container{
         background-color: $gray;
@@ -13,7 +78,7 @@
             background-position: 15%  0% !important
         }
         .banner-wrap{
-            max-width: 1200px;
+            max-width: 1260px;
             margin: 0 auto;
             display: flex;
             align-items: center;
@@ -43,6 +108,22 @@
                     @include xs-screen{
                         font-size: 30px;
                         line-height: 39px;
+                    }
+                }
+                .subtext-wrap{
+                    #subtext-container{
+                        & > div:first-child{
+                            display: flex;
+                            grid-gap: 65px;
+                        }
+                    }
+                }
+                .text{
+                    margin-bottom: 30px;
+                    p{
+                        font-size: 25px;
+                        line-height: 33px;
+                        margin: 0px;
                     }
                 }
                 @include bgbutton;
@@ -142,6 +223,138 @@
                                         font-size: 12px;
                                     }
                                 }
+                            }
+                        }
+                    }
+                    .video-wrap{
+                        width: 50%;
+                        @include md-screen{
+                            width: 100%;
+                        }
+                        iframe{
+                            width: 100%;
+                            height: 350px;
+                            @include md-screen{
+                                height: 500px;
+                            }
+                            @include xs-screen{
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+            #bottom-joingroup{
+                max-width: 1260px;
+                margin: 0 auto;
+                padding: 100px 0px;
+                & > div:first-child{
+                    display: flex;
+                    align-items: center;
+                    // grid-gap: 100px;
+                    flex-wrap: wrap;
+                    @include lg-screen{
+                        // grid-gap: 40px;
+                    }
+                    // @include md-screen{
+                    //     // grid-gap: 50px;
+                    //     flex-direction: column-reverse;
+                    // }
+                    // .image-wrap{
+                    //     width: 55%;
+                    //     @include md-screen{
+                    //         width: 100%;
+                    //     }
+                    //     .cmp-container{
+                    //         & > div:first-child{
+                    //             display: flex;
+                    //             grid-gap: 30px;
+                    //             width: 100%;
+                    //             .image{
+                    //                 display: flex;
+                    //                 width: 100%;
+                    //                 div{
+                    //                     width: 100%;
+                    //                     img{
+                    //                         width: 100%;
+                    //                         height: fit-content;
+                    //                     }
+                    //                 }
+                    //                 &:nth-child(2){
+                    //                     margin-top: 50px;
+                    //                 }
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                    .bottom-content{
+                        color: white;
+                        width: 50%;
+                        padding: 0 30px;
+                        @include md-screen{
+                            width: 100%;
+                            padding: 0px 30px 60px;
+                        }
+                        .sub-title{
+                            margin-bottom: 20px;
+                            h6{
+                                letter-spacing: 0.07em;
+                                text-transform: uppercase;
+                                color: $yellow;
+                            }
+                        }
+                        .title{
+                            margin-bottom: 30px;
+                            padding-right: 100px;
+                            @include md-screen{
+                                padding-right: 20px;
+                            }
+                            h3{
+                                @include md-screen{
+                                    font-size: 32px;
+                                    line-height: 40px;
+                                }
+                            }
+                        }
+                        .text{
+                            padding-right: 80px;
+                            margin-bottom: 20px;
+                            p{
+                                @include lg-screen{
+                                    font-size: 16px;                   
+                                }
+                            }
+                            @include lg-screen{
+                                font-size: 16px;                   
+                            }
+                            @include md-screen{
+                                padding-right: 0px;                   
+                            }
+                        }
+                        @include bgbutton;
+                        .button{
+                            a{
+                                span{
+                                    @include md-screen{ 
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .video-wrap{
+                        width: 50%;
+                        @include md-screen{
+                            width: 100%;
+                        }
+                        iframe{
+                            width: 100%;
+                            height: 350px;
+                            @include md-screen{
+                                height: 500px;
+                            }
+                            @include xs-screen{
+                                height: 300px;
                             }
                         }
                     }

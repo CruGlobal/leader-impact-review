@@ -74,53 +74,55 @@
         .navigation-wrap{
             flex: 0 0 100%;
             margin-top: 35px;
-            .nav-content-wrap{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                @include sm-screen{
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
-                ul{
-                    padding: 0px;
+            #nav-content-wrap{
+                & > div:first-child{
                     display: flex;
+                    justify-content: space-between;
                     align-items: center;
-                    grid-gap: 35px;
-                    margin: 0px;
                     @include sm-screen{
                         flex-direction: column;
-                        margin-bottom: 35px;
                         align-items: flex-start;
-                        grid-gap: 25px;
                     }
-                    li{
-                        list-style: none;
-                        a{
-                            color: white;
-                            font-weight: 600;
-                            font-size: 19px;
-                            line-height: 24px;
-                            transition: all 0.3s ease;
-                            letter-spacing: -0.005em;
-                            &:hover{
-                                color: $yellow;
+                    ul{
+                        padding: 0px;
+                        display: flex;
+                        align-items: center;
+                        grid-gap: 35px;
+                        margin: 0px;
+                        @include sm-screen{
+                            flex-direction: column;
+                            margin-bottom: 35px;
+                            align-items: flex-start;
+                            grid-gap: 25px;
+                        }
+                        li{
+                            list-style: none;
+                            a{
+                                color: white;
+                                font-weight: 600;
+                                font-size: 19px;
+                                line-height: 24px;
+                                transition: all 0.3s ease;
+                                letter-spacing: -0.005em;
+                                &:hover{
+                                    color: $yellow;
+                                }
                             }
                         }
                     }
-                }
-                .social-wrap{
-                    .cmp-container{
-                        & > div:first-child{
-                            display: flex;
-                            grid-gap: 10px;
-                            align-items: center;
-                            .social-link-item{
-                                svg{
-                                    transition: all 0.3 ease;
-                                    &:hover{
-                                        path{
-                                            fill: $yellow;
+                    .social-wrap{
+                        .cmp-container{
+                            & > div:first-child{
+                                display: flex;
+                                grid-gap: 10px;
+                                align-items: center;
+                                .social-link-item{
+                                    svg{
+                                        transition: all 0.3 ease;
+                                        &:hover{
+                                            path{
+                                                fill: $yellow;
+                                            }
                                         }
                                     }
                                 }

@@ -1,0 +1,223 @@
+.article{
+    padding: 0 20px;
+    #article-container{
+        & > div:first-child{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 0px 190px;
+            display: flex;
+            flex-direction: column;
+            @include md-screen{
+                padding: 45px 0 70px;
+            }
+            .date{
+                p {
+                    color: #383F43;
+                }
+            }
+            .article-top{
+                #article-top-container{
+                    & > div:first-child{
+                        display: flex;
+                        justify-content: space-between;
+                        @include md-screen{
+                            flex-direction: column;
+                            margin-bottom: 80px;
+                        }
+                        .heading-author {
+                            width: 80%;
+                            @include md-screen{
+                                width: 100%;
+                            }
+                            .heading {
+                                h1{
+                                    font-size: 58px;
+                                    color: #383F43;
+                                    @include md-screen{
+                                        font-size: 52px;
+                                    }
+                                    @include xs-screen{
+                                        font-size: 40px;
+                                        line-height: 45px;
+                                    }
+                                }
+                            }
+                            .author{
+                                p {
+                                    font-size: 22px;
+                                    color: #383F43;
+                                }
+                            }
+                        }
+                        .social{
+                            width: 15%;
+                            @include md-screen{
+                                width: 100%;
+                            }
+                            #social-wrapper{
+                                & > div:first-child{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-end;
+                                    grid-gap: 5px;
+                                    @include md-screen{
+                                        flex-direction: row;
+                                        grid-gap: 15px;
+                                    }
+                                    .socio{
+                                        display: flex;
+                                        align-items: center;
+                                        width: 80px;
+                                        border: 1px solid #FFCF07;
+                                        grid-gap: 5px;
+                                        border-radius: 35px;
+                                        padding: 6px 0;
+                                        justify-content: center;
+                                        transition: all 0.3s ease;
+                                        cursor: pointer;
+                                        &:hover{
+                                            background-color: #FFCF07;
+                                        }
+                                        p {
+                                            margin: 0;
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .article-bottom{
+                #article-bottom-container{
+                    & > div:first-child{
+                        .img-text-wrap{
+                            display: flex;
+                            flex-direction: column;
+                            .img-wrap{
+                                display: flex;
+                                width: 100%;
+                                margin-bottom: 50px;
+                                @include md-screen{
+                                    margin-bottom: 55px;
+                                }
+                                div{
+                                    width: 100%;
+                                    img{
+                                        width: 100%;
+                                        object-fit: contain;
+                                    }
+                                }
+                            }
+                            .subtext-wrap{
+                                display: flex;
+                                @include md-screen{
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                p{
+                                    color: #383F43;
+                                    @include md-screen{
+                                        width: 90%;
+                                    }
+                                }
+                            }
+                        }
+                        .article-text-wrap{
+                            #article-text-container{
+                                & > div:first-child{
+                                    .title-wrap{
+                                        @include md-screen{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                        h3{
+                                            font-weight: 600;
+                                            font-size: 29px;
+                                            color: #383F43;
+                                            @include md-screen{
+                                                width: 90%;
+                                            }
+                                        }
+                                        h2{
+                                            font-weight: 600;
+                                            font-size: 35px;
+                                            color: #383F43;
+                                            @include md-screen{
+                                                width: 90%;
+                                            }
+                                        }
+                                    }
+                                    .subtext-wrap{
+                                        color: #383F43;
+                                        margin: 0;
+                                        @include md-screen{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                        &.mb{
+                                            margin-bottom: 50px;
+                                            @include md-screen{
+                                                display: none;
+                                            }
+                                        }
+                                        p{
+                                            @include md-screen{
+                                               width: 90%;
+                                            }
+                                        }
+                                    }
+                                    .sub-heading-wrap{
+                                        border-left: 4px solid #FFCF07;
+                                        margin: 30px 0;
+                                        @include md-screen{
+                                            width: 90%;
+                                            margin: 30px auto;
+                                        }
+                                        h3{
+                                            font-weight: 400;
+                                            font-size: 32px;
+                                            color: #383F43;
+                                            margin-left: 40px;
+                                        }
+                                    }
+        
+                                }
+                            }
+                        }
+                        .bottom-img {
+                            .img-wrap{
+                                display: flex;
+                                width: 100%;
+                                margin-top: 40px;
+                                @include md-screen{
+                                    margin-top: 80px;
+                                }
+                                div{
+                                    width: 100%;
+                                    img{
+                                        width: 100%;
+                                        object-fit: contain;
+                                    }
+                                }
+                            }
+                            .secondary-text{
+                                p{
+                                    font-size: 12px;
+                                    opacity: 0.6;
+                                    @include xs-screen{
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
