@@ -1,23 +1,26 @@
 .article{
-    padding: 0 20px;
+    // padding: 0 20px;
     #article-container{
-        & > div:first-child{
             max-width: 1200px;
             margin: 0 auto;
-            padding: 60px 0px 190px;
-            display: flex;
-            flex-direction: column;
+            padding: 60px 0px 170px;
             @include md-screen{
                 padding: 45px 0 70px;
             }
             .date{
+                @media (max-width:1200px) {
+                    padding: 0 20px;
+                }
                 p {
-                    color: #383F43;
+                    color: $gray;
                 }
             }
             .article-top{
+                @media (max-width:1200px) {
+                    padding: 0 20px;
+                }
                 #article-top-container{
-                    & > div:first-child{
+
                         display: flex;
                         justify-content: space-between;
                         @include md-screen{
@@ -32,7 +35,8 @@
                             .heading {
                                 h1{
                                     font-size: 58px;
-                                    color: #383F43;
+                                    color: $gray;
+                                    max-width: 600px;
                                     @include md-screen{
                                         font-size: 52px;
                                     }
@@ -45,7 +49,7 @@
                             .author{
                                 p {
                                     font-size: 22px;
-                                    color: #383F43;
+                                    color: $gray;
                                 }
                             }
                         }
@@ -55,7 +59,7 @@
                                 width: 100%;
                             }
                             #social-wrapper{
-                                & > div:first-child{
+
                                     display: flex;
                                     flex-direction: column;
                                     align-items: flex-end;
@@ -83,16 +87,16 @@
                                             font-size: 12px;
                                         }
                                     }
-                                }
+
                             }
                         }
-                    }
+
                 }
             }
-    
+
             .article-bottom{
                 #article-bottom-container{
-                    & > div:first-child{
+
                         .img-text-wrap{
                             display: flex;
                             flex-direction: column;
@@ -113,12 +117,15 @@
                             }
                             .subtext-wrap{
                                 display: flex;
+                                @media (max-width:1200px) {
+                                    padding: 0 20px;
+                                }
                                 @include md-screen{
                                     align-items: center;
                                     justify-content: center;
                                 }
                                 p{
-                                    color: #383F43;
+                                    color: $gray;
                                     @include md-screen{
                                         width: 90%;
                                     }
@@ -126,18 +133,21 @@
                             }
                         }
                         .article-text-wrap{
+                            @media (max-width:1200px) {
+                                padding: 0 20px;
+                            }
                             #article-text-container{
-                                & > div:first-child{
+
                                     .title-wrap{
                                         @include md-screen{
-                                            display: flex;
-                                            align-items: center;
-                                            justify-content: center;
+                                            // display: flex;
+                                            // align-items: center;
+                                            // justify-content: center;
                                         }
                                         h3{
                                             font-weight: 600;
                                             font-size: 29px;
-                                            color: #383F43;
+                                            color: $gray;
                                             @include md-screen{
                                                 width: 90%;
                                             }
@@ -145,14 +155,14 @@
                                         h2{
                                             font-weight: 600;
                                             font-size: 35px;
-                                            color: #383F43;
+                                            color: $gray;
                                             @include md-screen{
                                                 width: 90%;
                                             }
                                         }
                                     }
                                     .subtext-wrap{
-                                        color: #383F43;
+                                        color: $gray;
                                         margin: 0;
                                         @include md-screen{
                                             display: flex;
@@ -175,20 +185,20 @@
                                         border-left: 4px solid #FFCF07;
                                         margin: 30px 0;
                                         @include md-screen{
-                                            width: 90%;
+                                            width: 100%;
                                             margin: 30px auto;
                                         }
                                         h3{
                                             font-weight: 400;
                                             font-size: 32px;
-                                            color: #383F43;
+                                            color: $gray;
                                             margin-left: 40px;
                                         }
                                     }
-        
+
                                 }
                             }
-                        }
+
                         .bottom-img {
                             .img-wrap{
                                 display: flex;
@@ -215,9 +225,9 @@
                                 }
                             }
                         }
-                    }
+
                 }
             }
-        }
+
     }
 }

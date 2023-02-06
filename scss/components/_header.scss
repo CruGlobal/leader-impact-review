@@ -283,7 +283,7 @@
         padding: 15px 30px;
         .social-wrap{
             .cmp-container{
-                & > div:first-child{
+                 .social-wrap{
                     display: flex;
                     grid-gap: 10px;
                     align-items: center;

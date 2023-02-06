@@ -14,14 +14,14 @@
         padding: 0;
         .title-btn-wrap{
             .cmp-container{
-                & > div:first-child{
+
                     padding-left: 0;
                     margin-bottom: 50px;
                     h5{
                         font-size: 30px;
                         color: #FFFFFF;
                     }
-                }
+
             }
         }
         .resource-slider{
@@ -98,7 +98,6 @@
                     margin: 20px 0;
                 }
                 .cmp-container{
-                    .aem-Grid{
                         position: relative;
                         .image{
                             .cmp-image{
@@ -175,7 +174,7 @@
                                 }
                             }
                         }
-                    }
+
                 }
                 &:hover{
                     .content-wrap{
