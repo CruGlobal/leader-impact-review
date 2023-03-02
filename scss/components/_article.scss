@@ -213,17 +213,16 @@
                                         width: 100%;
                                         object-fit: contain;
                                     }
-                                }
-                            }
-                            .secondary-text{
-                                p{
-                                    font-size: 12px;
-                                    opacity: 0.6;
-                                    @include xs-screen{
-                                        font-size: 10px;
+                                    .cmp-image__title{
+                                        font-size: 12px;
+                                        opacity: 0.6;
+                                        @include xs-screen{
+                                            font-size: 10px;
+                                        }
                                     }
                                 }
                             }
+
                         }
 
                 }
