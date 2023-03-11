@@ -1,21 +1,16 @@
 .video{
     background-color: $gray;
     padding: 0 30px;
-    #video-container{
-        & > div:first-child{
+    #video-wrap{
+        .aem-Grid{
             max-width: 1200px;
             margin: 0 auto;
             padding: 100px 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            @include md-screen{
-                grid-gap: 50px;
-            }
-            .video-wrap{
-                width: 50%;
+            .video-frame{
+                //width: 50%;
                 @include md-screen{
-                    width: 100%;
+                    //width: 100%;
+                    margin-bottom: 50px;
                 }
                 iframe{
                     width: 100%;
@@ -28,54 +23,42 @@
                     }
                 }
             }
-            .content-wrap{
-                width: 45%;
-                color: white;
+            .video-content{
+                padding-left: 65px;
                 @include md-screen{
-                    width: 100%;
+                    padding-left: 0;
                 }
-                .sub-title{
-                    margin-bottom: 20px;
-                    h6{
-                        letter-spacing: 0.07em;
-                        text-transform: uppercase;
-                        color: $yellow;
+                .cmp-container{
+                    //width: 45%;
+                    color: white;
+                    @include md-screen{
+                            //width: 100%;
                     }
-                }
-                .title{
-                    margin-bottom: 30px;
-                    h3{
-                        @include md-screen{
-                            font-size: 32px;
-                            line-height: 40px;
+                    .video-subtitle{    
+                        margin-bottom: 20px;
+                        h6{
+                            letter-spacing: 0.07em;
+                            text-transform: uppercase;
+                            color: $yellow;
                         }
                     }
-                }
-                .text{
-                    padding-right: 50px;
-                    margin-bottom: 20px;
-                    @include md-screen{ 
-                        padding-right: 0px;                   
-                    }
-                }
-                .button-wrap{
-                    margin-top: 30px;
-                    .cmp-container{
-                        display: flex;
-                        grid-column-gap: 40px;
-                        @include sm-screen{
-                            grid-column-gap: 25px;
-                        }
-                        .button{
-                            .btn-link{
-                                @include sm-screen{
-                                    padding: 8px 20px 10px 10px;
-                                }
-                                
+                    .video-title{
+                        margin-bottom: 30px;
+                        h3{
+                            @include md-screen{
+                                font-size: 32px;
+                                line-height: 40px;
                             }
                         }
-                        @include bgbutton;
                     }
+                    .video-subtext{
+                        padding-right: 50px;
+                        margin-bottom: 30px;
+                        @include md-screen{ 
+                            padding-right: 0px;                   
+                        }
+                    }
+                    @include bgbutton;
                 }
             }
         }

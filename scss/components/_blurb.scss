@@ -1,20 +1,18 @@
 .blurb{
-    & > div:first-child{
+    #blurb-container{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        padding: 0 30px;
         position: relative;
+        padding: 0 30px;
         @include sm-screen{
-            background: linear-gradient(-90deg, $yellow -97.69%, rgba(255, 207, 7, 0) 44.01%) !important;
+            background: linear-gradient(-90deg, $yellow -97.69%, rgba(255, 255, 255, 1) 44.01%) !important;
             background-image: none;
         }
-        #blurb-container{
+        .aem-Grid{
             max-width: 1200px;
             margin: 0 auto;
             padding: 220px 0;
-            display: flex;
-            flex-wrap: wrap;
             @include md-screen{
                 padding: 150px 0;
             }
@@ -22,115 +20,87 @@
                 padding: 100px 0 0;
                 justify-content: center;
             }
-            .content-wrap{
-                width: 40%;
-                display: flex;
-                flex-direction: column;
+            .blurb-content{
                 @include md-screen{
                     width: 60%;
                 }
                 @include sm-screen{
                     width: 100%;
-                    margin-bottom: 80px;
                 }
-                .title{
-                    margin-bottom: 20px;
-                    h1{
-                        font-weight: 700;
-                        font-size: 50px;
-                        line-height: 59px;
-                        color: #414042;
-                    }
-                }
-                #content{
-                    .blurb-text p{
-                        font-weight: 600;
-                        font-size: 18px;
-                        line-height: 28px;
-                        color: $gray;
-                        margin: 0;
-                        padding-right: 100px;
-                        @include xs-screen{
-                            padding: 0px;
-                        }
-                    }
-                }
-                img{
-                    width: fit-content;
-                    margin-bottom: 30px;
-                    @include xs-screen{
-                        width: 80%;
-                    }
-                }
-                .button-wrap{
-                    margin-top: 20px;
-                    .cmp-container{
-                        display: flex;
-                        align-items: center;
-                        grid-gap: 30px;
-                        @include bgbutton;
-                        .button{
-                            .btn-text{
-                                @include xs-screen{
-                                    font-size: 12px;
-                                }
-                            }
-                            &:hover{
-                                a{
-                                    &::before{
-                                        background: transparent;
-                                        border-color: $yellow;
-                                    }
-                                    &::after{
-                                        background: transparent;
-                                        border-color: $yellow;
-                                    }
-                                }
-                            }
-                        }
-                        @include xs-screen{
-                            justify-content: space-between;
-                        }
-                    }
-                    .video-btn{
-                        a{
-                            display: flex;
-                            align-items: center;
-                            grid-gap: 15px;
+                .cmp-container{
+                    .image{
+                        .cmp-image{
                             img{
-                                width: 40px;
-                                margin: 0px;
-                            }
-                            .cmp-button__text{
-                                font-weight: 600;
-                                font-size: 14px;
-                                line-height: 18px;
-                                text-align: center;
-                                letter-spacing: -0.005em;
-                                color: $gray;
+                                width: fit-content;
+                                margin-bottom: 30px;
                                 @include xs-screen{
-                                    font-size: 12px;
+                                    width: 80%;
+                                }
+                            }
+                        }
+                    }
+                    .title{
+                        margin-bottom: 20px;
+                        .cmp-title{
+                            h1{
+                                font-weight: 700;
+                                font-size: 50px;
+                                line-height: 59px;
+                                color: #414042;
+                            }
+                        }
+                    }
+                    .text{
+                        #text-53cc58dc93{
+                            p{
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 28px;
+                                color: $gray;
+                                margin: 0;
+                                padding-right: 100px;
+                                @include xs-screen{
+                                    padding: 0px;
                                 }
                             }
                         }
                     }
                 }
             }
-    
-            .image-wrap{
-                width: 50%;
-                display: none;
-                @include xs-screen{
-                    width: 100%;
+            .button-wrap{
+                margin-top: 20px;
+                #blurb-button-wrap{
+                    @include bgbutton;
+                    @include sm-screen{
+                        flex-direction: column;
+                        margin-bottom: 80px;
+                    }
+                    & > div:nth-child(2){
+                        padding-left: 30px;
+                        @include sm-screen{
+                            padding: 0;
+                            margin-top: 20px;
+                        }
+                    }
                 }
+            }
+            .mobile-img{
+                display: none;
                 @include sm-screen{
                     display: block;
                 }
-                img{
+                .cmp-image{
+                    display: flex;
                     width: 100%;
-                    display: block;
+                    img{
+                        width: 100%;
+                        display: flex;
+                    }
                 }
             }
         }
     }
 }
+
+
+

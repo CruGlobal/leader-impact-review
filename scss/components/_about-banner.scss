@@ -1,36 +1,3 @@
-.start-group{
-    .about-banner{
-        #abt-banner-container{ 
-            background-position: bottom !important;
-        @include xl-screen{
-            background-size: 120% !important;
-        }    
-         @include md-screen{
-            background-size: 160% !important;
-
-         }
-         @include xs-screen{
-            background-size: 280% !important;
-
-         }
-            .banner-wrap{
-                padding: 100px 30px 200px !important;
-                @include xl-screen{
-                    padding: 50px 30px 100px !important;
-                }
-                .content-wrap{
-                    width: 40% !important;
-                    @include xl-screen{
-                        width: 55% !important;
-                    }
-                    @include md-screen{
-                        width: 100% !important;
-                    }
-                }
-            }
-        }
-    }
-}
 .join-a-group{
     .about-banner{
         #abt-banner-container{ 
@@ -92,6 +59,9 @@
                 padding: 50px 30px 250px;
             }
             .content-wrap{
+                &.no-details{
+                    padding-bottom: 120px;
+                }
                 color: white;
                 width: 60%;
                 @include sm-screen{
@@ -112,7 +82,7 @@
                 }
                 .subtext-wrap{
                     #subtext-container{
-                        & > div:first-child{
+                        & > div:first-child > #flex-container{
                             display: flex;
                             grid-gap: 65px;
                         }
@@ -131,17 +101,16 @@
         }
         .bottom-container{
             #bottom-wrap{
-                & > div:first-child{
+                    max-width: 1260px;
+                    margin: 0 auto;
                     display: flex;
                     align-items: center;
-                    grid-gap: 100px;
-                    flex-wrap: wrap;
                     @include lg-screen{
                         grid-gap: 40px;
                     }
                     @include md-screen{
                         grid-gap: 50px;
-                        flex-direction: column-reverse;
+                        flex-direction: column;
                     }
                     .image-wrap{
                         width: 55%;
@@ -172,13 +141,8 @@
                     }
                     .bottom-content{
                         color: white;
-                        width: 30%;
-                        @include xl-screen{
-                            width: 35%;
-                        }
-                        @include lg-screen{
-                            width: 40%;
-                        }
+                        width: 50%;
+                        padding: 0 30px;
                         @include md-screen{
                             width: 100%;
                             padding: 0 30px;
@@ -193,6 +157,10 @@
                         }
                         .title{
                             margin-bottom: 30px;
+                            padding-right: 100px;
+                            @include md-screen{
+                                padding-right: 0;
+                            }
                             h3{
                                 @include md-screen{
                                     font-size: 32px;
@@ -242,7 +210,7 @@
                             }
                         }
                     }
-                }
+                
             }
             #bottom-joingroup{
                 max-width: 1260px;
@@ -358,6 +326,166 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+
+
+.about-hero{
+    background-color: $gray;
+    background-image: url("../../assets/about-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    @media (max-width: 1400px){
+        background-size: contain !important;
+    }
+    @media (max-width: 991px){
+        background-size: 150% !important;
+        background-position: top left !important;
+    }
+    @media (max-width: 575px){
+        background-size: 200% !important;
+        background-position: 15% 0% !important;
+    }
+    #about-hero_cmp{
+        .aem-Grid{
+            .about-hero-heading-group{
+                #about-hero-heading-group_cmp{
+                    max-width: 1260px;
+                    margin: 0 auto;
+                    padding: 200px 30px 300px;
+                    @media (max-width: 1250px){
+                        padding: 100px 30px 200px;
+                    }
+                    @media (max-width: 991px){
+                        padding: 50px 30px 250px;
+                    }
+                    .about-hero-heading-text{
+                        width: 60%;
+                        @media (max-width: 767px){
+                            width: 100%;
+                        }
+                        #about-hero-heading-text_cmp{
+                            .cmp-title__text{
+                                font-size: 50px;
+                                line-height: 59px;
+                                margin-bottom: 20px;
+                                color: white;
+                                @media (max-width: 768px){
+                                    font-size: 40px;
+                                    line-height: 49px;
+                                } 
+                                @media (max-width: 575px){
+                                    font-size: 30px;
+                                    line-height: 39px;
+                                }   
+                            }
+                        }
+                    }
+                    @include bgbutton;
+                }
+            }
+            .bottom-row{
+                #bottom-row_cmp{
+                    display: flex;
+                    grid-gap: 100px;
+                    @media (max-width: 1250px){
+                        grid-gap: 40px;
+                    }
+                    @media (max-width: 991px){
+                        flex-direction: column-reverse;
+                    }
+                    .image-group{
+                        &.custom-width{
+                            width: 55%;
+                            @media (max-width: 991px){
+                                width: 100%;
+                            }
+                        }
+                        #image-group_cmp{
+                            display: flex;
+                            grid-gap: 30px;
+                            .image{
+                                display: flex;
+                                width: 100%;
+                                &:nth-child(2){
+                                    margin-top: 50px;
+                                }
+                                .cmp-image{
+                                    width: 100%;
+                                    img{
+                                        width: 100%;
+                                        height: fit-content;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .hero-blurb{
+                        align-self: center;
+                        &.custom-width{
+                            width: 30%;
+                            @media (max-width: 1250px){
+                                width: 40%;
+                            }
+                            @media (max-width: 991px){
+                                padding: 0 30px;
+                                width: 100%;
+                            }
+                        }
+                        #hero-blurb_cmp{
+                            .blurb-subtitle{
+                                margin-bottom: 30px;
+                                .cmp-text{
+                                    p{
+                                        letter-spacing: 0.07em;
+                                        text-transform: uppercase;
+                                        color: #FFCF07; 
+                                        font-weight: 700;
+                                        font-size: 19px;
+                                        line-height: 30px;
+                                        margin: 0px;
+                                    }
+                                }
+                            }
+                            .blurb-heading{
+                                margin-bottom: 30px;
+                                .cmp-title{
+                                    h2{
+                                        font-weight: 700;
+                                        font-size: 40px;
+                                        color: white;
+                                        line-height: 47px;
+                                        margin: 0px;
+                                    }
+                                }
+                            }
+                            .blurb-description{
+                                padding-right: 80px;
+                                margin-bottom: 20px;
+                                @media (max-width: 991px){
+                                    padding-right: 0;
+                                }
+                                .cmp-text{
+                                    p{
+                                        font-weight: 400;
+                                        font-size: 18px;
+                                        color: white;
+                                        line-height: 28px;
+                                        @media (max-width: 1250px){
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                            @include bgbutton;
+                        }
+                    }
+
                 }
             }
         }

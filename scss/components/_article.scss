@@ -1,232 +1,206 @@
 .article{
-    // padding: 0 20px;
+    padding: 0 30px;
     #article-container{
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 0px 170px;
-            @include md-screen{
-                padding: 45px 0 70px;
-            }
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 0px 170px;
+        @include md-screen{
+            padding: 45px 0 70px;
+        }
+        .heading-author {
+            // width: 80%;
+            // @include md-screen{
+            //     width: 100%;
+            // }
             .date{
-                @media (max-width:1200px) {
-                    padding: 0 20px;
-                }
                 p {
                     color: $gray;
                 }
             }
-            .article-top{
-                @media (max-width:1200px) {
-                    padding: 0 20px;
-                }
-                #article-top-container{
-
-                        display: flex;
-                        justify-content: space-between;
-                        @include md-screen{
-                            flex-direction: column;
-                            margin-bottom: 80px;
-                        }
-                        .heading-author {
-                            width: 80%;
-                            @include md-screen{
-                                width: 100%;
-                            }
-                            .heading {
-                                h1{
-                                    font-size: 58px;
-                                    color: $gray;
-                                    max-width: 600px;
-                                    @include md-screen{
-                                        font-size: 52px;
-                                    }
-                                    @include xs-screen{
-                                        font-size: 40px;
-                                        line-height: 45px;
-                                    }
-                                }
-                            }
-                            .author{
-                                p {
-                                    font-size: 22px;
-                                    color: $gray;
-                                }
-                            }
-                        }
-                        .social{
-                            width: 15%;
-                            @include md-screen{
-                                width: 100%;
-                            }
-                            #social-wrapper{
-
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: flex-end;
-                                    grid-gap: 5px;
-                                    @include md-screen{
-                                        flex-direction: row;
-                                        grid-gap: 15px;
-                                    }
-                                    .socio{
-                                        display: flex;
-                                        align-items: center;
-                                        width: 80px;
-                                        border: 1px solid #FFCF07;
-                                        grid-gap: 5px;
-                                        border-radius: 35px;
-                                        padding: 6px 0;
-                                        justify-content: center;
-                                        transition: all 0.3s ease;
-                                        cursor: pointer;
-                                        &:hover{
-                                            background-color: #FFCF07;
-                                        }
-                                        p {
-                                            margin: 0;
-                                            font-size: 12px;
-                                        }
-                                    }
-
-                            }
-                        }
-
+            .heading {
+                h1{
+                    font-size: 58px;
+                    color: $gray;
+                    max-width: 600px;
+                    @include md-screen{
+                        font-size: 52px;
+                    }
+                    @include xs-screen{
+                        font-size: 40px;
+                        line-height: 45px;
+                    }
                 }
             }
-
-            .article-bottom{
-                #article-bottom-container{
-
-                        .img-text-wrap{
+            .author{
+                p {
+                    font-size: 22px;
+                    color: $gray;
+                }
+            }
+        }
+        .social{
+            // width: 15%;
+            margin-top: 100px;
+            @include md-screen{
+                width: 100%;
+                margin: 0px;
+            }
+            #social-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    grid-gap: 5px;
+                    @include md-screen{
+                        flex-direction: row;
+                        grid-gap: 15px;
+                    }
+                    .socio{
+                        button{
                             display: flex;
-                            flex-direction: column;
-                            .img-wrap{
-                                display: flex;
-                                width: 100%;
-                                margin-bottom: 50px;
-                                @include md-screen{
-                                    margin-bottom: 55px;
-                                }
-                                div{
-                                    width: 100%;
-                                    img{
-                                        width: 100%;
-                                        object-fit: contain;
-                                    }
-                                }
+                            align-items: center;
+                            width: 77px;
+                            border: 1px solid #FFCF07;
+                            grid-gap: 5px;
+                            border-radius: 35px;
+                            padding: 8px 0;
+                            justify-content: center;
+                            transition: all 0.3s ease;
+                            background-color: transparent;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: #FFCF07;
                             }
-                            .subtext-wrap{
-                                display: flex;
-                                @media (max-width:1200px) {
-                                    padding: 0 20px;
-                                }
-                                @include md-screen{
-                                    align-items: center;
-                                    justify-content: center;
-                                }
-                                p{
-                                    color: $gray;
-                                    @include md-screen{
-                                        width: 90%;
-                                    }
-                                }
+                            p {
+                                margin: 0;
+                                font-size: 12px;
+                            }
+                            .cmp-button__icon--share{
+                                content: url('./assets/Vector.png');
+                            }
+                            .cmp-button__icon--save{
+                                content: url('./assets/Vector_1.png');
+                            }
+                            .cmp-button__icon--copy{
+                                content: url('./assets/Vector_2.png');
                             }
                         }
-                        .article-text-wrap{
-                            @media (max-width:1200px) {
-                                padding: 0 20px;
-                            }
-                            #article-text-container{
+                    }
 
-                                    .title-wrap{
-                                        @include md-screen{
-                                            // display: flex;
-                                            // align-items: center;
-                                            // justify-content: center;
-                                        }
-                                        h3{
-                                            font-weight: 600;
-                                            font-size: 29px;
-                                            color: $gray;
-                                            @include md-screen{
-                                                width: 90%;
-                                            }
-                                        }
-                                        h2{
-                                            font-weight: 600;
-                                            font-size: 35px;
-                                            color: $gray;
-                                            @include md-screen{
-                                                width: 90%;
-                                            }
-                                        }
-                                    }
-                                    .subtext-wrap{
-                                        color: $gray;
-                                        margin: 0;
-                                        @include md-screen{
-                                            display: flex;
-                                            align-items: center;
-                                            justify-content: center;
-                                        }
-                                        &.mb{
-                                            margin-bottom: 50px;
-                                            @include md-screen{
-                                                display: none;
-                                            }
-                                        }
-                                        p{
-                                            @include md-screen{
-                                               width: 90%;
-                                            }
-                                        }
-                                    }
-                                    .sub-heading-wrap{
-                                        border-left: 4px solid #FFCF07;
-                                        margin: 30px 0;
-                                        @include md-screen{
-                                            width: 100%;
-                                            margin: 30px auto;
-                                        }
-                                        h3{
-                                            font-weight: 400;
-                                            font-size: 32px;
-                                            color: $gray;
-                                            margin-left: 40px;
-                                        }
-                                    }
-
-                                }
-                            }
-
-                        .bottom-img {
-                            .img-wrap{
-                                display: flex;
-                                width: 100%;
-                                margin-top: 40px;
-                                @include md-screen{
-                                    margin-top: 80px;
-                                }
-                                div{
-                                    width: 100%;
-                                    img{
-                                        width: 100%;
-                                        object-fit: contain;
-                                    }
-                                    .cmp-image__title{
-                                        font-size: 12px;
-                                        opacity: 0.6;
-                                        @include xs-screen{
-                                            font-size: 10px;
-                                        }
-                                    }
-                                }
-                            }
-
+            }
+        } 
+        .article-bottom{
+            #article-bottom-container{
+                .img-wrap{
+                    display: flex;
+                    width: 100%;
+                    margin-bottom: 50px;
+                    @include md-screen{
+                        margin-bottom: 55px;
+                    }
+                    div{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            object-fit: contain;
                         }
-
+                    }
+                }
+                .subtext-wrap{
+                    display: flex;
+                    @include md-screen{
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    p{
+                        color: $gray;
+                        @include md-screen{
+                            width: 90%;
+                        }
+                    }
+                }
+                .title-wrap{
+                    @include md-screen{
+                        // display: flex;
+                        // align-items: center;
+                        // justify-content: center;
+                    }
+                    h3{
+                        font-weight: 600;
+                        font-size: 29px;
+                        color: $gray;
+                        @include md-screen{
+                            width: 90%;
+                        }
+                    }
+                    h2{
+                        font-weight: 600;
+                        font-size: 35px;
+                        color: $gray;
+                        @include md-screen{
+                            width: 90%;
+                        }
+                    }
+                }
+                .subtext-wrap{
+                    color: $gray;
+                    margin: 0;
+                    @include md-screen{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    &.mb{
+                        margin-bottom: 50px;
+                        @include md-screen{
+                            display: none;
+                        }
+                    }
+                    p{
+                        @include md-screen{
+                            width: 90%;
+                        }
+                    }
+                }
+                .sub-heading-wrap{
+                    border-left: 4px solid #FFCF07;
+                    margin: 30px 0;
+                    @include md-screen{
+                        width: 100%;
+                        margin: 30px auto;
+                    }
+                    h3{
+                        font-weight: 400;
+                        font-size: 32px;
+                        color: $gray;
+                        margin-left: 40px;
+                    }
+                }
+                .img-wrap{
+                    display: flex;
+                    width: 100%;
+                    margin-top: 40px;
+                    @include md-screen{
+                        margin-top: 80px;
+                    }
+                    div{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            object-fit: contain;
+                        }
+                        .cmp-image__title{
+                            font-size: 12px;
+                            opacity: 0.6;
+                            margin-top: 20px;
+                            display: block;
+                            @include xs-screen{
+                                font-size: 10px;
+                            }
+                        }
+                    }
                 }
             }
-
+        }
     }
 }
+

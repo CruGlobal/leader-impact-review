@@ -1,78 +1,87 @@
 .about-blurb{
     background-color: $gray;
     padding: 0 30px;
-    #abt-blurb-wrap{
-        & > div:first-child{
+    .cmp-container{
+        .aem-Grid{
             max-width: 1200px;
             margin: 0 auto;
-            padding: 100px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            @include md-screen{
-                grid-gap: 50px;
-            }
-            .content-wrap{
-                width: 45%;
-                color: white;
-                @include md-screen{
-                    width: 100%;
-                }
-                .sub-title{
-                    margin-bottom: 20px;
-                    h6{
-                        letter-spacing: 0.07em;
-                        text-transform: uppercase;
-                        color: $yellow;
+            padding: 100px 0px;
+            // display: flex;
+            // flex-wrap: wrap;
+            .about-blurb-wrap{
+                padding-right: 50px;
+                &.custom-width{
+                    // width: 45%;
+                    @include md-screen{
+                        width: 100%;
+                        margin-right: 0;
+                        margin-bottom: 50px;
                     }
-                }
-                .title{
-                    margin-bottom: 30px;
-                    h3{
-                        @include md-screen{
-                            font-size: 32px;
-                            line-height: 40px;
+                    .blurb-subtitle{
+                        margin-bottom: 30px;
+                        .cmp-text{
+                            p{
+                                letter-spacing: 0.07em;
+                                text-transform: uppercase;
+                                color: #FFCF07; 
+                                font-weight: 700;
+                                font-size: 19px;
+                                line-height: 30px;
+                                margin: 0px;
+                            }
                         }
                     }
-                }
-                .text{
-                    padding-right: 50px;
-                    margin-bottom: 20px;
-                    @include md-screen{ 
-                        padding-right: 0px;                   
-                    }
-                    a{
-                        color: $yellow;
-                    }
-                }
-                .button-wrap{
-                    margin-top: 30px;
-                    .cmp-container{
-                        & > div:first-child{
-                            display: flex;
-                            grid-column-gap: 40px;
-                            @include sm-screen{
-                                grid-column-gap: 25px;
-                            }    
-                            .button{
-                                .btn-link{
-                                    @include sm-screen{
-                                        padding: 8px 20px 10px 10px;
-                                    }
-                                    
+                    .blurb-heading{
+                        margin-bottom: 30px;
+                        .cmp-title{
+                            h2{
+                                font-weight: 700;
+                                font-size: 40px;
+                                color: white;
+                                line-height: 47px;
+                                margin: 0px;
+                                @include md-screen{
+                                    font-size: 32px;
+                                    line-height: 40px;
                                 }
                             }
+                        }
+                    }
+                    .blurb-description{
+                        padding-right: 50px;
+                        margin-bottom: 20px;
+                        @media(max-width:991px){
+                            padding-right: 0;
+                        }
+                        .cmp-text{
+                            p{
+                                font-weight: 400;
+                                font-size: 18px;
+                                color: white;
+                                line-height: 28px;
+                                a{
+                                    color: $yellow;
+                                }
+                                @include md-screen{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    @include bgbutton;
+                    .button-wrap{
+                        .cmp-container{
+                            display: flex;
+                            flex-wrap: wrap;
+                            grid-gap: 40px;
                             @include bgbutton;
                         }
                     }
                 }
             }
-            .image-wrap{
-                width: 50%;
-                display: flex;
+            .about-blurb-image{
                 @include md-screen{
-                    width: 100%;
+                    width: 100% !important;
                 }
                 img{
                     width: 100%;

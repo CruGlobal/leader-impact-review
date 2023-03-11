@@ -50,7 +50,7 @@ $('#search-overlay .close').click(function(){
 });
 
 
-$('.resource-slider').slick({
+$('.article-slider-wrap > .cmp-container').slick({
     dots: false,
 	slidesToShow: 3,
 	adaptiveHeight: false,
@@ -74,20 +74,22 @@ $('.resource-slider').slick({
         {
             breakpoint: 768,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                arrows: false,
+                dots: true
             }
         },
     ]
 });
 
-$('.product-slider , #product-slider').slick({
+$('.product-slider-wrap > .cmp-container').slick({
     dots: false,
-	slidesToShow: 3,
-	adaptiveHeight: false,
-	infinite: true,
+    slidesToShow: 3,
+    adaptiveHeight: false,
+    infinite: true,
     centerMode: true,
     variableWidth: false,
-	speed: 500,
+    speed: 500,
     arrows: true,
     prevArrow:"<button type='button' class='slick-prev pull-left'><img src='./assets/left-arrow.svg'></button>",
     //prevArrow:"<button type='button' class='slick-prev pull-left'><img src='/content/dam/LeaderImpact/site-assets/left-arrow.svg' alt='Previous'></button>",
@@ -105,14 +107,16 @@ $('.product-slider , #product-slider').slick({
             breakpoint: 768,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true
             }
         },
     ]
 });
 
 $window = $(window);
-$slick_slider = $('.latest-post .post-wrap');
+$slick_slider = $('.latest-post #post-wrap');
 settings = {
     dots: false,
 	slidesToShow: 2,
@@ -166,7 +170,7 @@ $window.on('resize', function() {
 });
 
 
-$slick_sliders = $('#expect-slider > div:first-child');
+$slick_sliders = $('#expect-slider');
 settings = {
     dots: false,
 	slidesToShow: 1,

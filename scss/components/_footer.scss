@@ -16,22 +16,20 @@
             margin: 0 auto;
             padding-bottom: 100px;
         }
-
         @include md-screen{
-            padding: 80px 0;
+            padding: 80px 0 0;
             padding-top: 0;
         }
         @include sm-screen{
-            padding: 50px 0;
+            padding: 50px 0 0;
             padding-top: 0;
         }
-
-        .content-wrap{
+        // margin-bottom: 70px;
+        @include sm-screen{
+            // margin-bottom: 50px;
+        }
+        .footer-nav-wrap{
             color: white;
-            // margin-bottom: 70px;
-            @include sm-screen{
-                // margin-bottom: 50px;
-            }
             .title{
                 width: 65%;
                 @include sm-screen{
@@ -138,63 +136,62 @@
         background: #303031;
         margin: 0 -30px;
         padding: 0 30px;
-        .inner-wrap{
+        .cmp-container{
             padding: 15px 0;
             max-width: 1200px;
             margin: 0 auto;
-            .cmp-container{
-                & > div:first-child{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .copy-right-img{
+                .cmp-image{
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
-                    grid-gap: 10px;
-                    @include xs-screen{
-                        flex-direction: column-reverse;
-                        align-items: flex-start;
-                        grid-gap: 10px;
+                    color: #9C9FA1;
+                    grid-gap: 12px;
+                    p{
+                        margin: 0;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: -0.005em;
                     }
-                    .copy-right{
-                        display: flex;
-                        align-items: center;
-                        color: #9C9FA1;
-                        grid-gap: 12px;
-                        p{
-                            margin: 0;
-                            font-weight: 600;
-                            font-size: 12px;
-                            line-height: 15px;
-                            letter-spacing: -0.005em;
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+            .term-policy-wrap{
+                ul{
+                    display: flex;
+                    grid-gap: 20px;
+                    padding: 0px;
+                    margin: 0px;
+                    li{
+                        position: relative;
+                        list-style: none;
+                        &:last-child{
+                            &:after{
+                                display: none;
+                            }
                         }
-                    }
-                    .term-policy-wrap{
-                        display: flex;
-                        grid-gap: 20px;
-                        .text{
-                            position: relative;
-                            &:last-child{
-                                &:after{
-                                    display: none;
-                                }
-                            }
-                            &:after {
-                                content: "|";
-                                position: absolute;
-                                right: -11px;
-                                color: #9C9FA1;
-                                font-size: 12px;
-                                top: 0px;
-                            }
-                            p{
+                        &:after {
+                            content: "|";
+                            position: absolute;
+                            right: -11px;
+                            color: #9C9FA1;
+                            font-size: 12px;
+                            top: 4px;
+                        }
+                        article{
+                            margin: 0px;
+                            a{
                                 font-weight: 600;
                                 font-size: 12px;
                                 line-height: 15px;
                                 letter-spacing: -0.005em;
                                 text-decoration-line: underline;
                                 color: #9C9FA1;
-                                margin: 0;
-                                a{
-                                    color: #9C9FA1;
-                                }
                             }
                         }
                     }

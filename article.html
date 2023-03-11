@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./aem/styles/grid.min.css">
+
 </head>
 <body class="article-page">
   <script src="https://global.oktacdn.com/okta-auth-js/7.0.0/okta-auth-js.min.js"></script>
@@ -16,80 +18,98 @@
   <div class="modal fade sign-in-modal"></div>
   <div id="okta-config" class="hidden"></div>
       <div class="content-parsys responsivegrid">
+      <!-- WRAPPING GRID -->
       <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+        <!-- HEADING WRAP -->
         <div class="container responsivegrid header aem-GridColumn aem-GridColumn--default--12 layout-grid">
-          <div id="container-3bd95d56fa" class="cmp-container">
-            <div class="home-search-overlay aem-GridColumn aem-GridColumn--default--12 layout-grid">
-              <div id="search-overlay">
-                <a href="#" class="close"><img src="./assets/close.svg"></a>
-                <form action="/search">
-                  <input type="text" placeholder="SEARCH" name="q">
-                </form>
-              </div>
-            </div>
-            <div class="container responsivegrid">
-              <div id="container-header" class="cmp-container">
-                <div class="image site-logo">
-                  <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container/container_2037006891/image.coreimg{.width}.png/1669058748470/leaderimpactlogo.png" data-asset="/content/dam/LeaderImpact/site-./assets/leaderimpactlogo.png" data-title="logo" id="image-25b62a9953" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                    <a class="cmp-image__link" href="/content/leaderimpact/lang/en2.html" data-cmp-hook-image="link">
-                      <img src="./assets/logo.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="logo">
-                    </a>
-                  </div>
-                </div>
-
-                <div class="navigation nav-wrap">
-                  <nav id="navigation-241ab1aa9d" class="cmp-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
-                    <ul class="cmp-navigation__group">
-                      <li class="cmp-navigation__item cmp-navigation__item--level-0">
-                        <a href="/content/leaderimpact/lang/en2/join-a-group.html" class="cmp-navigation__item-link">Join a Group</a>
-                      </li>
-
-                      <li class="cmp-navigation__item cmp-navigation__item--level-0">
-                        <a href="/content/leaderimpact/lang/en2/start-a-group.html" class="cmp-navigation__item-link">Start a Group</a>
-                      </li>
-
-                      <li class="cmp-navigation__item cmp-navigation__item--level-0">
-                        <a href="/content/leaderimpact/lang/en2/resources.html" class="cmp-navigation__item-link">Resources</a>
-                      </li>
-
-                      <li class="cmp-navigation__item cmp-navigation__item--level-0">
-                        <a href="/content/leaderimpact/lang/en2/stories.html" class="cmp-navigation__item-link">About</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-
-                <div class="container responsivegrid sub-nav">
-                  <div id="container-0b2a65237d" class="cmp-container">
-                    <div class="text">
-                      <div id="text-1ffc132fa9" class="cmp-text">
-                        <p><a href="#">Give</a></p>
-                      </div>
-                    </div>
-
-                    <div class="button nav-button">
-                      <a id="button-4e7f03c2b8" class="cmp-button" href="/content/leaderimpact/lang/en2/leaderhub.html">
-                        <span class="cmp-button__text">Leaderhub</span>
+          <div id="header-main" class="cmp-container">
+            <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+              <!-- SEARCH OVERLAY WRAP -->
+              <div class="container responsivegrid home-search-overlay aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                <div id="search-overlay" class="cmp-container">
+                  <!-- CLOSE IMAGE -->
+                  <div class="close">
+                    <div class="cmp-image">
+                      <a href="#" class="close">
+                        <img class="cmp-image__image" src="./assets/close.svg">
                       </a>
                     </div>
-
-                    <div class="image search">
-                      <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container/container_2037006891/container/image.coreimg{.width}.svg/1669058888816/search.svg" data-asset="/content/dam/LeaderImpact/site-./assets/search.svg" data-title="search" id="image-fd5f155c3f" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <img src="./assets/search.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="search">
-                      </div>
+                  </div>
+                  <!-- SEARCH FORM -->
+                  <form action="/search">
+                    <input type="text" placeholder="SEARCH" name="q">
+                  </form>
+                </div>
+              </div>
+              <!-- NAVIGAION WRAP -->
+              <div class="container responsivegrid nav-wrap-main aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                <div id="container-header" class="cmp-container">
+                  <!-- SITE LOGO -->
+                  <div class="image site-logo">
+                    <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container/container_2037006891/image.coreimg{.width}.png/1669058748470/leaderimpactlogo.png" data-asset="/content/dam/LeaderImpact/site-./assets/leaderimpactlogo.png" data-title="logo" id="image-25b62a9953" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                      <a class="cmp-image__link" href="/content/leaderimpact/lang/en2.html" data-cmp-hook-image="link">
+                        <img src="./assets/logo.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="logo">
+                      </a>
                     </div>
-
-                    <div class="container responsivegrid hamburger">
-                      <div id="container-686bb06b29" class="cmp-container">
-                        <div class="image open">
-                          <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container/container_2037006891/container/container/image_324769233.coreimg{.width}.svg/1669059161137/hamburger.svg" data-asset="/content/dam/LeaderImpact/site-./assets/hamburger.svg" data-title="menu" id="image-479635272c" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                            <img src="./assets/hamburger.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="menu">
-                          </div>
+                  </div>
+                  <!-- NAV MENU -->
+                  <div class="navigation nav-wrap">
+                    <nav id="navigation-241ab1aa9d" class="cmp-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                      <ul class="cmp-navigation__group">
+                        <!-- MENU ITEMS -->
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/join-a-group.html" class="cmp-navigation__item-link">Join a Group</a>
+                        </li>
+  
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/start-a-group.html" class="cmp-navigation__item-link">Start a Group</a>
+                        </li>
+  
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/resources.html" class="cmp-navigation__item-link">Resources</a>
+                        </li>
+  
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/stories.html" class="cmp-navigation__item-link">About</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <!-- SUB NAV -->
+                  <div class="container responsivegrid sub-nav">
+                    <div id="container-0b2a65237d" class="cmp-container">
+                      <!-- SUB NAV LINK -->
+                      <div class="link">
+                        <div id="text-1ffc132fa9" class="cmp-link">
+                          <a href="#">Give</a>
                         </div>
-
-                        <div class="image close">
-                          <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container/container_2037006891/container/container/image.coreimg{.width}.svg/1669059409586/close.svg" data-asset="/content/dam/LeaderImpact/site-./assets/close.svg" data-title="Close" id="image-534f826118" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                            <img src="./assets/close-menu.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                      </div>
+                      <!-- SUB NAV BUTTON -->
+                      <div class="button nav-button">
+                        <a id="button-4e7f03c2b8" class="cmp-button" href="/content/leaderimpact/lang/en2/leaderhub.html">
+                          <span class="cmp-button__text">Leaderhub</span>
+                        </a>
+                      </div>
+                      <!-- IMAGE SEARCH -->
+                      <div class="image search">
+                        <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container/container_2037006891/container/image.coreimg{.width}.svg/1669058888816/search.svg" data-asset="/content/dam/LeaderImpact/site-./assets/search.svg" data-title="search" id="image-fd5f155c3f" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                          <img src="./assets/search.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="search">
+                        </div>
+                      </div>
+                      <!-- HAMBURGER WRAP -->
+                      <div class="container responsivegrid hamburger">
+                        <div id="container-686bb06b29" class="cmp-container">
+                          <!-- HAM OPEN -->
+                          <div class="image open">
+                            <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container/container_2037006891/container/container/image_324769233.coreimg{.width}.svg/1669059161137/hamburger.svg" data-asset="/content/dam/LeaderImpact/site-./assets/hamburger.svg" data-title="menu" id="image-479635272c" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                              <img src="./assets/hamburger.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="menu">
+                            </div>
+                          </div>
+                          <!-- HAM CLOSE  -->
+                          <div class="image close">
+                            <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container/container_2037006891/container/container/image.coreimg{.width}.svg/1669059409586/close.svg" data-asset="/content/dam/LeaderImpact/site-./assets/close.svg" data-title="Close" id="image-534f826118" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                              <img src="./assets/close-menu.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -97,103 +117,115 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="container responsivegrid mobile-navigation">
-              <div id="container-4980578f66" class="cmp-container">
-                <div class="navigation mobile-nav-wrap">
-                  <nav id="navigation-531e2bf8d6" class="cmp-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
-                    <ul class="cmp-navigation__group">
-                      <li class="cmp-navigation__item cmp-navigation__item--level-0">
-                        <a href="/content/leaderimpact/lang/en2/join-a-group.html" class="cmp-navigation__item-link">Join a Group</a>
+              <!-- MOBILE NAV WRAP -->
+              <div class="container responsivegrid mobile-navigation aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                <div id="container-4980578f66" class="cmp-container">
+                  <!-- MOBILE NAV MENU -->
+                  <div class="navigation mobile-nav-wrap">
+                    <nav id="navigation-531e2bf8d6" class="cmp-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                      <ul class="cmp-navigation__group">
+                        <!-- NAV MENU ITEM -->
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/join-a-group.html" class="cmp-navigation__item-link">Join a Group</a>
+                        </li>
+  
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/start-a-group.html" class="cmp-navigation__item-link">Start a Group</a>
+                        </li>
+  
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/resources.html" class="cmp-navigation__item-link">Resources</a>
+                        </li>
+  
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/stories.html" class="cmp-navigation__item-link">About</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <!-- SUB LINK LIST -->
+                  <div class="list sub-link">
+                    <ul id="list-47b09bfbb1" class="cmp-list">
+                      <!-- LIST ITEMS -->
+                      <li class="cmp-list__item">
+                        <article>
+                          <a class="cmp-list__item-link" href="/content/leaderimpact/lang/en/leaderhub.html">
+                            <span class="cmp-list__item-title">Leaderhub</span>
+                          </a>
+                        </article>
                       </li>
-
-                      <li class="cmp-navigation__item cmp-navigation__item--level-0">
-                        <a href="/content/leaderimpact/lang/en2/start-a-group.html" class="cmp-navigation__item-link">Start a Group</a>
+                      <li class="cmp-list__item">
+                        <article>
+                          <a class="cmp-list__item-link" href="https://give.cru.org/2860269">
+                            <span class="cmp-list__item-title">Give</span>
+                          </a>
+                        </article>
                       </li>
-
-                      <li class="cmp-navigation__item cmp-navigation__item--level-0">
-                        <a href="/content/leaderimpact/lang/en2/resources.html" class="cmp-navigation__item-link">Resources</a>
-                      </li>
-
-                      <li class="cmp-navigation__item cmp-navigation__item--level-0">
-                        <a href="/content/leaderimpact/lang/en2/stories.html" class="cmp-navigation__item-link">About</a>
+                      <li class="cmp-list__item">
+                        <article>
+                          <a class="cmp-list__item-link" href="/content/leaderimpact/lang/en/contact.html">
+                            <span class="cmp-list__item-title">Contact</span>
+                          </a>
+                        </article>
                       </li>
                     </ul>
-                  </nav>
-                </div>
-
-                <div class="list sub-link">
-                  <ul id="list-47b09bfbb1" class="cmp-list">
-                    <li class="cmp-list__item">
-                      <article>
-                        <a class="cmp-list__item-link" href="/content/leaderimpact/lang/en/leaderhub.html">
-                          <span class="cmp-list__item-title">Leaderhub</span>
-                        </a>
-                      </article>
-                    </li>
-                    <li class="cmp-list__item">
-                      <article>
-                        <a class="cmp-list__item-link" href="https://give.cru.org/2860269">
-                          <span class="cmp-list__item-title">Give</span>
-                        </a>
-                      </article>
-                    </li>
-                    <li class="cmp-list__item">
-                      <article>
-                        <a class="cmp-list__item-link" href="/content/leaderimpact/lang/en/contact.html">
-                          <span class="cmp-list__item-title">Contact</span>
-                        </a>
-                      </article>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="container responsivegrid mobile-nav-footer">
-                  <div id="nav-bottom-footer" class="cmp-container">
-                    <div class="container responsivegrid term-policy-wrap">
-                      <div id="container-aa1adff3d8" class="cmp-container">
-                        <div class="container responsivegrid terms-grid">
-                          <div id="container-10bae5eac8" class="cmp-container">
-                            <div class="text term-policy-item">
-                              <div id="text-5b59f11baa" class="cmp-text">
-                                <p><a href="#">Privacy</a></p>
-                              </div>
-                            </div>
-                            <div class="text term-policy-item">
-                              <div id="text-703f7fc464" class="cmp-text">
-                                <p><a href="#">Terms of Use</a></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                  </div>
+                  <!-- MOBILE NAV FOOTER -->
+                  <div class="container responsivegrid mobile-nav-footer aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                    <div id="nav-bottom-footer" class="cmp-container">
+                      <!-- TERMS LIST -->
+                      <div class="term-policy-wrap">
+                        <ul id="list-47b09bfbb1" class="cmp-list">
+                          <!-- LIST ITEMS -->
+                          <li class="cmp-list__item term-policy-item">
+                            <article>
+                              <a class="cmp-list__item-link" href="#">
+                                <span class="cmp-list__item-title">Privacy</span>
+                              </a>
+                            </article>
+                          </li>
+                          <li class="cmp-list__item term-policy-item">
+                            <article>
+                              <a class="cmp-list__item-link" href="#">
+                                <span class="cmp-list__item-title">Terms of Use</span>
+                              </a>
+                            </article>
+                          </li>
+                        </ul>
                       </div>
-                    </div>
-
-                    <div class="container responsivegrid social-wrap">
-                      <div id="container-8ebb211cec" class="cmp-container">
-                        <div class="social-wrap">
+                      <!-- MOBILE NAV SOCIAL WRAP -->
+                      <div class="container responsivegrid social-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                        <div id="social-wrap" class="cmp-container">
+                          <!-- MOBILE NAV SOCIAL ICONS -->
                           <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
                             <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container/container/container/container/image.coreimg{.width}.svg/1669130127313/facebook.svg" data-asset="/content/dam/LeaderImpact/site-./assets/facebook.svg" data-title="facebook" id="image-a988be5535" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                              <img src="./assets/facebook.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="facebook">
+                              <a href="#" class="cmp-image__link">
+                                <img src="./assets/facebook.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="facebook">
+                              </a>
                             </div>
                           </div>
 
                           <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
                             <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container/container/container/container/image_512298232.coreimg{.width}.svg/1669130210337/insta.svg" data-asset="/content/dam/LeaderImpact/site-./assets/insta.svg" data-title="instagram" id="image-ae3671446d" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                              <img src="./assets/insta.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="instagram">
+                              <a href="#" class="cmp-image__link">
+                                <img src="./assets/insta.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="instagram">
+                              </a>
                             </div>
                           </div>
 
                           <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
                             <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container/container/container/container/image_1887433809.coreimg{.width}.svg/1669130230195/yt.svg" data-asset="/content/dam/LeaderImpact/site-./assets/yt.svg" data-title="YouTube" id="image-46d1bf6845" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                              <img src="./assets/yt.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="YouTube">
+                              <a href="#" class="cmp-image__link">
+                                <img src="./assets/yt.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="YouTube">
+                              </a>
                             </div>
                           </div>
 
                           <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
                             <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container/container/container/container/image_1801542987.coreimg{.width}.svg/1669130241057/linkedin.svg" data-asset="/content/dam/LeaderImpact/site-./assets/linkedin.svg" data-title="LinkedIn" id="image-bb85cd5a39" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                              <img src="./assets/linkedin.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="LinkedIn">
+                              <a href="#" class="cmp-image__link">
+                                <img src="./assets/linkedin.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="LinkedIn">
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -207,452 +239,317 @@
         </div>
 
         <div class="container responsivegrid article aem-GridColumn aem-GridColumn--default--12 layout-grid">
-            <div id="article-container" class="cmp-container">
-                <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
-                    <div class="text date quote-content">
-                        <div id="text-49e22e7256" class="cmp-text">
-                            <p>November 28, 2022 </p>
-                        </div>
-                    </div>
-                    <div class="container responsivegrid article-top aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                        <div id="article-top-container" class="cmp-container">
-
-                                <div class="container responsivegrid heading-author aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                    <div id="container-445633ddcf" class="cmp-container">
-
-                                            <div class="title heading aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                                <div id="title-63091b8133" class="cmp-title">
-                                                  <h1 class="cmp-title__text">Uncommon Opportunities to Lead</h1>
-                                                </div>
-                                            </div>
-                                            <div class="text author quote-content">
-                                                <div id="text-49e22e7256" class="cmp-text">
-                                                    <p>by Ed Maggard</p>
-                                                </div>
-                                            </div>
-
-                                    </div>
-                                </div>
-                                <div class="container responsivegrid social aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                    <div id="social-wrapper" class="cmp-container">
-
-                                            <div class="container responsivegrid share socio aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                                <div class="text quote-content">
-                                                    <div id="text-49e22e7256" class="cmp-text">
-                                                        <p>Share</p>
-                                                    </div>
-                                                </div>
-                                                <div class="image logo-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                                    <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_1715762034/container_1796181454/tabs/item_1669125273755/image_copy.coreimg{.width}.png/1669126312045/quote-img.png" data-asset="/content/dam/LeaderImpact/site-./assets/Vector.png" data-title="lady smiling" id="image-6bcf13ac84" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                                      <img src="./assets/Vector.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="lady smiling">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="container responsivegrid save socio aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                                <div class="text quote-content">
-                                                    <div id="text-49e22e7256" class="cmp-text">
-                                                        <p>Save</p>
-                                                    </div>
-                                                </div>
-                                                <div class="image logo-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                                    <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_1715762034/container_1796181454/tabs/item_1669125273755/image_copy.coreimg{.width}.png/1669126312045/quote-img.png" data-asset="/content/dam/LeaderImpact/site-./assets/Vector_1.png" data-title="lady smiling" id="image-6bcf13ac84" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                                      <img src="./assets/Vector_1.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="lady smiling">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="container responsivegrid copy socio aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                                <div class="text quote-content">
-                                                    <div id="text-49e22e7256" class="cmp-text">
-                                                        <p>Copy</p>
-                                                    </div>
-                                                </div>
-                                                <div class="image logo-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                                    <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_1715762034/container_1796181454/tabs/item_1669125273755/image_copy.coreimg{.width}.png/1669126312045/quote-img.png" data-asset="/content/dam/LeaderImpact/site-./assets/Vector_2.png" data-title="lady smiling" id="image-6bcf13ac84" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                                      <img src="./assets/Vector_2.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="lady smiling">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                    </div>
-                                </div>
-
-                        </div>
-                    </div>
-
-                    <div class="container responsivegrid article-bottom aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                        <div id="article-bottom-container" class="cmp-container">
-
-                                <div class="container responsivegrid img-text-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                    <div class="image img-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                        <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_1715762034/container_1796181454/tabs/item_1669125273755/image_copy.coreimg{.width}.png/1669126312045/quote-img.png" data-asset="/content/dam/LeaderImpact/site-./assets/Rectangle_726.png" data-title="lady smiling" id="image-6bcf13ac84" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                          <img src="./assets/Rectangle_726.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="lady smiling">
-                                        </div>
-                                    </div>
-                                    <div class="text subtext-wrap quote-content">
-                                        <div id="text-49e22e7256" class="cmp-text">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in. Venenatis lectus magna fringilla urna. Tempor orci eu lobortis elementum nibh. Risus nec feugiat in fermentum posuere urna nec tincidunt. Facilisis leo vel fringilla est. Lobortis ma purus in. Arcu odio ut sem nulla pharetra diam sit amet nisl. Enim sed faucibus turpis in eu mi bibendum neque. Sed elementum tempus egestas sed sed risus pretium quam.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="container responsivegrid article-text-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                    <div id="article-text-container" class="cmp-container">
-
-                                            <div class="title title-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                                <div id="title-63091b8133" class="cmp-title">
-                                                  <h3 class="cmp-title__text">Section Title Ipsum Dolar</h3>
-                                                </div>
-                                            </div>
-                                            <div class="text subtext-wrap quote-content">
-                                                <div id="text-49e22e7256" class="cmp-text">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in. Venenatis lectus magna fringilla urna. Tempor orci eu lobortis elementum nibh. Risus nec feugiat in fermentum posuere urna nec tincidunt. Facilisis leo vel fringilla est. Lobortis ma purus in. Arcu odio ut sem nulla pharetra diam sit amet nisl. Enim sed faucibus turpis in eu mi bibendum neque. Sed elementum tempus egestas sed sed risus pretium quam.</p>
-                                                </div>
-                                            </div>
-                                            <div class="title quote sub-heading-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                                <div id="title-63091b8133" class="cmp-title">
-                                                  <h3 class="cmp-title__text">Lorem ipsum dolor amet, consect etur adipiscing elit sed do eius. Consect etur adipiscing elit sed.</h3>
-                                                </div>
-                                            </div>
-                                            <div class="text subtext-wrap quote-content">
-                                                <div id="text-49e22e7256" class="cmp-text">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in. Venenatis lectus magna fringilla urna. Tempor orci eu lobortis elementum nibh. Risus nec feugiat in fermentum posuere urna nec tincidunt. Facilisis leo vel fringilla est. Lobortis ma purus in. Arcu odio ut sem nulla pharetra diam sit amet nisl. Enim sed faucibus turpis in eu mi bibendum neque. Sed elementum tempus egestas sed sed risus pretium quam.</p>
-                                                </div>
-                                            </div>
-                                            <div class="title title-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                                <div id="title-63091b8133" class="cmp-title">
-                                                  <h2 class="cmp-title__text">Section Title Ipsum Dolar</h2>
-                                                </div>
-                                            </div>
-                                            <div class="text subtext-wrap quote-content">
-                                                <div id="text-49e22e7256" class="cmp-text">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in. Venenatis lectus magna fringilla urna. Tempor orci eu lobortis elementum nibh. Risus nec feugiat in fermentum posuere urna nec tincidunt. Facilisis leo vel fringilla est. Lobortis ma purus in. Arcu odio ut sem nulla pharetra diam sit amet nisl. Enim sed faucibus turpis in eu mi bibendum neque. Sed elementum tempus egestas sed sed risus pretium quam.</p>
-                                                </div>
-                                            </div>
-
-                                    </div>
-                                </div>
-                                <div class="container responsivegrid bottom-img aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                    <div class="image img-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                        <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_1715762034/container_1796181454/tabs/item_1669125273755/image_copy.coreimg{.width}.png/1669126312045/quote-img.png" data-asset="/content/dam/LeaderImpact/site-./assets/Rectangle_726.png" data-title="lady smiling" id="image-6bcf13ac84" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                          <img src="./assets/Rectangle_709.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt." title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt." >
-                                          <span class="cmp-image__title" itemprop="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="text secondary-text quote-content">
-                                        <div id="text-49e22e7256" class="cmp-text">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                        </div>
-                                    </div> -->
-                                </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container responsivegrid article-slider aem-GridColumn aem-GridColumn--default--12 layout-grid">
-            <div id="container-b0c5fbd9e2" class="cmp-container">
-              <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
-                <div class="responsivegrid aem-GridColumn title-btn-wrap aem-GridColumn--default--12 layout-grid">
-                  <div id="container-56884b3bb11" class="cmp-container">
-
-                      <div class="title aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                        <div id="title-bcb754f8400" class="cmp-title">
-                          <h5 class="cmp-title__text">Leading Through a Crisis Video Series</h5>
-                        </div>
+          <div id="article-container" class="cmp-container">
+            <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+              <div class="container responsivegrid heading-author aem-GridColumn aem-GridColumn--default--none aem-GridColumn--default--10 aem-GridColumn--offset--default--0 aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--offset--phone--0">
+                <div class="cmp-container">
+                  <div class="text date quote-content">
+                      <div class="cmp-text">
+                          <p>November 28, 2022 </p>
                       </div>
-
+                  </div>
+                  <div class="title heading ">
+                      <div class="cmp-title">
+                        <h1 class="cmp-title__text">Uncommon Opportunities to Lead</h1>
+                      </div>
+                  </div>
+                  <div class="text author quote-content">
+                      <div class="cmp-text">
+                          <p>by Ed Maggard</p>
+                      </div>
                   </div>
                 </div>
-
-                <div class=" responsivegrid aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                  <div id="container-9ce1cf14410" class="cmp-container">
-                    <div class="resource-slider ">
-                          <div class="container responsivegrid post-item aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                            <div id="container-172911e9c5" class="cmp-container">
-
-                                <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                  <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_273228732/container/container_254357149/image.coreimg{.width}.svg/1669068912998/post-article.svg" data-asset="/content/dam/LeaderImpact/site-./assets/post-article.svg" data-title="logo" id="image-91e3c387c10" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                    <img src="./assets/post-article.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="logo">
-                                  </div>
-                                </div>
-                                <div class="teaser aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                  <div class="cmp-teaser">
-                                    <div class="cmp-teaser__image">
-                                      <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_273228732/container/container_254357149/teaser.coreimg{.width}.png/1669068677351/latest-post1.png" data-asset="/content/dam/LeaderImpact/site-./assets/latest-post1.png" data-asset-id="0b6ddea4-6648-4057-abf4-e1c3c7c5e4c8" id="image-cd419a3s839" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                        <a class="cmp-image__link" href="/content/leaderimpact/lang/en2/resources/leading-forward-series.html" data-cmp-hook-image="link">
-                                          <img src="./assets/latest-post1.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="">
-                                        </a>
-                                      </div>
-                                    </div>
-
-                                    <div class="cmp-teaser__content">
-                                      <h2 class="cmp-teaser__title">
-                                        <a class="cmp-teaser__title-link" href="/content/leaderimpact/lang/en2/resources/leading-forward-series.html">Living the Fullfilled Life of a Leader</a>
-                                      </h2>
-                                      <div class="cmp-teaser__description"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                            </div>
-                          </div>
-
-                          <div class="container responsivegrid post-item aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                            <div id="container-eee8345f82" class="cmp-container">
-
-                                <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                  <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_273228732/container/container_254357149_/image.coreimg{.width}.svg/1669068912998/post-article.svg" data-asset="/content/dam/LeaderImpact/site-./assets/post-article.svg" data-title="logo" id="image-fd860772a7" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                    <img src="./assets/post-article.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="logo">
-                                  </div>
-                                </div>
-
-                                <div class="teaser aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                  <div class="cmp-teaser">
-                                    <div class="cmp-teaser__image">
-                                      <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_273228732/container/container_254357149_/teaser.coreimg{.width}.png/1669069332703/latest-post2.png" data-asset="/content/dam/LeaderImpact/site-./assets/latest-post2.png" data-asset-id="0dae268c-3451-4422-bcd5-5d50f3d4be89" id="image-c0002c5af7" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                        <a class="cmp-image__link" href="/content/leaderimpact/lang/en2/resources/leading-forward-series.html" data-cmp-hook-image="link">
-                                          <img src="./assets/latest-post2.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="">
-                                        </a>
-                                      </div>
-                                    </div>
-
-                                    <div class="cmp-teaser__content">
-                                      <h2 class="cmp-teaser__title">
-                                        <a class="cmp-teaser__title-link" href="/content/leaderimpact/lang/en2/resources/leading-forward-series.html">Who’s Following in your Wake?</a>
-                                      </h2>
-                                      <div class="cmp-teaser__description"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                            </div>
-                          </div>
-
-                          <div class="container responsivegrid post-item aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                            <div id="container-9d6da4685a" class="cmp-container">
-
-                                <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                  <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_273228732/container/container_254357149__1845441463/image.coreimg{.width}.svg/1669069372251/post-book.svg" data-asset="/content/dam/LeaderImpact/site-./assets/post-book.svg" data-title="logo" id="image-bda35b0a19" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                    <img src="./assets/post-book.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="logo">
-                                  </div>
-                                </div>
-
-                                <div class="teaser aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                  <div class="cmp-teaser">
-                                    <div class="cmp-teaser__image">
-                                      <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_273228732/container/container_254357149__1845441463/teaser.coreimg{.width}.png/1669069414315/latest-post3.png" data-asset="/content/dam/LeaderImpact/site-./assets/latest-post3.png" data-asset-id="31038f2a-5ba4-4399-a1f0-c933be9b065b" id="image-d9c794a479" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                        <a class="cmp-image__link" href="/content/leaderimpact/lang/en/impact-book.html" data-cmp-hook-image="link">
-                                          <img src="./assets/latest-post3.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="">
-                                        </a>
-                                      </div>
-                                    </div>
-
-                                    <div class="cmp-teaser__content">
-                                      <h2 class="cmp-teaser__title">
-                                        <a class="cmp-teaser__title-link" href="/content/leaderimpact/lang/en/impact-book.html">Becoming a Leader of Impact Book</a>
-                                      </h2>
-                                      <div class="cmp-teaser__description"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                            </div>
-                          </div>
-
-                          <div class="container responsivegrid post-item aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                            <div id="container-65d37f1ed7" class="cmp-container">
-
-                                <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                  <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_273228732/container/container_254357149__2023736202/image.coreimg{.width}.svg/1669069447619/video.svg" data-asset="/content/dam/LeaderImpact/site-./assets/video.svg" data-title="logo" id="image-30c883b926" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                    <img src="./assets/video.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="logo">
-                                  </div>
-                                </div>
-
-                                <div class="teaser aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                  <div class="cmp-teaser">
-                                    <div class="cmp-teaser__image">
-                                      <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_273228732/container/container_254357149__2023736202/teaser.coreimg{.width}.png/1669069497270/latest-post4.png" data-asset="/content/dam/LeaderImpact/site-./assets/latest-post4.png" data-asset-id="5aed357e-9be0-407f-922e-e289625c3207" id="image-aade128154" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                        <a class="cmp-image__link" href="/content/leaderimpact/lang/en2/resources/leading-through-a-crisis/video-series.html" data-cmp-hook-image="link">
-                                          <img src="./assets/latest-post4.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="">
-                                        </a>
-                                      </div>
-                                    </div>
-
-                                    <div class="cmp-teaser__content">
-                                      <h2 class="cmp-teaser__title">
-                                        <a class="cmp-teaser__title-link" href="/content/leaderimpact/lang/en2/resources/leading-through-a-crisis/video-series.html">Leading in Times of Crisis Video Series</a>
-                                      </h2>
-                                      <div class="cmp-teaser__description"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                            </div>
-                          </div>
+              </div>
+              <div class="container responsivegrid social aem-GridColumn aem-GridColumn--default--none aem-GridColumn--default--2 aem-GridColumn--offset--default--0 aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--offset--phone--0">
+                <div id="social-wrapper" class="cmp-container">
+                  <!-- SHARE-->
+                  <div class="button share socio">
+                      <button class="cmp-button" type="button">
+                          <span class="cmp-button__text">
+                              Share
+                          </span>
+                          <span class="cmp-button__icon cmp-button__icon--share" aria-hidden="true"></span>
+                      </button>
+                  </div>
+                  <!-- SAVE-->
+                  <div class="button save socio">
+                      <button class="cmp-button" type="button">
+                          <span class="cmp-button__text">
+                              Save
+                          </span>
+                          <span class="cmp-button__icon cmp-button__icon--save" aria-hidden="true"></span>
+                      </button>
+                  </div>
+                  <!-- COPY-->
+                  <div class="button copy socio">
+                      <button class="cmp-button" type="button">
+                          <span class="cmp-button__text">
+                            Copy
+                          </span>
+                          <span class="cmp-button__icon cmp-button__icon--copy" aria-hidden="true"></span>
+                      </button>
+                  </div>
+                </div>
+              </div>
+              <div class="container responsivegrid article-bottom aem-GridColumn aem-GridColumn--default--12">
+                <div id="article-bottom-container" class="cmp-container">
+                  <div class="image img-wrap">
+                    <div class="cmp-image">
+                        <img src="./assets/Rectangle_726.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="lady smiling">
+                      </div>
+                  </div>
+                  <div class="text subtext-wrap quote-content">
+                    <div class="cmp-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in. Venenatis lectus magna fringilla urna. Tempor orci eu lobortis elementum nibh. Risus nec feugiat in fermentum posuere urna nec tincidunt. Facilisis leo vel fringilla est. Lobortis ma purus in. Arcu odio ut sem nulla pharetra diam sit amet nisl. Enim sed faucibus turpis in eu mi bibendum neque. Sed elementum tempus egestas sed sed risus pretium quam.</p>
                     </div>
                   </div>
-                </div>
-
-                <!-- Alternate product-slider option -->
-
-
-                <div class="button bottom-btn aem-GridColumn aem-GridColumn--default--12 layout-grid" style="display: none;">
-                  <a id="button-e7ea1382b31" class="cmp-button" href="/content/leaderimpact/lang/en2/resources.html">
-                    <span class="cmp-button__text">Shop All</span>
-                  </a>
+                  
+                  <div class="title title-wrap">
+                    <div id="title-63091b8133" class="cmp-title">
+                      <h3 class="cmp-title__text">Section Title Ipsum Dolar</h3>
+                    </div>
+                  </div>
+                  <div class="text subtext-wrap quote-content">
+                      <div id="text-49e22e7256" class="cmp-text">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in. Venenatis lectus magna fringilla urna. Tempor orci eu lobortis elementum nibh. Risus nec feugiat in fermentum posuere urna nec tincidunt. Facilisis leo vel fringilla est. Lobortis ma purus in. Arcu odio ut sem nulla pharetra diam sit amet nisl. Enim sed faucibus turpis in eu mi bibendum neque. Sed elementum tempus egestas sed sed risus pretium quam.</p>
+                      </div>
+                  </div>
+                  <div class="title quote sub-heading-wrap">
+                      <div id="title-63091b8133" class="cmp-title">
+                        <h3 class="cmp-title__text">Lorem ipsum dolor amet, consect etur adipiscing elit sed do eius. Consect etur adipiscing elit sed.</h3>
+                      </div>
+                  </div>
+                  <div class="text subtext-wrap quote-content">
+                      <div id="text-49e22e7256" class="cmp-text">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in. Venenatis lectus magna fringilla urna. Tempor orci eu lobortis elementum nibh. Risus nec feugiat in fermentum posuere urna nec tincidunt. Facilisis leo vel fringilla est. Lobortis ma purus in. Arcu odio ut sem nulla pharetra diam sit amet nisl. Enim sed faucibus turpis in eu mi bibendum neque. Sed elementum tempus egestas sed sed risus pretium quam.</p>
+                      </div>
+                  </div>
+                  <div class="title title-wrap">
+                      <div id="title-63091b8133" class="cmp-title">
+                        <h2 class="cmp-title__text">Section Title Ipsum Dolar</h2>
+                      </div>
+                  </div>
+                  <div class="text subtext-wrap quote-content">
+                      <div id="text-49e22e7256" class="cmp-text">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in. Venenatis lectus magna fringilla urna. Tempor orci eu lobortis elementum nibh. Risus nec feugiat in fermentum posuere urna nec tincidunt. Facilisis leo vel fringilla est. Lobortis ma purus in. Arcu odio ut sem nulla pharetra diam sit amet nisl. Enim sed faucibus turpis in eu mi bibendum neque. Sed elementum tempus egestas sed sed risus pretium quam.</p>
+                      </div>
+                  </div>
+                  <div class="image img-wrap">
+                    <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_1715762034/container_1796181454/tabs/item_1669125273755/image_copy.coreimg{.width}.png/1669126312045/quote-img.png" data-asset="/content/dam/LeaderImpact/site-./assets/Rectangle_726.png" data-title="lady smiling" id="image-6bcf13ac84" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                      <img src="./assets/Rectangle_709.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt." title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt." >
+                      <span class="cmp-image__title" itemprop="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
 
+        <!-- ARTICLE SLIDER -->
+        <div class="container responsivegrid article-slider aem-GridColumn aem-GridColumn--default--12 layout-grid">
+          <div id="container-b0c5fbd9e2" class="cmp-container">
+            <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+              <!-- ARTICLE MAIN TITLE -->
+              <div class="responsivegrid aem-GridColumn title-btn-wrap aem-GridColumn--default--12 layout-grid">
+                <div id="container-56884b3bb11" class="cmp-container">
+                  <!-- ARTICLE TITLE -->
+                  <div class="title aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                    <div id="title-bcb754f8400" class="cmp-title">
+                      <h5 class="cmp-title__text">Leading Through a Crisis Video Series</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ARTICLE SLIDER WRAP -->
+              <div class=" responsivegrid article-slider-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                <div id="container-9ce1cf14410" class="cmp-container">
+                  <!-- ARTICLE SLIDER ITEM -->
+                  <div class="container responsivegrid post-item aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                    <div id="container-172911e9c5" class="cmp-container">
+                      <div class="teaser aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                        <div class="cmp-teaser">
+                          <div class="cmp-teaser__image post-article__image">
+                            <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_273228732/container/container_254357149/teaser.coreimg{.width}.png/1669068677351/latest-post1.png" data-asset="/content/dam/LeaderImpact/site-./assets/latest-post1.png" data-asset-id="0b6ddea4-6648-4057-abf4-e1c3c7c5e4c8" id="image-cd419a3s839" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                              <a class="cmp-image__link" href="/content/leaderimpact/lang/en2/resources/leading-forward-series.html" data-cmp-hook-image="link">
+                                <img src="./assets/latest-post1.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="cmp-teaser__content">
+                            <h2 class="cmp-teaser__title">
+                              <a class="cmp-teaser__title-link" href="/content/leaderimpact/lang/en2/resources/leading-forward-series.html">Living the Fullfilled Life of a Leader</a>
+                            </h2>
+                            <div class="cmp-teaser__description"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container responsivegrid post-item aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                    <div id="container-eee8345f82" class="cmp-container">
+                      <div class="teaser aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                        <div class="cmp-teaser">
+                          <div class="cmp-teaser__image post-article__image">
+                            <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_273228732/container/container_254357149_/teaser.coreimg{.width}.png/1669069332703/latest-post2.png" data-asset="/content/dam/LeaderImpact/site-./assets/latest-post2.png" data-asset-id="0dae268c-3451-4422-bcd5-5d50f3d4be89" id="image-c0002c5af7" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                              <a class="cmp-image__link" href="/content/leaderimpact/lang/en2/resources/leading-forward-series.html" data-cmp-hook-image="link">
+                                <img src="./assets/latest-post2.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="cmp-teaser__content">
+                            <h2 class="cmp-teaser__title">
+                              <a class="cmp-teaser__title-link" href="/content/leaderimpact/lang/en2/resources/leading-forward-series.html">Who’s Following in your Wake?</a>
+                            </h2>
+                            <div class="cmp-teaser__description"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container responsivegrid post-item aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                    <div id="container-9d6da4685a" class="cmp-container">
+                      <div class="teaser aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                        <div class="cmp-teaser">
+                          <div class="cmp-teaser__image post-book__image">
+                            <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_273228732/container/container_254357149__1845441463/teaser.coreimg{.width}.png/1669069414315/latest-post3.png" data-asset="/content/dam/LeaderImpact/site-./assets/latest-post3.png" data-asset-id="31038f2a-5ba4-4399-a1f0-c933be9b065b" id="image-d9c794a479" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                              <a class="cmp-image__link" href="/content/leaderimpact/lang/en/impact-book.html" data-cmp-hook-image="link">
+                                <img src="./assets/latest-post3.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="cmp-teaser__content">
+                            <h2 class="cmp-teaser__title">
+                              <a class="cmp-teaser__title-link" href="/content/leaderimpact/lang/en/impact-book.html">Becoming a Leader of Impact Book</a>
+                            </h2>
+                            <div class="cmp-teaser__description"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container responsivegrid post-item aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                    <div id="container-65d37f1ed7" class="cmp-container">
+                      <div class="teaser aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                        <div class="cmp-teaser">
+                          <div class="cmp-teaser__image post-video__image">
+                            <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_273228732/container/container_254357149__2023736202/teaser.coreimg{.width}.png/1669069497270/latest-post4.png" data-asset="/content/dam/LeaderImpact/site-./assets/latest-post4.png" data-asset-id="5aed357e-9be0-407f-922e-e289625c3207" id="image-aade128154" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                              <a class="cmp-image__link" href="/content/leaderimpact/lang/en2/resources/leading-through-a-crisis/video-series.html" data-cmp-hook-image="link">
+                                <img src="./assets/latest-post4.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="cmp-teaser__content">
+                            <h2 class="cmp-teaser__title">
+                              <a class="cmp-teaser__title-link" href="/content/leaderimpact/lang/en2/resources/leading-through-a-crisis/video-series.html">Leading in Times of Crisis Video Series</a>
+                            </h2>
+                            <div class="cmp-teaser__description"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Alternate ARTICLE SLIDER option -->
+              <div class="button bottom-btn aem-GridColumn aem-GridColumn--default--12 layout-grid" style="display: none;">
+                <a id="button-e7ea1382b31" class="cmp-button" href="/content/leaderimpact/lang/en2/resources.html">
+                  <span class="cmp-button__text">Shop All</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
         <div class="container responsivegrid footer aem-GridColumn aem-GridColumn--default--12 layout-grid">
           <div id="footer-wrap" class="cmp-container">
             <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+              <!-- FOOTER LOGO -->
               <div class="image site-logo aem-GridColumn aem-GridColumn--default--12 layout-grid">
                 <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/image.coreimg{.width}.svg/1669129774718/footer-logo.svg" data-asset="/content/dam/LeaderImpact/site-./assets/footer-logo.svg" data-title="logo" id="image-2e5a8b7257" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
                   <img src="./assets/footer-logo.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="logo">
                 </div>
               </div>
-
-              <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12 layout-grid footer-grid">
+              <!-- FOOTER NAV WRAP -->
+              <div class="container responsivegrid footer-nav-wrap  aem-GridColumn aem-GridColumn--default--12 layout-grid footer-grid">
                 <div id="container-8dfd65cd0f" class="cmp-container">
-                  <div class="content-wrap">
-                    <div class="title aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                      <div id="title-36fabd18c5" class="cmp-title">
-                        <h3 class="cmp-title__text">Join Thousands of Leaders Leaving a Lasting Impact</h3>
-                      </div>
-                    </div>
-
-                    <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                      <div id="container-32aff43d65" class="cmp-container">
-
-                          <div class="aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                            <div id="button-wrap" class="cmp-container">
-                              <div class="button btn-link aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                <a id="button-1cbc85b1e4" class="cmp-button" href="/content/leaderimpact/lang/en2/stories.html">
-                                  <span class="cmp-button__text">Subscribe to Our Newsletter</span>
-                                </a>
-                              </div>
-
-                              <div class="button btn-link aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                <a id="button-61928ed28f" class="cmp-button" href="/content/leaderimpact/lang/en2/join-a-group.html">
-                                  <span class="cmp-button__text">Join a Group</span>
-                                </a>
-                              </div>
-
-                              <div class="button btn-link aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                <a id="button-9752993433" class="cmp-button" href="/content/leaderimpact/lang/en2/start-a-group.html">
-                                  <span class="cmp-button__text">Start a Group</span>
-                                </a>
-                              </div>
-
-                              <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12 layout-grid navigation-wrap">
-                                <div id="nav-content-wrap" class="cmp-container">
-
-                                    <div class="navigation nav-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                      <div id="container-93b0189817" class="cmp-container">
-                                        <nav id="navigation-9706c9855f" class="cmp-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
-                                          <ul class="cmp-navigation__group">
-                                            <li class="cmp-navigation__item cmp-navigation__item--level-0">
-                                              <a href="/content/leaderimpact/lang/en2/join-a-group.html" class="cmp-navigation__item-link">Join a Group</a>
-                                            </li>
-                                            <li class="cmp-navigation__item cmp-navigation__item--level-0">
-                                              <a href="/content/leaderimpact/lang/en2/start-a-group.html" class="cmp-navigation__item-link">Start a Group</a>
-                                            </li>
-                                            <li class="cmp-navigation__item cmp-navigation__item--level-0">
-                                              <a href="/content/leaderimpact/lang/en2/resources.html" class="cmp-navigation__item-link">Resources</a>
-                                            </li>
-                                            <li class="cmp-navigation__item cmp-navigation__item--level-0">
-                                              <a href="/content/leaderimpact/lang/en2/stories.html" class="cmp-navigation__item-link">About</a>
-                                            </li>
-                                          </ul>
-                                        </nav>
-                                      </div>
-                                    </div>
-
-                                    <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12 layout-grid social-wrap ">
-                                      <div id="container-213142dc3b" class="cmp-container">
-
-                                          <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                            <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container/container/container/container/image.coreimg{.width}.svg/1669130127313/facebook.svg" data-asset="/content/dam/LeaderImpact/site-./assets/facebook.svg" data-title="facebook" id="image-a988be5535" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                              <img src="./assets/facebook.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="facebook">
-                                            </div>
-                                          </div>
-
-                                          <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                            <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container/container/container/container/image_512298232.coreimg{.width}.svg/1669130210337/insta.svg" data-asset="/content/dam/LeaderImpact/site-./assets/insta.svg" data-title="instagram" id="image-ae3671446d" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                              <img src="./assets/insta.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="instagram">
-                                            </div>
-                                          </div>
-
-                                          <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                            <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container/container/container/container/image_1887433809.coreimg{.width}.svg/1669130230195/yt.svg" data-asset="/content/dam/LeaderImpact/site-./assets/yt.svg" data-title="YouTube" id="image-46d1bf6845" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                              <img src="./assets/yt.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="YouTube">
-                                            </div>
-                                          </div>
-
-                                          <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                            <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container/container/container/container/image_1801542987.coreimg{.width}.svg/1669130241057/linkedin.svg" data-asset="/content/dam/LeaderImpact/site-./assets/linkedin.svg" data-title="LinkedIn" id="image-bb85cd5a39" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                              <img src="./assets/linkedin.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="LinkedIn">
-                                            </div>
-                                          </div>
-
-                                      </div>
-                                    </div>
-
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                      </div>
+                  <!-- FOOTER TITLE -->
+                  <div class="title">
+                    <div id="title-36fabd18c5" class="cmp-title">
+                      <h3 class="cmp-title__text">Join Thousands of Leaders Leaving a Lasting Impact</h3>
                     </div>
                   </div>
-                </div>
-              </div>
+                  <!-- FOOTER BUTTON WRAP -->
+                  <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                    <div id="button-wrap" class="cmp-container">
+                      <!-- FOOTER BUTTONS -->
+                      <div class="button btn-link aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                        <a id="button-1cbc85b1e4" class="cmp-button" href="/content/leaderimpact/lang/en2/stories.html">
+                          <span class="cmp-button__text">Subscribe to Our Newsletter</span>
+                        </a>
+                      </div>
 
-              <div class="container responsivegrid footer-bottom-container aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                <div id="container-48cdc20019" class="cmp-container">
-                  <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
-                    <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12 layout-grid inner-wrap">
-                      <div id="container-4873689adb" class="cmp-container">
-                        <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
-                          <div class=" responsivegrid aem-GridColumn aem-GridColumn--default--12 layout-grid copy-right">
-                            <div id="container-11ba88df40" class="cmp-container">
-                              <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
-                                <div class="text aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                  <div id="text-a69e08dea6" class="cmp-text">
-                                    <p>©1994-2022. LeaderImpact™ All Rights Reserved.</p>
-                                  </div>
-                                </div>
+                      <div class="button btn-link aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                        <a id="button-61928ed28f" class="cmp-button" href="/content/leaderimpact/lang/en2/join-a-group.html">
+                          <span class="cmp-button__text">Join a Group</span>
+                        </a>
+                      </div>
 
-                                <div class="image logo-img aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                  <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container_1777610207/container/container/image.coreimg{.width}.svg/1669130630947/copyright-ecfa.svg" data-asset="/content/dam/LeaderImpact/site-./assets/copyright-ecfa.svg" data-title="logo" id="image-77a3439061" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
-                                    <img src="./assets/copyright-ecfa.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="logo">
-                                  </div>
+                      <div class="button btn-link aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                        <a id="button-9752993433" class="cmp-button" href="/content/leaderimpact/lang/en2/start-a-group.html">
+                          <span class="cmp-button__text">Start a Group</span>
+                        </a>
+                      </div>
+                      <!-- FOOTER NAVIGATION WRAP -->
+                      <div class="container responsivegrid navigation-wrap aem-GridColumn aem-GridColumn--default--6 layout-grid">
+                        <div id="nav-content-wrap" class="cmp-container">
+                          <div class="navigation nav-wrap ">
+                            <nav id="navigation-9706c9855f" class="cmp-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                              <ul class="cmp-navigation__group">
+                                <!-- FOOTER NAVIGATION ITEM -->
+                                <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                                  <a href="/content/leaderimpact/lang/en2/join-a-group.html" class="cmp-navigation__item-link">Join a Group</a>
+                                </li>
+                                <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                                  <a href="/content/leaderimpact/lang/en2/start-a-group.html" class="cmp-navigation__item-link">Start a Group</a>
+                                </li>
+                                <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                                  <a href="/content/leaderimpact/lang/en2/resources.html" class="cmp-navigation__item-link">Resources</a>
+                                </li>
+                                <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                                  <a href="/content/leaderimpact/lang/en2/stories.html" class="cmp-navigation__item-link">About</a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                          <!-- FOOTER SOCIAL WRAP -->
+                          <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--6 layout-grid social-wrap ">
+                            <div id="container-213142dc3b" class="cmp-container">
+                              <!-- FOOTER SOCIAL ICON -->
+                              <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                                <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container/container/container/container/image.coreimg{.width}.svg/1669130127313/facebook.svg" data-asset="/content/dam/LeaderImpact/site-./assets/facebook.svg" data-title="facebook" id="image-a988be5535" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                                  <img src="./assets/facebook.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="facebook">
                                 </div>
                               </div>
-                            </div>
-                          </div>
-
-                          <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                            <div id="container-e0748c53a0" class="cmp-container">
-                              <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 term-policy-wrap">
-                                <div class="text aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                  <div id="text-8effc7147d" class="cmp-text">
-                                    <p><a href="/content/leaderimpact/lang/en2/stories.html" target="_self">Privacy</a></p>
-                                  </div>
+                              <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                                <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container/container/container/container/image_512298232.coreimg{.width}.svg/1669130210337/insta.svg" data-asset="/content/dam/LeaderImpact/site-./assets/insta.svg" data-title="instagram" id="image-ae3671446d" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                                  <img src="./assets/insta.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="instagram">
                                 </div>
-
-                                <div class="text aem-GridColumn aem-GridColumn--default--12 layout-grid">
-                                  <div id="text-098b89168c" class="cmp-text">
-                                    <p><a href="/content/leaderimpact/lang/en2/stories.html" target="_self">Terms of Use</a></p>
-                                  </div>
+                              </div>
+                              <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                                <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container/container/container/container/image_1887433809.coreimg{.width}.svg/1669130230195/yt.svg" data-asset="/content/dam/LeaderImpact/site-./assets/yt.svg" data-title="YouTube" id="image-46d1bf6845" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                                  <img src="./assets/yt.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="YouTube">
+                                </div>
+                              </div>
+                              <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                                <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container/container/container/container/image_1801542987.coreimg{.width}.svg/1669130241057/linkedin.svg" data-asset="/content/dam/LeaderImpact/site-./assets/linkedin.svg" data-title="LinkedIn" id="image-bb85cd5a39" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                                  <img src="./assets/linkedin.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="LinkedIn">
                                 </div>
                               </div>
                             </div>
@@ -660,6 +557,37 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FOOTER BOTTOM WRAP -->
+              <div class="container responsivegrid footer-bottom-container aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                <div id="container-48cdc20019" class="cmp-container">
+                  <!-- FOOTER COPYRIGHT -->
+                  <div class="image copy-right-img aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                    <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container_1777610207/container/container/image.coreimg{.width}.svg/1669130630947/copyright-ecfa.svg" data-asset="/content/dam/LeaderImpact/site-./assets/copyright-ecfa.svg" data-title="logo" id="image-77a3439061" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                      <p class="cmp-image__title">©1994-2022. LeaderImpact™ All Rights Reserved.</p>
+                      <img src="./assets/copyright-ecfa.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="logo">
+                    </div>
+                  </div>
+                  <div class="term-policy-wrap">
+                    <ul id="list-47b09bfbb1" class="cmp-list">
+                      <!-- LIST ITEMS -->
+                      <li class="cmp-list__item term-policy-item">
+                        <article>
+                          <a class="cmp-list__item-link" href="#">
+                            <span class="cmp-list__item-title">Privacy</span>
+                          </a>
+                        </article>
+                      </li>
+                      <li class="cmp-list__item term-policy-item">
+                        <article>
+                          <a class="cmp-list__item-link" href="#">
+                            <span class="cmp-list__item-title">Terms of Use</span>
+                          </a>
+                        </article>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

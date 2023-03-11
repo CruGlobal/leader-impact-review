@@ -1,60 +1,73 @@
 .contact{
-    background: linear-gradient(to left, #303031 50%, #ffffff 50%);
-    padding: 0 30px;
-    @media (max-width:991px) {
-        background: linear-gradient(to top, #303031 50%, #ffffff 50%);
-    }
-    #contact-container{
-        & > div:first-child{
-            display: flex;
-            width: 100%;
-            max-width: 1440px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            .content-wrap{
-                flex: 0 0 50%;
-                align-items: center;
-                padding: 70px 50px 70px 0px;
-                @media (max-width:991px) {
-                    flex: 100%;
-                }
-                @media (max-width:767px) {
-                    padding-right: 0;
-                 }
-                .top-content{
-                    #top-content-container{
-                        & > div:first-child{
+    .contact-us{
+        background: linear-gradient(to left, #303031 50%, #ffffff 50%);
+        padding: 0 30px;
+        @include md-screen{
+            background: linear-gradient(to top, #303031 50%, #ffffff 50%);
+        }
+        @include sm-screen{
+            background: linear-gradient(to top, #303031 45%, #ffffff 45%);
+        }
+        #contact-container{
+            .aem-Grid{
+                display: flex;
+                width: 100%;
+                max-width: 1440px;
+                margin: 0 auto;
+                flex-wrap: wrap;
+                .contact-content{
+                    flex: 0 0 50%;
+                    padding: 70px 50px 70px 0px;
+                    @include md-screen{
+                        flex: 100%;
+                    }
+                    @include sm-screen{
+                        padding-right: 0;
+                     }
+                     .contact-title{
+                        h1{
+                            font-size: 50px;
+                            line-height: 66px;
+                            color: $gray;
+                        }
+                    }
+                    .contact-subtext{
+                        font-size: 16px;
+                        line-height: 24px;
+                        max-width: 360px;
+                        margin-top: 10px;
+                    }
+                    .contact-subtitle{
+                        h6{
+                            font-size: 25px;
+                            line-height: 24px;
+                            padding: 30px 0 20px;
+                            color: #414042;
+                        }
+                    }
+                    .contact-text-button{
+                        .cmp-container{
                             display: flex;
-                            @media (max-width:767px) {
-                                flex-wrap: wrap;
+                            @include md-screen{
+                                flex-direction: column;
                             }
-                            .text-wrap{
+                            .button-text{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
                                 width: 50%;
-                                @media (max-width:767px) {
-                                   width: 100%;
-                                }
-                                .heading-wrap{
-                                    .title{
-                                        h1{
-                                            font-size: 50px;
-                                            line-height: 66px;
-                                            color: $gray;
-                                        }
-                                    }
-                                    .paragraph{
-                                        font-size: 16px;
-                                        line-height: 24px;
-                                        max-width: 360px;
-                                        margin-top: 10px;
+                                @include md-screen{
+                                    width: 100%;
+                                    &:first-child{
+                                        margin-bottom: 30px;
                                     }
                                 }
-                                .address-wrap{
-                                    color: $gray;
-                                    .sub-title{
-                                        h6{
-                                            font-size: 25px;
-                                            line-height: 24px;
-                                            padding: 30px 0 20px;
+                                .btn-text{
+                                    &.underline{
+                                        padding-top: 20px;
+                                        padding-right: 10px;
+                                        p{
+                                            border-bottom: 1px solid #FFCF07;
                                         }
                                     }
                                     p{
@@ -62,65 +75,21 @@
                                         font-weight: 400;
                                         font-size: 16px;
                                         line-height: 24px;
-                                        width: fit-content;
-                                    }
-                                    .number{
-                                        p{
-                                            padding-top: 20px;
-                                            padding-right: 10px;
-                                            border-bottom: 1px solid $yellow;
-                                        }
-                                    }
-                                    .email-text{
-                                        p{
-                                            padding-top: 20px;
-                                            padding-right: 10px;
-                                            border-bottom: 1px solid $yellow;
-                                        }
+                                        width: max-content;
+                                        color: #414042;
                                     }
                                 }
+                                @include bgbutton;
+                                 .button{
+                                    margin-bottom: 20px;
+                                 }
                             }
                         }
                     }
-                }
-                .button-align{
-                    display: flex;
-                    align-items: flex-end;
-                    @include sm-screen{
-                        width: 100%;
-                     }
-                    .button-wrap{
-                        margin-top: 20px;
-                        display: flex;
-                        align-items: center;
-                        grid-gap: 30px;
-                        @include bgbutton;
-                        .button{
-                            .btn-text{
-                                @include xs-screen{
-                                    font-size: 12px;
-                                }
-                            }
-                            &:hover{
-                                a{
-                                    &::before{
-                                        background: transparent;
-                                        border-color: $yellow;
-                                    }
-                                    &::after{
-                                        background: transparent;
-                                        border-color: $yellow;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .socials{
-                    border-top: 1px solid #EBECEC;
-                    padding-top: 40px;
-                    margin-top: 40px;
-                    .title-socials{
+                    .social-title{
+                        border-top: 1px solid #EBECEC;
+                        margin-top: 40px;
+                        padding-top: 40px;
                         h3{
                             font-family: 'Source Sans Pro';
                             font-style: normal;
@@ -129,133 +98,129 @@
                             line-height: 24px;
                         }
                     }
-                    .icons{
+                    .social-logos{
                         padding-top: 30px;
                         .cmp-container{
-                            & > div:first-child{
-                                display: flex;
-                                grid-gap: 10px;
-                                a{
-                                    margin-right: 0px;
-                                    margin-top: 10px;
-                                    margin-right: 15px;
-                                    svg{
-                                        transform: scale(1.3);
-                                        &:hover{
-                                            fill: $yellow;
-                                        }
+                            display: flex;
+                            grid-gap: 10px;
+                            a{
+                                margin-right: 0px;
+                                margin-top: 10px;
+                                margin-right: 15px;
+                                svg{
+                                    transform: scale(1.3);
+                                    &:hover{
+                                        fill: $yellow;
                                     }
                                 }
                             }
+
                         }
                     }
-                } 
-            }
-            .form{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding: 70px 50px;
-                padding-right: 20px;
-                flex: 0 0 50%;
-                @media (max-width:991px) {
-                    flex: 100%;
-                    padding: 70px 50px 70px 0px;
-                    
                 }
-                @media (max-width:767px) {
-                    padding-right: 0;
-                 }
-                .formtext{
-                    p{
-                        font-size: 16px;
-                        line-height: 24px;
-                        color: #9C9FA1;
-                        margin-bottom: 30px;
-                        width: 100%;
-                        text-align: left;
+                .contact-form{
+                    padding: 70px 50px;
+                    padding-right: 0px;
+                    flex: 0 0 50%;
+                    @include md-screen{
+                        flex: 100%;
+                        padding: 70px 50px 70px 0px;
+                        
                     }
-                }
-                .form-container{
-                    .container{
-                        display: flex;
-                        form{
-                            @media(max-width:768px){
-                                padding: 20px;
-                            }
-                            display: flex;
-                            grid-gap: 20px;
+                    @include sm-screen{
+                        padding-right: 0;
+                     }
+                    .formtext{
+                        p{
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #9C9FA1;
+                            margin-bottom: 30px;
                             width: 100%;
-                            justify-content: space-between;
-                            flex-wrap: wrap;
-                            input{
-                                width: 100%;
-                                border: none;
-                                border-bottom: 1px solid #9C9FA1;
-                                background: transparent;
-                                padding: 10px 10px 10px 0px;
-                                font-family: $source;
-                                color: white;
-                                &.mail{
-                                    flex: 0 0 46%;
+                            text-align: left;
+                        }
+                    }
+                    .form-container{
+                        .container{
+                            display: flex;
+                            form{
+                                @include sm-screen{
+                                    padding: 0px;
                                 }
-                                &.phone{
-                                    flex: 0 0 46%;
-                                }
-                                &::placeholder {
-                                    font-family: $source;
-                                    font-weight: 600;
-                                    font-size: 16;
-                                    color: white;
-                                }
-                            }
-                            textarea{
-                                width: 100%;
-                                background: transparent;
-                                padding: 10px 10px 10px 10px;
-                                border: 1px solid #9C9FA1;
-                                border-radius: 5px;
-                                resize: none;
-                                height: 150px !important;
-                                &::placeholder {
-                                    font-family: $source;
-                                    font-weight: 600;
-                                    font-size: 16;
-                                    color: white;
-                                }
-                            }
-                            select{
-                                width: 100%;
-                                border-bottom: 1px solid #9C9FA1;
-                                background: transparent;
-                                padding: 10px 10px 10px 0px;
-                                border: none;
-                                border-bottom: 1px solid #9C9FA1;
-                                color: white;
-                                option{
-                                    font-family: $source;
-                                    font-weight: 600;
-                                    font-size: 16;
-                                    color: white;
-                                    background-color: $gray;
-                                }
-                                .white{
-                                    color: white;
-                                }
-                            }
-                            span{
                                 display: flex;
-                                justify-content: center;
-                                width: fit-content;
-                                margin: 0 auto;
-                                .submit{
-                                    border: 1px solid #FFCF07;
-                                    border-radius: 35px;
-                                    text-align: center;
-                                    margin: 10px;
-                                    padding: 10px 30px;
-                                    background-color: transparent;
+                                grid-gap: 20px;
+                                width: 100%;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                input{
+                                    width: 100%;
+                                    border: none;
+                                    border-bottom: 1px solid #9C9FA1;
+                                    background: transparent;
+                                    padding: 10px 10px 10px 0px;
+                                    font-family: $source;
                                     color: white;
+                                    &.mail{
+                                        flex: 0 0 46%;
+                                    }
+                                    &.phone{
+                                        flex: 0 0 46%;
+                                    }
+                                    &::placeholder {
+                                        font-family: $source;
+                                        font-weight: 600;
+                                        font-size: 16;
+                                        color: white;
+                                    }
+                                }
+                                textarea{
+                                    width: 100%;
+                                    background: transparent;
+                                    padding: 10px 10px 10px 10px;
+                                    border: 1px solid #9C9FA1;
+                                    border-radius: 5px;
+                                    resize: none;
+                                    height: 150px !important;
+                                    &::placeholder {
+                                        font-family: $source;
+                                        font-weight: 600;
+                                        font-size: 16;
+                                        color: white;
+                                    }
+                                }
+                                select{
+                                    width: 100%;
+                                    border-bottom: 1px solid #9C9FA1;
+                                    background: transparent;
+                                    padding: 10px 10px 10px 0px;
+                                    border: none;
+                                    border-bottom: 1px solid #9C9FA1;
+                                    color: white;
+                                    option{
+                                        font-family: $source;
+                                        font-weight: 600;
+                                        font-size: 16;
+                                        color: white;
+                                        background-color: $gray;
+                                    }
+                                    .white{
+                                        color: white;
+                                    }
+                                }
+                                span{
+                                    display: flex;
+                                    justify-content: center;
+                                    width: fit-content;
+                                    margin: 0 auto;
+                                    .submit{
+                                        border: 1px solid #FFCF07;
+                                        border-radius: 35px;
+                                        text-align: center;
+                                        margin: 10px;
+                                        padding: 10px 30px;
+                                        background-color: transparent;
+                                        color: white;
+                                    }
                                 }
                             }
                         }

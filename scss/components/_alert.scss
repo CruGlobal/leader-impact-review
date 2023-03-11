@@ -1,130 +1,126 @@
 .alert-bar{
     padding: 0 30px;
-    #container_alert{
-      
+    display: flex;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 50%;
+        left: 65px;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        background: linear-gradient(-90deg, #FFCF07 -120.02%, rgba(255, 207, 7, 0) 48.57%);
+        z-index: -1;
+        @media(max-width:1250px){
+            width: 47%;
+        }
+        @media(max-width:991px){
+            width: 100%;
+        }
+    }
+    #alert-bar_cmp{
         max-width: 1200px;
+        width: 100%;
         margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        @include md-screen{
-            flex-direction: column;
-            align-items: center;
-            padding: 50px 0
+        @media(max-width:991px){
+            padding: 50px 0;
         }
-        &::before{
-            content: "";
-            position: absolute;
-            width: 50%;
-            left: 65px;
-            top: 0;
-            bottom: 0;
-            height: 100%;
-            background: linear-gradient(-90deg, $yellow -120.02%, rgba(255, 207, 7, 0) 48.57%);
-            @include md-screen{
-                left: unset;
-                right: -30px;
-            }
-        }
-        .alert-logo-wrap{
-            z-index: 20;
-            @include md-screen{
-                width: 100%;
-                margin-bottom: 30px;
-            }
-            .cmp-image{
-                display: flex;
-                align-items: center;
-                grid-column-gap: 30px;
-                @include md-screen{
-                    width: 100%;
-                    flex-direction: column;
-                }
-                img{
-                    @include lg-screen{
-                        width: 150px;
+        .aem-Grid{
+            .alert-bar-flex{
+                #alert-bar-flex_cmp{
+                    display: flex;
+                    flex-wrap: wrap;
+                    @media(max-width:991px){
+                        max-width: 477px;
+                        margin: 0 auto;
                     }
-                    @include md-screen{
-                        width: 180px;
-                    }
-                }
-                .cmp-image__title{
-                    font-weight: 600;
-                    font-size: 18px;
-                    line-height: 28px;
-                    color: $gray;
-                    @include md-screen{
-                        margin-top: 20px;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-        .alert-btn-wrap{
-            .cmp-container{
-            display: flex;
-            align-items: center;
-            grid-column-gap: 30px;
-            z-index: 20;
-            position: relative;
-            @include lg-screen{
-                flex-wrap: wrap;
-                grid-column-gap: 10px;
-                justify-content: space-between;
-            }
-            @include md-screen{
-                width: 100%;
-                flex-direction: column;
-            }
-            .cmp-image{
-                @include lg-screen{
-                    width: 65%;
-                    margin: 0 auto;
-                }
-                @include sm-screen{
-                    width: 100%;
-                }
-                img{
-                    width: 100%;
-                    display: block;
-                }
-            }
-            @include bgbutton;
-            .button{
-                @include lg-screen{
-                    width: 30%;
-                }
-                @include sm-screen{
-                    width: 100%;
-                }
-                @include md-screen{
-                    justify-content: center;
-                    margin-top: 40px;
-                }
-                transition: all 0.3 ease;
-                &:hover{
-                    a{
-                        &::before{
-                            background: transparent;
-                            border-color: $yellow;
+                    .left-col{
+                        width: 45%;
+                        @media(max-width:1250px){
+                            width: 40%;
                         }
-                        &::after{
-                            background: transparent;
-                            border-color: $yellow;
+                        @media(max-width:991px){
+                            width: 100%;
+                            margin-bottom: 30px;
+                        }
+                        #left-col_cmp{
+                            display: flex;
+                            height: 100%;
+                            align-items: center;
+                            @media(max-width:991px){
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                            .image{
+                                margin-right: 45px;
+                                @media(max-width:1250px){
+                                    margin-right: 15px;
+                                }
+                                @media(max-width:991px){
+                                    margin-right: 0;
+                                }
+                            }
+                            .text{
+                                .cmp-text{
+                                    p{
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        line-height: 28px;
+                                        color: #414042;
+                                        text-align: center;
+                                    }
+                                }
+                            }
                         }
                     }
-                }
-                a{
-                    span{
-                        @include lg-screen{
-                            font-size: 12px;
+                    .right-col{
+                        width: 55%;
+                        @media(max-width:1250px){
+                            width: 60%;
+                        }
+                        @media(max-width:991px){
+                            width: 100%;
+                        }
+                        #right-col_cmp{
+                            display: flex;
+                            height: 100%;
+                            align-items: center;
+                            @media(max-width:991px){
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                            .image{
+                                height: 100%;
+                                @media(max-width:991px){
+                                    width: 65%;
+                                    margin: 0 auto;
+                                }
+                                .cmp-image{
+                                    height: 100%;
+                                    img{
+                                        height: 100%;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            @include bgbutton;
+                            .button{
+                                margin-left: 20px;
+                                @media(max-width:991px){
+                                    margin-top: 40px;
+                                    margin-left: 0;
+                                }
+                                a{
+                                    span{
+                                        white-space: nowrap;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
-            }
         }
-
     }
 }
