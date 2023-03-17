@@ -22,6 +22,53 @@
     @include lg-screen{
         padding-left: 30px;
     }
+    &.slider{
+        background-color: $gray;
+        margin: 0px;
+        padding-top: 100px;
+        .product-title{
+            .cmp-container{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 28px;
+                .btn-link{
+                    margin-right: 250px;
+                    @include lg-screen{
+                        margin-right: 200px;
+                    }
+                    @include md-screen{
+                        margin-right: 160px;
+                    }
+                    @include sm-screen{
+                        margin-right: 30px;
+                    }
+                    @include xs-screen{
+                        display: none;
+                    }
+                }
+                @include bgbutton;
+            }
+        }
+        .product-slider-wrap{
+            .product-item{
+                .post-product__image{
+                    img{
+                        height: 220px;
+                        width: 150px;
+                        object-fit: cover;
+                        @include xl-screen{
+                            height: 200px;
+                            width: 130px;
+                        }
+                        @include md-screen{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .product-title{
         color: #FFFFFF;
         margin-bottom: 20px;
