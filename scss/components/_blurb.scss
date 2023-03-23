@@ -83,6 +83,11 @@
                         }
                     }
                 }
+                &.button-side-by-side{
+                    .cmp-container{
+                        display: flex;
+                    }
+                }
             }
             .mobile-img{
                 display: none;

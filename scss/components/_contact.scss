@@ -24,9 +24,9 @@
                     @include sm-screen{
                         padding-right: 0;
                      }
-                     .contact-title{
-                        h1{
-                            font-size: 50px;
+                     .title{
+                        .contact-title{
+                            font-size: 58px;
                             line-height: 66px;
                             color: $gray;
                         }
@@ -36,6 +36,9 @@
                         line-height: 24px;
                         max-width: 360px;
                         margin-top: 10px;
+                        p{
+                            margin: 0;
+                        }
                     }
                     .contact-subtitle{
                         h6{
@@ -48,48 +51,63 @@
                     .contact-text-button{
                         .cmp-container{
                             display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: end;
                             @include md-screen{
                                 flex-direction: column;
+                                grid-gap: 20px;
                             }
-                            .button-text{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                width: 50%;
+                            .btn-text{
+                                width: 45%;
                                 @include md-screen{
                                     width: 100%;
-                                    &:first-child{
-                                        margin-bottom: 30px;
-                                    }
                                 }
-                                .btn-text{
-                                    &.underline{
-                                        padding-top: 20px;
-                                        padding-right: 10px;
-                                        p{
-                                            border-bottom: 1px solid #FFCF07;
-                                        }
-                                    }
+                                .cmp-text{
                                     p{
                                         margin: 0px;
-                                        font-weight: 400;
                                         font-size: 16px;
                                         line-height: 24px;
-                                        width: max-content;
-                                        color: #414042;
                                     }
                                 }
-                                @include bgbutton;
-                                 .button{
-                                    margin-bottom: 20px;
-                                 }
+                                &.underline{
+                                    padding-top: 10px;
+                                    padding-right: 10px;
+                                    @include md-screen{
+                                        padding-top: 0px;
+                                    }
+                                    span{
+                                        border-bottom: 1px solid #FFCF07;
+                                    }
+                                }
+                                span{
+                                    margin: 0px;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    width: max-content;
+                                    color: #414042;
+                                }
+                            }
+                            @include bgbutton;
+                             .button{
+                                width: 45%;
+                                margin-bottom: 15px;
+                                align-items: end;
+                                &:last-child{
+                                    margin-bottom: 0px;
+                                }
+                                @include md-screen{
+                                    margin-bottom: 0px;
+                                    width: 100%;
+                                }
                             }
                         }
                     }
                     .social-title{
                         border-top: 1px solid #EBECEC;
-                        margin-top: 40px;
-                        padding-top: 40px;
+                        margin-top: 30px;
+                        padding-top: 30px;
                         h3{
                             font-family: 'Source Sans Pro';
                             font-style: normal;
@@ -99,22 +117,61 @@
                         }
                     }
                     .social-logos{
-                        padding-top: 30px;
+                        padding-top: 20px;
                         .cmp-container{
                             display: flex;
                             grid-gap: 10px;
-                            a{
-                                margin-right: 0px;
-                                margin-top: 10px;
-                                margin-right: 15px;
-                                svg{
-                                    transform: scale(1.3);
-                                    &:hover{
-                                        fill: $yellow;
+                            .button{
+                                width: 40px;
+                                height: 40px;
+                                border: 1px solid $yellow;
+                                border-radius: 50px;
+                                position: relative;
+                                transition: all 0.3s ease;
+                                &:hover{
+                                    background-color: $yellow;
+                                }
+                                a{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 100%;
+                                    height: 100%;
+                                    span{
+                                        &.cmp-button__icon--icon-facebook{
+                                            &:before{
+                                                content: url('./assets/fb-contact.png');
+                                                font-size: 22px;
+                                                margin-top: 2px;
+                                            }
+                                        }
+                                        &.cmp-button__icon--icon-twitter{
+                                            &:before{
+                                                content: url('./assets/tweet-contact.png');
+                                                font-size: 20px;
+                                                margin-top: 2px;
+                                                margin-left: 1px;
+                                            }
+                                        }
+                                        &.cmp-button__icon--icon-pinterest{
+                                            &:before{
+                                                content: url('./assets/pint-contact.png');
+                                                font-size: 20px;
+                                                margin-top: 2px;
+                                                margin-left: 1px;
+                                            }
+                                        }
+                                        &.cmp-button__icon--icon-flipboard{
+                                            &:before{
+                                                content: url('./assets/flip-contact.png');
+                                                font-size: 20px;
+                                                margin-top: 2px;
+                                                margin-left: 2px;
+                                            }
+                                        }
                                     }
                                 }
                             }
-
                         }
                     }
                 }
@@ -152,6 +209,18 @@
                                 width: 100%;
                                 justify-content: space-between;
                                 flex-wrap: wrap;
+                                .mail-field{
+                                    width: 46%;
+                                    @include sm-screen{
+                                        width: 100%;
+                                    }
+                                }
+                                .phone-field {
+                                    width: 46%;
+                                    @include sm-screen{
+                                        width: 100%;
+                                    }
+                                }
                                 input{
                                     width: 100%;
                                     border: none;
@@ -160,12 +229,6 @@
                                     padding: 10px 10px 10px 0px;
                                     font-family: $source;
                                     color: white;
-                                    &.mail{
-                                        flex: 0 0 46%;
-                                    }
-                                    &.phone{
-                                        flex: 0 0 46%;
-                                    }
                                     &::placeholder {
                                         font-family: $source;
                                         font-weight: 600;
@@ -207,7 +270,7 @@
                                         color: white;
                                     }
                                 }
-                                span{
+                                .button{
                                     display: flex;
                                     justify-content: center;
                                     width: fit-content;
