@@ -114,17 +114,13 @@
                                 display: flex;
                                 grid-gap: 10px;
                                 align-items: center;
-                                .social-link-item{
-                                    svg{
-                                        transition: all 0.3 ease;
-                                        &:hover{
-                                            path{
-                                                fill: $yellow;
-                                            }
-                                        }
+                                .image {
+                                    button{
+                                        background-color: transparent;
+                                        border: none;
+                                        padding: 0px;
                                     }
                                 }
-
                         }
                     }
 

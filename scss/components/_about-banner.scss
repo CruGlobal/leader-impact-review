@@ -18,10 +18,6 @@
                     padding: 50px 30px 100px !important;
                 }
                 .content-wrap{
-                    width: 40% !important;
-                    @include xl-screen{
-                        width: 55% !important;
-                    }
                     @include md-screen{
                         width: 100% !important;
                     }
@@ -58,12 +54,17 @@
             @include md-screen{
                 padding: 50px 30px 250px;
             }
+            @include sm-screen{
+                padding: 50px 30px 100px;
+            }
             .content-wrap{
+                @include md-screen{
+                    width: 100%;
+                }
                 &.no-details{
                     padding-bottom: 120px;
                 }
                 color: white;
-                width: 60%;
                 @include sm-screen{
                     width: 100%;
                 }
@@ -103,8 +104,6 @@
             #bottom-wrap{
                     max-width: 1260px;
                     margin: 0 auto;
-                    display: flex;
-                    align-items: center;
                     @include lg-screen{
                         grid-gap: 40px;
                     }
@@ -141,11 +140,10 @@
                     }
                     .bottom-content{
                         color: white;
-                        width: 50%;
                         padding: 0 30px;
                         @include md-screen{
                             width: 100%;
-                            padding: 0 30px;
+                            padding: 0 30px 50px;
                         }
                         .sub-title{
                             margin-bottom: 20px;
@@ -195,7 +193,6 @@
                         }
                     }
                     .video-wrap{
-                        width: 50%;
                         @include md-screen{
                             width: 100%;
                         }
@@ -257,7 +254,6 @@
                     // }
                     .bottom-content{
                         color: white;
-                        width: 50%;
                         padding: 0 30px;
                         @include md-screen{
                             width: 100%;
@@ -311,7 +307,6 @@
                         }
                     }
                     .video-wrap{
-                        width: 50%;
                         @include md-screen{
                             width: 100%;
                         }

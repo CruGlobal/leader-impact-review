@@ -68,6 +68,10 @@
                     }
                     .close{
                         cursor: pointer;
+                        button{
+                            background-color: transparent;
+                            border: none;
+                        }
                     }
                 }
         
@@ -186,18 +190,27 @@
                         }
                         .search{
                             display: contents;
-                            cursor: pointer;
-        
-                            img{
-                                display: block;
-                                @include sm-screen{
-                                    width: 20px;
+                            button{
+                                background-color: transparent;
+                                border: none;
+                                cursor: pointer;
+                                img{
+                                    display: block;
+                                    @include sm-screen{
+                                        width: 20px;
+                                    }
                                 }
                             }
                         }
                         .hamburger{
                             @media (min-width: 768px){
                                 display: none;
+                            }
+                            button{
+                                background-color: transparent;
+                                border: none;
+                                width: 22px;
+                                height: 18px;
                             }
                             .close{
                                 display: none;
@@ -276,9 +289,7 @@
                     }
                 }
         
-                .mobile-nav-footer #nav-bottom-footer{
-                    display: flex;
-                    justify-content: space-between;
+                .mobile-nav-footer{
                     background: #303031;
                     margin: 200px -35px 0;
                     padding: 15px 30px;
@@ -287,6 +298,7 @@
                             display: flex;
                             grid-gap: 10px;
                             align-items: center;
+                            justify-content: flex-end;
                             .social-link-item{
                                 svg{
                                     transition: all 0.3 ease;

@@ -31,31 +31,24 @@
                         margin-right: 33px;
                         min-height: 270px;
                     }
-    
-                    .s-no{
-                        margin-bottom: 0px;
-                        h6{
+                    .cmp-teaser__content{
+                        .s-no{
                             color: $yellow;
                             margin-bottom: 20px;
                         }
-                    }
-                    .title{
-                        h3{
+                        .cmp-teaser__title{
                             font-size: 32px;
                             margin-bottom: 15px;
                         }
-                    }
-                    .info{
-                        p{
+                        .info{
                             font-size: 18px;
                             font-weight: 500;
                             letter-spacing: 0.5px;
                             line-height: 28px;
                             color: rgba(255, 255, 255, 0.5);
+                            margin-top: auto;
                         }
-                        margin-top: auto;
-                    }
-    
+                    }    
                 }
             }
         }

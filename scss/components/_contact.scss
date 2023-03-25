@@ -60,8 +60,29 @@
                             }
                             .btn-text{
                                 width: 45%;
+                                margin: 0px !important;
                                 @include md-screen{
                                     width: 100%;
+                                }
+                                a{
+                                    background-color: transparent;
+                                    border:none;
+                                    padding: 0px !important;
+                                    display: flex;
+                                    &::after{
+                                        display: none;
+                                    }
+                                    &::before{
+                                        display: none;
+                                    }
+                                    span{
+                                        margin: 0px;
+                                        font-size: 16px !important;
+                                        line-height: 24px;
+                                        padding-top: 10px;
+                                        padding-right: 10px;
+                                        font-weight: 500 !important;
+                                    }
                                 }
                                 .cmp-text{
                                     p{
@@ -243,7 +264,7 @@
                                     border: 1px solid #9C9FA1;
                                     border-radius: 5px;
                                     resize: none;
-                                    height: 150px !important;
+                                    height: 150px;
                                     &::placeholder {
                                         font-family: $source;
                                         font-weight: 600;
@@ -251,23 +272,37 @@
                                         color: white;
                                     }
                                 }
-                                select{
-                                    width: 100%;
-                                    border-bottom: 1px solid #9C9FA1;
-                                    background: transparent;
-                                    padding: 10px 10px 10px 0px;
-                                    border: none;
-                                    border-bottom: 1px solid #9C9FA1;
-                                    color: white;
-                                    option{
-                                        font-family: $source;
-                                        font-weight: 600;
-                                        font-size: 16;
-                                        color: white;
-                                        background-color: $gray;
-                                    }
-                                    .white{
-                                        color: white;
+                                .options{
+                                    margin-top: 20px;
+                                    .cmp-form-options{
+                                        border: none;
+                                        padding: 0px;
+                                        label{
+                                            font-family: $source;
+                                            font-weight: 600;
+                                            font-size: 16;
+                                            color: white;
+                                            background-color: transparent;
+                                        }
+                                        select{
+                                            width: 100%;
+                                            border-bottom: 1px solid #9C9FA1;
+                                            background: transparent;
+                                            padding: 10px 10px 10px 0px;
+                                            border: none;
+                                            border-bottom: 1px solid #9C9FA1;
+                                            color: white;
+                                            option{
+                                                font-family: $source;
+                                                font-weight: 600;
+                                                font-size: 16;
+                                                color: white;
+                                                background-color: $gray;
+                                            }
+                                            .white{
+                                                color: white;
+                                            }
+                                        }
                                     }
                                 }
                                 .button{
@@ -275,7 +310,7 @@
                                     justify-content: center;
                                     width: fit-content;
                                     margin: 0 auto;
-                                    .submit{
+                                    .cmp-form-button{
                                         border: 1px solid #FFCF07;
                                         border-radius: 35px;
                                         text-align: center;
