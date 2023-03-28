@@ -240,3 +240,32 @@ $(".tooltip-wrap").click(function(){
     }
 })
 
+
+const next = function(){
+    $(this).closest(".popup-slide").fadeOut(200);
+    $('.steps .curr-step').text(parseInt($(this).closest(".popup-slide").attr("slide-no")) + 1);
+    $(".progress").animate({width: `${((parseInt($(this).closest(".popup-slide").attr("slide-no")) + 1) / $(".popup-slide").length)*100}%`}, 100);
+}
+const prev = function(){
+    $(`[slide-no='${parseInt($(this).closest(".popup-slide").attr("slide-no")) - 1}']`).fadeIn(200);
+    $('.steps .curr-step').text(parseInt($(this).closest(".popup-slide").attr("slide-no")) - 1);
+    $(".progress").animate({width: `${((parseInt($(this).closest(".popup-slide").attr("slide-no")) - 1) / $(".popup-slide").length)*100}%`}, 100);
+}
+
+const popupStart = function(){
+    $(".signup-popup").fadeIn(100);
+    $('.steps .curr-step').text('1');
+    $('.steps .total-steps').text(`${$(".popup-slide").length}`);
+    $(".header").addClass("popup-active");
+    $(".progress").animate({width: `${(1 / $(".popup-slide").length)*100}%`}, 0);
+}
+const reset = function(){
+    $(".header").removeClass("popup-active");
+    $(".signup-popup").fadeOut(100);
+    $(".popup-slide").fadeIn(100);
+}
+
+$('.popup-trigger').click(popupStart);
+$(".next").click(next);
+$(".prev").click(prev);
+$('.back-to-home').click(reset);

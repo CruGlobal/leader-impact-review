@@ -61,13 +61,20 @@
     display: none;
     background-color: $gray;
     color: white;
-    position: relative;
+    position: fixed;
+    inset: 0px;
     z-index: 999;
+    @include sm-screen{
+        inset: 67px 0 0 0;
+    }
     h1, h2, h3, h4, h5, h6, p{
         text-align: center;
     }
     a{
         display: inline-block;
+    }
+    .input{
+        color: white;
     }
     .popup-btn{
        font-weight: 700;
@@ -83,7 +90,7 @@
     }
     .popup-header{
         border-top: 1px solid white;
-        .inner{
+        #header-container{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -93,12 +100,28 @@
                 font-family: $source;
                 font-weight: 600;
                 font-size: 16px;
+                margin: 0;
+            }
+            .cross{
+                width: 18px;
+                height: 18px;
+                .cmp-image{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
             }
         }
         .progress-bar{
             height: 4px;
             width: 100%;
             background-color: rgba(255, 255, 255, 0.4);
+            #progress-container{
+                height: 100%;
+            }
             .progress{
                 height: 100%;
                 width: 0%;
@@ -107,88 +130,101 @@
         }
     }
     .slides{
-        width: 500%;
-        position: relative;
-        background-color: $gray;
-        display: flex;
-        flex-wrap: wrap;
+        #slides-container{
+            &:first-child{
+                width: 500%;
+                position: relative;
+                background-color: $gray;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
     }
     .popup-slide{
-        height: 100vh;
+        height: calc(100vh - 145px);
         background-color: $gray;
         width: 100vw;
-        .inner{
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            flex-direction: column;
-            @media (max-width:1300px){
-                padding: 0 30px;
-            }
-
-            .content{
-                width: 95%;
+        @include sm-screen{
+            height: calc(100vh - 136px);
+        }
+        .cmp-container{
+            &:first-child{
+                max-width: 1200px;
+                width: 100%;
+                margin: 0 auto;
                 display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
                 flex-direction: column;
-                align-items: center ;
-                margin-bottom: 160px;
-            }
+                @media (max-width:1300px){
+                    padding: 0 30px;
+                }
+                &:first-child{
+                    width: 95%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center ;
+                }
+        }
         }
     }
 }
 
 #slide1{
     display: block;
-    .content{
-        max-width: 650px;
-        .heading{
-            font-size: 58px;
-            margin-bottom: 25px;
-            line-height: 66px;
-            @media(max-width: 567px){
-                font-size: 48px;
-                line-height: 56px;
+    .cmp-container{
+        &:first-child{
+            max-width: 650px;
+            margin: 0 auto;
+            .heading{
+                font-size: 58px;
+                margin-bottom: 25px;
+                line-height: 66px;
+                @media(max-width: 567px){
+                    font-size: 48px;
+                    line-height: 56px;
+                }
             }
-        }
-        .info{
-            font-weight: 400;
-            line-height: 30px;
-            font-size: 22px;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 35px;
+            .info{
+                font-weight: 400;
+                line-height: 30px;
+                font-size: 22px;
+                color: rgba(255, 255, 255, 0.8);
+                margin: 0;
+                margin-bottom: 35px;
+            }
         }
     }
 }
 
 #slide2{
-    .content{
-        max-width: 340px;
-        .heading{
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 40px;
-            margin-bottom: 22px;
-        }
-        .input-container{
-            width: 100%;
-            margin-bottom: 53px;
-            .inp{
-                input{
-                    width: 100%;
-                    background-color: transparent;
-                    border: none;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-                    padding-bottom: 8px;
-                    padding-top: 33px;
-                    &::placeholder{
-                        color: white;
-                        font-size: 16px;
-                        font-weight: 600;
-                        letter-spacing: 0.5px;
+    .cmp-container{
+        &:first-child{
+            max-width: 340px;
+            .heading{
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 40px;
+                margin-bottom: 22px;
+            }
+            .input-container{
+                width: 100%;
+                margin-bottom: 53px;
+                .inp{
+                    input{
+                        width: 100%;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                        padding-bottom: 8px;
+                        padding-top: 33px;
+                        &::placeholder{
+                            color: white;
+                            font-size: 16px;
+                            font-weight: 600;
+                            letter-spacing: 0.5px;
+                        }
                     }
                 }
             }
@@ -197,13 +233,23 @@
 }
 
 #slide3{
-    .content{
-        max-width: 340px;
+    #slide3-container{
+        &:first-child{
+            max-width: 340px;
+            align-items: flex-start;
         .heading{
             font-weight: 600;
             font-size: 32px;
             line-height: 40px;
             margin-bottom: 22px;
+        }
+        .info{
+            text-align: left;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .inp-y-n{
+            margin-bottom: 20px;
         }
         .input-container{
             width: 100%;
@@ -227,18 +273,24 @@
             .inp-2{
                 display: flex;
                 justify-content: space-between;
-                select{
-                    width: 40%;
-                    height: 22px;
-                    align-self: flex-end;
-                    background-color: $gray;
-                    border: none;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-                    color: white;
-                    font-size: 16px;
-                    font-weight: 600;
-                    line-height: 100px;
-                    letter-spacing: 0.5px;
+                .cmp-form-options{
+                    width: 100%;
+                    border: 0px;
+                    padding: 35px 0 0px;
+                    margin: 0px;
+                    select{
+                        width: 100%;
+                        height: 22px;
+                        align-self: flex-end;
+                        background-color: $gray;
+                        border: none;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 100px;
+                        letter-spacing: 0.5px;
+                    }
                 }
                 input{
                     width: 55%;
@@ -255,352 +307,48 @@
                     }
                 }
             }
-            select{
+            .cmp-form-options{
                 width: 100%;
-                margin-top: 33px;
-                height: 22px;
-                align-self: flex-end;
-                background-color: $gray;
-                border: none;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-                color: white;
-                font-size: 16px;
-                font-weight: 600;
-                line-height: 100px;
-                letter-spacing: 0.5px;
+                border: 0px;
+                padding: 35px 0 0px;
+                margin: 0px;
+                select{
+                    width: 100%;
+                    height: 22px;
+                    align-self: flex-end;
+                    background-color: $gray;
+                    border: none;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 100px;
+                    letter-spacing: 0.5px;
+                }
             }
         }
         .buttons{
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-        } 
-    }
-}
-
-#slide4{
-    .content{
-        align-items: flex-start;
-        max-width: 340px;
-        .heading{
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 40px;
-            margin-bottom: 22px;
-        }
-        .info{
-            font-weight: 600;
-            font-size: 16px;
-            color: rgba(255, 255, 255, 0.8);
-            text-align: left;
-            margin-bottom: 18px;
-        }
-        .inp-y-n{
-            margin-bottom: 15px;
-            input{
-                margin-right: 12px;
-                scale: 1.5;
-                color: $gray;
-            }
-            label{
-                margin-right: 12px;
-                font-weight: 300;
-                color: rgba(255, 255, 255, 0.8)
-            }
-        }
-        .alr-signed{
-            margin-bottom: 70px;
-            input{
-                margin-right: 12px;
-                scale: 1.5;
-                color: $gray;
-            }
-            label{
-                margin-right: 12px;
-                font-weight: 300;
-                color: rgba(255, 255, 255, 0.8)
-            }
-        }
-        .how-learn{
-            margin-bottom: 40px;
-            label{
-                font-weight: 600;
-                font-size: 16px;
-                color: rgba(255, 255, 255, 0.8);
-                text-align: left;
-                margin-bottom: 18px;
-            }
-            select{
+            #buttons-wrap_cmp{
                 width: 100%;
-                margin-top: 33px;
-                height: 22px;
-                align-self: flex-end;
-                background-color: $gray;
-                border: none;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-                color: white;
-                font-size: 16px;
-                font-weight: 600;
-                line-height: 100px;
-                letter-spacing: 0.5px;
-            }
-        }
-        .buttons{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-}
-
-#slide5{
-    .content{
-        max-width: 550px;
-        svg{
-            margin-bottom: 44px;
-        }
-        .heading{
-            font-size: 58px;
-            line-height: 66px;
-            margin-bottom: 30px;
-            @media(max-width: 567px){
-                font-size: 48px;
-                line-height: 56px;
-            }
-        }
-        .info{
-            font-size: 22px;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 30px;
-        }
-    }
-}
-
-
-
-.signup-popup{
-    display: none;
-    background-color: $gray;
-    color: white;
-    position: relative;
-    z-index: 999;
-    h1, h2, h3, h4, h5, h6, p{
-        text-align: center;
-    }
-    a{
-        display: inline-block;
-    }
-    .popup-btn{
-       font-weight: 700;
-       font-size: 11px;
-       letter-spacing: 1px;
-       text-transform: uppercase;
-       color: white;
-       padding: 10px 24px;
-       background-color: transparent;
-       border: 1px solid $yellow;
-       border-radius: 40px; 
-       cursor: pointer;
-    }
-    .popup-header{
-        border-top: 1px solid white;
-        .inner{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 22px 30px;
-            .steps{
-                color: rgba(255, 255, 255, 0.4);
-                font-family: $source;
-                font-weight: 600;
-                font-size: 16px;
-            }
-        }
-        .progress-bar{
-            height: 4px;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.4);
-            .progress{
-                height: 100%;
-                width: 0%;
-                background-color: $yellow;
-            }
-        }
-    }
-    .slides{
-        width: 500%;
-        position: relative;
-        background-color: $gray;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .popup-slide{
-        height: 100vh;
-        background-color: $gray;
-        width: 100vw;
-        .inner{
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            flex-direction: column;
-            @media (max-width:1300px){
-                padding: 0 30px;
-            }
-
-            .content{
-                width: 95%;
-                display: flex;
-                flex-direction: column;
-                align-items: center ;
-                margin-bottom: 160px;
-            }
-        }
-    }
-}
-
-#slide1{
-    display: block;
-    .content{
-        max-width: 650px;
-        .heading{
-            font-size: 58px;
-            margin-bottom: 25px;
-            line-height: 66px;
-            @media(max-width: 567px){
-                font-size: 48px;
-                line-height: 56px;
-            }
-        }
-        .info{
-            font-weight: 400;
-            line-height: 30px;
-            font-size: 22px;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 35px;
-        }
-    }
-}
-
-#slide2{
-    .content{
-        max-width: 340px;
-        .heading{
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 40px;
-            margin-bottom: 22px;
-        }
-        .input-container{
-            width: 100%;
-            margin-bottom: 53px;
-            .inp{
-                input{
-                    width: 100%;
-                    background-color: transparent;
-                    border: none;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-                    padding-bottom: 8px;
-                    padding-top: 33px;
-                    &::placeholder{
-                        color: white;
-                        font-size: 16px;
-                        font-weight: 600;
-                        letter-spacing: 0.5px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-#slide3{
-    .content{
-        max-width: 340px;
-        .heading{
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 40px;
-            margin-bottom: 22px;
-        }
-        .input-container{
-            width: 100%;
-            margin-bottom: 53px;
-            .inp{
-                input{
-                    width: 100%;
-                    background-color: transparent;
-                    border: none;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-                    padding-bottom: 8px;
-                    padding-top: 33px;
-                    &::placeholder{
-                        color: white;
-                        font-size: 16px;
-                        font-weight: 600;
-                        letter-spacing: 0.5px;
-                    }
-                }
-            }
-            .inp-2{
                 display: flex;
                 justify-content: space-between;
-                select{
-                    width: 40%;
-                    height: 22px;
-                    align-self: flex-end;
-                    background-color: $gray;
-                    border: none;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-                    color: white;
-                    font-size: 16px;
-                    font-weight: 600;
-                    line-height: 100px;
-                    letter-spacing: 0.5px;
-                }
-                input{
-                    width: 55%;
-                    background-color: transparent;
-                    border: none;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-                    padding-bottom: 8px;
-                    padding-top: 33px;
-                    &::placeholder{
-                        color: white;
-                        font-size: 16px;
-                        font-weight: 600;
-                        letter-spacing: 0.5px;
+                flex-direction: row;
+                .popup-btn{
+                    a{
+                        span{
+                            color: white;
+                        }
                     }
                 }
             }
-            select{
-                width: 100%;
-                margin-top: 33px;
-                height: 22px;
-                align-self: flex-end;
-                background-color: $gray;
-                border: none;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-                color: white;
-                font-size: 16px;
-                font-weight: 600;
-                line-height: 100px;
-                letter-spacing: 0.5px;
-            }
-        }
-        .buttons{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
         } 
+        }
     }
 }
 
 #slide4{
-    .content{
+    .cmp-container{
         align-items: flex-start;
         max-width: 340px;
         .heading{
@@ -618,15 +366,31 @@
         }
         .inp-y-n{
             margin-bottom: 15px;
-            input{
-                margin-right: 12px;
-                scale: 1.5;
-                color: $gray;
-            }
-            label{
-                margin-right: 12px;
-                font-weight: 300;
-                color: rgba(255, 255, 255, 0.8)
+            fieldset{
+                border: 0px;
+                padding: 0px;
+                margin: 0px;
+                display: flex;
+                flex-wrap: wrap;
+                .radio-item{
+                    &.half{
+                        width: 40%;
+                    }
+                    &.alr-signed{
+                        width: 100%;
+                        margin-top: 20px;
+                    }
+                }
+                input{
+                    margin-right: 12px;
+                    scale: 1.5;
+                    color: $gray;
+                }
+                span{
+                    margin-right: 12px;
+                    font-weight: 300;
+                    color: rgba(255, 255, 255, 0.8)
+                }
             }
         }
         .alr-signed{
@@ -644,6 +408,11 @@
         }
         .how-learn{
             margin-bottom: 40px;
+            .cmp-form-options{
+                padding:0px;
+                margin:0px;
+                border: 0px;
+            }
             label{
                 font-weight: 600;
                 font-size: 16px;
@@ -664,19 +433,32 @@
                 font-weight: 600;
                 line-height: 100px;
                 letter-spacing: 0.5px;
+                height: 45px;
             }
         }
         .buttons{
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
+            #buttons-wrap_cmp{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                .popup-btn{
+                    a{
+                        span{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        } 
     }
 }
 
 #slide5{
-    .content{
+    .cmp-container{
         max-width: 550px;
+        align-items: center;
         svg{
             margin-bottom: 44px;
         }
@@ -693,6 +475,48 @@
             font-size: 22px;
             color: rgba(255, 255, 255, 0.8);
             margin-bottom: 30px;
+            text-align: center;
+        }
+        .button{
+            a{
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+
+.start-popup{
+
+    #slide4{
+        .cmp-container{
+            max-width: 550px;
+            align-items: center;
+            svg{
+                margin-bottom: 44px;
+            }
+            .heading{
+                font-size: 58px;
+                line-height: 66px;
+                margin-bottom: 30px;
+                @media(max-width: 567px){
+                    font-size: 48px;
+                    line-height: 56px;
+                }
+            }
+            .info{
+                font-size: 22px;
+                color: rgba(255, 255, 255, 0.8);
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .button{
+                a{
+                    color: white;
+                }
+            }
         }
     }
 }
