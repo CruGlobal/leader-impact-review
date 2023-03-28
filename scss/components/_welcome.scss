@@ -1,105 +1,108 @@
 .welcome{
-    padding: 0 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    .container{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 100px 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        @include sm-screen{
-            padding: 50px 0;
-        }
-        .content-wrap{
-            color: white;
-            width: 45%;
+    #welcome-container{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0 30px;
+        .aem-Grid{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 0;
+            // display: flex;
+            // justify-content: space-between;
             @include sm-screen{
-                width: 100%;
-                margin-bottom: 50px;
+                padding: 50px 0;
+                flex-wrap: wrap;
             }
-            .sub-title{
-                margin-bottom: 20px;
-                h6{
-                    letter-spacing: 0.07em;
-                    text-transform: uppercase;
-                    color: $yellow;
-                }
-            }
-            .title{
-                margin-bottom: 30px;
-                h3{
-                    @include md-screen{
-                        font-size: 32px;
-                        line-height: 40px;
-                    }
-                }
-            }
-            .text{
-                padding-right: 80px;
-                margin-bottom: 20px;
-                @include md-screen{ 
-                    padding-right: 0px;                   
-                }
-            }
-            @include bgbutton;
-            .button{
-                a{
-                    span{
-                        @include md-screen{ 
-                            font-size: 12px;
-                        }
-                    }
-                }
-            }
-        }
-        .icon-box-wrap{
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            grid-gap: 15px 0;
-            @include sm-screen{
-                width: 100%;
-            }
-            .icon-box-item{
-                background-color: #626163;
-                display: flex;
-                grid-column-gap: 30px;
-                align-items: center;
+            .content-wrap{
                 color: white;
-                padding: 30px 40px;
-                border-radius: 10px;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                &:hover{
-                    background-color: #737373;
+                // width: 45%;
+                @include sm-screen{
+                    width: 100%;
+                    margin-bottom: 50px;
                 }
-                @include md-screen{
-                    padding: 20px 30px;
-                }
-                .cmp-image{
-                    display: flex;
-                    img{
-                        display: block;
-                        width: 100%;
+                .sub-title{
+                    margin-bottom: 20px !important;
+                    h6{
+                        letter-spacing: 0.07em;
+                        text-transform: uppercase;
+                        color: $yellow;
                     }
                 }
-                .box-title-wrap{
-                    h4{
-                        margin-bottom: 5px;
-                        @include md-screen{                  
-                            font-size: 26px;
-                            line-height: 32px;
+                .title{
+                    margin-bottom: 30px;
+                    h3{
+                        @include md-screen{
+                            font-size: 32px;
+                            line-height: 40px;
                         }
                     }
-                    p{
-                        margin: 0px;
-                        color: #9C9FA1;
-                        @include md-screen{    
-                            font-size: 16px;
-                            line-height: 22px;                
+                }
+                .text{
+                    padding-right: 80px;
+                    margin-bottom: 20px;
+                    @include md-screen{
+                        padding-right: 0px;
+                    }
+                }
+                @include bgbutton;
+                .button{
+                    a{
+                        span{
+                            @include md-screen{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .icon-box-wrap{
+            //    flex: 0 0 45%;
+                @include sm-screen{
+                    width: 100%;
+                }
+                .icon-box-item-col{
+                    background-color: #626163;
+                    color: white;
+                    padding: 30px 40px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    margin-bottom: 15px;
+                    &:hover{
+                        background-color: #737373;
+                    }
+                    @include md-screen{
+                        padding: 20px 30px;
+                    }
+                    .cmp-teaser{
+                        display: flex;
+                        grid-column-gap: 30px;
+                        .image{
+                            .cmp-image{
+                                display: flex;
+                                img{
+                                    display: block;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .cmp-teaser__content{
+                            h4{
+                                margin-bottom: 5px;
+                                @include md-screen{
+                                    font-size: 26px;
+                                    line-height: 32px;
+                                }
+                            }
+                            p{
+                                margin: 0px;
+                                color: #9C9FA1;
+                                @include md-screen{
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                }
+                            }
                         }
                     }
                 }

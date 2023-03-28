@@ -7,3 +7,8 @@ $source : 'Source Sans Pro';
 // colors
 $yellow : #FFCF07;
 $gray : #414042;
+
+
+.aem-Grid::before, .aem-Grid::after{
+    content: none;
+}

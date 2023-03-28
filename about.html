@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leader Impact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./aem/styles/grid.min.css">
+
+</head>
+<body class="about">
+  <script src="https://global.oktacdn.com/okta-auth-js/7.0.0/okta-auth-js.min.js"></script>
+  <div class="alert alert-danger dn" role="alert"></div>
+  <div class="modal fade sign-in-modal"></div>
+  <div id="okta-config" class="hidden"></div>
+
+  <div class="content-parsys responsivegrid">
+    <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+        <!-- HEADING WRAP -->
+        <div class="container responsivegrid header aem-GridColumn aem-GridColumn--default--12">
+          <div id="header-main" class="cmp-container">
+            <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+              <!-- SEARCH OVERLAY WRAP -->
+              <div class="container responsivegrid home-search-overlay aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                <div id="search-overlay" class="cmp-container">
+                  <!-- CLOSE IMAGE -->
+                  <div class="button image close">
+                    <button type="button" id="button-5487aab983" class="cmp-button" data-cmp-clickable="" data-cmp-data-layer="{&quot;button-5487aab983&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/button&quot;,&quot;dc:title&quot;:&quot;Button&quot;}}">
+                      <span class="cmp-button__icon cmp-button__icon--close close" aria-hidden="true">
+                        <img src="./assets/close.svg" class="cmp-image-button__icon" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                      </span>
+                    </button>
+                  </div>
+                  <!-- SEARCH FORM -->
+                  <form action="/search">
+                    <input type="text" placeholder="SEARCH" name="q">
+                  </form>
+                </div>
+              </div>
+              <!-- NAVIGAION WRAP -->
+              <div class="container responsivegrid nav-wrap-main aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                <div id="container-header" class="cmp-container">
+                  <!-- SITE LOGO -->
+                  <div class="image site-logo">
+                    <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container/container_2037006891/image.coreimg{.width}.png/1669058748470/leaderimpactlogo.png" data-asset="/content/dam/LeaderImpact/site-./assets/leaderimpactlogo.png" data-title="logo" id="image-25b62a9953" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                      <a class="cmp-image__link" href="/content/leaderimpact/lang/en2.html" data-cmp-hook-image="link">
+                        <img src="./assets/logo.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="logo">
+                      </a>
+                    </div>
+                  </div>
+                  <!-- NAV MENU -->
+                  <div class="navigation nav-wrap">
+                    <nav id="navigation-241ab1aa9d" class="cmp-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                      <ul class="cmp-navigation__group">
+                        <!-- MENU ITEMS -->
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/join-a-group.html" class="cmp-navigation__item-link">Join a Group</a>
+                        </li>
+  
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/start-a-group.html" class="cmp-navigation__item-link">Start a Group</a>
+                        </li>
+  
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/resources.html" class="cmp-navigation__item-link">Resources</a>
+                        </li>
+  
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/stories.html" class="cmp-navigation__item-link">About</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <!-- SUB NAV -->
+                  <div class="container responsivegrid sub-nav">
+                    <div id="container-0b2a65237d" class="cmp-container">
+                      <!-- SUB NAV LINK -->
+                      <div class="button link">
+                        <a id="button-a1f53d50c2" class="cmp-button" data-cmp-clickable="" data-cmp-data-layer="{&quot;button-a1f53d50c2&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/button&quot;,&quot;dc:title&quot;:&quot;Anchor Button&quot;,&quot;xdm:linkURL&quot;:&quot;/content/core-components-examples/library/core-content/button.html&quot;}}" href="/content/core-components-examples/library/core-content/button.html">
+                          <span class="cmp-button__text">Give</span>
+                        </a>
+                      </div>
+                      <!-- SUB NAV BUTTON -->
+                      <div class="button nav-button">
+                        <a id="button-4e7f03c2b8" class="cmp-button" href="/content/leaderimpact/lang/en2/leaderhub.html">
+                          <span class="cmp-button__text">Leaderhub</span>
+                        </a>
+                      </div>
+                      <!-- IMAGE SEARCH -->
+                      <div class="button image search">
+                        <button type="button" id="button-5487aab983" class="cmp-button" data-cmp-clickable="" data-cmp-data-layer="{&quot;button-5487aab983&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/button&quot;,&quot;dc:title&quot;:&quot;Button&quot;}}">
+                          <span class="cmp-button__icon cmp-button__icon--search search" aria-hidden="true">
+                            <img src="./assets/search.svg" class="cmp-image-button__icon" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                          </span>
+                        </button>
+                      </div>
+                      <!-- HAMBURGER WRAP -->
+                      <div class="container responsivegrid hamburger">
+                        <div id="container-686bb06b29" class="cmp-container">
+                          <!-- HAM OPEN -->
+                          <div class="button image open">
+                            <button type="button" id="button-5487aab983" class="cmp-button" data-cmp-clickable="" data-cmp-data-layer="{&quot;button-5487aab983&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/button&quot;,&quot;dc:title&quot;:&quot;Button&quot;}}">
+                              <span class="cmp-button__icon cmp-button__icon--open open" aria-hidden="true">
+                                <img src="./assets/hamburger.svg" class="cmp-image-button__icon" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                              </span>
+                            </button>
+                          </div>
+                          <!-- HAM CLOSE  -->
+                          <div class="button image close">
+                            <button type="button" id="button-5487aab983" class="cmp-button" data-cmp-clickable="" data-cmp-data-layer="{&quot;button-5487aab983&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/button&quot;,&quot;dc:title&quot;:&quot;Button&quot;}}">
+                              <span class="cmp-button__icon cmp-button__icon--close close" aria-hidden="true">
+                                <img src="./assets/close-menu.svg" class="cmp-image-button__icon" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- MOBILE NAV WRAP -->
+              <div class="container responsivegrid mobile-navigation aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                <div id="container-4980578f66" class="cmp-container">
+                  <!-- MOBILE NAV MENU -->
+                  <div class="navigation mobile-nav-wrap">
+                    <nav id="navigation-531e2bf8d6" class="cmp-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                      <ul class="cmp-navigation__group">
+                        <!-- NAV MENU ITEM -->
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/join-a-group.html" class="cmp-navigation__item-link">Join a Group</a>
+                        </li>
+  
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/start-a-group.html" class="cmp-navigation__item-link">Start a Group</a>
+                        </li>
+  
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/resources.html" class="cmp-navigation__item-link">Resources</a>
+                        </li>
+  
+                        <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                          <a href="/content/leaderimpact/lang/en2/stories.html" class="cmp-navigation__item-link">About</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <!-- SUB LINK LIST -->
+                  <div class="list sub-link">
+                    <ul id="list-47b09bfbb1" class="cmp-list">
+                      <!-- LIST ITEMS -->
+                      <li class="cmp-list__item">
+                        <article>
+                          <a class="cmp-list__item-link" href="/content/leaderimpact/lang/en/leaderhub.html">
+                            <span class="cmp-list__item-title">Leaderhub</span>
+                          </a>
+                        </article>
+                      </li>
+                      <li class="cmp-list__item">
+                        <article>
+                          <a class="cmp-list__item-link" href="https://give.cru.org/2860269">
+                            <span class="cmp-list__item-title">Give</span>
+                          </a>
+                        </article>
+                      </li>
+                      <li class="cmp-list__item">
+                        <article>
+                          <a class="cmp-list__item-link" href="/content/leaderimpact/lang/en/contact.html">
+                            <span class="cmp-list__item-title">Contact</span>
+                          </a>
+                        </article>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- MOBILE NAV FOOTER -->
+                  <div class="container responsivegrid mobile-nav-footer aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                    <div id="nav-bottom-footer" class="cmp-container">
+                      <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+                        <!-- TERMS LIST -->
+                        <div class="container responsivegrid list term-policy-wrap aem-GridColumn aem-GridColumn--default--6 layout-grid">
+                          <ul id="list-47b09bfbb1" class="cmp-list">
+                            <!-- LIST ITEMS -->
+                            <li class="cmp-list__item term-policy-item">
+                              <article>
+                                <a class="cmp-list__item-link" href="#">
+                                  <span class="cmp-list__item-title">Privacy</span>
+                                </a>
+                              </article>
+                            </li>
+                            <li class="cmp-list__item term-policy-item">
+                              <article>
+                                <a class="cmp-list__item-link" href="#">
+                                  <span class="cmp-list__item-title">Terms of Use</span>
+                                </a>
+                              </article>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- MOBILE NAV SOCIAL WRAP -->
+                        <div class="container responsivegrid social-wrap aem-GridColumn aem-GridColumn--default--6 layout-grid">
+                          <div id="social-wrap" class="cmp-container">
+                            <!-- MOBILE NAV SOCIAL ICONS -->
+                            <div class="button image aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                              <a href="#" class="cmp-button">
+                                <span class="cmp-button__icon cmp-button__icon--facebook facebook" aria-hidden="true">
+                                  <img src="./assets/facebook.svg" class="cmp-image-button__icon" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                                </span>
+                              </a>
+                            </div>
+                            <div class="button image aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                              <a href="#" class="cmp-button">
+                                <span class="cmp-button__icon cmp-button__icon--instagram instagram" aria-hidden="true">
+                                  <img src="./assets/insta.svg" class="cmp-image-button__icon" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                                </span>
+                              </a>
+                            </div>
+                            <div class="button image aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                              <a href="#" class="cmp-button">
+                                <span class="cmp-button__icon cmp-button__icon--youtube youtube" aria-hidden="true">
+                                  <img src="./assets/yt.svg" class="cmp-image-button__icon" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                                </span>
+                              </a>
+                            </div>
+                            <div class="button image aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                              <a href="#" class="cmp-button">
+                                <span class="cmp-button__icon cmp-button__icon--linkedin linkedin" aria-hidden="true">
+                                  <img src="./assets/linkedin.svg" class="cmp-image-button__icon" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ABOUT BANNER -->
+        <div class="container responsivegrid about-hero aem-GridColumn aem-GridColumn--default--12">
+            <div id="about-hero_cmp" class="cmp-container">
+                <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+                    <div class="container responsivegrid about-hero-heading-group aem-GridColumn aem-GridColumn--default--12">
+                        <div id="about-hero-heading-group_cmp" class="cmp-container">
+                            <div class="title about-hero-heading-text">
+                                <div id="about-hero-heading-text_cmp" class="cmp-title">
+                                    <h1 class="cmp-title__text">For Leaders Who Want to Leave a Lasting Impact</h1>
+                                </div>
+                            </div>
+                            <div class="button start-group">
+                                <a href="#" class="cmp-button" type="button">
+                                    <span class="cmp-button__text">Start a Group</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container responsivegrid bottom-row aem-GridColumn aem-GridColumn--default--none aem-GridColumn--default--12 aem-GridColumn--offset--default--0 aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--offset--phone--0">
+                        <div id="bottom-row_cmp" class="cmp-container">
+                            <div class="container responsivegrid image-group aem-GridColumn aem-GridColumn--default--8 custom-width">
+                                <div id="image-group_cmp" class="cmp-container">
+                                    <div class="image">
+                                        <div class="cmp-image">
+                                            <img src="./assets/focus-img1.png" class="cmp-image__image">
+                                            <meta itemprop="caption" content="">
+                                        </div>
+                                    </div>
+                                    <div class="image">
+                                        <div class="cmp-image">
+                                            <img src="./assets/focus-img2.png" class="cmp-image__image">
+                                            <meta itemprop="caption" content="">
+                                        </div>
+                                    </div>
+                                    <div class="image">
+                                        <div class="cmp-image">
+                                            <img src="./assets/focus-img3.png"
+                                                class="cmp-image__image">
+                                            <meta itemprop="caption" content="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container responsivegrid hero-blurb aem-GridColumn aem-GridColumn--default--4 custom-width">
+                                <div id="hero-blurb_cmp" class="cmp-container">
+                                    <div class="text blurb-subtitle">
+                                        <div class="cmp-text">
+                                            <p>WHY LEADER IMPACT?</p>
+                                        </div>
+                                    </div>
+                                    <div class="title blurb-heading">
+                                        <div class="cmp-title">
+                                            <h2 class="cmp-title__text">
+                                                The Focus
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="text blurb-description">
+                                        <div class="cmp-text">
+                                            <p>Leaders need to be great professionally in order to establish
+                                                credibility. Their personal health and relationships need to be in
+                                                order. They need to have a faith in God through Jesus that guides and
+                                                influences every action. When these areas come together – they become
+                                                leaders who will have an impact.</p>
+                                        </div>
+                                    </div>
+                                    <div class="button sign-up">
+                                        <a href="#" class="cmp-button" type="button">
+                                            <span class="cmp-button__text">Sign Up Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ABOUT BLURB -->
+        <div class="container responsivegrid about-blurb aem-GridColumn aem-GridColumn--default--12">
+          <div class="cmp-container">
+              <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+                  <div class="container responsivegrid about-blurb-wrap aem-GridColumn aem-GridColumn--default--6 custom-width">
+                      <div class="cmp-container">
+                          <div class="text blurb-subtitle">
+                              <div class="cmp-text">
+                                  <p>OUR PURPOSE</p>
+                              </div>
+                          </div>
+                          <div class="title blurb-heading">
+                              <div class="cmp-title">
+                                  <h2 class="cmp-title__text">
+                                      LeaderImpact is a volunteer-led movement dedicated to having a lasting impact.
+                                  </h2>
+                              </div>
+                          </div>
+                          <div class="text blurb-description">
+                              <div class="cmp-text">
+                                  <p>Together they challenge all leaders to accomplish more through developing their
+                                      personal, professional, and spiritual lives.<br><br>
+                                      Through groups, events, excursions, and communication our worldwide network is
+                                      growing and making an impact in cities, nations, and the world.  
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="button sign-up">
+                              <a href="#" class="cmp-button" type="button">
+                                  <span class="cmp-button__text">Sign Up Now</span>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="container responsivegrid about-blurb-image aem-GridColumn aem-GridColumn--default--6 custom-width">
+                      <div class="cmp-container">
+                          <div class="image">
+                              <div class="cmp-image">
+                                  <img src="./assets/purpose.png" class="cmp-image__image">
+                                  <meta itemprop="caption" content="">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- NEWSLETTER -->
+        <div class="container responsivegrid newsletter aem-GridColumn aem-GridColumn--default--12">
+          <div id="newsletter_cmp" class="cmp-container">
+              <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+                  <div class="container responsivegrid newsletter-flex aem-GridColumn aem-GridColumn--default--12">
+                      <div id="newsletter-flex_cmp" class="cmp-container">
+                          <div class="title newsletter-heading-text">
+                              <div id="newsletter-heading-text_cmp" class="cmp-title">
+                                  <h2 class="cmp-title__text">Join Thousands of Leaders Leaving a Lasting Impact</h2>
+                              </div>
+                          </div>
+                          <div
+                              class="container responsivegrid button-wrap aem-GridColumn aem-GridColumn--default--12 custom-width">
+                              <div id="button-wrap_cmp" class="cmp-container">
+                                  <div class="button subscribe-to-our-newsletter">
+                                      <a href="#" class="cmp-button" type="button">
+                                          <span class="cmp-button__text">Subscribe To Our Newsletter</span>
+                                      </a>
+                                  </div>
+                                  <div class="button join-a-group">
+                                      <a href="#" class="cmp-button" type="button">
+                                          <span class="cmp-button__text">Join A Group</span>
+                                      </a>
+                                  </div>
+                                  <div class="button start-a-group">
+                                      <a href="#" class="cmp-button" type="button">
+                                          <span class="cmp-button__text">Start A Group</span>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- ABOUT IMPACT -->
+        <div class="container responsivegrid impact aem-GridColumn aem-GridColumn--default--12">
+          <div id="impact-container" class="cmp-container">
+              <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+                  <div
+                      class="container responsivegrid content-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                      <div id="container-d4e4b902f2" class="cmp-container">
+                          <div class="sub-title title aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                              <div id="title-5c2405ff2a" class="cmp-title">
+                                  <h6 class="cmp-title__text">OUR PHILOSOPHY</h6>
+                              </div>
+                          </div>
+                          <div class="title aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                              <div id="title-c6c8e598f8" class="cmp-title">
+                                  <h3 class="cmp-title__text">Impact occurs when a leader’s personal, professional and
+                                      spiritual life is fully engaged.</h3>
+                              </div>
+                          </div>
+                          <div class="text aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                              <div id="text-924f8b967f" class="cmp-text">
+                                  <p>It’s an easy concept to grasp but takes a lifetime to master.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div
+                      class="container responsivegrid impact-img aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                      <div id="container-fcf0395128" class="cmp-container">
+                          <div class="image aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                              <div data-cmp-lazythreshold="0"
+                                  data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_1715762034/container_1796181454/tabs/item_1669125273755/image_copy.coreimg{.width}.png/1669126312045/quote-img.png"
+                                  data-asset="/content/dam/LeaderImpact/site-./assets/quote-img.png"
+                                  data-title="lady smiling" id="image-6bcf13ac84" class="cmp-image" itemscope=""
+                                  itemtype="http://schema.org/ImageObject">
+                                  <img src="./assets/liphilosophygraphic.png" class="cmp-image__image"
+                                      itemprop="contentUrl" data-cmp-hook-image="image" alt="guy smiling">
+                              </div>
+                          </div>
+                          <div
+                              class="container responsivegrid tooltips aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                              <div id="container-fcf0395128" class="cmp-container">
+                                  <div
+                                      class="container responsivegrid tooltip-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                                      <div id="tip1" class="cmp-container">
+                                          <div class="text">
+                                              <div data-cmp-data-layer="{&quot;text-a4dbea2ecb&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/text&quot;,&quot;xdm:text&quot;:&quot;<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>&quot;}}"
+                                                  id="text-a4dbea2ecb" class="cmp-text">
+                                                  <span class="tooltip">+</span>
+                                              </div>
+                                          </div>
+                                          <div
+                                              class="container responsivegrid tip aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                                              <div id="container-fcf0395128" class="cmp-container">
+                                                  <div class="container tooltip-wrap responsivegrid">
+                                                      <div class="cmp-container">
+                                                          <div class="title">
+                                                              <div data-cmp-data-layer="{&quot;title-93b80ba481&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/title&quot;,&quot;dc:title&quot;:&quot;Lorem Ipsum&quot;}}"
+                                                                  id="title-93b80ba481" class="cmp-title">
+                                                                  <h3 class="cmp-title__text">Professional</h3>
+                                                              </div>
+                                                          </div>
+                                                          <div class="text">
+                                                              <div data-cmp-data-layer="{&quot;text-a4dbea2ecb&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/text&quot;,&quot;xdm:text&quot;:&quot;<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>&quot;}}"
+                                                                  id="text-a4dbea2ecb" class="cmp-text">
+                                                                  <p>This is your career and regardless of what stage
+                                                                      you are in, you can be focused on making an
+                                                                      impact. The better professional you are and the
+                                                                      higher the position you attain, the bigger the
+                                                                      platform or opportunity for great impact. This
+                                                                      is why it's critical to always be learning and
+                                                                      honing your skills and knowledge through the
+                                                                      best thought leaders in a peer environment.</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div
+                                      class="container responsivegrid tooltip-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                                      <div id="tip2" class="cmp-container">
+                                          <div class="text">
+                                              <div data-cmp-data-layer="{&quot;text-a4dbea2ecb&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/text&quot;,&quot;xdm:text&quot;:&quot;<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>&quot;}}"
+                                                  id="text-a4dbea2ecb" class="cmp-text">
+                                                  <span class="tooltip">+</span>
+                                              </div>
+                                          </div>
+                                          <div
+                                              class="container responsivegrid tip aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                                              <div id="container-fcf0395128" class="cmp-container">
+                                                  <div class="container tooltip-wrap responsivegrid">
+                                                      <div class="cmp-container">
+                                                          <div class="title">
+                                                              <div data-cmp-data-layer="{&quot;title-93b80ba481&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/title&quot;,&quot;dc:title&quot;:&quot;Lorem Ipsum&quot;}}"
+                                                                  id="title-93b80ba481" class="cmp-title">
+                                                                  <h3 class="cmp-title__text">Personal</h3>
+                                                              </div>
+                                                          </div>
+                                                          <div class="text">
+                                                              <div data-cmp-data-layer="{&quot;text-a4dbea2ecb&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/text&quot;,&quot;xdm:text&quot;:&quot;<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>&quot;}}"
+                                                                  id="text-a4dbea2ecb" class="cmp-text">
+                                                                  <p>This is your career and regardless of what stage
+                                                                      you are in, you can be focused on making an
+                                                                      impact. The better professional you are and the
+                                                                      higher the position you attain, the bigger the
+                                                                      platform or opportunity for great impact. This
+                                                                      is why it's critical to always be learning and
+                                                                      honing your skills and knowledge through the
+                                                                      best thought leaders in a peer environment.</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div
+                                      class="container responsivegrid tooltip-wrap aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                                      <div id="tip3" class="cmp-container">
+                                          <div class="text">
+                                              <div data-cmp-data-layer="{&quot;text-a4dbea2ecb&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/text&quot;,&quot;xdm:text&quot;:&quot;<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>&quot;}}"
+                                                  id="text-a4dbea2ecb" class="cmp-text">
+                                                  <span class="tooltip">+</span>
+                                              </div>
+                                          </div>
+                                          <div
+                                              class="container responsivegrid tip aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                                              <div id="container-fcf0395128" class="cmp-container">
+                                                  <div class="container tooltip-wrap responsivegrid">
+                                                      <div class="cmp-container">
+                                                          <div class="title">
+                                                              <div data-cmp-data-layer="{&quot;title-93b80ba481&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/title&quot;,&quot;dc:title&quot;:&quot;Lorem Ipsum&quot;}}"
+                                                                  id="title-93b80ba481" class="cmp-title">
+                                                                  <h3 class="cmp-title__text">Spiritual</h3>
+                                                              </div>
+                                                          </div>
+                                                          <div class="text">
+                                                              <div data-cmp-data-layer="{&quot;text-a4dbea2ecb&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/text&quot;,&quot;xdm:text&quot;:&quot;<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>&quot;}}"
+                                                                  id="text-a4dbea2ecb" class="cmp-text">
+                                                                  <p>This is your career and regardless of what stage
+                                                                      you are in, you can be focused on making an
+                                                                      impact. The better professional you are and the
+                                                                      higher the position you attain, the bigger the
+                                                                      platform or opportunity for great impact. This
+                                                                      is why it's critical to always be learning and
+                                                                      honing your skills and knowledge through the
+                                                                      best thought leaders in a peer environment.</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div
+                      class="container responsivegrid tooltips-mobile aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                      <div id="container-fcf0395128" class="cmp-container">
+                          <div
+                              class="container responsivegrid tip aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                              <div class="cmp-container">
+                                  <div class="container tooltip-wrap responsivegrid">
+                                      <div class="cmp-container">
+                                          <div class="title">
+                                              <div data-cmp-data-layer="{&quot;title-93b80ba481&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/title&quot;,&quot;dc:title&quot;:&quot;Lorem Ipsum&quot;}}"
+                                                  id="title-93b80ba481" class="cmp-title">
+                                                  <h3 class="cmp-title__text">Professional</h3>
+                                              </div>
+                                          </div>
+                                          <div class="text">
+                                              <div data-cmp-data-layer="{&quot;text-a4dbea2ecb&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/text&quot;,&quot;xdm:text&quot;:&quot;<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>&quot;}}"
+                                                  id="text-a4dbea2ecb" class="cmp-text">
+                                                  <p>This is your career and regardless of what stage
+                                                      you are in, you can be focused on making an
+                                                      impact. The better professional you are and the
+                                                      higher the position you attain, the bigger the
+                                                      platform or opportunity for great impact. This
+                                                      is why it's critical to always be learning and
+                                                      honing your skills and knowledge through the
+                                                      best thought leaders in a peer environment.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div
+                              class="container responsivegrid tip aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                              <div class="cmp-container">
+                                  <div class="container tooltip-wrap responsivegrid">
+                                      <div class="cmp-container">
+                                          <div class="title">
+                                              <div data-cmp-data-layer="{&quot;title-93b80ba481&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/title&quot;,&quot;dc:title&quot;:&quot;Lorem Ipsum&quot;}}"
+                                                  id="title-93b80ba481" class="cmp-title">
+                                                  <h3 class="cmp-title__text">Personal</h3>
+                                              </div>
+                                          </div>
+                                          <div class="text">
+                                              <div data-cmp-data-layer="{&quot;text-a4dbea2ecb&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/text&quot;,&quot;xdm:text&quot;:&quot;<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>&quot;}}"
+                                                  id="text-a4dbea2ecb" class="cmp-text">
+                                                  <p>This is your career and regardless of what stage
+                                                      you are in, you can be focused on making an
+                                                      impact. The better professional you are and the
+                                                      higher the position you attain, the bigger the
+                                                      platform or opportunity for great impact. This
+                                                      is why it's critical to always be learning and
+                                                      honing your skills and knowledge through the
+                                                      best thought leaders in a peer environment.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div
+                              class="container responsivegrid tip aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                              <div class="cmp-container">
+                                  <div class="container tooltip-wrap responsivegrid">
+                                      <div class="cmp-container">
+                                          <div class="title">
+                                              <div data-cmp-data-layer="{&quot;title-93b80ba481&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/title&quot;,&quot;dc:title&quot;:&quot;Lorem Ipsum&quot;}}"
+                                                  id="title-93b80ba481" class="cmp-title">
+                                                  <h3 class="cmp-title__text">Spiritual</h3>
+                                              </div>
+                                          </div>
+                                          <div class="text">
+                                              <div data-cmp-data-layer="{&quot;text-a4dbea2ecb&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/text&quot;,&quot;xdm:text&quot;:&quot;<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>&quot;}}"
+                                                  id="text-a4dbea2ecb" class="cmp-text">
+                                                  <p>This is your career and regardless of what stage
+                                                      you are in, you can be focused on making an
+                                                      impact. The better professional you are and the
+                                                      higher the position you attain, the bigger the
+                                                      platform or opportunity for great impact. This
+                                                      is why it's critical to always be learning and
+                                                      honing your skills and knowledge through the
+                                                      best thought leaders in a peer environment.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- ABOUT BLURB -->
+        <div class="container responsivegrid about-blurb aem-GridColumn aem-GridColumn--default--12">
+          <div class="cmp-container">
+              <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+                  <div class="container responsivegrid about-blurb-wrap aem-GridColumn aem-GridColumn--default--6 custom-width">
+                      <div class="cmp-container">
+                          <div class="text blurb-subtitle">
+                              <div class="cmp-text">
+                                  <p>WHAT NEXT?</p>
+                              </div>
+                          </div>
+                          <div class="title blurb-heading">
+                              <div class="cmp-title">
+                                  <h2 class="cmp-title__text">
+                                      Get Involved
+                                  </h2>
+                              </div>
+                          </div>
+                          <div class="text blurb-description">
+                              <div class="cmp-text">
+                                    <p>TLeaderImpact is built on the community and bond that forms when leaders come
+                                    together with intention. We encourage leaders to get involved in a group in
+                                    their city.</p>
+                              </div>
+                          </div>
+                          <div class="container responsivegrid button-wrap aem-GridColumn aem-GridColumn--default--12 custom-width">
+                            <div class="cmp-container">
+                                <div class="button join-a-group">
+                                    <a href="#" class="cmp-button" type="button">
+                                        <span class="cmp-button__text">Join A Group</span>
+                                    </a>
+                                </div>
+                                <div class="button start-a-group">
+                                    <a href="#" class="cmp-button" type="button">
+                                        <span class="cmp-button__text">Start A Group</span>
+                                    </a>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="container responsivegrid about-blurb-image aem-GridColumn aem-GridColumn--default--6 custom-width">
+                      <div class="cmp-container">
+                          <div class="image">
+                              <div class="cmp-image">
+                                  <img src="./assets/next.png" class="cmp-image__image">
+                                  <meta itemprop="caption" content="">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- ABOUT ALERT -->
+        <div class="container responsivegrid alert-bar aem-GridColumn aem-GridColumn--default--12">
+          <div id="alert-bar_cmp" class="cmp-container">
+              <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+                  <div class="container responsivegrid alert-bar-flex aem-GridColumn aem-GridColumn--default--12">
+                      <div id="alert-bar-flex_cmp" class="cmp-container">
+                          <div class="container responsivegrid left-col aem-GridColumn aem-GridColumn--default--12">
+                              <div id="left-col_cmp" class="cmp-container">
+                                  <div class="image">
+                                      <div class="cmp-image">
+                                          <img src="./assets/alert-logo.svg" class="cmp-image__image">
+                                          <meta itemprop="caption" content="">
+                                      </div>
+                                  </div>
+                                  <div class="text alert-text">
+                                      <div class="cmp-text">
+                                          <p>Have an impact as a young professional.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="container responsivegrid right-col aem-GridColumn aem-GridColumn--default--12">
+                              <div id="right-col_cmp" class="cmp-container">
+                                  <div class="image">
+                                      <div class="cmp-image">
+                                          <img src="./assets/alert-img.png" class="cmp-image__image">
+                                          <meta itemprop="caption" content="">
+                                      </div>
+                                  </div>
+                                  <div class="button learn-more">
+                                      <a href="#" class="cmp-button" type="button">
+                                          <span class="cmp-button__text">Learn More</span>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="container responsivegrid footer aem-GridColumn aem-GridColumn--default--12">
+          <div id="footer-wrap" class="cmp-container">
+            <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+              <!-- FOOTER LOGO -->
+              <div class="image site-logo aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/image.coreimg{.width}.svg/1669129774718/footer-logo.svg" data-asset="/content/dam/LeaderImpact/site-./assets/footer-logo.svg" data-title="logo" id="image-2e5a8b7257" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                  <img src="./assets/footer-logo.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="logo">
+                </div>
+              </div>
+              <!-- FOOTER NAV WRAP -->
+              <div class="container responsivegrid footer-nav-wrap  aem-GridColumn aem-GridColumn--default--12 layout-grid footer-grid">
+                <div id="container-8dfd65cd0f" class="cmp-container">
+                  <!-- FOOTER TITLE -->
+                  <div class="title">
+                    <div id="title-36fabd18c5" class="cmp-title">
+                      <h3 class="cmp-title__text">Join Thousands of Leaders Leaving a Lasting Impact</h3>
+                    </div>
+                  </div>
+                  <!-- FOOTER BUTTON WRAP -->
+                  <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                    <div id="button-wrap" class="cmp-container">
+                      <!-- FOOTER BUTTONS -->
+                      <div class="button btn-link aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                        <a id="button-1cbc85b1e4" class="cmp-button" href="/content/leaderimpact/lang/en2/stories.html">
+                          <span class="cmp-button__text">Subscribe to Our Newsletter</span>
+                        </a>
+                      </div>
+
+                      <div class="button btn-link aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                        <a id="button-61928ed28f" class="cmp-button" href="/content/leaderimpact/lang/en2/join-a-group.html">
+                          <span class="cmp-button__text">Join a Group</span>
+                        </a>
+                      </div>
+
+                      <div class="button btn-link aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                        <a id="button-9752993433" class="cmp-button" href="/content/leaderimpact/lang/en2/start-a-group.html">
+                          <span class="cmp-button__text">Start a Group</span>
+                        </a>
+                      </div>
+                      <!-- FOOTER NAVIGATION WRAP -->
+                      <div class="container responsivegrid navigation-wrap aem-GridColumn aem-GridColumn--default--6 layout-grid">
+                        <div id="nav-content-wrap" class="cmp-container">
+                          <div class="navigation nav-wrap ">
+                            <nav id="navigation-9706c9855f" class="cmp-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                              <ul class="cmp-navigation__group">
+                                <!-- FOOTER NAVIGATION ITEM -->
+                                <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                                  <a href="/content/leaderimpact/lang/en2/join-a-group.html" class="cmp-navigation__item-link">Join a Group</a>
+                                </li>
+                                <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                                  <a href="/content/leaderimpact/lang/en2/start-a-group.html" class="cmp-navigation__item-link">Start a Group</a>
+                                </li>
+                                <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                                  <a href="/content/leaderimpact/lang/en2/resources.html" class="cmp-navigation__item-link">Resources</a>
+                                </li>
+                                <li class="cmp-navigation__item cmp-navigation__item--level-0">
+                                  <a href="/content/leaderimpact/lang/en2/stories.html" class="cmp-navigation__item-link">About</a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                          <!-- FOOTER SOCIAL WRAP -->
+                          <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--6 layout-grid social-wrap ">
+                            <div id="container-213142dc3b" class="cmp-container">
+                              <!-- FOOTER SOCIAL ICON -->
+                              <div class="button image ">
+                                <button type="button" id="button-5487aab983" class="cmp-button" data-cmp-clickable="" data-cmp-data-layer="{&quot;button-5487aab983&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/button&quot;,&quot;dc:title&quot;:&quot;Button&quot;}}">
+                                  <span class="cmp-button__icon cmp-button__icon--facebook facebook" aria-hidden="true">
+                                    <img src="./assets/facebook.svg" class="cmp-image-button__icon" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                                  </span>
+                                </button>
+                              </div>
+                              <div class="button image ">
+                                <button type="button" id="button-5487aab983" class="cmp-button" data-cmp-clickable="" data-cmp-data-layer="{&quot;button-5487aab983&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/button&quot;,&quot;dc:title&quot;:&quot;Button&quot;}}">
+                                  <span class="cmp-button__icon cmp-button__icon--instagram instagram" aria-hidden="true">
+                                    <img src="./assets/insta.svg" class="cmp-image-button__icon" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                                  </span>
+                                </button>
+                              </div>
+                              <div class="button image ">
+                                <button type="button" id="button-5487aab983" class="cmp-button" data-cmp-clickable="" data-cmp-data-layer="{&quot;button-5487aab983&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/button&quot;,&quot;dc:title&quot;:&quot;Button&quot;}}">
+                                  <span class="cmp-button__icon cmp-button__icon--youtube youtube" aria-hidden="true">
+                                    <img src="./assets/yt.svg" class="cmp-image-button__icon" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                                  </span>
+                                </button>
+                              </div>
+                              <div class="button image">
+                                <button type="button" id="button-5487aab983" class="cmp-button" data-cmp-clickable="" data-cmp-data-layer="{&quot;button-5487aab983&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/button&quot;,&quot;dc:title&quot;:&quot;Button&quot;}}">
+                                  <span class="cmp-button__icon cmp-button__icon--linkedin linkedin" aria-hidden="true">
+                                    <img src="./assets/linkedin.svg" class="cmp-image-button__icon" itemprop="contentUrl" data-cmp-hook-image="image" alt="Close">
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FOOTER BOTTOM WRAP -->
+              <div class="container responsivegrid footer-bottom-container aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                <div id="container-48cdc20019" class="cmp-container">
+                  <!-- FOOTER COPYRIGHT -->
+                  <div class="image copy-right-img aem-GridColumn aem-GridColumn--default--12 layout-grid">
+                    <div data-cmp-lazythreshold="0" data-cmp-src="/content/leaderimpact/lang/en2/_jcr_content/content-parsys/container_428510884/container_1777610207/container/container/image.coreimg{.width}.svg/1669130630947/copyright-ecfa.svg" data-asset="/content/dam/LeaderImpact/site-./assets/copyright-ecfa.svg" data-title="logo" id="image-77a3439061" class="cmp-image" itemscope="" itemtype="http://schema.org/ImageObject">
+                      <p class="cmp-image__title">©1994-2022. LeaderImpact™ All Rights Reserved.</p>
+                      <img src="./assets/copyright-ecfa.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt="logo">
+                    </div>
+                  </div>
+                  <div class="list term-policy-wrap">
+                    <ul id="list-47b09bfbb1" class="cmp-list">
+                      <!-- LIST ITEMS -->
+                      <li class="cmp-list__item term-policy-item">
+                        <article>
+                          <a class="cmp-list__item-link" href="#">
+                            <span class="cmp-list__item-title">Privacy</span>
+                          </a>
+                        </article>
+                      </li>
+                      <li class="cmp-list__item term-policy-item">
+                        <article>
+                          <a class="cmp-list__item-link" href="#">
+                            <span class="cmp-list__item-title">Terms of Use</span>
+                          </a>
+                        </article>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script/custom.js"></script>
+</html>

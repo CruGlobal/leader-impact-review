@@ -1,0 +1,330 @@
+.contact{
+    .contact-us{
+        background: linear-gradient(to left, #303031 50%, #ffffff 50%);
+        padding: 0 30px;
+        @include md-screen{
+            background: linear-gradient(to top, #303031 50%, #ffffff 50%);
+        }
+        @include sm-screen{
+            background: linear-gradient(to top, #303031 45%, #ffffff 45%);
+        }
+        #contact-container{
+            .aem-Grid{
+                display: flex;
+                width: 100%;
+                max-width: 1440px;
+                margin: 0 auto;
+                flex-wrap: wrap;
+                .contact-content{
+                    flex: 0 0 50%;
+                    padding: 70px 50px 70px 0px;
+                    @include md-screen{
+                        flex: 100%;
+                    }
+                    @include sm-screen{
+                        padding-right: 0;
+                     }
+                     .title{
+                        .contact-title{
+                            font-size: 58px;
+                            line-height: 66px;
+                            color: $gray;
+                        }
+                    }
+                    .contact-subtext{
+                        font-size: 16px;
+                        line-height: 24px;
+                        max-width: 360px;
+                        margin-top: 10px;
+                        p{
+                            margin: 0;
+                        }
+                    }
+                    .contact-subtitle{
+                        h6{
+                            font-size: 25px;
+                            line-height: 24px;
+                            padding: 30px 0 20px;
+                            color: #414042;
+                        }
+                    }
+                    .contact-text-button{
+                        .cmp-container{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: end;
+                            @include md-screen{
+                                flex-direction: column;
+                                grid-gap: 20px;
+                            }
+                            .btn-text{
+                                width: 45%;
+                                margin: 0px !important;
+                                @include md-screen{
+                                    width: 100%;
+                                }
+                                a{
+                                    background-color: transparent;
+                                    border:none;
+                                    padding: 0px !important;
+                                    display: flex;
+                                    &::after{
+                                        display: none;
+                                    }
+                                    &::before{
+                                        display: none;
+                                    }
+                                    span{
+                                        margin: 0px;
+                                        font-size: 16px !important;
+                                        line-height: 24px;
+                                        padding-top: 10px;
+                                        padding-right: 10px;
+                                        font-weight: 500 !important;
+                                    }
+                                }
+                                .cmp-text{
+                                    p{
+                                        margin: 0px;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                    }
+                                }
+                                &.underline{
+                                    padding-top: 10px;
+                                    padding-right: 10px;
+                                    @include md-screen{
+                                        padding-top: 0px;
+                                    }
+                                    span{
+                                        border-bottom: 1px solid #FFCF07;
+                                    }
+                                }
+                                span{
+                                    margin: 0px;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    width: max-content;
+                                    color: #414042;
+                                }
+                            }
+                            @include bgbutton;
+                             .button{
+                                width: 45%;
+                                margin-bottom: 15px;
+                                align-items: end;
+                                &:last-child{
+                                    margin-bottom: 0px;
+                                }
+                                @include md-screen{
+                                    margin-bottom: 0px;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .social-title{
+                        border-top: 1px solid #EBECEC;
+                        margin-top: 30px;
+                        padding-top: 30px;
+                        h3{
+                            font-family: 'Source Sans Pro';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+                    .social-logos{
+                        padding-top: 20px;
+                        .cmp-container{
+                            display: flex;
+                            grid-gap: 10px;
+                            .button{
+                                width: 40px;
+                                height: 40px;
+                                border: 1px solid $yellow;
+                                border-radius: 50px;
+                                position: relative;
+                                transition: all 0.3s ease;
+                                &:hover{
+                                    background-color: $yellow;
+                                }
+                                a{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 100%;
+                                    height: 100%;
+                                    span{
+                                        &.cmp-button__icon--icon-facebook{
+                                            &:before{
+                                                content: url('./assets/fb-contact.png');
+                                                font-size: 22px;
+                                                margin-top: 2px;
+                                            }
+                                        }
+                                        &.cmp-button__icon--icon-twitter{
+                                            &:before{
+                                                content: url('./assets/tweet-contact.png');
+                                                font-size: 20px;
+                                                margin-top: 2px;
+                                                margin-left: 1px;
+                                            }
+                                        }
+                                        &.cmp-button__icon--icon-pinterest{
+                                            &:before{
+                                                content: url('./assets/pint-contact.png');
+                                                font-size: 20px;
+                                                margin-top: 2px;
+                                                margin-left: 1px;
+                                            }
+                                        }
+                                        &.cmp-button__icon--icon-flipboard{
+                                            &:before{
+                                                content: url('./assets/flip-contact.png');
+                                                font-size: 20px;
+                                                margin-top: 2px;
+                                                margin-left: 2px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .contact-form{
+                    padding: 70px 50px;
+                    padding-right: 0px;
+                    flex: 0 0 50%;
+                    @include md-screen{
+                        flex: 100%;
+                        padding: 70px 50px 70px 0px;
+                        
+                    }
+                    @include sm-screen{
+                        padding-right: 0;
+                     }
+                    .formtext{
+                        p{
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #9C9FA1;
+                            margin-bottom: 30px;
+                            width: 100%;
+                            text-align: left;
+                        }
+                    }
+                    .form-container{
+                        .container{
+                            display: flex;
+                            form{
+                                @include sm-screen{
+                                    padding: 0px;
+                                }
+                                display: flex;
+                                grid-gap: 20px;
+                                width: 100%;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                .mail-field{
+                                    width: 46%;
+                                    @include sm-screen{
+                                        width: 100%;
+                                    }
+                                }
+                                .phone-field {
+                                    width: 46%;
+                                    @include sm-screen{
+                                        width: 100%;
+                                    }
+                                }
+                                input{
+                                    width: 100%;
+                                    border: none;
+                                    border-bottom: 1px solid #9C9FA1;
+                                    background: transparent;
+                                    padding: 10px 10px 10px 0px;
+                                    font-family: $source;
+                                    color: white;
+                                    &::placeholder {
+                                        font-family: $source;
+                                        font-weight: 600;
+                                        font-size: 16;
+                                        color: white;
+                                    }
+                                }
+                                textarea{
+                                    width: 100%;
+                                    background: transparent;
+                                    padding: 10px 10px 10px 10px;
+                                    border: 1px solid #9C9FA1;
+                                    border-radius: 5px;
+                                    resize: none;
+                                    height: 150px;
+                                    &::placeholder {
+                                        font-family: $source;
+                                        font-weight: 600;
+                                        font-size: 16;
+                                        color: white;
+                                    }
+                                }
+                                .options{
+                                    margin-top: 20px;
+                                    .cmp-form-options{
+                                        border: none;
+                                        padding: 0px;
+                                        label{
+                                            font-family: $source;
+                                            font-weight: 600;
+                                            font-size: 16;
+                                            color: white;
+                                            background-color: transparent;
+                                        }
+                                        select{
+                                            width: 100%;
+                                            border-bottom: 1px solid #9C9FA1;
+                                            background: transparent;
+                                            padding: 10px 10px 10px 0px;
+                                            border: none;
+                                            border-bottom: 1px solid #9C9FA1;
+                                            color: white;
+                                            option{
+                                                font-family: $source;
+                                                font-weight: 600;
+                                                font-size: 16;
+                                                color: white;
+                                                background-color: $gray;
+                                            }
+                                            .white{
+                                                color: white;
+                                            }
+                                        }
+                                    }
+                                }
+                                .button{
+                                    display: flex;
+                                    justify-content: center;
+                                    width: fit-content;
+                                    margin: 0 auto;
+                                    .cmp-form-button{
+                                        border: 1px solid #FFCF07;
+                                        border-radius: 35px;
+                                        text-align: center;
+                                        margin: 10px;
+                                        padding: 10px 30px;
+                                        background-color: transparent;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

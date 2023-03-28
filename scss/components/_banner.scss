@@ -2,104 +2,117 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 0 30px;
+    // padding: 0 30px;
     position: relative;
     @include sm-screen{
         background-image: url('./assets/mobile-banner.png') !important;
     }
-    &:before{
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(180deg, $yellow -20%, rgba(217, 217, 217, 0) 51.04%);
-        transform: rotate(-180deg);
-    }
-    .container{
-        max-width: 1200px;
-        margin: 0 auto;
-        height: 80vh;
+    // &:before{
+    //     content: "";
+    //     position: absolute;
+    //     bottom: 0px;
+    //     left: 0;
+    //     right: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background: linear-gradient(180deg, $yellow -20%, rgba(217, 217, 217, 0) 51.04%);
+    //     transform: rotate(-180deg);
+    // }
+    #banner-wrap{
         display: flex;
         align-items: center;
-        justify-content: space-between;        
-        flex-wrap: wrap;
-        @include md-screen{
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
+        height: 50em;
+        padding: 0 30px;
+        @include lg-screen{
+            padding: 0 30px;
         }
         @include sm-screen{
-            height: 90vh;
+            height: 40em;
             padding-bottom: 30px;
         }
-        .title{
-            color: white;
-            width: 55%;
-            @include md-screen{
-                width: 60%;
+        .aem-Grid{
+            max-width: 1200px;
+            margin: 0 auto;
+            .banner-wrap{
+                @include sm-screen{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                // @include lg-screen{
+                //     padding: 0 30px;
+                // }
+                // @include md-screen{
+                //     flex-direction: column;
+                //     justify-content: center;
+                //     align-items: flex-start;
+                // }
+                .title{
+                    color: white;
+                    h1{
+                        @include lg-screen{
+                            font-size: 60px;
+                            line-height: 65px;
+                        }
+                        @include sm-screen{
+                            font-size: 50px;
+                            line-height: 51px;
+                        }
+                    }
+                }
             }
-            @include sm-screen{
-                width: 100%;
-            }
-            h1{
-                @include lg-screen{
-                    font-size: 60px;
-                    line-height: 65px;
+            .content-wrap{
+                color: white;
+                @include md-screen{
+                    width: 50%;
+                    margin-top: 20px;
                 }
                 @include sm-screen{
-                    font-size: 50px;
-                    line-height: 51px;
+                    width: 100%;
+                    margin-top: 20px;
                 }
-            }
-        }
-        .content-wrap{
-            color: white;
-            width: 35%;
-            @include lg-screen{
-                width: 40%;
-            }
-            @include md-screen{
-                width: 60%;
-            }
-            @include sm-screen{
-                width: 100%;
-                margin-top: 10px;
-            }
-            .text{
-                p{
-                    font-weight: 400;
-                    font-size: 25px;
-                    line-height: 33px;
-                    margin: 0;
-                    @include lg-screen{
-                        font-size: 20px;
-                        line-height: 25px;
-                    }
-                    @include sm-screen{
+                #content-container{
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                }
+                .text{
+                    p{
+                        font-weight: 400;
                         font-size: 25px;
                         line-height: 33px;
-                    }
-                }
-            }
-            .button-wrap{
-                display: flex;
-                margin-top: 30px;
-                grid-column-gap: 40px;
-                @include sm-screen{
-                    grid-column-gap: 25px;
-                }
-                .button{
-                    .btn-link{
-                        @include sm-screen{
-                            padding: 8px 20px 10px 10px;
+                        margin: 0;
+                        @include lg-screen{
+                            font-size: 20px;
+                            line-height: 25px;
                         }
-                        
+                        @include sm-screen{
+                            font-size: 25px;
+                            line-height: 33px;
+                        }
                     }
                 }
-                @include bgbutton;
+                .button-wrap{
+                    .cmp-container{
+                    display: flex;
+                    margin-top: 30px;
+                    grid-column-gap: 40px;
+                    max-width: 100%;
+                    height: auto;
+                    justify-content: flex-start;
+                    @include sm-screen{
+                        grid-column-gap: 25px;
+                    }
+                    .button{
+                        .btn-link{
+                            @include sm-screen{
+                                padding: 8px 20px 10px 10px;
+                            }
+    
+                        }
+                    }
+                    @include bgbutton;
+                    }
+                }
             }
         }
     }

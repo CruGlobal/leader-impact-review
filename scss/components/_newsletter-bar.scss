@@ -1,95 +1,67 @@
-.newsletter-bar{
+.newsletter{
+    background: linear-gradient(120deg, #FFCF07 47%, rgb(255, 255, 255) 47%);
     padding: 0 30px;
-    background: linear-gradient(120deg, $yellow 47%, rgba(255, 207, 7, 0) 47%);
-    @include lg-screen{
-        background: linear-gradient(120deg, $yellow 43%, rgba(255, 207, 7, 0) 43%);
+    @media(max-width:1250px){
+        background: linear-gradient(120deg, #FFCF07 43%, rgb(255, 255, 255) 43%);
     }
-    @include md-screen{
-        background: linear-gradient(180deg, $yellow 53%, rgba(255, 207, 7, 0) 50%);
+    @media(max-width:991px){
+        background: linear-gradient(180deg, #FFCF07 53%, rgb(255, 255, 255) 50%);
     }
-    @include sm-screen{
-        background: linear-gradient(180deg, $yellow 45%, rgba(255, 207, 7, 0) 45%);
-    }
-    @media (max-width: 475px){ 
-        background: linear-gradient(180deg, $yellow 50%, rgba(255, 207, 7, 0) 45%);
-    }
-    .container{
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 45px 0;
-        @include md-screen{
-            justify-content: center;
-            padding: 45px 0 70px;
-        }
-        .title{
-            width: 40%;
-            color: #383F43;
-            @include md-screen{
-                width: 100%;
-                padding-bottom: 60px;
-            }
-            h3{
-                @include lg-screen{
-                    font-size: 32px;
-                    line-height: 40px;
-                }
-                @include md-screen{
-                    font-size: 40px;
-                    line-height: 47px;
-                }
-                @include sm-screen{
-                    font-size: 32px;
-                    line-height: 40px;
-                }
-            }
-        }
-        .btn-wrap{
-            width: 60%;
+    .cmp-container{
+        .aem-Grid{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 45px 0;
             display: flex;
-            justify-content: end;
-            grid-column-gap: 35px;
-            align-items: center;
-            @include md-screen{
-                justify-content: start;
-                width: 100%;
-            }
-            @include xs-screen{
-                flex-wrap: wrap;
-            }
-            @include bgbutton;
-            .button{
-                display: block;
-                @include md-screen{
-                    margin-top: 50px;
-                }
-                @include sm-screen{
-                    margin-top: 25px;
-                }
-                &:first-child{
-                    @include xs-screen{
-                        width: 100%;
+            .newsletter-flex{
+                #newsletter-flex_cmp{
+                    display: flex;
+                    align-items: center;
+                    @media(max-width:991px){
+                        flex-direction: column;
                     }
-                }
-                .btn-link{
-                    padding: 8px 20px 10px 10px;
-                    span{
-                        @include lg-screen{
-                            font-size: 12px;
+                    .newsletter-heading-text{
+                        width: 40%;
+                        @media(max-width:991px){
+                            width: 100%;
+                            padding-bottom: 60px;
+                        }
+                        #newsletter-heading-text_cmp{
+                            .cmp-title__text{
+                                font-size: 40px;
+                                line-height: 47px;
+                                color: $gray;
+                                @media(max-width:1250px){
+                                    font-size: 32px;
+                                    line-height: 40px;
+                                }
+                            }
                         }
                     }
-                }
-                &:hover{
-                    a{
-                        &::before{
-                            background: transparent;
-                            border-color: $yellow;
+                    .button-wrap{
+                        width: 60%;
+                        @media(max-width:991px){
+                            width: 100%;
                         }
-                        &::after{
-                            background: transparent;
-                            border-color: $yellow;
+                        #button-wrap_cmp{
+                            display: flex;
+                            justify-content: flex-end;
+                            flex-wrap: wrap;
+                            grid-gap: 35px;
+                            @include bgbutton;
+                            @media(max-width:991px){
+                                justify-content: flex-start;
+                                margin-top: 50px;
+                            }
+                            @media(max-width:1250px){
+                                .button{
+                                    a{
+                                        span{
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }

@@ -1,119 +1,111 @@
 .blurb{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0 30px;
-    position: relative;
-    @include sm-screen{
-        background: linear-gradient(-90deg, $yellow -97.69%, rgba(255, 207, 7, 0) 44.01%) !important;
-        background-image: none;
-    }
-    .container{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 220px 0;
-        display: flex;
-        flex-wrap: wrap;
-        @include md-screen{
-            padding: 150px 0;
-        }
+    #blurb-container{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        padding: 0 30px;
         @include sm-screen{
-            padding: 100px 0 0;
-            justify-content: center;
+            background: linear-gradient(-90deg, $yellow -97.69%, rgba(255, 255, 255, 1) 44.01%) !important;
+            background-image: none;
         }
-        .content-wrap{
-            width: 40%;
-            display: flex;
-            flex-direction: column;
+        .aem-Grid{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 220px 0;
             @include md-screen{
-                width: 60%;
+                padding: 150px 0;
             }
             @include sm-screen{
-                width: 100%;
-                margin-bottom: 80px;
+                padding: 100px 0 0;
+                justify-content: center;
             }
-            img{
-                width: fit-content;
-                margin-bottom: 30px;
-                @include xs-screen{
-                    width: 80%;
+            .blurb-content{
+                @include md-screen{
+                    width: 60%;
                 }
-            }
-            .blurb-text{
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 28px;
-                color: $gray;
-                padding-right: 100px;
-                @include xs-screen{
-                    padding: 0px;
+                @include sm-screen{
+                    width: 100%;
+                }
+                .cmp-container{
+                    .image{
+                        .cmp-image{
+                            img{
+                                width: fit-content;
+                                margin-bottom: 30px;
+                                @include xs-screen{
+                                    width: 80%;
+                                }
+                            }
+                        }
+                    }
+                    .title{
+                        margin-bottom: 20px;
+                        .cmp-title{
+                            h1{
+                                font-weight: 700;
+                                font-size: 50px;
+                                line-height: 59px;
+                                color: #414042;
+                            }
+                        }
+                    }
+                    .text{
+                        #text-53cc58dc93{
+                            p{
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 28px;
+                                color: $gray;
+                                margin: 0;
+                                padding-right: 100px;
+                                @include xs-screen{
+                                    padding: 0px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             .button-wrap{
                 margin-top: 20px;
-                display: flex;
-                align-items: center;
-                grid-gap: 30px;
-                @include bgbutton;
-                .button{
-                    .btn-text{
-                        @include xs-screen{
-                            font-size: 12px;
-                        }
+                #blurb-button-wrap{
+                    @include bgbutton;
+                    @include sm-screen{
+                        flex-direction: column;
+                        margin-bottom: 80px;
                     }
-                    &:hover{
-                        a{
-                            &::before{
-                                background: transparent;
-                                border-color: $yellow;
-                            }
-                            &::after{
-                                background: transparent;
-                                border-color: $yellow;
-                            }
+                    & > div:nth-child(2){
+                        padding-left: 30px;
+                        @include sm-screen{
+                            padding: 0;
+                            margin-top: 20px;
                         }
                     }
                 }
-                @include xs-screen{
-                    justify-content: space-between;
-                }
-                .video-btn{
-                    a{
+                &.button-side-by-side{
+                    .cmp-container{
                         display: flex;
-                        align-items: center;
-                        grid-gap: 15px;
-                        img{
-                            width: 40px;
-                            margin: 0px;
-                        }
-                        .btn-text{
-                            font-weight: 600;
-                            font-size: 14px;
-                            line-height: 18px;
-                            text-align: center;
-                            letter-spacing: -0.005em;
-                            color: $gray;
-                            @include xs-screen{
-                                font-size: 12px;
-                            }
-                        }
                     }
-                }             
+                }
             }
-        }
-        .img-wrap{
-            width: 50%;
-            display: none;
-            @include xs-screen{
-                width: 100%;
-            }
-            @include sm-screen{
-                display: block;
-            }
-            img{
-                width: 100%;
-                display: block;
+            .mobile-img{
+                display: none;
+                @include sm-screen{
+                    display: block;
+                }
+                .cmp-image{
+                    display: flex;
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        display: flex;
+                    }
+                }
             }
         }
     }
 }
+
+
+
